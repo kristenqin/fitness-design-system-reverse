@@ -83,19 +83,7 @@ npm run storybook
 ## Existing Project Structure
 
 ```text
-AGENTS.md
 docs/
-  git-workflow.md
   reverse-workflow.md
   storybook-classification.md
-src/reverse-components/
-  fitness-dashboard/
-    FitnessDashboard.contract.md
-    FitnessDashboard.tsx
-    FitnessDashboard.css
-    FitnessDashboard.stories.tsx
 ```
-
-## Git Constraints
-
-This project follows the repository workflow in `docs/git-workflow.md` and the agent-facing rules in `AGENTS.md`.

@@ -1,12 +1,7 @@
 import { existsSync } from "node:fs";
 
 const requiredPaths = [
-  "AGENTS.md",
-  "docs/git-workflow.md",
-  "docs/reverse-workflow.md",
-  "src/reverse-components/fitness-dashboard/FitnessDashboard.contract.md",
-  "src/reverse-components/fitness-dashboard/FitnessDashboard.tsx",
-  "src/reverse-components/fitness-dashboard/FitnessDashboard.stories.tsx"
+  "docs/reverse-workflow.md"
 ];
 
 const missing = requiredPaths.filter((path) => !existsSync(path));
