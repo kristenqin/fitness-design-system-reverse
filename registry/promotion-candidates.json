@@ -48,15 +48,16 @@
       "id": "workout-item-candidate",
       "type": "component",
       "evidenceStatus": "captured",
+      "contractStatus": "defined",
       "runtimeStatus": "not-tested",
       "promotionStatus": "not-promoted",
       "blockers": [
         "WorkoutItem has captured source evidence but no runtime implementation.",
         "WorkoutItem has no Storybook state stories.",
-        "Input contract and accessibility behavior are not specified.",
+        "Input contract and accessibility behavior are drafted but not runtime-validated.",
         "Relationship to internal MetricCard-like metric values is documented only as a boundary principle."
       ],
-      "nextAction": "Create a WorkoutItem contract and runtime validation plan before implementing or promoting it."
+      "nextAction": "Use the WorkoutItem contract and runtime plan to run a component-only validation cycle before SummaryDashboard integration or promotion."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

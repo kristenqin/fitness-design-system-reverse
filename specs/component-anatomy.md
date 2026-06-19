@@ -87,6 +87,51 @@ States:
 - goal-completed
 - overachieved
 
+## WorkoutItem
+
+Purpose:
+
+Represent one completed behavior record in a list, dashboard preview, or history surface.
+
+Primary object:
+
+- Record
+- Completed workout record in the captured SummaryDashboard evidence
+
+Observed information slots:
+
+- title
+- duration
+- date
+
+Inferred information slots:
+
+- activity type
+- record identity
+- detail target
+- metadata group
+
+Future candidate slots:
+
+- thumbnail
+- route
+- distance
+- energy
+- pace
+- sync state
+
+States to validate:
+
+- default
+- long-title
+- missing-duration
+- missing-date
+- interactive-target
+
+Transfer notes:
+
+Can migrate to focus sessions, study sessions, habit completions, and training records when the object is a completed behavior record rather than a standalone metric.
+
 ## TrendCard
 
 Purpose:
@@ -161,3 +206,7 @@ Fifth-cycle runtime validation adds loading, empty, error, goal-completed, overa
 Sixth-cycle boundary review separates compact metric display from completed behavior records. `MetricCard` owns Activity-style metric groups such as `143:25113` named `Stats`. `WorkoutItem` owns Workouts-section rows such as `143:25136` and `143:25151` named `Card`.
 
 A workout row can contain metric values, but the row's primary object is a completed behavior record. `MetricCard` may become an internal substructure of `WorkoutItem` later, but it cannot replace `WorkoutItem`.
+
+### WorkoutItem Contract
+
+Seventh-cycle contract planning defines `WorkoutItem` as a completed behavior record candidate. Observed slots are limited to title, duration, and date from the captured SummaryDashboard workout rows. Additional slots such as activity type, detail target, route, distance, energy, and sync state remain inferred or future candidates until runtime validation or additional evidence supports them.

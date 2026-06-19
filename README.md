@@ -122,6 +122,7 @@ reviews/
   ComponentState.accessibility-review.md
   MetricCard_WorkoutItem.boundary-review.md
   SummaryDashboard.promotion-review.md
+  WorkoutItem.runtime-plan.md
 scripts/
   validate-project.ts
 specs/
@@ -143,6 +144,7 @@ src/
       MetricCard.stories.tsx
       ProgressRing.stories.tsx
       TypographyMetricRoles.stories.tsx
+      WorkoutItem.contract.md
   vite-env.d.ts
 stories/
   components/
