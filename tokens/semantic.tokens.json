@@ -1,0 +1,30 @@
+{
+  "color": {
+    "activity": {
+      "move": {"value": "{color.source.pending}", "type": "color", "description": "Activity color for movement or calorie-like progress."},
+      "exercise": {"value": "{color.source.pending}", "type": "color", "description": "Activity color for exercise or training progress."},
+      "stand": {"value": "{color.source.pending}", "type": "color", "description": "Activity color for stand or interval-based completion."}
+    },
+    "progress": {
+      "completed": {"value": "{color.source.pending}", "type": "color", "description": "Progress has reached the goal."},
+      "pending": {"value": "{color.source.pending}", "type": "color", "description": "Progress exists but is not complete."},
+      "low": {"value": "{color.source.pending}", "type": "color", "description": "Progress is far below expected state."}
+    },
+    "trend": {
+      "positive": {"value": "{color.source.pending}", "type": "color", "description": "Trend direction is improving."},
+      "negative": {"value": "{color.source.pending}", "type": "color", "description": "Trend direction is declining."},
+      "neutral": {"value": "{color.source.pending}", "type": "color", "description": "Trend direction is stable or inconclusive."}
+    }
+  },
+  "typography": {
+    "metric": {
+      "value": {"value": "pending", "type": "typography", "description": "Large numeric value in metric surfaces."},
+      "unit": {"value": "pending", "type": "typography", "description": "Unit next to metric value."},
+      "label": {"value": "pending", "type": "typography", "description": "Metric name or compact label."}
+    },
+    "card": {
+      "title": {"value": "pending", "type": "typography", "description": "Card title."},
+      "caption": {"value": "pending", "type": "typography", "description": "Secondary explanation or supporting text."}
+    }
+  }
+}
