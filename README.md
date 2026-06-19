@@ -87,6 +87,9 @@ npm run storybook
   main.ts
   preview.ts
 README.md
+assets/
+  source-evidence/
+    summary-dashboard-143-23952.png
 decisions/
   ADR-001-project-scope.md
   ADR-002-not-apple-clone.md
@@ -116,6 +119,9 @@ specs/
   page-patterns.md
   visual-language.md
 src/
+  reverse-components/
+    summary-dashboard/
+      SummaryDashboard.contract.md
   vite-env.d.ts
 stories/
   components/
@@ -128,5 +134,7 @@ stories/
     README.md
   style-system/
     README.md
+tokens/
+  semantic.tokens.json
 tsconfig.json
 ```

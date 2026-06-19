@@ -5,10 +5,11 @@
       "name": "SummaryDashboard",
       "category": "dashboard",
       "coreObjects": ["goal", "progress", "activity", "trend", "award"],
-      "componentCandidates": ["progress-ring", "metric-card", "trend-card", "award-badge"],
-      "sourceStatus": "unseen",
+      "componentCandidates": ["progress-ring", "metric-card", "trend-card", "award-badge", "workout-item"],
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952", "screenshot-summary-dashboard-143-23952"],
       "reusePriority": "high",
-      "notes": "Compresses multiple behavior indicators into a daily state overview."
+      "notes": "Compresses multiple behavior indicators into a daily state overview. Captured from Screen 5 inside the provided Summary Tab Screens Figma node."
     },
     {
       "id": "activity-detail",

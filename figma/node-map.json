@@ -1,12 +1,76 @@
 {
-  "sourceStatus": "unseen",
-  "nodeMappings": [],
+  "sourceStatus": "captured",
+  "nodeMappings": [
+    {
+      "id": "node-summary-tab-screens",
+      "nodeId": "143:23952",
+      "nodeName": "Summary Tab Screens",
+      "nodeType": "frame",
+      "targetType": "source",
+      "targetId": "figma-node-143-23952",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "node-summary-dashboard-screen",
+      "nodeId": "143:25101",
+      "nodeName": "Screen 5",
+      "nodeType": "frame",
+      "targetType": "page",
+      "targetId": "summary-dashboard",
+      "sourceRefs": ["figma-node-143-23952", "screenshot-summary-dashboard-143-23952"]
+    },
+    {
+      "id": "node-summary-dashboard-pattern",
+      "nodeId": "143:25101",
+      "nodeName": "Screen 5",
+      "nodeType": "frame",
+      "targetType": "pattern",
+      "targetId": "summary-dashboard",
+      "sourceRefs": ["figma-node-143-23952", "screenshot-summary-dashboard-143-23952"]
+    },
+    {
+      "id": "node-summary-activity-section",
+      "nodeId": "143:25110",
+      "nodeName": "Activity",
+      "nodeType": "frame",
+      "targetType": "section",
+      "targetId": "summary-dashboard.activity",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "node-summary-workouts-section",
+      "nodeId": "143:25131",
+      "nodeName": "Workout",
+      "nodeType": "frame",
+      "targetType": "section",
+      "targetId": "summary-dashboard.workouts",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "node-summary-trends-section",
+      "nodeId": "143:25166",
+      "nodeName": "Trends",
+      "nodeType": "frame",
+      "targetType": "section",
+      "targetId": "summary-dashboard.trends",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "node-summary-awards-section",
+      "nodeId": "143:25188",
+      "nodeName": "Awards",
+      "nodeType": "frame",
+      "targetType": "section",
+      "targetId": "summary-dashboard.awards",
+      "sourceRefs": ["figma-node-143-23952"]
+    }
+  ],
   "fieldDefinitions": {
-    "nodeId": "Real Figma node id. Leave absent until source evidence is provided.",
+    "nodeId": "Real Figma node id.",
     "nodeName": "Real Figma node name.",
-    "targetType": "page | pattern | component | style-system | scenario | experiment",
-    "targetId": "Registry id that the Figma node supports.",
+    "targetType": "source | page | pattern | section | component | style-system | scenario | experiment",
+    "targetId": "Registry id or local target id that the Figma node supports.",
     "sourceRefs": "Evidence references from registry/source-map.json."
   },
-  "notes": "Future map from Figma nodes to registry targets. No real node ids are recorded yet."
+  "notes": "Map from captured Figma nodes to registry targets. Captured entries come from the provided node 143:23952 and its observed Summary Dashboard descendants."
 }

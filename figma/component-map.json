@@ -1,12 +1,59 @@
 {
-  "sourceStatus": "unseen",
-  "componentMappings": [],
+  "sourceStatus": "captured",
+  "componentMappings": [
+    {
+      "id": "component-progress-ring-summary-dashboard",
+      "sourceNodeId": "143:25127",
+      "sourceNodeName": "Circle",
+      "sourceNodeType": "frame",
+      "candidateType": "component",
+      "candidateId": "progress-ring",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "component-metric-card-activity-stats",
+      "sourceNodeId": "143:25113",
+      "sourceNodeName": "Stats",
+      "sourceNodeType": "frame",
+      "candidateType": "component",
+      "candidateId": "metric-card",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "component-workout-item-summary-dashboard",
+      "sourceNodeId": "143:25136",
+      "sourceNodeName": "Card",
+      "sourceNodeType": "frame",
+      "candidateType": "component",
+      "candidateId": "workout-item",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "component-trend-card-summary-dashboard",
+      "sourceNodeId": "143:25168",
+      "sourceNodeName": "Trends Box",
+      "sourceNodeType": "frame",
+      "candidateType": "component",
+      "candidateId": "trend-card",
+      "sourceRefs": ["figma-node-143-23952"]
+    },
+    {
+      "id": "component-award-badge-summary-dashboard",
+      "sourceNodeId": "143:25193",
+      "sourceNodeName": "A",
+      "sourceNodeType": "frame",
+      "candidateType": "component",
+      "candidateId": "award-badge",
+      "sourceRefs": ["figma-node-143-23952"]
+    }
+  ],
   "fieldDefinitions": {
-    "figmaComponentId": "Real Figma component id. Leave absent until source evidence is provided.",
-    "figmaComponentName": "Real Figma component name.",
+    "sourceNodeId": "Real Figma node id for an observed source node.",
+    "sourceNodeName": "Real Figma node name for the observed source node.",
+    "sourceNodeType": "Figma node type returned by metadata.",
     "candidateType": "component | pattern | style-system",
-    "candidateId": "Registry id that the Figma component supports.",
+    "candidateId": "Registry id that the observed node supports.",
     "sourceRefs": "Evidence references from registry/source-map.json."
   },
-  "notes": "Future map from Figma components to system candidates. No real component ids are recorded yet."
+  "notes": "Map from observed Summary Dashboard Figma nodes to component candidates. These are candidate mappings, not promoted components."
 }

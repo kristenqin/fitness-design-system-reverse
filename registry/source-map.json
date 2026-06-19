@@ -1,18 +1,115 @@
 {
-  "sourceStatus": "unseen",
-  "figmaNodes": [],
-  "screenshots": [],
-  "pages": [],
-  "components": [],
-  "patterns": [],
-  "flows": [],
-  "pendingEvidence": [
+  "sourceStatus": "captured",
+  "figmaNodes": [
     {
-      "id": "figma-source-file",
-      "type": "figma-file",
-      "status": "pending",
-      "notes": "No Figma source has been provided yet. Do not add nodeId values until real evidence is available."
+      "id": "figma-node-143-23952",
+      "type": "figma-node",
+      "fileKey": "8vMf36ZtDA5gimN3xt468r",
+      "nodeId": "143:23952",
+      "nodeName": "Summary Tab Screens",
+      "nodeType": "frame",
+      "sourceStatus": "captured",
+      "figmaUrl": "https://www.figma.com/design/8vMf36ZtDA5gimN3xt468r/AppleFitness?node-id=143-23952&m=dev",
+      "capturedWith": ["get_design_context", "get_metadata", "get_screenshot"],
+      "dimensions": {
+        "x": -2955,
+        "y": 1378,
+        "width": 1880,
+        "height": 1600
+      },
+      "directChildren": [
+        {
+          "nodeId": "143:23953",
+          "nodeName": "Header",
+          "nodeType": "frame"
+        },
+        {
+          "nodeId": "143:25100",
+          "nodeName": "Summary Tab Screens",
+          "nodeType": "frame"
+        }
+      ],
+      "summaryDashboardScreen": {
+        "nodeId": "143:25101",
+        "nodeName": "Screen 5",
+        "nodeType": "frame",
+        "width": 390,
+        "height": 1296
+      },
+      "notes": "The provided node contains multiple Summary tab related screens. This evidence mapping uses Screen 5 as the Summary Dashboard surface and does not promote adjacent detail, calendar, or workout-detail screens."
     }
   ],
-  "notes": "Traceability map for connecting future Figma nodes, screenshots, pages, components, patterns, and flows. This file intentionally contains no fabricated evidence."
+  "screenshots": [
+    {
+      "id": "screenshot-summary-dashboard-143-23952",
+      "type": "screenshot",
+      "sourceNodeId": "143:23952",
+      "path": "assets/source-evidence/summary-dashboard-143-23952.png",
+      "format": "png",
+      "width": 1960,
+      "height": 1680,
+      "originalWidth": 1960,
+      "originalHeight": 1680,
+      "sourceStatus": "captured",
+      "notes": "Screenshot generated from get_screenshot for node 143:23952 and stored locally for durable source evidence."
+    }
+  ],
+  "pages": [
+    {
+      "id": "summary-dashboard",
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952", "screenshot-summary-dashboard-143-23952"],
+      "observedNodeIds": ["143:25101"],
+      "notes": "Summary Dashboard is observed in Screen 5 within the provided Summary Tab Screens node."
+    }
+  ],
+  "components": [
+    {
+      "id": "progress-ring",
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952"],
+      "observedNodeIds": ["143:25127"],
+      "notes": "Observed as the circular progress visual in the Activity section on Screen 5."
+    },
+    {
+      "id": "metric-card",
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952"],
+      "observedNodeIds": ["143:25113", "143:25136", "143:25151"],
+      "notes": "Observed as compact metric groups in Activity and repeated workout summary cards."
+    },
+    {
+      "id": "trend-card",
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952"],
+      "observedNodeIds": ["143:25166", "143:25168"],
+      "notes": "Observed as the Trends section and explanatory Trends Box on Screen 5."
+    },
+    {
+      "id": "award-badge",
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952"],
+      "observedNodeIds": ["143:25193", "143:25201", "143:25209"],
+      "notes": "Observed as three award items inside the Awards section on Screen 5."
+    },
+    {
+      "id": "workout-item",
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952"],
+      "observedNodeIds": ["143:25136", "143:25151"],
+      "notes": "Observed as repeated workout rows in the Workouts section on Screen 5."
+    }
+  ],
+  "patterns": [
+    {
+      "id": "summary-dashboard",
+      "sourceStatus": "captured",
+      "sourceRefs": ["figma-node-143-23952", "screenshot-summary-dashboard-143-23952"],
+      "observedNodeIds": ["143:25101"],
+      "notes": "Observed Summary Dashboard pattern with header, activity summary, workouts, trends, awards, and bottom navigation."
+    }
+  ],
+  "flows": [],
+  "pendingEvidence": [],
+  "notes": "Traceability map for connecting Figma nodes, screenshots, pages, components, patterns, and flows. Captured means evidence was read; it does not mean design-system review is complete."
 }
