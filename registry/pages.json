@@ -1,0 +1,54 @@
+{
+  "pages": [
+    {
+      "id": "summary-dashboard",
+      "name": "Summary Dashboard",
+      "type": "dashboard",
+      "coreObjects": ["goal", "progress", "activity", "trend", "award"],
+      "sourceStatus": "unseen",
+      "reversePriority": "high",
+      "sourceRefs": [],
+      "notes": "Primary entry point for the Goal → Behavior → Record → Trend → Reward loop."
+    },
+    {
+      "id": "activity-detail",
+      "name": "Activity Detail",
+      "type": "detail",
+      "coreObjects": ["activity", "progress", "metric", "goal"],
+      "sourceStatus": "unseen",
+      "reversePriority": "high",
+      "sourceRefs": [],
+      "notes": "Detail surface for explaining current activity progress and goal relation."
+    },
+    {
+      "id": "workout-detail",
+      "name": "Workout Detail",
+      "type": "detail",
+      "coreObjects": ["workout", "record", "metric"],
+      "sourceStatus": "unseen",
+      "reversePriority": "high",
+      "sourceRefs": [],
+      "notes": "Record surface for one completed behavior unit."
+    },
+    {
+      "id": "trend-overview",
+      "name": "Trend Overview",
+      "type": "history",
+      "coreObjects": ["trend", "metric", "insight"],
+      "sourceStatus": "unseen",
+      "reversePriority": "high",
+      "sourceRefs": [],
+      "notes": "Explains long-term change direction and interpretation."
+    },
+    {
+      "id": "achievement-collection",
+      "name": "Achievement Collection",
+      "type": "collection",
+      "coreObjects": ["award", "milestone", "reward"],
+      "sourceStatus": "unseen",
+      "reversePriority": "medium",
+      "sourceRefs": [],
+      "notes": "Reward surface for sustained behavior and milestone feedback."
+    }
+  ]
+}
