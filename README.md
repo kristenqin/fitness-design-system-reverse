@@ -109,6 +109,7 @@ figma/
 package-lock.json
 package.json
 registry/
+  component-boundary-matrix.json
   component-state-matrix.json
   components.json
   flows.json
@@ -119,6 +120,7 @@ registry/
   source-map.json
 reviews/
   ComponentState.accessibility-review.md
+  MetricCard_WorkoutItem.boundary-review.md
   SummaryDashboard.promotion-review.md
 scripts/
   validate-project.ts

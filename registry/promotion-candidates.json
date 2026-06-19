@@ -37,12 +37,26 @@
       "runtimeStatus": "runtime-tested-states",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Boundary between MetricCard and WorkoutItem is unresolved.",
+        "MetricCard versus WorkoutItem boundary is documented but WorkoutItem is not specified or runtime-tested.",
         "Accessibility behavior is drafted but not reviewed with assistive technology or automated checks.",
         "Source typography, spacing, and color values are not confirmed.",
         "Interactive or navigational behavior is runtime-tested only as a local synthetic target."
       ],
-      "nextAction": "Clarify MetricCard versus WorkoutItem, then review interactive semantics, error behavior, and source-backed visual rules before promotion."
+      "nextAction": "Keep MetricCard scoped to compact metric display and review source-backed visual rules before promotion."
+    },
+    {
+      "id": "workout-item-candidate",
+      "type": "component",
+      "evidenceStatus": "captured",
+      "runtimeStatus": "not-tested",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "WorkoutItem has captured source evidence but no runtime implementation.",
+        "WorkoutItem has no Storybook state stories.",
+        "Input contract and accessibility behavior are not specified.",
+        "Relationship to internal MetricCard-like metric values is documented only as a boundary principle."
+      ],
+      "nextAction": "Create a WorkoutItem contract and runtime validation plan before implementing or promoting it."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

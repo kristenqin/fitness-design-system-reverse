@@ -1,0 +1,50 @@
+{
+  "boundaries": [
+    {
+      "sourceNodeId": "143:25113",
+      "sourceNodeName": "Stats",
+      "observedIn": "SummaryDashboard Activity section",
+      "primaryMeaning": "Compact activity metrics that support the current progress signal.",
+      "recommendedOwner": "metric-card",
+      "reason": "The node's primary role is displaying metric values and labels; it is not a completed behavior record.",
+      "status": "boundary-decided"
+    },
+    {
+      "sourceNodeId": "143:25136",
+      "sourceNodeName": "Card",
+      "observedIn": "SummaryDashboard Workouts section",
+      "primaryMeaning": "Completed workout behavior record with title, duration, and date.",
+      "recommendedOwner": "workout-item",
+      "reason": "The row contains metric values, but its primary meaning is a completed workout record.",
+      "status": "boundary-decided"
+    },
+    {
+      "sourceNodeId": "143:25151",
+      "sourceNodeName": "Card",
+      "observedIn": "SummaryDashboard Workouts section",
+      "primaryMeaning": "Repeated completed workout behavior record with title, duration, and date.",
+      "recommendedOwner": "workout-item",
+      "reason": "The repeated row belongs to the Workouts section and should be owned by WorkoutItem, not swallowed by MetricCard.",
+      "status": "boundary-decided"
+    },
+    {
+      "sourceNodeId": "143:25168",
+      "sourceNodeName": "Trends Box",
+      "observedIn": "SummaryDashboard Trends section",
+      "primaryMeaning": "Trend explanation or trend onboarding surface.",
+      "recommendedOwner": "trend-card",
+      "reason": "Recorded as adjacent evidence only; it is not part of the MetricCard versus WorkoutItem boundary.",
+      "status": "out-of-scope-adjacent"
+    },
+    {
+      "sourceNodeId": "143:25193",
+      "sourceNodeName": "A",
+      "observedIn": "SummaryDashboard Awards section",
+      "primaryMeaning": "Award preview or reward item.",
+      "recommendedOwner": "award-badge",
+      "reason": "Recorded as adjacent evidence only; it is not part of the MetricCard versus WorkoutItem boundary.",
+      "status": "out-of-scope-adjacent"
+    }
+  ],
+  "notes": "Boundary ownership follows primary semantic meaning. Numeric values inside a workout row do not make the row a MetricCard."
+}

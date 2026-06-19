@@ -153,3 +153,11 @@ Fifth-cycle runtime validation adds empty, overachieved, and unavailable states 
 Fourth-cycle promotion review keeps `MetricCard` as a reverse-surface candidate. Runtime stories cover default, long Chinese text, and extreme values, but loading, empty, error, goal-completed, and overachieved states remain missing. The boundary between `MetricCard` and `WorkoutItem` is still unresolved.
 
 Fifth-cycle runtime validation adds loading, empty, error, goal-completed, overachieved, and interactive-target states with synthetic data. The accessibility draft keeps non-interactive cards as `article` surfaces and uses a native `button` only for the interactive target state. This improves state coverage but leaves error announcement behavior, interaction rules, and the `WorkoutItem` boundary unresolved.
+
+## Boundary Notes
+
+### MetricCard and WorkoutItem
+
+Sixth-cycle boundary review separates compact metric display from completed behavior records. `MetricCard` owns Activity-style metric groups such as `143:25113` named `Stats`. `WorkoutItem` owns Workouts-section rows such as `143:25136` and `143:25151` named `Card`.
+
+A workout row can contain metric values, but the row's primary object is a completed behavior record. `MetricCard` may become an internal substructure of `WorkoutItem` later, but it cannot replace `WorkoutItem`.
