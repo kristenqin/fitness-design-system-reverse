@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Page Registry",
+  "type": "object",
+  "required": ["pages"],
+  "properties": {
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "sourceStatus", "reversePriority"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "type": {"type": "string", "description": "dashboard, detail, history, collection, settings, permission, or other page type"},
+          "coreObjects": {"type": "array", "items": {"type": "string"}},
+          "sourceStatus": {"type": "string", "enum": ["unseen", "captured", "mapped", "reviewed"]},
+          "reversePriority": {"type": "string", "enum": ["high", "medium", "low"]},
+          "sourceRefs": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}
