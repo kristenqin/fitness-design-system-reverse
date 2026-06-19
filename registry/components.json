@@ -1,0 +1,54 @@
+{
+  "components": [
+    {
+      "id": "progress-ring",
+      "name": "ProgressRing",
+      "category": "progress-feedback",
+      "systemLevel": "semantic-component",
+      "sourceStatus": "unseen",
+      "reusePriority": "high",
+      "states": ["default", "empty", "low-progress", "completed", "overachieved"],
+      "notes": "Visualizes goal relation and current completion state."
+    },
+    {
+      "id": "metric-card",
+      "name": "MetricCard",
+      "category": "data-display",
+      "systemLevel": "semantic-component",
+      "sourceStatus": "unseen",
+      "reusePriority": "high",
+      "states": ["default", "loading", "empty", "error", "long-text", "extreme-value"],
+      "notes": "Displays one trackable metric with value, unit, goal relation, trend, and explanation."
+    },
+    {
+      "id": "trend-card",
+      "name": "TrendCard",
+      "category": "trend-explanation",
+      "systemLevel": "semantic-component",
+      "sourceStatus": "unseen",
+      "reusePriority": "high",
+      "states": ["improving", "declining", "neutral", "insufficient-data"],
+      "notes": "Explains long-term direction without reducing the interface to raw chart display."
+    },
+    {
+      "id": "award-badge",
+      "name": "AwardBadge",
+      "category": "achievement",
+      "systemLevel": "semantic-component",
+      "sourceStatus": "unseen",
+      "reusePriority": "medium",
+      "states": ["locked", "unlocked", "new", "in-progress"],
+      "notes": "Turns repeated behavior into visible reward evidence."
+    },
+    {
+      "id": "workout-item",
+      "name": "WorkoutItem",
+      "category": "record-display",
+      "systemLevel": "semantic-component",
+      "sourceStatus": "unseen",
+      "reusePriority": "medium",
+      "states": ["default", "with-route", "without-route", "incomplete-data"],
+      "notes": "Represents one completed behavior record in a list or history surface."
+    }
+  ]
+}
