@@ -1,0 +1,44 @@
+{
+  "patterns": [
+    {
+      "id": "summary-dashboard",
+      "name": "SummaryDashboard",
+      "category": "dashboard",
+      "coreObjects": ["goal", "progress", "activity", "trend", "award"],
+      "componentCandidates": ["progress-ring", "metric-card", "trend-card", "award-badge"],
+      "sourceStatus": "unseen",
+      "reusePriority": "high",
+      "notes": "Compresses multiple behavior indicators into a daily state overview."
+    },
+    {
+      "id": "activity-detail",
+      "name": "ActivityDetail",
+      "category": "detail",
+      "coreObjects": ["activity", "metric", "goal", "progress"],
+      "componentCandidates": ["progress-ring", "metric-card"],
+      "sourceStatus": "unseen",
+      "reusePriority": "high",
+      "notes": "Expands one progress object into values, explanations, and supporting metrics."
+    },
+    {
+      "id": "trend-overview",
+      "name": "TrendOverview",
+      "category": "analysis",
+      "coreObjects": ["trend", "metric", "insight"],
+      "componentCandidates": ["trend-card", "metric-card"],
+      "sourceStatus": "unseen",
+      "reusePriority": "high",
+      "notes": "Turns historical records into direction and interpretation."
+    },
+    {
+      "id": "achievement-collection",
+      "name": "AchievementCollection",
+      "category": "motivation",
+      "coreObjects": ["award", "milestone", "reward"],
+      "componentCandidates": ["award-badge"],
+      "sourceStatus": "unseen",
+      "reusePriority": "medium",
+      "notes": "Organizes reward evidence into a browsable collection."
+    }
+  ]
+}
