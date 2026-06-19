@@ -139,3 +139,13 @@ A component can be promoted only when:
 - it has a documented anatomy
 - it has Storybook runtime stories for default and edge states
 - it does not rely on Apple-specific branding to remain meaningful
+
+## Runtime Notes
+
+### ProgressRing
+
+Fourth-cycle promotion review keeps `ProgressRing` as a reverse-surface candidate. Runtime stories cover default, low-progress, and completed states, but empty and overachieved states remain missing. Source-backed geometry, token mapping, and accessibility requirements are not yet reviewed enough for promotion.
+
+### MetricCard
+
+Fourth-cycle promotion review keeps `MetricCard` as a reverse-surface candidate. Runtime stories cover default, long Chinese text, and extreme values, but loading, empty, error, goal-completed, and overachieved states remain missing. The boundary between `MetricCard` and `WorkoutItem` is still unresolved.

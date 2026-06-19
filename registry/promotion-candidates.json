@@ -1,0 +1,49 @@
+{
+  "candidates": [
+    {
+      "id": "summary-dashboard-pattern",
+      "type": "pattern",
+      "evidenceStatus": "captured",
+      "runtimeStatus": "runtime-tested-minimum",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "Source evidence is captured but not reviewed.",
+        "Observed Workouts, Trends, Awards, and Bottom Nav sections are not implemented in the minimum runtime surface.",
+        "Required versus optional module boundaries are unresolved.",
+        "No-data, goal-completed, overachieved, permission-denied, and unavailable-data states are not runtime-tested.",
+        "Semantic tokens remain pending and raw token values are not extracted.",
+        "Accessibility expectations are not reviewed enough for promotion."
+      ],
+      "nextAction": "Keep SummaryDashboard in reverse surface and validate missing pattern states plus optional module behavior before any promotion review."
+    },
+    {
+      "id": "progress-ring-candidate",
+      "type": "component",
+      "evidenceStatus": "captured",
+      "runtimeStatus": "runtime-tested-minimum",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "Exact source geometry, stroke behavior, and color-variable mapping are not confirmed.",
+        "Empty and overachieved states are not runtime-tested.",
+        "Accessibility requirements are not reviewed beyond a basic runtime label.",
+        "Transfer beyond the captured Activity context is not yet proven."
+      ],
+      "nextAction": "Add empty and overachieved runtime states, then review source-backed semantics and accessibility before considering promotion."
+    },
+    {
+      "id": "metric-card-candidate",
+      "type": "component",
+      "evidenceStatus": "captured",
+      "runtimeStatus": "runtime-tested-minimum",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "Boundary between MetricCard and WorkoutItem is unresolved.",
+        "Loading, empty, error, goal-completed, and overachieved states are not runtime-tested.",
+        "Source typography, spacing, and color values are not confirmed.",
+        "Interactive or navigational behavior is not reviewed."
+      ],
+      "nextAction": "Clarify MetricCard versus WorkoutItem, then add missing runtime states and accessibility notes before promotion."
+    }
+  ],
+  "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."
+}

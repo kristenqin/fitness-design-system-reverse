@@ -34,8 +34,10 @@ Initial modules:
 
 ```text
 assets/      Original screenshots, exports, and visual references.
+extraction/  Candidate system-asset extraction notes after runtime review.
 figma/       Figma source notes and node-to-system mapping.
 registry/    Machine-readable inventory for pages, flows, components, patterns, and sources.
+reviews/     Promotion reviews and blocker analysis before system promotion.
 tokens/      Design token source files and semantic token drafts.
 specs/       Human-readable design system explanations and usage rules.
 src/         Executable design assets: tokens, components, and patterns.
@@ -99,6 +101,8 @@ decisions/
 docs/
   reverse-workflow.md
   storybook-classification.md
+extraction/
+  SummaryDashboard.system-extraction.md
 figma/
   component-map.json
   node-map.json
@@ -110,7 +114,10 @@ registry/
   pages.json
   pages.schema.json
   patterns.json
+  promotion-candidates.json
   source-map.json
+reviews/
+  SummaryDashboard.promotion-review.md
 scripts/
   validate-project.ts
 specs/

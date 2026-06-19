@@ -114,3 +114,9 @@ A pattern can be promoted only when:
 - its component composition is documented
 - it has Storybook stories for at least one default and one edge scenario
 - it can be explained without Apple-specific brand assumptions
+
+## Runtime Notes
+
+### SummaryDashboard
+
+Fourth-cycle promotion review keeps `SummaryDashboard` as a reverse-surface pattern candidate. Runtime stories cover a minimum default shell, low-progress shell, low-progress scenario, and WebAdaptation experiment. The observed Workouts, Trends, Awards, and Bottom Nav sections are not yet implemented in the runtime surface, and required versus optional module rules remain unresolved.
