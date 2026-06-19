@@ -1,0 +1,12 @@
+{
+  "sourceStatus": "unseen",
+  "nodeMappings": [],
+  "fieldDefinitions": {
+    "nodeId": "Real Figma node id. Leave absent until source evidence is provided.",
+    "nodeName": "Real Figma node name.",
+    "targetType": "page | pattern | component | style-system | scenario | experiment",
+    "targetId": "Registry id that the Figma node supports.",
+    "sourceRefs": "Evidence references from registry/source-map.json."
+  },
+  "notes": "Future map from Figma nodes to registry targets. No real node ids are recorded yet."
+}

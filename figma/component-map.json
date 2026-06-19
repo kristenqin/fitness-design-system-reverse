@@ -1,0 +1,12 @@
+{
+  "sourceStatus": "unseen",
+  "componentMappings": [],
+  "fieldDefinitions": {
+    "figmaComponentId": "Real Figma component id. Leave absent until source evidence is provided.",
+    "figmaComponentName": "Real Figma component name.",
+    "candidateType": "component | pattern | style-system",
+    "candidateId": "Registry id that the Figma component supports.",
+    "sourceRefs": "Evidence references from registry/source-map.json."
+  },
+  "notes": "Future map from Figma components to system candidates. No real component ids are recorded yet."
+}

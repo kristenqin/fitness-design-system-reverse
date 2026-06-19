@@ -1,0 +1,47 @@
+{
+  "flows": [
+    {
+      "id": "goal-behavior-record-trend-reward",
+      "name": "Goal to Reward Loop",
+      "scope": "first-cycle",
+      "sourceStatus": "unseen",
+      "sourceRefs": [],
+      "coreObjects": ["goal", "behavior", "record", "trend", "reward"],
+      "steps": [
+        {
+          "order": 1,
+          "id": "goal",
+          "object": "goal",
+          "purpose": "Define the desired target state that gives behavior direction."
+        },
+        {
+          "order": 2,
+          "id": "behavior",
+          "object": "behavior",
+          "purpose": "Capture the measurable or memorable user action."
+        },
+        {
+          "order": 3,
+          "id": "record",
+          "object": "record",
+          "purpose": "Preserve evidence that the behavior happened."
+        },
+        {
+          "order": 4,
+          "id": "trend",
+          "object": "trend",
+          "purpose": "Interpret direction from repeated records."
+        },
+        {
+          "order": 5,
+          "id": "reward",
+          "object": "reward",
+          "purpose": "Make sustained behavior, milestones, or meaningful progress visible."
+        }
+      ],
+      "relatedPages": ["summary-dashboard", "activity-detail", "trend-overview", "achievement-collection"],
+      "relatedPatterns": ["summary-dashboard", "activity-detail", "trend-overview", "achievement-collection"],
+      "notes": "First-cycle flow boundary from specs/concept-model.md. Evidence links remain empty until real Figma or screenshot sources are provided."
+    }
+  ]
+}

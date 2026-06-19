@@ -83,7 +83,50 @@ npm run storybook
 ## Existing Project Structure
 
 ```text
+.storybook/
+  main.ts
+  preview.ts
+README.md
+decisions/
+  ADR-001-project-scope.md
+  ADR-002-not-apple-clone.md
+  ADR-003-semantic-token-first.md
+  ADR-004-storybook-as-runtime.md
+  ADR-005-style-system-over-static-preview.md
 docs/
   reverse-workflow.md
   storybook-classification.md
+figma/
+  component-map.json
+  node-map.json
+package-lock.json
+package.json
+registry/
+  components.json
+  flows.json
+  pages.json
+  pages.schema.json
+  patterns.json
+  source-map.json
+scripts/
+  validate-project.ts
+specs/
+  component-anatomy.md
+  concept-model.md
+  page-patterns.md
+  visual-language.md
+src/
+  vite-env.d.ts
+stories/
+  components/
+    README.md
+  experiments/
+    README.md
+  patterns/
+    README.md
+  scenarios/
+    README.md
+  style-system/
+    README.md
+tsconfig.json
 ```

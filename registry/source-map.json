@@ -1,0 +1,18 @@
+{
+  "sourceStatus": "unseen",
+  "figmaNodes": [],
+  "screenshots": [],
+  "pages": [],
+  "components": [],
+  "patterns": [],
+  "flows": [],
+  "pendingEvidence": [
+    {
+      "id": "figma-source-file",
+      "type": "figma-file",
+      "status": "pending",
+      "notes": "No Figma source has been provided yet. Do not add nodeId values until real evidence is available."
+    }
+  ],
+  "notes": "Traceability map for connecting future Figma nodes, screenshots, pages, components, patterns, and flows. This file intentionally contains no fabricated evidence."
+}
