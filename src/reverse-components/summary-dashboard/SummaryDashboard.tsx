@@ -13,19 +13,21 @@ export type ProgressRingProps = {
 };
 
 export function ProgressRing({ data, size = "large" }: ProgressRingProps) {
-  const ratio = data.goal > 0 ? Math.min(data.value / data.goal, 1) : 0;
-  const degrees = Math.round(ratio * 360);
-  const percent = Math.round(ratio * 100);
+  const rawRatio = data.goal > 0 ? data.value / data.goal : 0;
+  const visualRatio = Math.min(rawRatio, 1);
+  const degrees = Math.round(visualRatio * 360);
+  const percent = Math.round(rawRatio * 100);
+  const displayPercent = data.status === "unavailable" ? "N/A" : `${percent}%`;
 
   return (
     <figure
       className={`sdr-progress-ring sdr-progress-ring--${size} sdr-progress-ring--${data.status}`}
       style={{ "--sdr-progress-deg": `${degrees}deg` } as CSSProperties}
-      aria-label={`${data.label}: ${data.value} of ${data.goal} ${data.unit}`}
+      aria-label={data.ariaLabel ?? `${data.label}: ${data.value} of ${data.goal} ${data.unit}`}
     >
       <div className="sdr-progress-ring__visual" aria-hidden="true">
         <div className="sdr-progress-ring__center">
-          <strong>{percent}%</strong>
+          <strong>{displayPercent}</strong>
         </div>
       </div>
       <figcaption>
@@ -45,14 +47,31 @@ export type MetricCardProps = {
 };
 
 export function MetricCard({ data }: MetricCardProps) {
-  return (
-    <article className={`sdr-metric-card sdr-metric-card--${data.status ?? "pending"}`}>
+  const className = `sdr-metric-card sdr-metric-card--${data.status ?? "pending"}${
+    data.isInteractive ? " sdr-metric-card--interactive" : ""
+  }`;
+  const content = (
+    <>
       <p>{data.title}</p>
       <strong>
         {data.value}
         {data.unit ? <small>{data.unit}</small> : null}
       </strong>
       <span>{data.caption}</span>
+    </>
+  );
+
+  if (data.isInteractive) {
+    return (
+      <button className={className} type="button" aria-label={data.actionLabel ?? data.title}>
+        {content}
+      </button>
+    );
+  }
+
+  return (
+    <article className={className} aria-busy={data.status === "loading" ? true : undefined}>
+      {content}
     </article>
   );
 }

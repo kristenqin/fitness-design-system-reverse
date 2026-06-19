@@ -1,0 +1,137 @@
+{
+  "components": [
+    {
+      "id": "progress-ring",
+      "runtimeSurface": "src/reverse-components/summary-dashboard/ProgressRing.stories.tsx",
+      "states": [
+        {
+          "id": "default",
+          "storyPath": "Components/ProgressRing",
+          "storyName": "Default",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "low-progress",
+          "storyPath": "Components/ProgressRing",
+          "storyName": "LowProgress",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "completed",
+          "storyPath": "Components/ProgressRing",
+          "storyName": "Completed",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "empty",
+          "storyPath": "Components/ProgressRing",
+          "storyName": "Empty",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "overachieved",
+          "storyPath": "Components/ProgressRing",
+          "storyName": "Overachieved",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "unavailable",
+          "storyPath": "Components/ProgressRing",
+          "storyName": "Unavailable",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        }
+      ]
+    },
+    {
+      "id": "metric-card",
+      "runtimeSurface": "src/reverse-components/summary-dashboard/MetricCard.stories.tsx",
+      "states": [
+        {
+          "id": "default",
+          "storyPath": "Components/MetricCard",
+          "storyName": "Default",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "long-text",
+          "storyPath": "Components/MetricCard",
+          "storyName": "LongChineseText",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "extreme-value",
+          "storyPath": "Components/MetricCard",
+          "storyName": "ExtremeValue",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "loading",
+          "storyPath": "Components/MetricCard",
+          "storyName": "Loading",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "empty",
+          "storyPath": "Components/MetricCard",
+          "storyName": "Empty",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "error",
+          "storyPath": "Components/MetricCard",
+          "storyName": "Error",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "goal-completed",
+          "storyPath": "Components/MetricCard",
+          "storyName": "GoalCompleted",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "overachieved",
+          "storyPath": "Components/MetricCard",
+          "storyName": "Overachieved",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "interactive-target",
+          "storyPath": "Components/MetricCard",
+          "storyName": "InteractiveTarget",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        }
+      ]
+    }
+  ],
+  "notes": "State coverage uses synthetic runtime validation data. Accessibility status is drafted only; no candidate is promoted."
+}

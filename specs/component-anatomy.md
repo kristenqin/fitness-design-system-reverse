@@ -146,6 +146,10 @@ A component can be promoted only when:
 
 Fourth-cycle promotion review keeps `ProgressRing` as a reverse-surface candidate. Runtime stories cover default, low-progress, and completed states, but empty and overachieved states remain missing. Source-backed geometry, token mapping, and accessibility requirements are not yet reviewed enough for promotion.
 
+Fifth-cycle runtime validation adds empty, overachieved, and unavailable states with synthetic data. The accessibility draft clarifies that the visual ring is decorative, while the `figure` needs a meaningful label for value, goal, and unavailable semantics. This improves runtime coverage but does not promote the candidate.
+
 ### MetricCard
 
 Fourth-cycle promotion review keeps `MetricCard` as a reverse-surface candidate. Runtime stories cover default, long Chinese text, and extreme values, but loading, empty, error, goal-completed, and overachieved states remain missing. The boundary between `MetricCard` and `WorkoutItem` is still unresolved.
+
+Fifth-cycle runtime validation adds loading, empty, error, goal-completed, overachieved, and interactive-target states with synthetic data. The accessibility draft keeps non-interactive cards as `article` surfaces and uses a native `button` only for the interactive target state. This improves state coverage but leaves error announcement behavior, interaction rules, and the `WorkoutItem` boundary unresolved.

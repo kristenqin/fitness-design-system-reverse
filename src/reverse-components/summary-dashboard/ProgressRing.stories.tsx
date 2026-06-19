@@ -1,6 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ProgressRing } from "./SummaryDashboard";
-import { completedProgressRingData, defaultSummaryDashboardData, lowProgressSummaryDashboardData } from "./SummaryDashboard.data";
+import {
+  completedProgressRingData,
+  defaultSummaryDashboardData,
+  emptyProgressRingData,
+  lowProgressSummaryDashboardData,
+  overachievedProgressRingData,
+  unavailableProgressRingData
+} from "./SummaryDashboard.data";
 
 const meta = {
   title: "Components/ProgressRing",
@@ -41,5 +48,23 @@ export const LowProgress: Story = {
 export const Completed: Story = {
   args: {
     data: completedProgressRingData
+  }
+};
+
+export const Empty: Story = {
+  args: {
+    data: emptyProgressRingData
+  }
+};
+
+export const Overachieved: Story = {
+  args: {
+    data: overachievedProgressRingData
+  }
+};
+
+export const Unavailable: Story = {
+  args: {
+    data: unavailableProgressRingData
   }
 };

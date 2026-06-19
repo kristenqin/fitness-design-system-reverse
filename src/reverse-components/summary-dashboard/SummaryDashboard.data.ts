@@ -1,4 +1,5 @@
-export type ProgressStatus = "low" | "pending" | "completed";
+export type ProgressStatus = "empty" | "low" | "pending" | "completed" | "overachieved" | "unavailable";
+export type MetricStatus = ProgressStatus | "loading" | "error";
 
 export type ProgressRingData = {
   label: string;
@@ -7,6 +8,7 @@ export type ProgressRingData = {
   unit: string;
   status: ProgressStatus;
   caption: string;
+  ariaLabel?: string;
 };
 
 export type MetricCardData = {
@@ -14,7 +16,9 @@ export type MetricCardData = {
   value: string;
   unit?: string;
   caption: string;
-  status?: ProgressStatus;
+  status?: MetricStatus;
+  isInteractive?: boolean;
+  actionLabel?: string;
 };
 
 export type SummaryDashboardData = {
@@ -97,6 +101,36 @@ export const completedProgressRingData: ProgressRingData = {
   caption: "Goal completed"
 };
 
+export const emptyProgressRingData: ProgressRingData = {
+  label: "Move",
+  value: 0,
+  goal: 300,
+  unit: "CAL",
+  status: "empty",
+  caption: "Synthetic empty state for no recorded progress",
+  ariaLabel: "Move progress has no recorded value toward a synthetic 300 CAL goal"
+};
+
+export const overachievedProgressRingData: ProgressRingData = {
+  label: "Move",
+  value: 386,
+  goal: 300,
+  unit: "CAL",
+  status: "overachieved",
+  caption: "Synthetic overachieved state",
+  ariaLabel: "Move progress is 386 of 300 CAL, over the synthetic goal"
+};
+
+export const unavailableProgressRingData: ProgressRingData = {
+  label: "Move",
+  value: 0,
+  goal: 300,
+  unit: "CAL",
+  status: "unavailable",
+  caption: "Synthetic unavailable state for permission or source gaps",
+  ariaLabel: "Move progress is unavailable in synthetic runtime validation"
+};
+
 export const longChineseMetricData: MetricCardData = {
   title: "连续完成训练目标的平均活动分钟数",
   value: "128",
@@ -111,4 +145,51 @@ export const extremeMetricData: MetricCardData = {
   unit: "PTS",
   caption: "Synthetic extreme value for overflow validation",
   status: "completed"
+};
+
+export const loadingMetricData: MetricCardData = {
+  title: "Steps",
+  value: "Loading",
+  caption: "Synthetic loading state for pending metric data",
+  status: "loading"
+};
+
+export const emptyMetricData: MetricCardData = {
+  title: "Distance",
+  value: "0",
+  unit: "KM",
+  caption: "Synthetic empty state for no recorded metric value",
+  status: "empty"
+};
+
+export const errorMetricData: MetricCardData = {
+  title: "Energy",
+  value: "Error",
+  caption: "Synthetic error state for unavailable metric calculation",
+  status: "error"
+};
+
+export const goalCompletedMetricData: MetricCardData = {
+  title: "Move goal",
+  value: "300",
+  unit: "CAL",
+  caption: "Synthetic goal-completed state",
+  status: "completed"
+};
+
+export const overachievedMetricData: MetricCardData = {
+  title: "Move goal",
+  value: "386",
+  unit: "CAL",
+  caption: "Synthetic overachieved metric state",
+  status: "overachieved"
+};
+
+export const interactiveMetricData: MetricCardData = {
+  title: "Steps detail",
+  value: "1,736",
+  caption: "Synthetic interactive target for keyboard and focus validation",
+  status: "pending",
+  isInteractive: true,
+  actionLabel: "Open synthetic steps detail"
 };

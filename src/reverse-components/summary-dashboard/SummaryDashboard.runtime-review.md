@@ -59,3 +59,33 @@ It does not implement `WorkoutItem`, `TrendCard`, `AwardBadge`, Workout Detail, 
 Do not promote.
 
 This runtime surface is useful validation evidence, but the pattern and components are not reviewed, not complete, and not ready for stable design-system promotion.
+
+## Fifth Cycle Update
+
+The fifth cycle added component-state validation for the two core candidates only:
+
+- `Components/ProgressRing/Empty`
+- `Components/ProgressRing/Overachieved`
+- `Components/ProgressRing/Unavailable`
+- `Components/MetricCard/Loading`
+- `Components/MetricCard/Empty`
+- `Components/MetricCard/Error`
+- `Components/MetricCard/GoalCompleted`
+- `Components/MetricCard/Overachieved`
+- `Components/MetricCard/InteractiveTarget`
+
+What improved:
+
+- ProgressRing now has runtime coverage for empty, overachieved, and unavailable states.
+- MetricCard now has runtime coverage for loading, empty, error, goal-completed, overachieved, and interactive target states.
+- Synthetic fixtures remain clearly marked as runtime validation data, not Figma or Apple Fitness source data.
+- An accessibility review draft now records current semantics and remaining gaps.
+
+Still open:
+
+- Source-reviewed geometry, color, spacing, and typography remain unavailable.
+- Accessibility behavior is drafted but not verified with automated checks or assistive technology.
+- MetricCard versus WorkoutItem remains unresolved.
+- SummaryDashboard pattern composition is still incomplete and not promoted.
+
+Promotion decision remains unchanged: do not promote.

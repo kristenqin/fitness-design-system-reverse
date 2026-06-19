@@ -8,7 +8,7 @@
       "sourceStatus": "captured",
       "sourceRefs": ["figma-node-143-23952"],
       "reusePriority": "high",
-      "states": ["default", "empty", "low-progress", "completed", "overachieved"],
+      "states": ["default", "empty", "low-progress", "completed", "overachieved", "unavailable"],
       "notes": "Visualizes goal relation and current completion state. Observed in the Summary Dashboard Activity section as node 143:25127."
     },
     {
@@ -19,7 +19,17 @@
       "sourceStatus": "captured",
       "sourceRefs": ["figma-node-143-23952"],
       "reusePriority": "high",
-      "states": ["default", "loading", "empty", "error", "long-text", "extreme-value"],
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "long-text",
+        "extreme-value",
+        "goal-completed",
+        "overachieved",
+        "interactive-target"
+      ],
       "notes": "Displays one trackable metric with value, unit, goal relation, trend, and explanation. Observed in Summary Dashboard activity stats and workout summary rows."
     },
     {

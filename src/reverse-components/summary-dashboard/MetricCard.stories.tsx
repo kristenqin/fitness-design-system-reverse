@@ -1,6 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MetricCard } from "./SummaryDashboard";
-import { defaultSummaryDashboardData, extremeMetricData, longChineseMetricData } from "./SummaryDashboard.data";
+import {
+  defaultSummaryDashboardData,
+  emptyMetricData,
+  errorMetricData,
+  extremeMetricData,
+  goalCompletedMetricData,
+  interactiveMetricData,
+  loadingMetricData,
+  longChineseMetricData,
+  overachievedMetricData
+} from "./SummaryDashboard.data";
 
 const meta = {
   title: "Components/MetricCard",
@@ -44,5 +54,43 @@ export const ExtremeValue: Story = {
   name: "ExtremeValue",
   args: {
     data: extremeMetricData
+  }
+};
+
+export const Loading: Story = {
+  args: {
+    data: loadingMetricData
+  }
+};
+
+export const Empty: Story = {
+  args: {
+    data: emptyMetricData
+  }
+};
+
+export const Error: Story = {
+  args: {
+    data: errorMetricData
+  }
+};
+
+export const GoalCompleted: Story = {
+  name: "GoalCompleted",
+  args: {
+    data: goalCompletedMetricData
+  }
+};
+
+export const Overachieved: Story = {
+  args: {
+    data: overachievedMetricData
+  }
+};
+
+export const InteractiveTarget: Story = {
+  name: "InteractiveTarget",
+  args: {
+    data: interactiveMetricData
   }
 };

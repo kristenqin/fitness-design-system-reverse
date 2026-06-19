@@ -158,6 +158,22 @@
   --sdr-progress-color: #68e48d;
 }
 
+.sdr-progress-ring--empty {
+  --sdr-progress-color: #6f776f;
+}
+
+.sdr-progress-ring--overachieved {
+  --sdr-progress-color: #8ddfff;
+}
+
+.sdr-progress-ring--unavailable {
+  --sdr-progress-color: #8f988f;
+}
+
+.sdr-progress-ring--unavailable .sdr-progress-ring__visual {
+  opacity: 0.58;
+}
+
 .sdr-progress-ring__center {
   display: grid;
   width: 58%;
@@ -207,8 +223,11 @@
 .sdr-metric-card {
   min-width: 0;
   padding: 12px;
+  border: 1px solid transparent;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.045);
+  color: inherit;
+  text-align: left;
 }
 
 .sdr-metric-card strong {
@@ -226,6 +245,31 @@
 
 .sdr-metric-card--completed strong {
   color: #68e48d;
+}
+
+.sdr-metric-card--empty strong,
+.sdr-metric-card--loading strong,
+.sdr-metric-card--unavailable strong {
+  color: #a9b1a9;
+}
+
+.sdr-metric-card--error strong {
+  color: #ff7f91;
+}
+
+.sdr-metric-card--overachieved strong {
+  color: #8ddfff;
+}
+
+.sdr-metric-card--interactive {
+  cursor: pointer;
+  font: inherit;
+}
+
+.sdr-metric-card--interactive:hover,
+.sdr-metric-card--interactive:focus-visible {
+  border-color: rgba(214, 255, 112, 0.46);
+  outline: none;
 }
 
 .sdr-typography-roles {

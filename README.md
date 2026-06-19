@@ -109,6 +109,7 @@ figma/
 package-lock.json
 package.json
 registry/
+  component-state-matrix.json
   components.json
   flows.json
   pages.json
@@ -117,6 +118,7 @@ registry/
   promotion-candidates.json
   source-map.json
 reviews/
+  ComponentState.accessibility-review.md
   SummaryDashboard.promotion-review.md
 scripts/
   validate-project.ts
