@@ -1,0 +1,14 @@
+node_modules/
+storybook-static/
+dist/
+coverage/
+playwright-report/
+test-results/
+ui-reverse-experiments/
+.playwright-profiles/
+playwright/.auth/
+.DS_Store
+npm-debug.log*
+.env
+.env.*
+!.env.example

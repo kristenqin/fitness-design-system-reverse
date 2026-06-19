@@ -1,0 +1,37 @@
+{
+  "name": "fitness-design-system-reverse",
+  "version": "0.1.0",
+  "description": "Reverse fitness-product UI evidence into reusable design-system candidates.",
+  "type": "module",
+  "scripts": {
+    "validate": "tsx scripts/validate-project.ts",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "tsc --noEmit && npm run validate"
+  },
+  "keywords": [
+    "design-system",
+    "ui-reverse",
+    "fitness",
+    "storybook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.4.6",
+    "@storybook/react-vite": "^10.4.6",
+    "@types/node": "^25.9.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "storybook": "^10.4.6",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16"
+  },
+  "dependencies": {
+    "lucide-react": "^1.20.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
