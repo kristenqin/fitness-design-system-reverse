@@ -122,6 +122,16 @@ src/
   reverse-components/
     summary-dashboard/
       SummaryDashboard.contract.md
+      SummaryDashboard.css
+      SummaryDashboard.data.ts
+      SummaryDashboard.experiments.stories.tsx
+      SummaryDashboard.runtime-review.md
+      SummaryDashboard.scenarios.stories.tsx
+      SummaryDashboard.stories.tsx
+      SummaryDashboard.tsx
+      MetricCard.stories.tsx
+      ProgressRing.stories.tsx
+      TypographyMetricRoles.stories.tsx
   vite-env.d.ts
 stories/
   components/
