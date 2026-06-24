@@ -37,7 +37,7 @@
       "runtimeStatus": "runtime-tested-states",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "MetricCard versus WorkoutItem boundary is documented but WorkoutItem is not specified or runtime-tested.",
+        "MetricCard versus WorkoutItem boundary is documented, but cross-component composition is not reviewed.",
         "Accessibility behavior is drafted but not reviewed with assistive technology or automated checks.",
         "Source typography, spacing, and color values are not confirmed.",
         "Interactive or navigational behavior is runtime-tested only as a local synthetic target."
@@ -49,15 +49,14 @@
       "type": "component",
       "evidenceStatus": "captured",
       "contractStatus": "defined",
-      "runtimeStatus": "not-tested",
+      "runtimeStatus": "runtime-tested-minimum",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "WorkoutItem has captured source evidence but no runtime implementation.",
-        "WorkoutItem has no Storybook state stories.",
-        "Input contract and accessibility behavior are drafted but not runtime-validated.",
+        "WorkoutItem has minimum runtime stories but is not integrated into SummaryDashboard.",
+        "Input contract and accessibility behavior are drafted but not reviewed with assistive technology or automated checks.",
         "Relationship to internal MetricCard-like metric values is documented only as a boundary principle."
       ],
-      "nextAction": "Use the WorkoutItem contract and runtime plan to run a component-only validation cycle before SummaryDashboard integration or promotion."
+      "nextAction": "Review WorkoutItem runtime results and decide whether SummaryDashboard optional-module validation should include it before any promotion."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

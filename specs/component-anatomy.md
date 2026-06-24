@@ -210,3 +210,7 @@ A workout row can contain metric values, but the row's primary object is a compl
 ### WorkoutItem Contract
 
 Seventh-cycle contract planning defines `WorkoutItem` as a completed behavior record candidate. Observed slots are limited to title, duration, and date from the captured SummaryDashboard workout rows. Additional slots such as activity type, detail target, route, distance, energy, and sync state remain inferred or future candidates until runtime validation or additional evidence supports them.
+
+### WorkoutItem Runtime
+
+Eighth-cycle runtime validation adds a local reverse component for default, long-title, missing-duration, missing-date, interactive-target, and unavailable states. Missing metadata renders as unavailable instead of `0` or blank text. The component keeps completed-record semantics by rendering duration and date as record metadata rather than standalone `MetricCard` instances. This is minimum runtime validation only and does not promote `WorkoutItem`.

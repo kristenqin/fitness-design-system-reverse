@@ -145,6 +145,10 @@ src/
       ProgressRing.stories.tsx
       TypographyMetricRoles.stories.tsx
       WorkoutItem.contract.md
+      WorkoutItem.data.ts
+      WorkoutItem.runtime-review.md
+      WorkoutItem.stories.tsx
+      WorkoutItem.tsx
   vite-env.d.ts
 stories/
   components/

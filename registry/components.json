@@ -62,8 +62,8 @@
       "sourceStatus": "captured",
       "sourceRefs": ["figma-node-143-23952"],
       "reusePriority": "medium",
-      "states": ["default", "with-route", "without-route", "incomplete-data"],
-      "notes": "Represents one completed behavior record in a list or history surface. Observed as repeated workout rows in the Summary Dashboard Workouts section."
+      "states": ["default", "long-title", "missing-duration", "missing-date", "interactive-target", "unavailable"],
+      "notes": "Represents one completed behavior record in a list or history surface. Observed as repeated workout rows in the Summary Dashboard Workouts section. Minimum runtime validation exists under the reverse surface only."
     }
   ]
 }

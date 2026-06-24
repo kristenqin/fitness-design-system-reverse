@@ -21,6 +21,12 @@
   max-width: 860px;
 }
 
+.sdr-workout-story-stack {
+  display: grid;
+  gap: 12px;
+  max-width: 680px;
+}
+
 .sdr-summary-dashboard {
   width: min(100%, 390px);
   min-height: 720px;
@@ -272,6 +278,87 @@
   outline: none;
 }
 
+.sdr-workout-item {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #1b1f1b;
+  color: inherit;
+  text-align: left;
+}
+
+.sdr-workout-item--interactive {
+  cursor: pointer;
+  font: inherit;
+}
+
+.sdr-workout-item--interactive:hover,
+.sdr-workout-item--interactive:focus-visible {
+  border-color: rgba(214, 255, 112, 0.46);
+  outline: none;
+}
+
+.sdr-workout-item--unavailable {
+  opacity: 0.74;
+}
+
+.sdr-workout-item__body {
+  min-width: 0;
+}
+
+.sdr-workout-item__body p,
+.sdr-workout-item__body strong,
+.sdr-workout-item__metadata,
+.sdr-workout-item__metadata dt,
+.sdr-workout-item__metadata dd {
+  margin: 0;
+}
+
+.sdr-workout-item__body p {
+  color: #9ca49d;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.sdr-workout-item__body strong {
+  display: block;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+  color: #f8fbf6;
+  font-size: 18px;
+  line-height: 1.18;
+}
+
+.sdr-workout-item__metadata {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  color: #d6dbd2;
+}
+
+.sdr-workout-item__metadata dt {
+  color: #8f988f;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.sdr-workout-item__metadata dd {
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sdr-workout-item__unavailable {
+  color: #ffb3be;
+}
+
 .sdr-typography-roles {
   display: grid;
   gap: 16px;
@@ -327,7 +414,8 @@
   }
 
   .sdr-summary-dashboard--web-adaptation,
-  .sdr-summary-dashboard__activity {
+  .sdr-summary-dashboard__activity,
+  .sdr-workout-item {
     grid-template-columns: 1fr;
   }
 

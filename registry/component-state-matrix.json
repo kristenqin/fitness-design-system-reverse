@@ -131,6 +131,60 @@
           "promotionStatus": "not-promoted"
         }
       ]
+    },
+    {
+      "id": "workout-item",
+      "runtimeSurface": "src/reverse-components/summary-dashboard/WorkoutItem.stories.tsx",
+      "states": [
+        {
+          "id": "default",
+          "storyPath": "Components/WorkoutItem",
+          "storyName": "Default",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "long-title",
+          "storyPath": "Components/WorkoutItem",
+          "storyName": "LongTitle",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "missing-duration",
+          "storyPath": "Components/WorkoutItem",
+          "storyName": "MissingDuration",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "missing-date",
+          "storyPath": "Components/WorkoutItem",
+          "storyName": "MissingDate",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "interactive-target",
+          "storyPath": "Components/WorkoutItem",
+          "storyName": "InteractiveTarget",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "unavailable",
+          "storyPath": "Components/WorkoutItem",
+          "storyName": "Unavailable",
+          "runtimeStatus": "runtime-tested",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        }
+      ]
     }
   ],
   "notes": "State coverage uses synthetic runtime validation data. Accessibility status is drafted only; no candidate is promoted."

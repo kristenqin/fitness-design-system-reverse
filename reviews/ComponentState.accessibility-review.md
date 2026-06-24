@@ -50,6 +50,25 @@ States drafted in Storybook:
 - `Components/MetricCard/Overachieved`
 - `Components/MetricCard/InteractiveTarget`
 
+## WorkoutItem Accessibility Draft
+
+Current draft expectations:
+
+- Non-interactive completed records render as `article`.
+- Interactive completed records render as native `button`.
+- Accessible names include title, duration availability, and date availability.
+- Missing duration and missing date are announced as unavailable instead of being rendered as `0` or omitted.
+- Duration and date remain record metadata, not separate `MetricCard` semantics.
+
+States drafted in Storybook:
+
+- `Components/WorkoutItem/Default`
+- `Components/WorkoutItem/LongTitle`
+- `Components/WorkoutItem/MissingDuration`
+- `Components/WorkoutItem/MissingDate`
+- `Components/WorkoutItem/InteractiveTarget`
+- `Components/WorkoutItem/Unavailable`
+
 ## Current Implementation
 
 - State fixtures are synthetic runtime validation data in `SummaryDashboard.data.ts`.
@@ -65,7 +84,8 @@ States drafted in Storybook:
 - Loading skeleton behavior is not specified; the current state uses text-only synthetic data.
 - ProgressRing color and geometry are still local runtime styling, not source-reviewed tokens.
 - MetricCard focus and target behavior need product-level rules before promotion.
-- `MetricCard` versus `WorkoutItem` remains unresolved.
+- `MetricCard` versus `WorkoutItem` is boundary-documented, but future internal metric substructure still needs validation.
+- WorkoutItem accessibility behavior is drafted from runtime semantics but not verified with automated checks or assistive technology.
 
 ## Decision
 
