@@ -31,18 +31,26 @@
         {
           "id": "trends",
           "component": "TrendCard",
-          "compositionStatus": "unresolved",
+          "compositionStatus": "unresolved-next-contract",
           "requirementStatus": "unresolved",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence but not implemented or runtime-tested in this pattern surface."
+          "notes": "Captured in source evidence but not implemented or runtime-tested. Recommended next step is a TrendCard contract before runtime work."
         },
         {
           "id": "awards",
           "component": "AwardBadge",
-          "compositionStatus": "unresolved",
+          "compositionStatus": "unresolved-later-contract",
           "requirementStatus": "unresolved",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence but not implemented or runtime-tested in this pattern surface."
+          "notes": "Captured in source evidence but not implemented or runtime-tested. Defer contract work until after TrendCard boundary is defined."
+        },
+        {
+          "id": "bottom-nav",
+          "component": "source-app-shell",
+          "compositionStatus": "deferred-shell-module",
+          "requirementStatus": "deferred",
+          "promotionStatus": "not-promoted",
+          "notes": "Visible in source evidence as app shell navigation, but not part of the current SummaryDashboard transferable core."
         }
       ]
     }

@@ -8,13 +8,15 @@
       "promotionStatus": "not-promoted",
       "blockers": [
         "Source evidence is captured but not reviewed.",
-        "Observed Trends, Awards, and Bottom Nav sections are not implemented in the runtime surface.",
-        "Required versus optional module boundaries are only partially validated.",
+        "WorkoutItem is integrated only as an optional module; the full Workouts section and source-reviewed workout behavior are not validated.",
+        "Observed Trends and Awards sections are captured but have no independent contracts or runtime surfaces.",
+        "Bottom Nav is treated as deferred source app shell and is not part of the current transferable core.",
+        "Required versus optional module boundaries are still unresolved for Trends, Awards, and app-shell navigation.",
         "No-data, goal-completed, overachieved, permission-denied, and unavailable-data states are not runtime-tested.",
         "Semantic tokens remain pending and raw token values are not extracted.",
         "Accessibility expectations are not reviewed enough for promotion."
       ],
-      "nextAction": "Keep SummaryDashboard in reverse surface and decide whether Trends and Awards need separate contracts before further optional-module validation."
+      "nextAction": "Keep SummaryDashboard in reverse surface and create a TrendCard contract next; defer AwardBadge and BottomNav."
     },
     {
       "id": "progress-ring-candidate",
@@ -52,11 +54,12 @@
       "runtimeStatus": "runtime-tested-minimum",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "WorkoutItem has minimum runtime stories but is not integrated into SummaryDashboard.",
+        "WorkoutItem is integrated into SummaryDashboard only as an optional module.",
+        "The full Workouts section and source-reviewed workout behavior are not validated.",
         "Input contract and accessibility behavior are drafted but not reviewed with assistive technology or automated checks.",
         "Relationship to internal MetricCard-like metric values is documented only as a boundary principle."
       ],
-      "nextAction": "Review WorkoutItem runtime results and decide whether SummaryDashboard optional-module validation should include it before any promotion."
+      "nextAction": "Keep WorkoutItem optional-supported in SummaryDashboard and validate full Workouts section behavior before any promotion."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

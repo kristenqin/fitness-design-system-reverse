@@ -1,0 +1,72 @@
+{
+  "patternId": "summary-dashboard",
+  "modules": [
+    {
+      "id": "activity-progress",
+      "owner": "progress-ring",
+      "semanticRole": "Goal-relative progress signal.",
+      "conceptModelRole": "Goal / Progress",
+      "sourceStatus": "captured",
+      "runtimeStatus": "runtime-tested-states",
+      "compositionStatus": "required-core",
+      "priority": "current-core",
+      "nextAction": "Keep as required SummaryDashboard core while source review, token review, and accessibility review remain pending."
+    },
+    {
+      "id": "activity-metrics",
+      "owner": "metric-card",
+      "semanticRole": "Compact supporting metrics for the current activity state.",
+      "conceptModelRole": "Progress / Metric context",
+      "sourceStatus": "captured",
+      "runtimeStatus": "runtime-tested-states",
+      "compositionStatus": "required-core",
+      "priority": "current-core",
+      "nextAction": "Keep as required SummaryDashboard core; do not promote until source-backed visual rules and accessibility behavior are reviewed."
+    },
+    {
+      "id": "workouts",
+      "owner": "workout-item",
+      "semanticRole": "Completed behavior records shown as an optional dashboard module.",
+      "conceptModelRole": "Behavior / Record",
+      "sourceStatus": "captured",
+      "runtimeStatus": "runtime-tested-minimum",
+      "compositionStatus": "optional-supported",
+      "priority": "validated-optional",
+      "nextAction": "Keep optional; validate full Workouts section behavior and source-reviewed record semantics before promotion."
+    },
+    {
+      "id": "trends",
+      "owner": "trend-card",
+      "semanticRole": "Trend explanation or interpretive summary.",
+      "conceptModelRole": "Trend / Insight",
+      "sourceStatus": "captured",
+      "runtimeStatus": "not-tested",
+      "compositionStatus": "unresolved-next-contract",
+      "priority": "next-contract",
+      "nextAction": "Create a TrendCard contract from existing evidence before any implementation or Storybook stories."
+    },
+    {
+      "id": "awards",
+      "owner": "award-badge",
+      "semanticRole": "Reward preview or achievement evidence.",
+      "conceptModelRole": "Reward",
+      "sourceStatus": "captured",
+      "runtimeStatus": "not-tested",
+      "compositionStatus": "unresolved-later-contract",
+      "priority": "later-contract",
+      "nextAction": "Defer until TrendCard boundary is defined; later create an AwardBadge contract from existing evidence."
+    },
+    {
+      "id": "bottom-nav",
+      "owner": "source-app-shell",
+      "semanticRole": "Source application navigation shell.",
+      "conceptModelRole": "App shell / navigation",
+      "sourceStatus": "captured",
+      "runtimeStatus": "not-tested",
+      "compositionStatus": "deferred-shell-module",
+      "priority": "deferred",
+      "nextAction": "Do not include in the current SummaryDashboard transferable core; revisit only if app-shell scope opens."
+    }
+  ],
+  "notes": "Priority is a planning signal only. It does not promote any module and does not change sourceStatus."
+}

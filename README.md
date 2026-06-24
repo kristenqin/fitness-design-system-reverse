@@ -98,6 +98,7 @@ decisions/
   ADR-003-semantic-token-first.md
   ADR-004-storybook-as-runtime.md
   ADR-005-style-system-over-static-preview.md
+  ADR-006-summary-dashboard-composition-path.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -112,6 +113,7 @@ registry/
   component-boundary-matrix.json
   component-state-matrix.json
   components.json
+  module-priority-matrix.json
   pattern-composition-matrix.json
   flows.json
   pages.json
@@ -122,6 +124,7 @@ registry/
 reviews/
   ComponentState.accessibility-review.md
   MetricCard_WorkoutItem.boundary-review.md
+  SummaryDashboard.composition-boundary-review.md
   SummaryDashboard.optional-modules-review.md
   SummaryDashboard.promotion-review.md
   WorkoutItem.runtime-plan.md
