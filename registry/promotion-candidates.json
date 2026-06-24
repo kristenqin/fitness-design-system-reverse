@@ -60,6 +60,22 @@
         "Relationship to internal MetricCard-like metric values is documented only as a boundary principle."
       ],
       "nextAction": "Keep WorkoutItem optional-supported in SummaryDashboard and validate full Workouts section behavior before any promotion."
+    },
+    {
+      "id": "trend-card-candidate",
+      "type": "component",
+      "evidenceStatus": "captured",
+      "contractStatus": "defined",
+      "runtimeStatus": "not-tested",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "TrendCard contract is defined from existing SummaryDashboard evidence, but runtime validation has not started.",
+        "Observed source evidence confirms Trends section, Trends Box, explanatory text, and Get Started action, but not exact trend copy, chart, arrow, percentage, or delta values.",
+        "Boundary with MetricCard is contract-defined only and needs runtime pressure tests.",
+        "Accessibility behavior is drafted but not reviewed with automated checks or assistive technology.",
+        "SummaryDashboard composition should wait until component-level runtime validation is complete."
+      ],
+      "nextAction": "Run component-level TrendCard runtime validation next; do not compose into SummaryDashboard yet."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

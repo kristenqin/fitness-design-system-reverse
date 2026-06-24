@@ -127,6 +127,7 @@ reviews/
   SummaryDashboard.composition-boundary-review.md
   SummaryDashboard.optional-modules-review.md
   SummaryDashboard.promotion-review.md
+  TrendCard.runtime-plan.md
   WorkoutItem.runtime-plan.md
 scripts/
   validate-project.ts
@@ -150,6 +151,7 @@ src/
       MetricCard.stories.tsx
       ProgressRing.stories.tsx
       TypographyMetricRoles.stories.tsx
+      TrendCard.contract.md
       WorkoutItem.contract.md
       WorkoutItem.data.ts
       WorkoutItem.runtime-review.md

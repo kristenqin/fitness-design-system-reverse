@@ -6,7 +6,7 @@
       "observedIn": "SummaryDashboard Activity section",
       "primaryMeaning": "Compact activity metrics that support the current progress signal.",
       "recommendedOwner": "metric-card",
-      "reason": "The node's primary role is displaying metric values and labels; it is not a completed behavior record.",
+      "reason": "The node's primary role is displaying current metric values and labels; it is not a completed behavior record or a trend interpretation surface.",
       "status": "boundary-decided"
     },
     {
@@ -31,10 +31,10 @@
       "sourceNodeId": "143:25168",
       "sourceNodeName": "Trends Box",
       "observedIn": "SummaryDashboard Trends section",
-      "primaryMeaning": "Trend explanation or trend onboarding surface.",
+      "primaryMeaning": "Direction or interpretation over time.",
       "recommendedOwner": "trend-card",
-      "reason": "Recorded as adjacent evidence only; it is not part of the MetricCard versus WorkoutItem boundary.",
-      "status": "out-of-scope-adjacent"
+      "reason": "The node's primary role is explanatory trend interpretation. It may contain metric values later, but those values would be subordinate to trend meaning, not owned by MetricCard.",
+      "status": "boundary-decided-contract-only"
     },
     {
       "sourceNodeId": "143:25193",

@@ -40,10 +40,11 @@
       "semanticRole": "Trend explanation or interpretive summary.",
       "conceptModelRole": "Trend / Insight",
       "sourceStatus": "captured",
+      "contractStatus": "defined",
       "runtimeStatus": "not-tested",
-      "compositionStatus": "unresolved-next-contract",
-      "priority": "next-contract",
-      "nextAction": "Create a TrendCard contract from existing evidence before any implementation or Storybook stories."
+      "compositionStatus": "contract-defined-next-runtime",
+      "priority": "next-runtime",
+      "nextAction": "Run component-level TrendCard runtime validation next; do not compose into SummaryDashboard yet."
     },
     {
       "id": "awards",

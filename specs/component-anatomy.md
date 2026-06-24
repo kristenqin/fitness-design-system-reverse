@@ -138,21 +138,52 @@ Purpose:
 
 Explain long-term direction without reducing the interface to raw chart display.
 
-Information slots:
+Primary object:
+
+- Trend
+- Insight
+
+Observed information slots:
+
+- section identity
+- Trends Box container
+- explanatory text block
+- action text
+
+Inferred information slots:
 
 - metric identity
 - direction
 - time range
-- explanation
+- interpretation
+- data sufficiency
+- optional action target
+
+Future candidate slots:
+
 - supporting value
-- optional chart
+- delta value
+- percentage change
+- direction icon
+- chart or sparkline
+- confidence label
 
-States:
+States to validate:
 
+- default
 - improving
 - declining
 - neutral
 - insufficient-data
+- long-explanation
+
+Boundary with MetricCard:
+
+`MetricCard` owns current metric display. `TrendCard` owns direction and interpretation over time. A TrendCard may contain metric values, but those values are supporting evidence for the trend and do not make the card a generic metric tile.
+
+Runtime status:
+
+Eleventh-cycle contract planning defines `TrendCard` as the next semantic module for SummaryDashboard, but runtime validation has not started. It should not be composed into SummaryDashboard until component-level runtime stories validate direction, insufficient-data, long-explanation, and accessibility behavior.
 
 ## AwardBadge
 
@@ -214,3 +245,7 @@ Seventh-cycle contract planning defines `WorkoutItem` as a completed behavior re
 ### WorkoutItem Runtime
 
 Eighth-cycle runtime validation adds a local reverse component for default, long-title, missing-duration, missing-date, interactive-target, and unavailable states. Missing metadata renders as unavailable instead of `0` or blank text. The component keeps completed-record semantics by rendering duration and date as record metadata rather than standalone `MetricCard` instances. This is minimum runtime validation only and does not promote `WorkoutItem`.
+
+### TrendCard Contract
+
+Eleventh-cycle contract planning defines `TrendCard` as the owner of direction and interpretation over time. Existing evidence confirms a Trends section, Trends Box, explanatory text, and `Get Started` action, but does not confirm exact trend copy, arrows, percentages, delta values, charts, or sparklines. Runtime validation has not started, and the candidate remains `not-promoted`.
