@@ -120,3 +120,5 @@ A pattern can be promoted only when:
 ### SummaryDashboard
 
 Fourth-cycle promotion review keeps `SummaryDashboard` as a reverse-surface pattern candidate. Runtime stories cover a minimum default shell, low-progress shell, low-progress scenario, and WebAdaptation experiment. The observed Workouts, Trends, Awards, and Bottom Nav sections are not yet implemented in the runtime surface, and required versus optional module rules remain unresolved.
+
+Ninth-cycle runtime validation adds optional Workouts module coverage. Workouts are currently optional but supported: SummaryDashboard can omit the module, show missing workout data, or render `WorkoutItem` records. Trends, Awards, and Bottom Nav remain unresolved and are not promoted into the pattern.

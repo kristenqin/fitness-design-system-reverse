@@ -1,0 +1,51 @@
+{
+  "patterns": [
+    {
+      "id": "summary-dashboard",
+      "runtimeSurface": "src/reverse-components/summary-dashboard/SummaryDashboard.optional-modules.stories.tsx",
+      "modules": [
+        {
+          "id": "activity-progress",
+          "component": "ProgressRing",
+          "compositionStatus": "runtime-tested",
+          "requirementStatus": "required-core",
+          "promotionStatus": "not-promoted",
+          "notes": "Primary goal-relative progress signal in the current reverse surface."
+        },
+        {
+          "id": "activity-metrics",
+          "component": "MetricCard",
+          "compositionStatus": "runtime-tested",
+          "requirementStatus": "required-core",
+          "promotionStatus": "not-promoted",
+          "notes": "Compact activity metric display in the current reverse surface."
+        },
+        {
+          "id": "workouts",
+          "component": "WorkoutItem",
+          "compositionStatus": "runtime-tested-optional-module",
+          "requirementStatus": "optional-supported",
+          "promotionStatus": "not-promoted",
+          "notes": "Optional Workouts module can be omitted, empty, or populated with WorkoutItem records."
+        },
+        {
+          "id": "trends",
+          "component": "TrendCard",
+          "compositionStatus": "unresolved",
+          "requirementStatus": "unresolved",
+          "promotionStatus": "not-promoted",
+          "notes": "Captured in source evidence but not implemented or runtime-tested in this pattern surface."
+        },
+        {
+          "id": "awards",
+          "component": "AwardBadge",
+          "compositionStatus": "unresolved",
+          "requirementStatus": "unresolved",
+          "promotionStatus": "not-promoted",
+          "notes": "Captured in source evidence but not implemented or runtime-tested in this pattern surface."
+        }
+      ]
+    }
+  ],
+  "notes": "Pattern composition status is separate from sourceStatus and promotionStatus. No module is promoted by this matrix."
+}

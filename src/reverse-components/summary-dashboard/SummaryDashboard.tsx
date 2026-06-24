@@ -6,6 +6,7 @@ import {
   type ProgressRingData,
   type SummaryDashboardData
 } from "./SummaryDashboard.data";
+import { WorkoutItem } from "./WorkoutItem";
 
 export type ProgressRingProps = {
   data: ProgressRingData;
@@ -82,6 +83,8 @@ export type SummaryDashboardProps = {
 };
 
 export function SummaryDashboard({ data = defaultSummaryDashboardData, mode = "default" }: SummaryDashboardProps) {
+  const hasWorkoutItems = data.workouts && data.workouts.items.length > 0;
+
   return (
     <section className={`sdr-summary-dashboard sdr-summary-dashboard--${mode}`} aria-label="Summary dashboard runtime validation">
       <header className="sdr-summary-dashboard__header">
@@ -105,6 +108,26 @@ export function SummaryDashboard({ data = defaultSummaryDashboardData, mode = "d
         <p>{data.insight.title}</p>
         <span>{data.insight.body}</span>
       </aside>
+
+      {data.workouts ? (
+        <section className="sdr-summary-dashboard__workouts" aria-label="Optional workouts module runtime validation">
+          <header>
+            <p>{data.workouts.title}</p>
+            <span>optional</span>
+          </header>
+          {hasWorkoutItems ? (
+            <div className="sdr-summary-dashboard__workout-list">
+              {data.workouts.items.map((workout) => (
+                <WorkoutItem data={workout} key={workout.id} />
+              ))}
+            </div>
+          ) : (
+            <div className="sdr-summary-dashboard__workouts-empty" role="status">
+              {data.workouts.unavailableMessage}
+            </div>
+          )}
+        </section>
+      ) : null}
     </section>
   );
 }

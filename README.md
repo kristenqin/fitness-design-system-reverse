@@ -112,6 +112,7 @@ registry/
   component-boundary-matrix.json
   component-state-matrix.json
   components.json
+  pattern-composition-matrix.json
   flows.json
   pages.json
   pages.schema.json
@@ -121,6 +122,7 @@ registry/
 reviews/
   ComponentState.accessibility-review.md
   MetricCard_WorkoutItem.boundary-review.md
+  SummaryDashboard.optional-modules-review.md
   SummaryDashboard.promotion-review.md
   WorkoutItem.runtime-plan.md
 scripts/
@@ -137,6 +139,7 @@ src/
       SummaryDashboard.css
       SummaryDashboard.data.ts
       SummaryDashboard.experiments.stories.tsx
+      SummaryDashboard.optional-modules.stories.tsx
       SummaryDashboard.runtime-review.md
       SummaryDashboard.scenarios.stories.tsx
       SummaryDashboard.stories.tsx

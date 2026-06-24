@@ -1,3 +1,9 @@
+import {
+  defaultWorkoutItemData,
+  interactiveWorkoutItemData,
+  type WorkoutItemData
+} from "./WorkoutItem.data";
+
 export type ProgressStatus = "empty" | "low" | "pending" | "completed" | "overachieved" | "unavailable";
 export type MetricStatus = ProgressStatus | "loading" | "error";
 
@@ -26,6 +32,11 @@ export type SummaryDashboardData = {
   title: string;
   progress: ProgressRingData;
   metrics: MetricCardData[];
+  workouts?: {
+    title: string;
+    items: WorkoutItemData[];
+    unavailableMessage: string;
+  };
   insight: {
     title: string;
     body: string;
@@ -192,4 +203,39 @@ export const interactiveMetricData: MetricCardData = {
   status: "pending",
   isInteractive: true,
   actionLabel: "Open synthetic steps detail"
+};
+
+// Synthetic optional-module validation data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardWithWorkoutItemsData: SummaryDashboardData = {
+  ...defaultSummaryDashboardData,
+  workouts: {
+    title: "Workouts",
+    unavailableMessage: "Synthetic workout records unavailable",
+    items: [defaultWorkoutItemData, interactiveWorkoutItemData]
+  },
+  insight: {
+    title: "Optional module active",
+    body: "Synthetic copy used to validate that completed workout records can compose into the dashboard without changing MetricCard semantics."
+  }
+};
+
+export const summaryDashboardWithoutWorkoutItemsData: SummaryDashboardData = {
+  ...defaultSummaryDashboardData,
+  insight: {
+    title: "No workouts module",
+    body: "Synthetic copy used to validate that the dashboard runs when the optional workouts module is omitted."
+  }
+};
+
+export const summaryDashboardWithMissingWorkoutData: SummaryDashboardData = {
+  ...defaultSummaryDashboardData,
+  workouts: {
+    title: "Workouts",
+    unavailableMessage: "Workout records are unavailable in this synthetic state.",
+    items: []
+  },
+  insight: {
+    title: "Missing workout data",
+    body: "Synthetic copy used to validate empty optional module handling without implementing the full Workouts section."
+  }
 };

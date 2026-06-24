@@ -118,6 +118,54 @@
   background: #1b1f1b;
 }
 
+.sdr-summary-dashboard__workouts {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #151915;
+}
+
+.sdr-summary-dashboard__workouts header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.sdr-summary-dashboard__workouts header p,
+.sdr-summary-dashboard__workouts header span {
+  margin: 0;
+}
+
+.sdr-summary-dashboard__workouts header p {
+  color: #f8fbf6;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.sdr-summary-dashboard__workouts header span {
+  color: #8f988f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sdr-summary-dashboard__workout-list {
+  display: grid;
+  gap: 10px;
+}
+
+.sdr-summary-dashboard__workouts-empty {
+  padding: 14px;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  color: #cfd4cc;
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 .sdr-summary-dashboard__insight p {
   color: #d6ff70;
   font-size: 16px;

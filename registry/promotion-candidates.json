@@ -4,17 +4,17 @@
       "id": "summary-dashboard-pattern",
       "type": "pattern",
       "evidenceStatus": "captured",
-      "runtimeStatus": "runtime-tested-minimum",
+      "runtimeStatus": "runtime-tested-optional-module",
       "promotionStatus": "not-promoted",
       "blockers": [
         "Source evidence is captured but not reviewed.",
-        "Observed Workouts, Trends, Awards, and Bottom Nav sections are not implemented in the minimum runtime surface.",
-        "Required versus optional module boundaries are unresolved.",
+        "Observed Trends, Awards, and Bottom Nav sections are not implemented in the runtime surface.",
+        "Required versus optional module boundaries are only partially validated.",
         "No-data, goal-completed, overachieved, permission-denied, and unavailable-data states are not runtime-tested.",
         "Semantic tokens remain pending and raw token values are not extracted.",
         "Accessibility expectations are not reviewed enough for promotion."
       ],
-      "nextAction": "Keep SummaryDashboard in reverse surface and validate missing pattern states plus optional module behavior before any promotion review."
+      "nextAction": "Keep SummaryDashboard in reverse surface and decide whether Trends and Awards need separate contracts before further optional-module validation."
     },
     {
       "id": "progress-ring-candidate",

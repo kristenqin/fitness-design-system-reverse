@@ -89,3 +89,27 @@ Still open:
 - SummaryDashboard pattern composition is still incomplete and not promoted.
 
 Promotion decision remains unchanged: do not promote.
+
+## Ninth Cycle Update
+
+The ninth cycle added optional module validation for Workouts only:
+
+- `Patterns/SummaryDashboard/OptionalModules/WithWorkoutItems`
+- `Patterns/SummaryDashboard/OptionalModules/WithoutWorkoutItems`
+- `Patterns/SummaryDashboard/OptionalModules/MissingWorkoutData`
+
+What improved:
+
+- SummaryDashboard can run when `workouts` is omitted.
+- SummaryDashboard can show an unavailable state when `workouts.items` is empty.
+- SummaryDashboard can compose populated Workouts data with `WorkoutItem`.
+- The MetricCard / WorkoutItem boundary remains intact.
+
+Still open:
+
+- TrendCard, AwardBadge, and Bottom Nav remain unresolved and unimplemented.
+- Workouts required-versus-optional rules are supported by runtime behavior but not source-reviewed.
+- The full Workouts section and Workout history page remain out of scope.
+- Page-level accessibility and module ordering rules remain incomplete.
+
+Promotion decision remains unchanged: do not promote.
