@@ -183,7 +183,7 @@ Boundary with MetricCard:
 
 Runtime status:
 
-Eleventh-cycle contract planning defines `TrendCard` as the next semantic module for SummaryDashboard, but runtime validation has not started. It should not be composed into SummaryDashboard until component-level runtime stories validate direction, insufficient-data, long-explanation, and accessibility behavior.
+Eleventh-cycle contract planning defines `TrendCard` as the next semantic module for SummaryDashboard. Twelfth-cycle minimum runtime validation covers direction, insufficient-data, long-explanation, and drafted accessibility behavior. It should not be composed into SummaryDashboard until a separate composition review happens.
 
 ## AwardBadge
 
@@ -248,4 +248,8 @@ Eighth-cycle runtime validation adds a local reverse component for default, long
 
 ### TrendCard Contract
 
-Eleventh-cycle contract planning defines `TrendCard` as the owner of direction and interpretation over time. Existing evidence confirms a Trends section, Trends Box, explanatory text, and `Get Started` action, but does not confirm exact trend copy, arrows, percentages, delta values, charts, or sparklines. Runtime validation has not started, and the candidate remains `not-promoted`.
+Eleventh-cycle contract planning defines `TrendCard` as the owner of direction and interpretation over time. Existing evidence confirms a Trends section, Trends Box, explanatory text, and `Get Started` action, but does not confirm exact trend copy, arrows, percentages, delta values, charts, or sparklines. The candidate remains `not-promoted`.
+
+### TrendCard Runtime
+
+Twelfth-cycle runtime validation adds a local reverse component for default, improving, declining, neutral, insufficient-data, and long-explanation states. The component uses text direction labels and interpretation copy rather than charts, sparklines, or arrow-heavy UI. Supporting values remain metadata, so `TrendCard` does not replace `MetricCard`. This is minimum runtime validation only and does not promote `TrendCard`.

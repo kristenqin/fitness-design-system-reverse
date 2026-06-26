@@ -185,6 +185,60 @@
           "promotionStatus": "not-promoted"
         }
       ]
+    },
+    {
+      "id": "trend-card",
+      "runtimeSurface": "src/reverse-components/summary-dashboard/TrendCard.stories.tsx",
+      "states": [
+        {
+          "id": "default",
+          "storyPath": "Components/TrendCard",
+          "storyName": "Default",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "improving",
+          "storyPath": "Components/TrendCard",
+          "storyName": "Improving",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "declining",
+          "storyPath": "Components/TrendCard",
+          "storyName": "Declining",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "neutral",
+          "storyPath": "Components/TrendCard",
+          "storyName": "Neutral",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "insufficient-data",
+          "storyPath": "Components/TrendCard",
+          "storyName": "InsufficientData",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "long-explanation",
+          "storyPath": "Components/TrendCard",
+          "storyName": "LongExplanation",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        }
+      ]
     }
   ],
   "notes": "State coverage uses synthetic runtime validation data. Accessibility status is drafted only; no candidate is promoted."

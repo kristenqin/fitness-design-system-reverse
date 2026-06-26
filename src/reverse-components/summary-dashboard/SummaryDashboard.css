@@ -27,6 +27,12 @@
   max-width: 680px;
 }
 
+.sdr-trend-story-stack {
+  display: grid;
+  gap: 12px;
+  max-width: 680px;
+}
+
 .sdr-summary-dashboard {
   width: min(100%, 390px);
   min-height: 720px;
@@ -405,6 +411,123 @@
 
 .sdr-workout-item__unavailable {
   color: #ffb3be;
+}
+
+.sdr-trend-card {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #1b1f1b;
+  color: inherit;
+  text-align: left;
+}
+
+.sdr-trend-card--interactive {
+  cursor: pointer;
+  font: inherit;
+}
+
+.sdr-trend-card--interactive:hover,
+.sdr-trend-card--interactive:focus-visible {
+  border-color: rgba(214, 255, 112, 0.46);
+  outline: none;
+}
+
+.sdr-trend-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.sdr-trend-card__header p,
+.sdr-trend-card__header span,
+.sdr-trend-card strong,
+.sdr-trend-card__explanation,
+.sdr-trend-card__metadata,
+.sdr-trend-card__metadata dt,
+.sdr-trend-card__metadata dd {
+  margin: 0;
+}
+
+.sdr-trend-card__header p {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #9ca49d;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.sdr-trend-card__header span {
+  flex: 0 0 auto;
+  color: var(--sdr-trend-color);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.sdr-trend-card strong {
+  overflow-wrap: anywhere;
+  color: #f8fbf6;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.sdr-trend-card__explanation {
+  color: #d6dbd2;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.sdr-trend-card__metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sdr-trend-card__metadata dt {
+  color: #8f988f;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.sdr-trend-card__metadata dd {
+  margin-top: 3px;
+  color: #f8fbf6;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.sdr-trend-card__action {
+  color: #d6ff70;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.sdr-trend-card--default {
+  --sdr-trend-color: #d6ff70;
+}
+
+.sdr-trend-card--improving {
+  --sdr-trend-color: #68e48d;
+}
+
+.sdr-trend-card--declining {
+  --sdr-trend-color: #ff7f91;
+}
+
+.sdr-trend-card--neutral {
+  --sdr-trend-color: #8ddfff;
+}
+
+.sdr-trend-card--insufficient-data {
+  --sdr-trend-color: #d6b56d;
 }
 
 .sdr-typography-roles {

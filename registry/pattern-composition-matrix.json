@@ -31,10 +31,10 @@
         {
           "id": "trends",
           "component": "TrendCard",
-          "compositionStatus": "unresolved-next-contract",
+          "compositionStatus": "component-runtime-tested-not-composed",
           "requirementStatus": "unresolved",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence but not implemented or runtime-tested. Recommended next step is a TrendCard contract before runtime work."
+          "notes": "Captured in source evidence and minimum component runtime-tested, but not composed into SummaryDashboard. A separate composition review is still required."
         },
         {
           "id": "awards",

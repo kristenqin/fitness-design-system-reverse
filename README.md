@@ -152,6 +152,10 @@ src/
       ProgressRing.stories.tsx
       TypographyMetricRoles.stories.tsx
       TrendCard.contract.md
+      TrendCard.data.ts
+      TrendCard.runtime-review.md
+      TrendCard.stories.tsx
+      TrendCard.tsx
       WorkoutItem.contract.md
       WorkoutItem.data.ts
       WorkoutItem.runtime-review.md
