@@ -122,6 +122,7 @@ registry/
   promotion-candidates.json
   source-map.json
 reviews/
+  AwardBadge.runtime-plan.md
   ComponentState.accessibility-review.md
   MetricCard_WorkoutItem.boundary-review.md
   SummaryDashboard.composition-boundary-review.md
@@ -148,6 +149,7 @@ src/
       SummaryDashboard.scenarios.stories.tsx
       SummaryDashboard.stories.tsx
       SummaryDashboard.tsx
+      AwardBadge.contract.md
       MetricCard.stories.tsx
       ProgressRing.stories.tsx
       TypographyMetricRoles.stories.tsx

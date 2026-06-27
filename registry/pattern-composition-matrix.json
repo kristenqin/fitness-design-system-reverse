@@ -39,10 +39,10 @@
         {
           "id": "awards",
           "component": "AwardBadge",
-          "compositionStatus": "unresolved-later-contract",
+          "compositionStatus": "contract-defined-next-runtime",
           "requirementStatus": "unresolved",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence but not implemented or runtime-tested. Defer contract work until after TrendCard boundary is defined."
+          "notes": "Captured in source evidence and contract-defined, but not implemented, runtime-tested, or composed into SummaryDashboard."
         },
         {
           "id": "bottom-nav",

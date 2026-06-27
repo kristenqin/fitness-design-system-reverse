@@ -9,14 +9,14 @@
       "blockers": [
         "Source evidence is captured but not reviewed.",
         "WorkoutItem is integrated only as an optional module; the full Workouts section and source-reviewed workout behavior are not validated.",
-        "Observed Trends and Awards sections are captured but have no independent contracts or runtime surfaces.",
+        "TrendCard has minimum component runtime validation, and AwardBadge has contract definition only; neither is composed into SummaryDashboard.",
         "Bottom Nav is treated as deferred source app shell and is not part of the current transferable core.",
         "Required versus optional module boundaries are still unresolved for Trends, Awards, and app-shell navigation.",
         "No-data, goal-completed, overachieved, permission-denied, and unavailable-data states are not runtime-tested.",
         "Semantic tokens remain pending and raw token values are not extracted.",
         "Accessibility expectations are not reviewed enough for promotion."
       ],
-      "nextAction": "Keep SummaryDashboard in reverse surface; review TrendCard runtime results before any composition work and continue deferring AwardBadge and BottomNav."
+      "nextAction": "Keep SummaryDashboard in reverse surface; run AwardBadge component runtime next and keep SummaryDashboard composition deferred."
     },
     {
       "id": "progress-ring-candidate",
@@ -76,6 +76,22 @@
         "SummaryDashboard composition should wait for a separate composition review."
       ],
       "nextAction": "Review TrendCard runtime results, add missing states only when scoped, and keep SummaryDashboard composition deferred."
+    },
+    {
+      "id": "award-badge-candidate",
+      "type": "component",
+      "evidenceStatus": "captured",
+      "contractStatus": "defined",
+      "runtimeStatus": "not-tested",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "AwardBadge contract is defined from existing SummaryDashboard evidence, but runtime validation has not started.",
+        "Observed source evidence confirms Awards section, Show More action, and three award item frames, but not exact award title, icon meaning, unlock condition, progress, date, or reward status.",
+        "Boundary with TrendCard, MetricCard, and WorkoutItem is contract-defined only and needs runtime pressure tests.",
+        "Accessibility behavior is drafted but not reviewed with automated checks or assistive technology.",
+        "SummaryDashboard composition should wait until component-level runtime validation is complete."
+      ],
+      "nextAction": "Run component-level AwardBadge runtime validation next; do not compose into SummaryDashboard yet."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

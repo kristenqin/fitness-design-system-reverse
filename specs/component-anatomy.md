@@ -191,20 +191,52 @@ Purpose:
 
 Turn repeated behavior into visible reward evidence.
 
-Information slots:
+Primary object:
+
+- Reward
+- Achievement
+
+Observed information slots:
+
+- section identity
+- Show More action text
+- repeated award item frames
+
+Inferred information slots:
 
 - award identity
-- visual symbol
 - status
+- visual symbol placeholder
+- progress summary
+- action target
+
+Future candidate slots:
+
+- award title
+- award description
+- icon meaning
 - unlock condition
-- date or progress
+- unlock date
+- progress value
+- locked reason
+- newness marker
 
-States:
+States to validate:
 
+- default
 - locked
 - unlocked
 - new
 - in-progress
+- long-title
+
+Boundary with TrendCard / MetricCard / WorkoutItem:
+
+`AwardBadge` owns reward evidence and achievement markers. `TrendCard` owns direction and interpretation over time. `MetricCard` owns current metric display. `WorkoutItem` owns completed behavior records. An AwardBadge may refer to progress or repeated behavior, but its primary meaning remains reward evidence rather than trend explanation, metric value, or record row.
+
+Runtime status:
+
+Thirteenth-cycle contract planning defines `AwardBadge` as the Reward semantic module for SummaryDashboard, but runtime validation has not started. It should not be composed into SummaryDashboard until component-level runtime stories validate locked, unlocked, new, in-progress, long-title, and accessibility behavior.
 
 ## Promotion Criteria
 
@@ -253,3 +285,7 @@ Eleventh-cycle contract planning defines `TrendCard` as the owner of direction a
 ### TrendCard Runtime
 
 Twelfth-cycle runtime validation adds a local reverse component for default, improving, declining, neutral, insufficient-data, and long-explanation states. The component uses text direction labels and interpretation copy rather than charts, sparklines, or arrow-heavy UI. Supporting values remain metadata, so `TrendCard` does not replace `MetricCard`. This is minimum runtime validation only and does not promote `TrendCard`.
+
+### AwardBadge Contract
+
+Thirteenth-cycle contract planning defines `AwardBadge` as the owner of reward evidence and achievement markers. Existing evidence confirms an Awards section, `Show More` action, and three award item frames, but does not confirm exact award titles, icon meanings, unlock conditions, progress values, dates, or reward statuses. Runtime validation has not started, and the candidate remains `not-promoted`.

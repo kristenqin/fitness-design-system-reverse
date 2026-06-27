@@ -40,10 +40,10 @@
       "sourceNodeId": "143:25193",
       "sourceNodeName": "A",
       "observedIn": "SummaryDashboard Awards section",
-      "primaryMeaning": "Award preview or reward item.",
+      "primaryMeaning": "Reward evidence or achievement marker.",
       "recommendedOwner": "award-badge",
-      "reason": "Recorded as adjacent evidence only; it is not part of the MetricCard versus WorkoutItem boundary.",
-      "status": "out-of-scope-adjacent"
+      "reason": "The node belongs to the Awards section and represents reward evidence. It should not be owned by MetricCard, TrendCard, or WorkoutItem because it is not current metric display, trend interpretation, or a completed behavior record.",
+      "status": "boundary-decided-contract-only"
     }
   ],
   "notes": "Boundary ownership follows primary semantic meaning. Numeric values inside a workout row do not make the row a MetricCard."
