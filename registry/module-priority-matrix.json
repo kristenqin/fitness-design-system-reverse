@@ -42,9 +42,9 @@
       "sourceStatus": "captured",
       "contractStatus": "defined",
       "runtimeStatus": "runtime-tested-minimum",
-      "compositionStatus": "ready-for-composition-review",
-      "priority": "ready-for-composition-review",
-      "nextAction": "Review TrendCard as an optional SummaryDashboard semantic module before any pattern integration."
+      "compositionStatus": "ready-for-runtime-composition",
+      "priority": "ready-for-runtime-composition",
+      "nextAction": "Compose TrendCard in the next SummaryDashboard runtime pass only as an optional semantic module; do not promote."
     },
     {
       "id": "awards",
@@ -54,9 +54,9 @@
       "sourceStatus": "captured",
       "contractStatus": "defined",
       "runtimeStatus": "runtime-tested-minimum",
-      "compositionStatus": "ready-for-composition-review",
-      "priority": "ready-for-composition-review",
-      "nextAction": "Review AwardBadge as an optional SummaryDashboard semantic module before any pattern integration."
+      "compositionStatus": "ready-for-runtime-composition",
+      "priority": "ready-for-runtime-composition",
+      "nextAction": "Compose AwardBadge in the next SummaryDashboard runtime pass only as an optional semantic module; do not promote."
     },
     {
       "id": "bottom-nav",

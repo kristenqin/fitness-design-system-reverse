@@ -100,6 +100,7 @@ decisions/
   ADR-005-style-system-over-static-preview.md
   ADR-006-summary-dashboard-composition-path.md
   ADR-007-concept-loop-before-promotion.md
+  ADR-008-summary-dashboard-semantic-composition.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -122,12 +123,14 @@ registry/
   pages.schema.json
   patterns.json
   promotion-candidates.json
+  summary-dashboard-semantic-composition-plan.json
   source-map.json
 reviews/
   AwardBadge.runtime-plan.md
   ComponentState.accessibility-review.md
   ConceptLoop.composition-review.md
   MetricCard_WorkoutItem.boundary-review.md
+  SummaryDashboard.semantic-composition-review.md
   SummaryDashboard.composition-boundary-review.md
   SummaryDashboard.optional-modules-review.md
   SummaryDashboard.promotion-review.md

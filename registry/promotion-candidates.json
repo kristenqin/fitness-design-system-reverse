@@ -108,6 +108,22 @@
         "SourceStatus remains captured and must not be treated as reviewed."
       ],
       "nextAction": "Use the concept loop review to guide SummaryDashboard semantic composition; do not promote the system model."
+    },
+    {
+      "id": "summary-dashboard-semantic-composition",
+      "type": "pattern-composition-plan",
+      "evidenceStatus": "captured",
+      "reviewStatus": "planned",
+      "runtimeStatus": "not-tested",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "TrendCard and AwardBadge are ready for optional runtime composition but are not yet composed into SummaryDashboard.",
+        "The next composition pass must use synthetic runtime validation data and keep all optional modules non-promoted.",
+        "Page-level accessibility, module density, ordering, and combined empty states remain untested.",
+        "Source evidence remains captured, not reviewed.",
+        "Token values and visual system decisions remain pending."
+      ],
+      "nextAction": "Run SummaryDashboard optional semantic runtime composition with WorkoutItem, TrendCard, and AwardBadge as optional modules while keeping ProgressRing and MetricCard as required core."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

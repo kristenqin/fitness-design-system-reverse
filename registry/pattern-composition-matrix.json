@@ -31,18 +31,18 @@
         {
           "id": "trends",
           "component": "TrendCard",
-          "compositionStatus": "component-runtime-tested-not-composed",
-          "requirementStatus": "unresolved",
+          "compositionStatus": "ready-for-runtime-composition",
+          "requirementStatus": "optional-semantic-module",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence and minimum component runtime-tested, but not composed into SummaryDashboard. A separate composition review is still required."
+          "notes": "Captured in source evidence and minimum component runtime-tested. Sixteenth-cycle semantic composition review says TrendCard can enter the next SummaryDashboard runtime pass only as an optional semantic module."
         },
         {
           "id": "awards",
           "component": "AwardBadge",
-          "compositionStatus": "component-runtime-tested-not-composed",
-          "requirementStatus": "unresolved",
+          "compositionStatus": "ready-for-runtime-composition",
+          "requirementStatus": "optional-semantic-module",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence and minimum component runtime-tested, but not composed into SummaryDashboard. A separate composition review is still required."
+          "notes": "Captured in source evidence and minimum component runtime-tested. Sixteenth-cycle semantic composition review says AwardBadge can enter the next SummaryDashboard runtime pass only as an optional semantic module."
         },
         {
           "id": "bottom-nav",

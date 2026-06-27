@@ -1,0 +1,81 @@
+{
+  "patternId": "summary-dashboard",
+  "status": "planned-for-optional-runtime-composition",
+  "promotionStatus": "not-promoted",
+  "compositionRule": "ProgressRing and MetricCard are required core. WorkoutItem, TrendCard, and AwardBadge are optional semantic modules. BottomNav is deferred source app shell. Runtime composition readiness does not imply promotion.",
+  "requiredCore": [
+    {
+      "id": "activity-progress",
+      "componentOwner": "progress-ring",
+      "componentName": "ProgressRing",
+      "semanticRole": "Goal-relative progress signal.",
+      "runtimeStatus": "runtime-tested-states",
+      "compositionStatus": "required-core",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "id": "activity-metrics",
+      "componentOwner": "metric-card",
+      "componentName": "MetricCard",
+      "semanticRole": "Compact current metric context.",
+      "runtimeStatus": "runtime-tested-states",
+      "compositionStatus": "required-core",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "optionalSemanticModules": [
+    {
+      "id": "workouts",
+      "componentOwner": "workout-item",
+      "componentName": "WorkoutItem",
+      "semanticRole": "Completed behavior records.",
+      "runtimeStatus": "runtime-tested-minimum",
+      "compositionStatus": "runtime-tested-optional-module",
+      "nextCompositionStatus": "keep-optional-supported",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "id": "trends",
+      "componentOwner": "trend-card",
+      "componentName": "TrendCard",
+      "semanticRole": "Direction and interpretation over time.",
+      "runtimeStatus": "runtime-tested-minimum",
+      "compositionStatus": "ready-for-runtime-composition",
+      "nextCompositionStatus": "optional-semantic-module",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "id": "awards",
+      "componentOwner": "award-badge",
+      "componentName": "AwardBadge",
+      "semanticRole": "Reward evidence and achievement marker.",
+      "runtimeStatus": "runtime-tested-minimum",
+      "compositionStatus": "ready-for-runtime-composition",
+      "nextCompositionStatus": "optional-semantic-module",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "deferredModules": [
+    {
+      "id": "bottom-nav",
+      "owner": "source-app-shell",
+      "semanticRole": "Source application navigation shell.",
+      "runtimeStatus": "not-tested",
+      "compositionStatus": "deferred-shell-module",
+      "promotionStatus": "not-promoted",
+      "reason": "Navigation shell is outside current SummaryDashboard transferable content-pattern scope."
+    }
+  ],
+  "nextCycleRecommendation": {
+    "id": "summary-dashboard-optional-semantic-runtime-composition",
+    "scope": "Compose TrendCard and AwardBadge into SummaryDashboard only as optional semantic modules using synthetic runtime validation data.",
+    "doNotDo": [
+      "Do not implement BottomNav.",
+      "Do not implement FullDashboard.",
+      "Do not implement full Trends or Awards pages.",
+      "Do not promote any asset.",
+      "Do not extract token values."
+    ]
+  },
+  "notes": "This plan is a composition planning artifact only. It does not change sourceStatus and does not promote SummaryDashboard or any component."
+}
