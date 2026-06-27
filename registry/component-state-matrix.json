@@ -239,6 +239,60 @@
           "promotionStatus": "not-promoted"
         }
       ]
+    },
+    {
+      "id": "award-badge",
+      "runtimeSurface": "src/reverse-components/summary-dashboard/AwardBadge.stories.tsx",
+      "states": [
+        {
+          "id": "default",
+          "storyPath": "Components/AwardBadge",
+          "storyName": "Default",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "locked",
+          "storyPath": "Components/AwardBadge",
+          "storyName": "Locked",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "unlocked",
+          "storyPath": "Components/AwardBadge",
+          "storyName": "Unlocked",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "new",
+          "storyPath": "Components/AwardBadge",
+          "storyName": "New",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "in-progress",
+          "storyPath": "Components/AwardBadge",
+          "storyName": "InProgress",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        },
+        {
+          "id": "long-title",
+          "storyPath": "Components/AwardBadge",
+          "storyName": "LongTitle",
+          "runtimeStatus": "runtime-tested-minimum",
+          "accessibilityStatus": "drafted",
+          "promotionStatus": "not-promoted"
+        }
+      ]
     }
   ],
   "notes": "State coverage uses synthetic runtime validation data. Accessibility status is drafted only; no candidate is promoted."

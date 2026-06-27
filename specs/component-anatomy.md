@@ -236,7 +236,7 @@ Boundary with TrendCard / MetricCard / WorkoutItem:
 
 Runtime status:
 
-Thirteenth-cycle contract planning defines `AwardBadge` as the Reward semantic module for SummaryDashboard, but runtime validation has not started. It should not be composed into SummaryDashboard until component-level runtime stories validate locked, unlocked, new, in-progress, long-title, and accessibility behavior.
+Thirteenth-cycle contract planning defines `AwardBadge` as the Reward semantic module for SummaryDashboard. Fourteenth-cycle minimum runtime validation covers locked, unlocked, new, in-progress, long-title, decoration-risk, and drafted accessibility behavior. It should not be composed into SummaryDashboard until a separate composition review happens.
 
 ## Promotion Criteria
 
@@ -288,4 +288,8 @@ Twelfth-cycle runtime validation adds a local reverse component for default, imp
 
 ### AwardBadge Contract
 
-Thirteenth-cycle contract planning defines `AwardBadge` as the owner of reward evidence and achievement markers. Existing evidence confirms an Awards section, `Show More` action, and three award item frames, but does not confirm exact award titles, icon meanings, unlock conditions, progress values, dates, or reward statuses. Runtime validation has not started, and the candidate remains `not-promoted`.
+Thirteenth-cycle contract planning defines `AwardBadge` as the owner of reward evidence and achievement markers. Existing evidence confirms an Awards section, `Show More` action, and three award item frames, but does not confirm exact award titles, icon meanings, unlock conditions, progress values, dates, or reward statuses. The candidate remains `not-promoted`.
+
+### AwardBadge Runtime
+
+Fourteenth-cycle runtime validation adds a local reverse component for default, locked, unlocked, new, in-progress, and long-title states. The component keeps reward status visible as text and uses only an `aria-hidden` placeholder symbol, avoiding real icon or medal assets. This keeps AwardBadge focused on reward evidence rather than decoration-only display. This is minimum runtime validation only and does not promote `AwardBadge`.

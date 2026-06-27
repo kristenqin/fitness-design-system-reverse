@@ -150,6 +150,10 @@ src/
       SummaryDashboard.stories.tsx
       SummaryDashboard.tsx
       AwardBadge.contract.md
+      AwardBadge.data.ts
+      AwardBadge.runtime-review.md
+      AwardBadge.stories.tsx
+      AwardBadge.tsx
       MetricCard.stories.tsx
       ProgressRing.stories.tsx
       TypographyMetricRoles.stories.tsx

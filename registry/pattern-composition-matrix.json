@@ -39,10 +39,10 @@
         {
           "id": "awards",
           "component": "AwardBadge",
-          "compositionStatus": "contract-defined-next-runtime",
+          "compositionStatus": "component-runtime-tested-not-composed",
           "requirementStatus": "unresolved",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence and contract-defined, but not implemented, runtime-tested, or composed into SummaryDashboard."
+          "notes": "Captured in source evidence and minimum component runtime-tested, but not composed into SummaryDashboard. A separate composition review is still required."
         },
         {
           "id": "bottom-nav",
