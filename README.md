@@ -99,6 +99,7 @@ decisions/
   ADR-004-storybook-as-runtime.md
   ADR-005-style-system-over-static-preview.md
   ADR-006-summary-dashboard-composition-path.md
+  ADR-007-concept-loop-before-promotion.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -111,6 +112,7 @@ package-lock.json
 package.json
 registry/
   component-boundary-matrix.json
+  concept-loop-matrix.json
   component-state-matrix.json
   components.json
   module-priority-matrix.json
@@ -124,6 +126,7 @@ registry/
 reviews/
   AwardBadge.runtime-plan.md
   ComponentState.accessibility-review.md
+  ConceptLoop.composition-review.md
   MetricCard_WorkoutItem.boundary-review.md
   SummaryDashboard.composition-boundary-review.md
   SummaryDashboard.optional-modules-review.md

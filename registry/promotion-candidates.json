@@ -16,7 +16,7 @@
         "Semantic tokens remain pending and raw token values are not extracted.",
         "Accessibility expectations are not reviewed enough for promotion."
       ],
-      "nextAction": "Keep SummaryDashboard in reverse surface and review optional TrendCard and AwardBadge composition boundaries before any pattern integration."
+      "nextAction": "Keep SummaryDashboard in reverse surface and run SummaryDashboard semantic composition review before any pattern integration or token evidence cycle."
     },
     {
       "id": "progress-ring-candidate",
@@ -92,6 +92,22 @@
         "SummaryDashboard composition should wait for a separate composition review."
       ],
       "nextAction": "Review AwardBadge runtime results, add missing states only when scoped, and keep SummaryDashboard composition deferred."
+    },
+    {
+      "id": "concept-loop-candidate",
+      "type": "system-model",
+      "evidenceStatus": "captured",
+      "reviewStatus": "reviewed-draft",
+      "runtimeStatus": "component-level-covered",
+      "promotionStatus": "not-promoted",
+      "blockers": [
+        "Concept loop coverage is component-level and synthetic, not source-reviewed.",
+        "TrendCard and AwardBadge are not composed into SummaryDashboard.",
+        "Tokens, layout, density, and accessibility remain unreviewed at system level.",
+        "Transferability is semantically plausible but not validated through migration experiments.",
+        "SourceStatus remains captured and must not be treated as reviewed."
+      ],
+      "nextAction": "Use the concept loop review to guide SummaryDashboard semantic composition; do not promote the system model."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

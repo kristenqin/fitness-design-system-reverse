@@ -124,3 +124,15 @@ The first cycle should only validate:
 - WebAdaptation experiment
 
 Do not expand into the full design system until this loop works in Storybook.
+
+## Runtime Coverage Notes
+
+Fifteenth-cycle concept-loop review maps current component-level runtime coverage to the core loop:
+
+- Goal / Progress -> `ProgressRing`
+- Metric context -> `MetricCard`
+- Behavior / Record -> `WorkoutItem`
+- Trend / Insight -> `TrendCard`
+- Reward / Achievement -> `AwardBadge`
+
+This is semantic coverage only. It is not promotion, not a source-reviewed visual system, and not a stable token system. SummaryDashboard still needs semantic composition review before the loop can be considered pattern-level coverage.

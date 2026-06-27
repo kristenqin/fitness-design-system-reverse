@@ -1,0 +1,87 @@
+{
+  "conceptLoop": "Goal -> Behavior -> Record -> Trend -> Reward",
+  "status": "component-level-covered-not-promoted",
+  "concepts": [
+    {
+      "concept": "Goal",
+      "componentOwner": "progress-ring",
+      "supportingComponents": ["metric-card"],
+      "runtimeStatus": "runtime-tested-states",
+      "evidenceStatus": "captured",
+      "promotionStatus": "not-promoted",
+      "role": "Defines the target state and goal-relative progress signal.",
+      "openQuestions": [
+        "Exact source-backed goal geometry, token mapping, and over-goal behavior remain unreviewed.",
+        "Goal semantics are component-level only and not yet reviewed as a stable system rule."
+      ]
+    },
+    {
+      "concept": "Behavior",
+      "componentOwner": "workout-item",
+      "supportingComponents": ["metric-card"],
+      "runtimeStatus": "runtime-tested-minimum",
+      "evidenceStatus": "captured",
+      "promotionStatus": "not-promoted",
+      "role": "Represents measured or remembered user action as completed behavior evidence.",
+      "openQuestions": [
+        "Full Workouts section behavior is not source-reviewed.",
+        "Future behavior metadata such as route, activity type, and sync state remains unresolved."
+      ]
+    },
+    {
+      "concept": "Record",
+      "componentOwner": "workout-item",
+      "supportingComponents": ["metric-card"],
+      "runtimeStatus": "runtime-tested-minimum",
+      "evidenceStatus": "captured",
+      "promotionStatus": "not-promoted",
+      "role": "Preserves evidence that a behavior happened, including title and record metadata.",
+      "openQuestions": [
+        "Record interaction rules are drafted but not source-reviewed.",
+        "Relationship to internal metric substructure remains a future boundary question."
+      ]
+    },
+    {
+      "concept": "Trend",
+      "componentOwner": "trend-card",
+      "supportingComponents": ["workout-item", "metric-card"],
+      "runtimeStatus": "runtime-tested-minimum",
+      "evidenceStatus": "captured",
+      "promotionStatus": "not-promoted",
+      "role": "Explains direction and interpretation over time from repeated records.",
+      "openQuestions": [
+        "TrendCard is not composed into SummaryDashboard.",
+        "Exact source trend copy, state model, chart need, and data confidence rules remain unreviewed."
+      ]
+    },
+    {
+      "concept": "Reward",
+      "componentOwner": "award-badge",
+      "supportingComponents": ["workout-item", "trend-card"],
+      "runtimeStatus": "runtime-tested-minimum",
+      "evidenceStatus": "captured",
+      "promotionStatus": "not-promoted",
+      "role": "Makes sustained behavior visible as reward evidence or achievement marker.",
+      "openQuestions": [
+        "AwardBadge is not composed into SummaryDashboard.",
+        "Exact source award title, icon meaning, unlock condition, date, and status remain unreviewed."
+      ]
+    }
+  ],
+  "supportingConcepts": [
+    {
+      "concept": "Metric context",
+      "componentOwner": "metric-card",
+      "supportingComponents": ["progress-ring", "workout-item", "trend-card"],
+      "runtimeStatus": "runtime-tested-states",
+      "evidenceStatus": "captured",
+      "promotionStatus": "not-promoted",
+      "role": "Provides compact current metric context without owning record, trend, or reward semantics.",
+      "openQuestions": [
+        "Source typography, spacing, and color values are not confirmed.",
+        "MetricCard remains a supporting component rather than the primary owner of the concept loop."
+      ]
+    }
+  ],
+  "notes": "Concept coverage is semantic and component-level only. This matrix does not promote any component, pattern, token, or visual system."
+}
