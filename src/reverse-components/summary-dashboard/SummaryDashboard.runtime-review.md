@@ -90,6 +90,35 @@ Still open:
 
 Promotion decision remains unchanged: do not promote.
 
+## Seventeenth Cycle Update
+
+The seventeenth cycle added optional semantic runtime composition for TrendCard and AwardBadge:
+
+- `Patterns/SummaryDashboard/SemanticComposition/CoreOnly`
+- `Patterns/SummaryDashboard/SemanticComposition/WithTrendCard`
+- `Patterns/SummaryDashboard/SemanticComposition/WithAwardBadge`
+- `Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward`
+- `Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop`
+- `Patterns/SummaryDashboard/SemanticComposition/MissingTrendData`
+- `Patterns/SummaryDashboard/SemanticComposition/MissingAwardData`
+
+What improved:
+
+- SummaryDashboard can run with only the required core: `ProgressRing` and `MetricCard`.
+- TrendCard can compose as an optional semantic module for Trend / Insight.
+- AwardBadge can compose as an optional semantic module for Reward / Achievement.
+- Missing trend and missing award data render explicit unavailable states.
+- `FullSemanticLoop` can represent Goal, Behavior, Record, Trend, and Reward without adding BottomNav or full source sections.
+
+Still open:
+
+- Runtime data remains synthetic and not source-reviewed.
+- Combined module density, ordering, and page-level accessibility are only minimally validated.
+- Source-backed layout, token values, typography, spacing, color, and radius remain pending.
+- Full Trends, Awards, Workouts, and app-shell navigation remain out of scope.
+
+Promotion decision remains unchanged: do not promote.
+
 ## Ninth Cycle Update
 
 The ninth cycle added optional module validation for Workouts only:

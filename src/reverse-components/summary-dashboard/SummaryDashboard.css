@@ -139,7 +139,17 @@
   background: #151915;
 }
 
-.sdr-summary-dashboard__workouts header {
+.sdr-summary-dashboard__semantic-module {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #151915;
+}
+
+.sdr-summary-dashboard__workouts header,
+.sdr-summary-dashboard__semantic-module header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,28 +157,34 @@
 }
 
 .sdr-summary-dashboard__workouts header p,
-.sdr-summary-dashboard__workouts header span {
+.sdr-summary-dashboard__workouts header span,
+.sdr-summary-dashboard__semantic-module header p,
+.sdr-summary-dashboard__semantic-module header span {
   margin: 0;
 }
 
-.sdr-summary-dashboard__workouts header p {
+.sdr-summary-dashboard__workouts header p,
+.sdr-summary-dashboard__semantic-module header p {
   color: #f8fbf6;
   font-size: 16px;
   font-weight: 800;
 }
 
-.sdr-summary-dashboard__workouts header span {
+.sdr-summary-dashboard__workouts header span,
+.sdr-summary-dashboard__semantic-module header span {
   color: #8f988f;
   font-size: 12px;
   font-weight: 700;
 }
 
-.sdr-summary-dashboard__workout-list {
+.sdr-summary-dashboard__workout-list,
+.sdr-summary-dashboard__award-list {
   display: grid;
   gap: 10px;
 }
 
-.sdr-summary-dashboard__workouts-empty {
+.sdr-summary-dashboard__workouts-empty,
+.sdr-summary-dashboard__module-empty {
   padding: 14px;
   border: 1px dashed rgba(255, 255, 255, 0.18);
   border-radius: 8px;

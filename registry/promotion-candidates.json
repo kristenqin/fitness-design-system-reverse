@@ -4,19 +4,19 @@
       "id": "summary-dashboard-pattern",
       "type": "pattern",
       "evidenceStatus": "captured",
-      "runtimeStatus": "runtime-tested-optional-module",
+      "runtimeStatus": "runtime-tested-optional-semantic-composition",
       "promotionStatus": "not-promoted",
       "blockers": [
         "Source evidence is captured but not reviewed.",
         "WorkoutItem is integrated only as an optional module; the full Workouts section and source-reviewed workout behavior are not validated.",
-        "TrendCard and AwardBadge have minimum component runtime validation, but neither is composed into SummaryDashboard.",
+        "TrendCard and AwardBadge are composed into SummaryDashboard as optional semantic modules, but source-reviewed layout, tokens, density, accessibility, and transferability remain unresolved.",
         "Bottom Nav is treated as deferred source app shell and is not part of the current transferable core.",
-        "Required versus optional module boundaries are still unresolved for Trends, Awards, and app-shell navigation.",
+        "Required versus optional module boundaries are runtime-tested for TrendCard and AwardBadge but not source-reviewed.",
         "No-data, goal-completed, overachieved, permission-denied, and unavailable-data states are not runtime-tested.",
         "Semantic tokens remain pending and raw token values are not extracted.",
         "Accessibility expectations are not reviewed enough for promotion."
       ],
-      "nextAction": "Keep SummaryDashboard in reverse surface and run SummaryDashboard semantic composition review before any pattern integration or token evidence cycle."
+      "nextAction": "Keep SummaryDashboard in reverse surface and review source-backed layout, density, accessibility, and token evidence before any promotion."
     },
     {
       "id": "progress-ring-candidate",
@@ -102,7 +102,7 @@
       "promotionStatus": "not-promoted",
       "blockers": [
         "Concept loop coverage is component-level and synthetic, not source-reviewed.",
-        "TrendCard and AwardBadge are not composed into SummaryDashboard.",
+        "TrendCard and AwardBadge are composed into SummaryDashboard as optional semantic modules, but the composition is synthetic and not source-reviewed.",
         "Tokens, layout, density, and accessibility remain unreviewed at system level.",
         "Transferability is semantically plausible but not validated through migration experiments.",
         "SourceStatus remains captured and must not be treated as reviewed."
@@ -114,16 +114,15 @@
       "type": "pattern-composition-plan",
       "evidenceStatus": "captured",
       "reviewStatus": "planned",
-      "runtimeStatus": "not-tested",
+      "runtimeStatus": "runtime-tested-optional-semantic-composition",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "TrendCard and AwardBadge are ready for optional runtime composition but are not yet composed into SummaryDashboard.",
-        "The next composition pass must use synthetic runtime validation data and keep all optional modules non-promoted.",
-        "Page-level accessibility, module density, ordering, and combined empty states remain untested.",
+        "TrendCard and AwardBadge are composed into SummaryDashboard only as optional semantic modules with synthetic runtime validation data.",
+        "Page-level accessibility, module density, ordering, and combined empty states remain drafted or minimally tested only.",
         "Source evidence remains captured, not reviewed.",
         "Token values and visual system decisions remain pending."
       ],
-      "nextAction": "Run SummaryDashboard optional semantic runtime composition with WorkoutItem, TrendCard, and AwardBadge as optional modules while keeping ProgressRing and MetricCard as required core."
+      "nextAction": "Review source-backed layout, density, accessibility, and token evidence before considering SummaryDashboard promotion."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

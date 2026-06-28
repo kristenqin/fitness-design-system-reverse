@@ -153,6 +153,8 @@ src/
       SummaryDashboard.optional-modules.stories.tsx
       SummaryDashboard.runtime-review.md
       SummaryDashboard.scenarios.stories.tsx
+      SummaryDashboard.semantic-composition-review.md
+      SummaryDashboard.semantic-composition.stories.tsx
       SummaryDashboard.stories.tsx
       SummaryDashboard.tsx
       AwardBadge.contract.md

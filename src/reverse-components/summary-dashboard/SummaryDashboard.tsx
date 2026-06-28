@@ -7,6 +7,8 @@ import {
   type SummaryDashboardData
 } from "./SummaryDashboard.data";
 import { WorkoutItem } from "./WorkoutItem";
+import { TrendCard } from "./TrendCard";
+import { AwardBadge } from "./AwardBadge";
 
 export type ProgressRingProps = {
   data: ProgressRingData;
@@ -84,6 +86,8 @@ export type SummaryDashboardProps = {
 
 export function SummaryDashboard({ data = defaultSummaryDashboardData, mode = "default" }: SummaryDashboardProps) {
   const hasWorkoutItems = data.workouts && data.workouts.items.length > 0;
+  const hasTrendItem = Boolean(data.trend?.item);
+  const hasAwardItems = data.awards && data.awards.items.length > 0;
 
   return (
     <section className={`sdr-summary-dashboard sdr-summary-dashboard--${mode}`} aria-label="Summary dashboard runtime validation">
@@ -124,6 +128,42 @@ export function SummaryDashboard({ data = defaultSummaryDashboardData, mode = "d
           ) : (
             <div className="sdr-summary-dashboard__workouts-empty" role="status">
               {data.workouts.unavailableMessage}
+            </div>
+          )}
+        </section>
+      ) : null}
+
+      {data.trend ? (
+        <section className="sdr-summary-dashboard__semantic-module" aria-label="Optional trend module runtime validation">
+          <header>
+            <p>{data.trend.title}</p>
+            <span>optional</span>
+          </header>
+          {hasTrendItem && data.trend.item ? (
+            <TrendCard data={data.trend.item} />
+          ) : (
+            <div className="sdr-summary-dashboard__module-empty" role="status">
+              {data.trend.unavailableMessage}
+            </div>
+          )}
+        </section>
+      ) : null}
+
+      {data.awards ? (
+        <section className="sdr-summary-dashboard__semantic-module" aria-label="Optional awards module runtime validation">
+          <header>
+            <p>{data.awards.title}</p>
+            <span>optional</span>
+          </header>
+          {hasAwardItems ? (
+            <div className="sdr-summary-dashboard__award-list">
+              {data.awards.items.map((award) => (
+                <AwardBadge data={award} key={award.id} />
+              ))}
+            </div>
+          ) : (
+            <div className="sdr-summary-dashboard__module-empty" role="status">
+              {data.awards.unavailableMessage}
             </div>
           )}
         </section>

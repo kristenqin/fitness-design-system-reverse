@@ -3,6 +3,19 @@ import {
   interactiveWorkoutItemData,
   type WorkoutItemData
 } from "./WorkoutItem.data";
+import {
+  defaultTrendCardData,
+  improvingTrendCardData,
+  insufficientDataTrendCardData,
+  type TrendCardData
+} from "./TrendCard.data";
+import {
+  defaultAwardBadgeData,
+  inProgressAwardBadgeData,
+  lockedAwardBadgeData,
+  newAwardBadgeData,
+  type AwardBadgeData
+} from "./AwardBadge.data";
 
 export type ProgressStatus = "empty" | "low" | "pending" | "completed" | "overachieved" | "unavailable";
 export type MetricStatus = ProgressStatus | "loading" | "error";
@@ -35,6 +48,16 @@ export type SummaryDashboardData = {
   workouts?: {
     title: string;
     items: WorkoutItemData[];
+    unavailableMessage: string;
+  };
+  trend?: {
+    title: string;
+    item?: TrendCardData | null;
+    unavailableMessage: string;
+  };
+  awards?: {
+    title: string;
+    items: AwardBadgeData[];
     unavailableMessage: string;
   };
   insight: {
@@ -237,5 +260,108 @@ export const summaryDashboardWithMissingWorkoutData: SummaryDashboardData = {
   insight: {
     title: "Missing workout data",
     body: "Synthetic copy used to validate empty optional module handling without implementing the full Workouts section."
+  }
+};
+
+// Synthetic optional semantic composition data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardCoreOnlyData: SummaryDashboardData = {
+  ...defaultSummaryDashboardData,
+  insight: {
+    title: "Required core only",
+    body: "Synthetic runtime validation data for ProgressRing and MetricCard as the required SummaryDashboard core."
+  }
+};
+
+// Synthetic optional semantic composition data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardWithTrendCardData: SummaryDashboardData = {
+  ...summaryDashboardCoreOnlyData,
+  trend: {
+    title: "Trends",
+    unavailableMessage: "Synthetic trend interpretation unavailable",
+    item: improvingTrendCardData
+  },
+  insight: {
+    title: "Optional trend module",
+    body: "Synthetic runtime validation data for adding TrendCard as an optional semantic module."
+  }
+};
+
+// Synthetic optional semantic composition data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardWithAwardBadgeData: SummaryDashboardData = {
+  ...summaryDashboardCoreOnlyData,
+  awards: {
+    title: "Awards",
+    unavailableMessage: "Synthetic reward evidence unavailable",
+    items: [defaultAwardBadgeData, newAwardBadgeData]
+  },
+  insight: {
+    title: "Optional reward module",
+    body: "Synthetic runtime validation data for adding AwardBadge as an optional semantic module."
+  }
+};
+
+// Synthetic optional semantic composition data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardWithTrendAndAwardData: SummaryDashboardData = {
+  ...summaryDashboardCoreOnlyData,
+  trend: {
+    title: "Trends",
+    unavailableMessage: "Synthetic trend interpretation unavailable",
+    item: defaultTrendCardData
+  },
+  awards: {
+    title: "Awards",
+    unavailableMessage: "Synthetic reward evidence unavailable",
+    items: [inProgressAwardBadgeData, lockedAwardBadgeData]
+  },
+  insight: {
+    title: "Trend and reward modules",
+    body: "Synthetic runtime validation data for composing TrendCard and AwardBadge without adding BottomNav or full source sections."
+  }
+};
+
+// Synthetic optional semantic composition data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardFullSemanticLoopData: SummaryDashboardData = {
+  ...summaryDashboardWithWorkoutItemsData,
+  trend: {
+    title: "Trends",
+    unavailableMessage: "Synthetic trend interpretation unavailable",
+    item: improvingTrendCardData
+  },
+  awards: {
+    title: "Awards",
+    unavailableMessage: "Synthetic reward evidence unavailable",
+    items: [defaultAwardBadgeData, inProgressAwardBadgeData, newAwardBadgeData]
+  },
+  insight: {
+    title: "Semantic loop validation",
+    body: "Synthetic runtime validation data for Goal, Behavior, Record, Trend, and Reward composition without implementing a full source dashboard."
+  }
+};
+
+// Synthetic optional semantic composition data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardWithMissingTrendData: SummaryDashboardData = {
+  ...summaryDashboardCoreOnlyData,
+  trend: {
+    title: "Trends",
+    unavailableMessage: "Trend interpretation is unavailable in this synthetic state.",
+    item: null
+  },
+  insight: {
+    title: "Missing trend data",
+    body: "Synthetic runtime validation data for a present trend module with missing interpretation data."
+  }
+};
+
+// Synthetic optional semantic composition data. This is not source data from Apple Fitness or Figma.
+export const summaryDashboardWithMissingAwardData: SummaryDashboardData = {
+  ...summaryDashboardCoreOnlyData,
+  awards: {
+    title: "Awards",
+    unavailableMessage: "Reward evidence is unavailable in this synthetic state.",
+    items: []
+  },
+  insight: {
+    title: "Missing reward data",
+    body: "Synthetic runtime validation data for a present awards module with no reward items."
   }
 };

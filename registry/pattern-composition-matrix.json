@@ -2,7 +2,7 @@
   "patterns": [
     {
       "id": "summary-dashboard",
-      "runtimeSurface": "src/reverse-components/summary-dashboard/SummaryDashboard.optional-modules.stories.tsx",
+      "runtimeSurface": "src/reverse-components/summary-dashboard/SummaryDashboard.semantic-composition.stories.tsx",
       "modules": [
         {
           "id": "activity-progress",
@@ -31,18 +31,18 @@
         {
           "id": "trends",
           "component": "TrendCard",
-          "compositionStatus": "ready-for-runtime-composition",
+          "compositionStatus": "runtime-tested-optional-semantic-module",
           "requirementStatus": "optional-semantic-module",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence and minimum component runtime-tested. Sixteenth-cycle semantic composition review says TrendCard can enter the next SummaryDashboard runtime pass only as an optional semantic module."
+          "notes": "Captured in source evidence and minimum component runtime-tested. Seventeenth-cycle runtime composition validates TrendCard inside SummaryDashboard only as an optional semantic module."
         },
         {
           "id": "awards",
           "component": "AwardBadge",
-          "compositionStatus": "ready-for-runtime-composition",
+          "compositionStatus": "runtime-tested-optional-semantic-module",
           "requirementStatus": "optional-semantic-module",
           "promotionStatus": "not-promoted",
-          "notes": "Captured in source evidence and minimum component runtime-tested. Sixteenth-cycle semantic composition review says AwardBadge can enter the next SummaryDashboard runtime pass only as an optional semantic module."
+          "notes": "Captured in source evidence and minimum component runtime-tested. Seventeenth-cycle runtime composition validates AwardBadge inside SummaryDashboard only as an optional semantic module."
         },
         {
           "id": "bottom-nav",
