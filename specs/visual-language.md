@@ -112,3 +112,18 @@ Before adding a chart, define:
 - what time range it represents
 - how it handles insufficient data
 - what semantic color rules apply
+
+## Token Evidence Notes
+
+Eighteenth-cycle token evidence review establishes semantic token candidates from runtime roles rather than raw visual values.
+
+Mapped groups:
+
+- `color.progress`, `color.metric`, `color.trend`, `color.reward`, `color.surface`
+- `typography.metric`, `typography.record`, `typography.trend`, `typography.reward`
+- `spacing.summary`, `spacing.component`
+- `density.dashboard`
+- `radius.policy`
+- `state.unavailable`, `state.interactive`
+
+All raw values remain pending. This cycle does not connect tokens to CSS, does not read Figma variables, does not validate contrast, and does not promote any style-system rule.

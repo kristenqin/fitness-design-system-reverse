@@ -1,30 +1,546 @@
 {
   "color": {
     "activity": {
-      "move": {"value": "{color.source.pending}", "type": "color", "description": "Activity color for movement or calorie-like progress."},
-      "exercise": {"value": "{color.source.pending}", "type": "color", "description": "Activity color for exercise or training progress."},
-      "stand": {"value": "{color.source.pending}", "type": "color", "description": "Activity color for stand or interval-based completion."}
+      "move": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["figma-node-143-23952", "progress-ring"],
+        "description": "Activity color for movement or calorie-like progress."
+      },
+      "exercise": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "pending",
+        "evidenceRefs": ["figma-node-143-23952"],
+        "description": "Activity color for exercise or training progress."
+      },
+      "stand": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "pending",
+        "evidenceRefs": ["figma-node-143-23952"],
+        "description": "Activity color for stand or interval-based completion."
+      }
     },
     "progress": {
-      "completed": {"value": "{color.source.pending}", "type": "color", "description": "Progress has reached the goal."},
-      "pending": {"value": "{color.source.pending}", "type": "color", "description": "Progress exists but is not complete."},
-      "low": {"value": "{color.source.pending}", "type": "color", "description": "Progress is far below expected state."}
+      "completed": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/Completed", "Components/MetricCard/GoalCompleted"],
+        "description": "Progress has reached the goal."
+      },
+      "pending": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/Default", "Patterns/SummaryDashboard/SemanticComposition/CoreOnly"],
+        "description": "Progress exists but is not complete."
+      },
+      "low": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/LowProgress", "Patterns/SummaryDashboard/LowProgress"],
+        "description": "Progress is far below expected state."
+      },
+      "empty": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/Empty"],
+        "description": "Progress has no recorded value."
+      },
+      "overachieved": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/Overachieved", "Components/MetricCard/Overachieved"],
+        "description": "Progress has exceeded the target."
+      },
+      "unavailable": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/Unavailable"],
+        "description": "Progress value is unavailable and should not imply zero."
+      }
+    },
+    "metric": {
+      "value": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Components/MetricCard/ExtremeValue"],
+        "description": "Primary metric value color role."
+      },
+      "label": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default"],
+        "description": "Metric label color role."
+      },
+      "caption": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Components/MetricCard/LongChineseText"],
+        "description": "Metric supporting caption color role."
+      },
+      "error": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Error"],
+        "description": "Metric error state color role."
+      },
+      "completed": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/GoalCompleted"],
+        "description": "Metric goal-completed color role."
+      },
+      "overachieved": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Overachieved"],
+        "description": "Metric overachieved color role."
+      }
     },
     "trend": {
-      "positive": {"value": "{color.source.pending}", "type": "color", "description": "Trend direction is improving."},
-      "negative": {"value": "{color.source.pending}", "type": "color", "description": "Trend direction is declining."},
-      "neutral": {"value": "{color.source.pending}", "type": "color", "description": "Trend direction is stable or inconclusive."}
+      "positive": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Improving"],
+        "description": "Trend direction is improving."
+      },
+      "negative": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Declining"],
+        "description": "Trend direction is declining."
+      },
+      "neutral": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Neutral"],
+        "description": "Trend direction is stable or inconclusive."
+      },
+      "insufficientData": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/InsufficientData", "Patterns/SummaryDashboard/SemanticComposition/MissingTrendData"],
+        "description": "Trend interpretation lacks enough data and should not read as failure."
+      },
+      "default": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Default"],
+        "description": "Default trend signal color role."
+      }
+    },
+    "reward": {
+      "default": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/Default"],
+        "description": "Default reward evidence color role."
+      },
+      "locked": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/Locked"],
+        "description": "Locked reward evidence color role."
+      },
+      "unlocked": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/Unlocked"],
+        "description": "Unlocked reward evidence color role."
+      },
+      "new": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/New"],
+        "description": "Newly earned reward evidence color role."
+      },
+      "inProgress": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/InProgress"],
+        "description": "In-progress reward evidence color role."
+      }
+    },
+    "surface": {
+      "canvas": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/CoreOnly"],
+        "description": "Outer runtime canvas color role."
+      },
+      "panel": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/CoreOnly"],
+        "description": "Summary dashboard panel surface role."
+      },
+      "card": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Components/WorkoutItem/Default", "Components/TrendCard/Default", "Components/AwardBadge/Default"],
+        "description": "Card-like component surface role."
+      },
+      "module": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward"],
+        "description": "Optional module container surface role."
+      },
+      "unavailable": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/MissingTrendData", "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"],
+        "description": "Unavailable or missing module surface role."
+      }
     }
   },
   "typography": {
     "metric": {
-      "value": {"value": "pending", "type": "typography", "description": "Large numeric value in metric surfaces."},
-      "unit": {"value": "pending", "type": "typography", "description": "Unit next to metric value."},
-      "label": {"value": "pending", "type": "typography", "description": "Metric name or compact label."}
+      "value": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Style System/Typography/MetricRoles"],
+        "description": "Large numeric value in metric surfaces."
+      },
+      "unit": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Style System/Typography/MetricRoles"],
+        "description": "Unit next to metric value."
+      },
+      "label": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Style System/Typography/MetricRoles"],
+        "description": "Metric name or compact label."
+      },
+      "caption": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/LongChineseText", "Style System/Typography/MetricRoles"],
+        "description": "Metric supporting caption."
+      }
     },
     "card": {
-      "title": {"value": "pending", "type": "typography", "description": "Card title."},
-      "caption": {"value": "pending", "type": "typography", "description": "Secondary explanation or supporting text."}
+      "title": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Components/TrendCard/Default", "Components/AwardBadge/Default"],
+        "description": "Card title."
+      },
+      "caption": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Components/TrendCard/Default"],
+        "description": "Secondary explanation or supporting text."
+      }
+    },
+    "record": {
+      "title": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/WorkoutItem/Default", "Components/WorkoutItem/LongTitle"],
+        "description": "Completed record title typography role."
+      },
+      "metadata": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/WorkoutItem/Default"],
+        "description": "Completed record duration and date metadata typography role."
+      },
+      "label": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/WorkoutItem/Default"],
+        "description": "Completed record metadata label typography role."
+      },
+      "unavailable": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/WorkoutItem/MissingDuration", "Components/WorkoutItem/MissingDate"],
+        "description": "Completed record unavailable metadata typography role."
+      }
+    },
+    "trend": {
+      "title": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Default"],
+        "description": "Trend subject title typography role."
+      },
+      "direction": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Improving", "Components/TrendCard/Declining", "Components/TrendCard/Neutral"],
+        "description": "Trend direction label typography role."
+      },
+      "explanation": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/LongExplanation"],
+        "description": "Trend interpretation copy typography role."
+      },
+      "metadata": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Default"],
+        "description": "Trend time range or support metadata typography role."
+      }
+    },
+    "reward": {
+      "title": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/Default", "Components/AwardBadge/LongTitle"],
+        "description": "Reward title typography role."
+      },
+      "status": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/Locked", "Components/AwardBadge/Unlocked", "Components/AwardBadge/New", "Components/AwardBadge/InProgress"],
+        "description": "Reward status label typography role."
+      },
+      "description": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/Default"],
+        "description": "Reward explanation typography role."
+      },
+      "progress": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "evidenceRefs": ["Components/AwardBadge/InProgress"],
+        "description": "Reward progress evidence typography role."
+      }
     }
-  }
+  },
+  "spacing": {
+    "summary": {
+      "padding": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/CoreOnly"],
+        "description": "SummaryDashboard shell padding role."
+      },
+      "sectionGap": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"],
+        "description": "Vertical section rhythm for SummaryDashboard modules."
+      },
+      "moduleGap": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward"],
+        "description": "Internal gap for optional SummaryDashboard modules."
+      },
+      "headerGap": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/CoreOnly"],
+        "description": "Header spacing role for SummaryDashboard."
+      }
+    },
+    "component": {
+      "padding": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Components/TrendCard/Default", "Components/AwardBadge/Default"],
+        "description": "Base component interior padding role."
+      },
+      "gap": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Components/WorkoutItem/Default", "Components/TrendCard/Default"],
+        "description": "Base component internal vertical gap role."
+      },
+      "inlineGap": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Components/WorkoutItem/Default", "Components/AwardBadge/Default"],
+        "description": "Inline gap between component body regions."
+      },
+      "compactGap": {
+        "value": "{space.source.pending}",
+        "type": "spacing",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default"],
+        "description": "Compact metric stack gap role."
+      }
+    }
+  },
+  "density": {
+    "dashboard": {
+      "compact": {
+        "value": "{space.source.pending}",
+        "type": "density",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/CoreOnly"],
+        "description": "Density role for the smallest SummaryDashboard core."
+      },
+      "composed": {
+        "value": "{space.source.pending}",
+        "type": "density",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"],
+        "description": "Density role for SummaryDashboard with optional semantic modules."
+      },
+      "modulePreview": {
+        "value": "{space.source.pending}",
+        "type": "density",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward"],
+        "description": "Density role for preview-sized optional modules."
+      }
+    }
+  },
+  "radius": {
+    "policy": {
+      "card": {
+        "value": "{radius.source.pending}",
+        "type": "borderRadius",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/Default", "Components/WorkoutItem/Default", "Components/TrendCard/Default", "Components/AwardBadge/Default"],
+        "description": "Candidate radius policy for card-like components."
+      },
+      "module": {
+        "value": "{radius.source.pending}",
+        "type": "borderRadius",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward"],
+        "description": "Candidate radius policy for SummaryDashboard module containers."
+      },
+      "control": {
+        "value": "{radius.source.pending}",
+        "type": "borderRadius",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/InteractiveTarget", "Components/WorkoutItem/InteractiveTarget"],
+        "description": "Candidate radius policy for interactive component targets."
+      },
+      "roundIndicator": {
+        "value": "{radius.source.pending}",
+        "type": "borderRadius",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/Default", "Components/AwardBadge/Default"],
+        "description": "Candidate radius policy for round progress or reward indicators."
+      }
+    }
+  },
+  "state": {
+    "unavailable": {
+      "text": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/WorkoutItem/MissingDuration", "Patterns/SummaryDashboard/SemanticComposition/MissingTrendData", "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"],
+        "description": "Text role for unavailable or missing data."
+      },
+      "surface": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/MissingTrendData", "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"],
+        "description": "Surface role for unavailable or missing data."
+      },
+      "border": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Patterns/SummaryDashboard/SemanticComposition/MissingTrendData", "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"],
+        "description": "Border role for unavailable or missing data containers."
+      },
+      "indicator": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/ProgressRing/Unavailable", "Components/TrendCard/InsufficientData"],
+        "description": "Indicator role for unavailable or insufficient data."
+      }
+    },
+    "interactive": {
+      "focusRing": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/InteractiveTarget", "Components/WorkoutItem/InteractiveTarget"],
+        "description": "Focus-visible indicator role for interactive candidates."
+      },
+      "border": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/InteractiveTarget", "Components/WorkoutItem/InteractiveTarget"],
+        "description": "Interactive target border role."
+      },
+      "text": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/TrendCard/Default", "Components/AwardBadge/Default"],
+        "description": "Interactive action text role."
+      },
+      "surface": {
+        "value": "{color.source.pending}",
+        "type": "color",
+        "status": "candidate",
+        "evidenceRefs": ["Components/MetricCard/InteractiveTarget", "Components/WorkoutItem/InteractiveTarget"],
+        "description": "Interactive surface role."
+      }
+    }
+  },
+  "notes": "All token values remain pending placeholders. Candidate status means runtime evidence exists for a semantic role; it does not mean accepted or promoted."
 }

@@ -101,6 +101,7 @@ decisions/
   ADR-006-summary-dashboard-composition-path.md
   ADR-007-concept-loop-before-promotion.md
   ADR-008-summary-dashboard-semantic-composition.md
+  ADR-009-semantic-token-evidence-before-raw-values.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -123,6 +124,7 @@ registry/
   pages.schema.json
   patterns.json
   promotion-candidates.json
+  style-token-evidence-matrix.json
   summary-dashboard-semantic-composition-plan.json
   source-map.json
 reviews/
@@ -134,6 +136,7 @@ reviews/
   SummaryDashboard.composition-boundary-review.md
   SummaryDashboard.optional-modules-review.md
   SummaryDashboard.promotion-review.md
+  StyleSystem.token-evidence-review.md
   TrendCard.runtime-plan.md
   WorkoutItem.runtime-plan.md
 scripts/
