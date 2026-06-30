@@ -1,0 +1,244 @@
+{
+  "status": "token-readiness-gate-reviewed",
+  "rawValueStatus": "pending",
+  "promotionStatus": "not-promoted",
+  "sourceRefs": [
+    "figma-node-143-23952",
+    "screenshot-summary-dashboard-143-23952"
+  ],
+  "criteria": {
+    "readyForConstrainedRawValuePlan": "Strong source-backed semantic evidence and narrow enough scope to plan raw-value extraction without performing it.",
+    "needsContrastReview": "Meaning-bearing color or surface role exists, but contrast and state treatment are not reviewed.",
+    "needsStateEvidence": "Runtime states exist, but source-backed state evidence is incomplete or weak.",
+    "needsTransferabilityReview": "Spacing or density role exists, but transferable policy is not proven outside the captured source context.",
+    "deferred": "Out of scope for this gate and not reviewed."
+  },
+  "groups": [
+    {
+      "tokenGroup": "color.progress",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-contrast-review",
+      "reason": "Progress color roles are source-visible but state colors are incomplete and contrast behavior is unknown.",
+      "allowedNextStep": "Plan a contrast and state-meaning review for progress roles before any raw-value extraction.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting progress color tokens",
+        "Connecting progress colors to CSS",
+        "Promoting ProgressRing or progress token rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.trend",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-contrast-review",
+      "reason": "Trend module color roles are source-visible, but direction-state colors and contrast are not source-reviewed.",
+      "allowedNextStep": "Plan contrast review for trend default, direction, and insufficient-data roles.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting trend direction colors",
+        "Connecting trend colors to CSS",
+        "Promoting TrendCard visual rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.reward",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-contrast-review",
+      "reason": "Reward module color roles are source-visible, but award status colors and contrast are not reviewed.",
+      "allowedNextStep": "Plan contrast and reward-status evidence review before any reward color extraction.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting reward status colors",
+        "Using real award assets or source-specific icon styling",
+        "Promoting AwardBadge visual rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.metric",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-contrast-review",
+      "reason": "Metric color hierarchy is source-visible, but metric state colors and contrast are not reviewed.",
+      "allowedNextStep": "Plan contrast review for metric value, label, caption, and state colors.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting metric state colors",
+        "Connecting metric colors to CSS",
+        "Promoting MetricCard visual rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.surface",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-contrast-review",
+      "reason": "Surface hierarchy is source-visible, but raw surfaces, unavailable surfaces, and text contrast are unreviewed.",
+      "allowedNextStep": "Plan contrast review for canvas, panel, card, module, and unavailable surfaces.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting surface tokens",
+        "Treating local dark runtime CSS as source evidence",
+        "Connecting surface tokens to CSS"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.metric",
+      "sourceEvidenceStrength": "strong",
+      "readinessStatus": "ready-for-constrained-raw-value-plan",
+      "reason": "Metric value, unit, label, and caption hierarchy have strong source-backed semantic evidence.",
+      "allowedNextStep": "Create a constrained raw-value extraction plan for metric typography roles only; do not extract values yet.",
+      "blockedActions": [
+        "Direct raw-value extraction without a plan",
+        "Accepting metric typography tokens",
+        "Connecting typography tokens to CSS",
+        "Promoting MetricCard typography rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.record",
+      "sourceEvidenceStrength": "strong",
+      "readinessStatus": "ready-for-constrained-raw-value-plan",
+      "reason": "Workout record title and metadata hierarchy have strong source-backed semantic evidence.",
+      "allowedNextStep": "Create a constrained raw-value extraction plan for record typography roles only; do not extract values yet.",
+      "blockedActions": [
+        "Direct raw-value extraction without a plan",
+        "Accepting record typography tokens",
+        "Connecting typography tokens to CSS",
+        "Promoting WorkoutItem typography rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.trend",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-state-evidence",
+      "reason": "Trend heading and explanation are visible, but direction labels, metadata, and state typography remain runtime-derived.",
+      "allowedNextStep": "Review source-backed trend states and metadata before raw typography planning.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting trend typography tokens",
+        "Treating synthetic direction labels as source typography",
+        "Promoting TrendCard typography rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.reward",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-state-evidence",
+      "reason": "Award title and progress-like text are visible, but reward status typography remains runtime-derived.",
+      "allowedNextStep": "Review source-backed award states and status text before raw typography planning.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting reward typography tokens",
+        "Treating synthetic reward statuses as source typography",
+        "Promoting AwardBadge typography rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "spacing.summary",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-transferability-review",
+      "reason": "Summary spacing rhythm is source-visible, but numeric values and transferability are unreviewed.",
+      "allowedNextStep": "Run transferability review for SummaryDashboard spacing across non-source product contexts.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting summary spacing tokens",
+        "Connecting spacing tokens to CSS",
+        "Promoting SummaryDashboard layout rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "spacing.component",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-transferability-review",
+      "reason": "Component spacing relationships are source-visible, but a reusable spacing scale is not proven.",
+      "allowedNextStep": "Run transferability review for component spacing across MetricCard, WorkoutItem, TrendCard, and AwardBadge.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting component spacing tokens",
+        "Connecting spacing tokens to CSS",
+        "Promoting component spacing rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "density.dashboard",
+      "sourceEvidenceStrength": "partial",
+      "readinessStatus": "needs-transferability-review",
+      "reason": "Dashboard density direction is source-visible, but a transferable density policy is not proven.",
+      "allowedNextStep": "Run transferability review for compact, composed, and module-preview dashboard density.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting density tokens",
+        "Treating runtime web density as source evidence",
+        "Promoting dashboard density rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "state.unavailable",
+      "sourceEvidenceStrength": "weak",
+      "readinessStatus": "needs-state-evidence",
+      "reason": "Unavailable, missing, empty, and insufficient states remain mostly synthetic runtime evidence.",
+      "allowedNextStep": "Review explicit source unavailable, missing, empty, and insufficient states before raw-value planning.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting unavailable state tokens",
+        "Merging unavailable into surface or trend tokens",
+        "Promoting state styling rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "state.interactive",
+      "sourceEvidenceStrength": "weak",
+      "readinessStatus": "needs-state-evidence",
+      "reason": "Source evidence confirms visible actions, but web focus, keyboard, and target states remain runtime adaptation.",
+      "allowedNextStep": "Run accessibility and interaction state evidence review before raw-value planning.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting focus or interactive state tokens",
+        "Treating runtime focus CSS as source evidence",
+        "Promoting interaction styling rules"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "radius.policy",
+      "sourceEvidenceStrength": "none",
+      "readinessStatus": "deferred",
+      "reason": "Radius policy was intentionally not reviewed and should not be inherited automatically from source styling.",
+      "allowedNextStep": "Keep deferred until a future radius policy review is explicitly scoped.",
+      "blockedActions": [
+        "Direct raw-value extraction",
+        "Accepting radius tokens",
+        "Connecting radius tokens to CSS",
+        "Reviewing radius in this gate cycle"
+      ],
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "Readiness gate does not extract raw values, read Figma, connect tokens to CSS, accept tokens, or promote any asset."
+}

@@ -1,5 +1,5 @@
 {
-  "status": "high-and-medium-priority-source-visual-evidence-reviewed-draft",
+  "status": "token-readiness-gate-reviewed",
   "rawValueStatus": "pending",
   "promotionStatus": "not-promoted",
   "sourceRefs": [
@@ -36,7 +36,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-contrast-review"
     },
     {
       "group": "color.metric",
@@ -67,7 +69,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "medium",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-contrast-review"
     },
     {
       "group": "color.trend",
@@ -97,7 +101,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-contrast-review"
     },
     {
       "group": "color.reward",
@@ -127,7 +133,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-contrast-review"
     },
     {
       "group": "color.surface",
@@ -160,7 +168,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "medium",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-contrast-review"
     },
     {
       "group": "typography.metric",
@@ -188,7 +198,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "strong"
+      "sourceEvidenceStrength": "strong",
+      "gateStatus": "reviewed",
+      "readinessStatus": "ready-for-constrained-raw-value-plan"
     },
     {
       "group": "typography.record",
@@ -216,7 +228,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "strong"
+      "sourceEvidenceStrength": "strong",
+      "gateStatus": "reviewed",
+      "readinessStatus": "ready-for-constrained-raw-value-plan"
     },
     {
       "group": "typography.trend",
@@ -244,7 +258,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "medium",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-state-evidence"
     },
     {
       "group": "typography.reward",
@@ -272,7 +288,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "medium",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-state-evidence"
     },
     {
       "group": "spacing.summary",
@@ -297,7 +315,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-transferability-review"
     },
     {
       "group": "spacing.component",
@@ -326,7 +346,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "medium",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-transferability-review"
     },
     {
       "group": "density.dashboard",
@@ -352,7 +374,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "partial"
+      "sourceEvidenceStrength": "partial",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-transferability-review"
     },
     {
       "group": "radius.policy",
@@ -380,7 +404,9 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "deferred",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "planned",
+      "gateStatus": "reviewed",
+      "readinessStatus": "deferred"
     },
     {
       "group": "state.unavailable",
@@ -414,7 +440,9 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "weak"
+      "sourceEvidenceStrength": "weak",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-state-evidence"
     },
     {
       "group": "state.interactive",
@@ -441,8 +469,10 @@
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "medium",
       "sourceReviewStatus": "reviewed-draft",
-      "sourceEvidenceStrength": "weak"
+      "sourceEvidenceStrength": "weak",
+      "gateStatus": "reviewed",
+      "readinessStatus": "needs-state-evidence"
     }
   ],
-  "notes": "This matrix maps semantic token candidates to runtime evidence and source visual review status. High and medium priority groups are reviewed-draft; radius.policy remains deferred. It does not extract raw Figma values, connect tokens to CSS, or promote any token."
+  "notes": "This matrix maps semantic token candidates to runtime evidence, source visual review status, and readiness gate status. No raw values are extracted, no tokens are connected to CSS, and no token is promoted."
 }

@@ -103,6 +103,7 @@ decisions/
   ADR-008-summary-dashboard-semantic-composition.md
   ADR-009-semantic-token-evidence-before-raw-values.md
   ADR-010-source-visual-evidence-before-token-extraction.md
+  ADR-011-token-readiness-gate-before-raw-values.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -130,6 +131,7 @@ registry/
   style-token-evidence-matrix.json
   summary-dashboard-semantic-composition-plan.json
   source-map.json
+  token-readiness-gate-matrix.json
 reviews/
   AwardBadge.runtime-plan.md
   ComponentState.accessibility-review.md
@@ -143,6 +145,7 @@ reviews/
   SourceVisualEvidence.medium-priority-review.md
   SourceVisualEvidence.review-plan.md
   StyleSystem.token-evidence-review.md
+  TokenReadiness.gate-review.md
   TrendCard.runtime-plan.md
   WorkoutItem.runtime-plan.md
 scripts/

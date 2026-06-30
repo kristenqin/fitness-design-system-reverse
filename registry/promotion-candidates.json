@@ -132,14 +132,17 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "High and medium priority token groups have source visual evidence review, but radius policy remains deferred.",
-        "Raw source token values are not extracted or reviewed.",
-        "Several states remain weakly source-backed.",
+        "Only typography.metric and typography.record are ready for constrained raw-value extraction planning.",
+        "No token group is ready for direct raw-value extraction.",
+        "Color groups require contrast review before raw values.",
+        "State groups require stronger state evidence.",
+        "Spacing and density require transferability review.",
+        "radius.policy remains deferred.",
         "CSS is still local runtime styling.",
-        "Accessibility contrast is not reviewed.",
         "Migration experiments have not tested token transferability."
       ],
-      "nextAction": "Keep radius.policy deferred and run accessibility contrast or state-evidence planning before extracting raw values or promoting tokens."
+      "nextAction": "Create a constrained raw-value extraction plan only for typography.metric and typography.record, while routing color, state, spacing, density, and radius groups through their required reviews.",
+      "gateStatus": "readiness-reviewed"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

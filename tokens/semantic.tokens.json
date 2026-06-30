@@ -52,7 +52,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "pending": {
         "value": "{color.source.pending}",
@@ -66,7 +68,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "low": {
         "value": "{color.source.pending}",
@@ -80,7 +84,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "empty": {
         "value": "{color.source.pending}",
@@ -93,7 +99,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "overachieved": {
         "value": "{color.source.pending}",
@@ -107,7 +115,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "unavailable": {
         "value": "{color.source.pending}",
@@ -120,7 +130,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       }
     },
     "metric": {
@@ -136,7 +148,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "label": {
         "value": "{color.source.pending}",
@@ -149,7 +163,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "caption": {
         "value": "{color.source.pending}",
@@ -163,7 +179,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "error": {
         "value": "{color.source.pending}",
@@ -176,7 +194,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "completed": {
         "value": "{color.source.pending}",
@@ -189,7 +209,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "overachieved": {
         "value": "{color.source.pending}",
@@ -202,7 +224,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       }
     },
     "trend": {
@@ -217,7 +241,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "negative": {
         "value": "{color.source.pending}",
@@ -230,7 +256,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "neutral": {
         "value": "{color.source.pending}",
@@ -243,7 +271,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "insufficientData": {
         "value": "{color.source.pending}",
@@ -257,7 +287,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "default": {
         "value": "{color.source.pending}",
@@ -270,7 +302,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       }
     },
     "reward": {
@@ -285,7 +319,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "locked": {
         "value": "{color.source.pending}",
@@ -298,7 +334,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "unlocked": {
         "value": "{color.source.pending}",
@@ -311,7 +349,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "new": {
         "value": "{color.source.pending}",
@@ -324,7 +364,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "inProgress": {
         "value": "{color.source.pending}",
@@ -337,7 +379,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       }
     },
     "surface": {
@@ -352,7 +396,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "panel": {
         "value": "{color.source.pending}",
@@ -365,7 +411,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "card": {
         "value": "{color.source.pending}",
@@ -381,7 +429,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "module": {
         "value": "{color.source.pending}",
@@ -394,7 +444,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       },
       "unavailable": {
         "value": "{color.source.pending}",
@@ -408,7 +460,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-contrast-review"
       }
     }
   },
@@ -426,7 +480,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       },
       "unit": {
         "value": "{font.source.pending}",
@@ -440,7 +496,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -454,7 +512,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -468,7 +528,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       }
     },
     "card": {
@@ -513,7 +575,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -526,7 +590,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -539,7 +605,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -553,7 +621,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "strong"
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan"
       }
     },
     "trend": {
@@ -568,7 +638,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "direction": {
         "value": "{font.source.pending}",
@@ -583,7 +655,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "explanation": {
         "value": "{font.source.pending}",
@@ -596,7 +670,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -609,7 +685,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       }
     },
     "reward": {
@@ -625,7 +703,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "status": {
         "value": "{font.source.pending}",
@@ -641,7 +721,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "description": {
         "value": "{font.source.pending}",
@@ -654,7 +736,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "progress": {
         "value": "{font.source.pending}",
@@ -667,7 +751,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       }
     }
   },
@@ -684,7 +770,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "sectionGap": {
         "value": "{space.source.pending}",
@@ -697,7 +785,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "moduleGap": {
         "value": "{space.source.pending}",
@@ -710,7 +800,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "headerGap": {
         "value": "{space.source.pending}",
@@ -723,7 +815,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       }
     },
     "component": {
@@ -740,7 +834,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "gap": {
         "value": "{space.source.pending}",
@@ -754,7 +850,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "inlineGap": {
         "value": "{space.source.pending}",
@@ -768,7 +866,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "compactGap": {
         "value": "{space.source.pending}",
@@ -781,7 +881,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       }
     }
   },
@@ -798,7 +900,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "composed": {
         "value": "{space.source.pending}",
@@ -811,7 +915,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       },
       "modulePreview": {
         "value": "{space.source.pending}",
@@ -824,7 +930,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "partial"
+        "sourceEvidenceStrength": "partial",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-transferability-review"
       }
     }
   },
@@ -843,7 +951,9 @@
         "description": "Candidate radius policy for card-like components.",
         "sourceReviewStatus": "planned",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "deferred"
+        "sourceReviewPriority": "deferred",
+        "gateStatus": "reviewed",
+        "readinessStatus": "deferred"
       },
       "module": {
         "value": "{radius.source.pending}",
@@ -855,7 +965,9 @@
         "description": "Candidate radius policy for SummaryDashboard module containers.",
         "sourceReviewStatus": "planned",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "deferred"
+        "sourceReviewPriority": "deferred",
+        "gateStatus": "reviewed",
+        "readinessStatus": "deferred"
       },
       "control": {
         "value": "{radius.source.pending}",
@@ -868,7 +980,9 @@
         "description": "Candidate radius policy for interactive component targets.",
         "sourceReviewStatus": "planned",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "deferred"
+        "sourceReviewPriority": "deferred",
+        "gateStatus": "reviewed",
+        "readinessStatus": "deferred"
       },
       "roundIndicator": {
         "value": "{radius.source.pending}",
@@ -881,7 +995,9 @@
         "description": "Candidate radius policy for round progress or reward indicators.",
         "sourceReviewStatus": "planned",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "deferred"
+        "sourceReviewPriority": "deferred",
+        "gateStatus": "reviewed",
+        "readinessStatus": "deferred"
       }
     }
   },
@@ -900,7 +1016,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "surface": {
         "value": "{color.source.pending}",
@@ -914,7 +1032,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "border": {
         "value": "{color.source.pending}",
@@ -928,7 +1048,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "indicator": {
         "value": "{color.source.pending}",
@@ -942,7 +1064,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "high",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       }
     },
     "interactive": {
@@ -958,7 +1082,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "border": {
         "value": "{color.source.pending}",
@@ -972,7 +1098,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "text": {
         "value": "{color.source.pending}",
@@ -986,7 +1114,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       },
       "surface": {
         "value": "{color.source.pending}",
@@ -1000,7 +1130,9 @@
         "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
         "sourceReviewPriority": "medium",
-        "sourceEvidenceStrength": "weak"
+        "sourceEvidenceStrength": "weak",
+        "gateStatus": "reviewed",
+        "readinessStatus": "needs-state-evidence"
       }
     }
   },

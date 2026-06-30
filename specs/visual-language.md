@@ -184,3 +184,18 @@ Reviewed strengths:
 - `state.interactive`: weak source evidence for actions; web focus, keyboard, hover, and target treatment remain runtime/accessibility assumptions.
 
 `radius.policy` remains deferred and was not reviewed. This cycle does not read Figma, extract variables, write raw values, connect tokens to CSS, change runtime styling, or promote any visual rule.
+
+## Token Readiness Gate Notes
+
+Twenty-second-cycle token readiness review decides which semantic token groups may enter constrained raw-value extraction planning.
+
+Readiness decisions:
+
+- `typography.metric` and `typography.record` are ready for constrained raw-value extraction planning only.
+- No token group is ready for direct raw-value extraction.
+- `color.progress`, `color.trend`, `color.reward`, `color.metric`, and `color.surface` need contrast review before raw-value planning.
+- `typography.trend`, `typography.reward`, `state.unavailable`, and `state.interactive` need stronger state evidence before raw-value planning.
+- `spacing.summary`, `spacing.component`, and `density.dashboard` need transferability review before raw-value planning.
+- `radius.policy` remains deferred.
+
+All raw values remain pending. CSS remains local runtime styling. No token is accepted, connected to CSS, or promoted by this gate.
