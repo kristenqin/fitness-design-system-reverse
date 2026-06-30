@@ -202,7 +202,10 @@
       "gateStatus": "reviewed",
       "readinessStatus": "ready-for-constrained-raw-value-plan",
       "rawValuePlanStatus": "planned",
-      "rawValuePlanScope": "constrained-typography-only"
+      "rawValuePlanScope": "constrained-typography-only",
+      "rawValueReviewMatrixStatus": "prepared",
+      "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+      "futureExtractionAllowed": false
     },
     {
       "group": "typography.record",
@@ -234,7 +237,10 @@
       "gateStatus": "reviewed",
       "readinessStatus": "ready-for-constrained-raw-value-plan",
       "rawValuePlanStatus": "planned",
-      "rawValuePlanScope": "constrained-typography-only"
+      "rawValuePlanScope": "constrained-typography-only",
+      "rawValueReviewMatrixStatus": "prepared",
+      "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+      "futureExtractionAllowed": false
     },
     {
       "group": "typography.trend",

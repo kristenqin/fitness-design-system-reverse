@@ -1,0 +1,450 @@
+{
+  "status": "prepared",
+  "scope": "constrained-typography-review-matrix",
+  "rawValueStatus": "pending",
+  "promotionStatus": "not-promoted",
+  "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+  "futureExtractionAllowed": false,
+  "sourceReadStatus": "not-started",
+  "allowedTokenGroups": [
+    "typography.metric",
+    "typography.record"
+  ],
+  "blockedTokenGroups": [
+    "color.*",
+    "typography.trend",
+    "typography.reward",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "allowedFields": [
+    "fontFamily",
+    "fontStyle",
+    "fontSize",
+    "fontWeight",
+    "lineHeight",
+    "letterSpacing",
+    "textCase",
+    "textDecoration"
+  ],
+  "disallowedFields": [
+    "color",
+    "fill",
+    "stroke",
+    "background",
+    "opacity",
+    "spacing",
+    "padding",
+    "margin",
+    "gap",
+    "radius",
+    "shadow",
+    "blur",
+    "gradient",
+    "layoutGeometry",
+    "componentPosition",
+    "iconAsset",
+    "cssVariable",
+    "semanticTokenValue"
+  ],
+  "reviewEntries": [
+    {
+      "token": "typography.metric.value",
+      "tokenGroup": "typography.metric",
+      "sourceRole": "Primary numeric metric value in Activity and MetricCard evidence.",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "The value cannot be separated from decorative Activity color or progress styling."
+      ]
+    },
+    {
+      "token": "typography.metric.unit",
+      "tokenGroup": "typography.metric",
+      "sourceRole": "Metric unit adjacent to primary metric value.",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "The unit style cannot be distinguished from the primary numeric value role."
+      ]
+    },
+    {
+      "token": "typography.metric.label",
+      "tokenGroup": "typography.metric",
+      "sourceRole": "Compact metric label such as Move, Steps, or Distance.",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "The label is actually a section heading, action label, or completed record label rather than a compact metric label."
+      ]
+    },
+    {
+      "token": "typography.metric.caption",
+      "tokenGroup": "typography.metric",
+      "sourceRole": "Supporting metric caption or secondary metric text under the primary metric role.",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "The caption role is only synthetic runtime text and not source-observed."
+      ]
+    },
+    {
+      "token": "typography.record.title",
+      "tokenGroup": "typography.record",
+      "sourceRole": "Workout record title in repeated Workouts row evidence.",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "The text role is a section heading, metric label, or action label rather than a completed record title."
+      ]
+    },
+    {
+      "token": "typography.record.metadata",
+      "tokenGroup": "typography.record",
+      "sourceRole": "Workout record metadata such as duration and date in repeated row evidence.",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "Duration and date cannot be distinguished from current metric values or unrelated summary metadata."
+      ]
+    },
+    {
+      "token": "typography.record.label",
+      "tokenGroup": "typography.record",
+      "sourceRole": "Distinct record metadata label when source-backed beyond title and metadata.",
+      "priority": "secondary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish.",
+        "A distinct label role must be confirmed separately from record title and metadata before acceptance."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "A distinct source label role is not observed beyond title and metadata."
+      ]
+    },
+    {
+      "token": "typography.record.unavailable",
+      "tokenGroup": "typography.record",
+      "sourceRole": "Unavailable record metadata typography role; currently cautious because mostly runtime-derived.",
+      "priority": "secondary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "futureRawValues": {
+        "fontFamily": null,
+        "fontStyle": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "rawValueStatus": "pending",
+      "reviewStatus": "not-started",
+      "acceptanceStatus": "not-reviewed",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish.",
+        "A source-backed unavailable record state must be confirmed before any raw value can be accepted."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "Unavailable record metadata remains synthetic and lacks source-backed typography evidence."
+      ],
+      "planningRisk": "Mostly runtime-derived; reject if future review cannot confirm a source-backed unavailable record typography state."
+    }
+  ],
+  "notes": "Prepared review matrix only. No Figma read, raw-value extraction, semantic token value write, CSS integration, acceptance, or promotion occurred."
+}

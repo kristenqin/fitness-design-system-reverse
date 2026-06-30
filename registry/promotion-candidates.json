@@ -132,18 +132,19 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Only typography.metric and typography.record have constrained raw-value extraction planning.",
-        "No raw values are extracted or written.",
-        "Future raw values must first land in a review matrix before semantic token updates.",
+        "Typography raw-value review matrix is prepared but no raw values are extracted.",
+        "Future raw values must first land in registry/typography-raw-value-review-matrix.json.",
+        "semantic.tokens.json values remain pending.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred.",
         "CSS is still local runtime styling."
       ],
-      "nextAction": "Create a future typography raw-value review matrix only after explicit approval for a constrained source read; keep semantic token values pending.",
+      "nextAction": "Use the prepared typography raw-value review matrix as the first landing zone before any future semantic token value update.",
       "gateStatus": "readiness-reviewed",
-      "rawValuePlanStatus": "constrained-typography-planned"
+      "rawValuePlanStatus": "constrained-typography-planned",
+      "rawValueReviewMatrixStatus": "prepared"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

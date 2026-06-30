@@ -223,3 +223,27 @@ Planned tokens:
 Future extraction may plan to inspect typography fields such as font family, style, size, weight, line height, letter spacing, text case, and text decoration, but this cycle does not read or write those values.
 
 Future raw values must first land in a typography raw-value review matrix, not in `tokens/semantic.tokens.json`. Color, spacing, density, state, and radius groups remain blocked from this plan. CSS remains local runtime styling, and no token is accepted or promoted.
+
+## Typography Raw-value Review Matrix Notes
+
+Twenty-fourth-cycle preparation creates the review matrix for future constrained typography raw-value review.
+
+Prepared groups:
+
+- `typography.metric`
+- `typography.record`
+
+Prepared token entries:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.metric.caption`
+- `typography.record.title`
+- `typography.record.metadata`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+The matrix allows only typography fields: font family, font style, font size, font weight, line height, letter spacing, text case, and text decoration. All future raw values remain null and pending.
+
+The review matrix is a preparation artifact only. It does not read Figma, extract raw values, write semantic token values, integrate CSS, accept tokens, or promote any asset.

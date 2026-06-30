@@ -484,7 +484,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       },
       "unit": {
         "value": "{font.source.pending}",
@@ -502,7 +505,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       },
       "label": {
         "value": "{font.source.pending}",
@@ -520,7 +526,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -538,7 +547,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       }
     },
     "card": {
@@ -587,7 +599,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -604,7 +619,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       },
       "label": {
         "value": "{font.source.pending}",
@@ -621,7 +639,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -639,7 +660,10 @@
         "gateStatus": "reviewed",
         "readinessStatus": "ready-for-constrained-raw-value-plan",
         "rawValuePlanStatus": "planned",
-        "rawValuePlanScope": "constrained-typography-only"
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false
       }
     },
     "trend": {

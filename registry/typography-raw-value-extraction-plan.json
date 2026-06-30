@@ -466,5 +466,8 @@
       }
     ]
   },
-  "notes": "This is a planning artifact only. It does not read Figma, extract variables, write raw typography values, update CSS, accept tokens, or promote assets."
+  "notes": "This is a planning artifact only. It does not read Figma, extract variables, write raw typography values, update CSS, accept tokens, or promote assets.",
+  "reviewMatrixStatus": "prepared",
+  "reviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+  "futureExtractionAllowed": false
 }
