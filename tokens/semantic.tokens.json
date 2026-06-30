@@ -482,7 +482,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       },
       "unit": {
         "value": "{font.source.pending}",
@@ -498,7 +500,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -514,7 +518,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -530,7 +536,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       }
     },
     "card": {
@@ -577,7 +585,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -592,7 +602,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -607,7 +619,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -623,7 +637,9 @@
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
-        "readinessStatus": "ready-for-constrained-raw-value-plan"
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only"
       }
     },
     "trend": {

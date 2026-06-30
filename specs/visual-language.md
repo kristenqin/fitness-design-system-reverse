@@ -199,3 +199,27 @@ Readiness decisions:
 - `radius.policy` remains deferred.
 
 All raw values remain pending. CSS remains local runtime styling. No token is accepted, connected to CSS, or promoted by this gate.
+
+## Typography Raw-value Planning Notes
+
+Twenty-third-cycle planning narrows future raw-value extraction planning to typography only.
+
+Allowed groups:
+
+- `typography.metric`
+- `typography.record`
+
+Planned tokens:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.metric.caption`
+- `typography.record.title`
+- `typography.record.metadata`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+Future extraction may plan to inspect typography fields such as font family, style, size, weight, line height, letter spacing, text case, and text decoration, but this cycle does not read or write those values.
+
+Future raw values must first land in a typography raw-value review matrix, not in `tokens/semantic.tokens.json`. Color, spacing, density, state, and radius groups remain blocked from this plan. CSS remains local runtime styling, and no token is accepted or promoted.

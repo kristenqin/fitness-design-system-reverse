@@ -200,7 +200,9 @@
       "sourceReviewStatus": "reviewed-draft",
       "sourceEvidenceStrength": "strong",
       "gateStatus": "reviewed",
-      "readinessStatus": "ready-for-constrained-raw-value-plan"
+      "readinessStatus": "ready-for-constrained-raw-value-plan",
+      "rawValuePlanStatus": "planned",
+      "rawValuePlanScope": "constrained-typography-only"
     },
     {
       "group": "typography.record",
@@ -230,7 +232,9 @@
       "sourceReviewStatus": "reviewed-draft",
       "sourceEvidenceStrength": "strong",
       "gateStatus": "reviewed",
-      "readinessStatus": "ready-for-constrained-raw-value-plan"
+      "readinessStatus": "ready-for-constrained-raw-value-plan",
+      "rawValuePlanStatus": "planned",
+      "rawValuePlanScope": "constrained-typography-only"
     },
     {
       "group": "typography.trend",
@@ -474,5 +478,5 @@
       "readinessStatus": "needs-state-evidence"
     }
   ],
-  "notes": "This matrix maps semantic token candidates to runtime evidence, source visual review status, and readiness gate status. No raw values are extracted, no tokens are connected to CSS, and no token is promoted."
+  "notes": "This matrix maps semantic token candidates to runtime evidence, source visual review status, readiness gate status, and constrained typography raw-value planning status. No raw values are extracted, no tokens are connected to CSS, and no token is promoted."
 }

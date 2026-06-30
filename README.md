@@ -104,6 +104,7 @@ decisions/
   ADR-009-semantic-token-evidence-before-raw-values.md
   ADR-010-source-visual-evidence-before-token-extraction.md
   ADR-011-token-readiness-gate-before-raw-values.md
+  ADR-012-constrained-typography-raw-value-plan.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -132,6 +133,7 @@ registry/
   summary-dashboard-semantic-composition-plan.json
   source-map.json
   token-readiness-gate-matrix.json
+  typography-raw-value-extraction-plan.json
 reviews/
   AwardBadge.runtime-plan.md
   ComponentState.accessibility-review.md
@@ -147,6 +149,7 @@ reviews/
   StyleSystem.token-evidence-review.md
   TokenReadiness.gate-review.md
   TrendCard.runtime-plan.md
+  TypographyRawValue.extraction-plan.md
   WorkoutItem.runtime-plan.md
 scripts/
   validate-project.ts

@@ -1,0 +1,470 @@
+{
+  "status": "planned",
+  "scope": "constrained-typography-only",
+  "rawValueStatus": "pending",
+  "promotionStatus": "not-promoted",
+  "allowedTokenGroups": [
+    "typography.metric",
+    "typography.record"
+  ],
+  "blockedTokenGroups": [
+    "color.*",
+    "typography.trend",
+    "typography.reward",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "sourceScope": {
+    "useExistingCapturedEvidenceOnly": true,
+    "readAdditionalFigmaNodes": false,
+    "extractFigmaVariables": false,
+    "writeRawValuesToSemanticTokens": false
+  },
+  "futureWritePolicy": {
+    "firstWriteTarget": "future registry/typography-raw-value-review-matrix.json",
+    "semanticTokensJsonPolicy": "remain-pending-until-later-acceptance-review",
+    "cssIntegrationPolicy": "not-allowed",
+    "promotionPolicy": "not-promoted"
+  },
+  "plannedExtractions": {
+    "typography.metric": [
+      {
+        "token": "typography.metric.value",
+        "sourceRole": "Primary numeric metric value in Activity and MetricCard evidence.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "primary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "The value cannot be separated from decorative Activity color or progress styling."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      },
+      {
+        "token": "typography.metric.unit",
+        "sourceRole": "Metric unit adjacent to primary metric value.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "primary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "The unit style cannot be distinguished from the numeric value role."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      },
+      {
+        "token": "typography.metric.label",
+        "sourceRole": "Compact metric label such as Move, Steps, or Distance.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "primary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "The label is actually a section heading or record label rather than a metric label."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      },
+      {
+        "token": "typography.metric.caption",
+        "sourceRole": "Supporting metric caption or secondary metric text under the primary metric role.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "primary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "The caption role is only synthetic runtime text and not source-observed."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      }
+    ],
+    "typography.record": [
+      {
+        "token": "typography.record.title",
+        "sourceRole": "Workout record title in repeated Workouts row evidence.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "primary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "The text role is a section heading or action label rather than a completed record title."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      },
+      {
+        "token": "typography.record.metadata",
+        "sourceRole": "Workout record metadata such as duration and date in repeated row evidence.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "primary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "Duration and date cannot be distinguished from current metric values."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      },
+      {
+        "token": "typography.record.label",
+        "sourceRole": "Record metadata label role when distinguishable from title and metadata.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "secondary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "A distinct source label role is not observed beyond title and metadata."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      },
+      {
+        "token": "typography.record.unavailable",
+        "sourceRole": "Unavailable record metadata typography role from runtime state coverage; source role requires cautious confirmation.",
+        "sourceEvidenceStrength": "strong",
+        "priority": "secondary",
+        "allowedFieldsToReadLater": [
+          "fontFamily",
+          "fontStyle",
+          "fontSize",
+          "fontWeight",
+          "lineHeight",
+          "letterSpacing",
+          "textCase",
+          "textDecoration"
+        ],
+        "disallowedFields": [
+          "color",
+          "fill",
+          "stroke",
+          "background",
+          "opacity",
+          "spacing",
+          "padding",
+          "margin",
+          "gap",
+          "radius",
+          "shadow",
+          "blur",
+          "gradient",
+          "layoutGeometry",
+          "componentPosition",
+          "iconAsset",
+          "rawValueWriteToSemanticTokens"
+        ],
+        "writeTargetForFutureCycle": "future registry/typography-raw-value-review-matrix.json; tokens/semantic.tokens.json must remain pending until a later acceptance review explicitly approves semantic token updates",
+        "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
+        "acceptanceGate": [
+          "Source role must match the token semantic role documented in the plan.",
+          "Future extraction must use only existing captured Summary Dashboard evidence and mapped source nodes.",
+          "Future raw values must first be written to a review matrix, not to tokens/semantic.tokens.json.",
+          "A reviewer must confirm the value is role-level evidence rather than source-specific polish.",
+          "No token may be accepted or connected to CSS during extraction planning."
+        ],
+        "rejectionCriteria": [
+          "The source text role cannot be matched to the planned semantic token.",
+          "The value requires reading additional Figma nodes outside captured evidence.",
+          "The value comes from local runtime CSS or Storybook implementation rather than source evidence.",
+          "The value is Apple/platform-specific polish rather than transferable typography evidence.",
+          "The extraction would require writing raw values directly to semantic.tokens.json.",
+          "Unavailable record metadata remains synthetic and lacks source-backed typography evidence."
+        ],
+        "rawValueStatus": "pending",
+        "promotionStatus": "not-promoted"
+      }
+    ]
+  },
+  "notes": "This is a planning artifact only. It does not read Figma, extract variables, write raw typography values, update CSS, accept tokens, or promote assets."
+}
