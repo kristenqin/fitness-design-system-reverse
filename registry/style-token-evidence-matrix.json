@@ -35,7 +35,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial"
     },
     {
       "group": "color.metric",
@@ -94,7 +95,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial"
     },
     {
       "group": "color.reward",
@@ -123,7 +125,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial"
     },
     {
       "group": "color.surface",
@@ -182,7 +185,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "strong"
     },
     {
       "group": "typography.record",
@@ -209,7 +213,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "strong"
     },
     {
       "group": "typography.trend",
@@ -287,7 +292,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial"
     },
     {
       "group": "spacing.component",
@@ -340,7 +346,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial"
     },
     {
       "group": "radius.policy",
@@ -401,7 +408,8 @@
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "weak"
     },
     {
       "group": "state.interactive",

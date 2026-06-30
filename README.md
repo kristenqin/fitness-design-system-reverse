@@ -125,6 +125,7 @@ registry/
   pages.schema.json
   patterns.json
   promotion-candidates.json
+  source-visual-evidence-review-matrix.json
   source-visual-evidence-priority-matrix.json
   style-token-evidence-matrix.json
   summary-dashboard-semantic-composition-plan.json
@@ -138,6 +139,7 @@ reviews/
   SummaryDashboard.composition-boundary-review.md
   SummaryDashboard.optional-modules-review.md
   SummaryDashboard.promotion-review.md
+  SourceVisualEvidence.execution-review.md
   SourceVisualEvidence.review-plan.md
   StyleSystem.token-evidence-review.md
   TrendCard.runtime-plan.md

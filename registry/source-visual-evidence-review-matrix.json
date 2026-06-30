@@ -1,0 +1,214 @@
+{
+  "status": "high-priority-source-visual-evidence-reviewed-draft",
+  "readAdditionalFigmaNodes": false,
+  "extractedRawValues": false,
+  "rawValueStatus": "pending",
+  "promotionStatus": "not-promoted",
+  "sourceRefs": [
+    "figma-node-143-23952",
+    "screenshot-summary-dashboard-143-23952"
+  ],
+  "reviewedGroups": [
+    {
+      "tokenGroup": "color.progress",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "Activity progress is visually emphasized in the captured Summary Dashboard screen.",
+        "A circular progress visual and current goal-relative metric are source-observed.",
+        "Progress color is meaning-bearing for the Activity core, but exact state colors are not reviewed."
+      ],
+      "runtimeAssumptions": [
+        "Completed, low, empty, overachieved, and unavailable progress colors are runtime validation assumptions.",
+        "The local ProgressRing color treatment is not a source token value.",
+        "Activity color roles should not be treated as accepted raw values."
+      ],
+      "candidateDecision": "Keep the color.progress group as a semantic candidate; defer raw values and state-specific color acceptance.",
+      "candidateTokenActions": [
+        "Keep color.progress.pending as source-backed in role only.",
+        "Keep color.progress.completed, low, empty, overachieved, and unavailable as runtime-tested candidates.",
+        "Defer any split between source activity color and web runtime progress-state colors until source value review."
+      ],
+      "nextAction": "Review source screenshots or variables for progress state separation before extracting raw values.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.trend",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "A Trends section and Trends Box are source-observed in the captured Summary Dashboard screen.",
+        "Trend is source-backed as an interpretation module in the SummaryDashboard concept loop.",
+        "Action emphasis is visible in the source, but direction-specific colors are not source-reviewed."
+      ],
+      "runtimeAssumptions": [
+        "Improving, declining, neutral, insufficient-data, and default trend colors are synthetic runtime states.",
+        "The local TrendCard status palette is not source visual evidence.",
+        "No chart, sparkline, arrow-heavy, or raw color treatment is promoted from source."
+      ],
+      "candidateDecision": "Keep the color.trend group as a semantic candidate; defer direction-color acceptance until source states are observed or reviewed.",
+      "candidateTokenActions": [
+        "Keep color.trend.default for the source-observed trend module role.",
+        "Keep color.trend.positive, negative, neutral, and insufficientData as runtime-only candidates.",
+        "Defer any merge with state.unavailable until insufficient-data source behavior is reviewed."
+      ],
+      "nextAction": "Collect source-backed trend direction and insufficient-data evidence before accepting trend colors.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.reward",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "An Awards section and repeated award items are source-observed in the captured Summary Dashboard screen.",
+        "Reward evidence exists as an achievement preview module.",
+        "Award titles and progress-like evidence are visible, but status-specific source colors are not reviewed."
+      ],
+      "runtimeAssumptions": [
+        "Locked, unlocked, new, and in-progress reward colors are synthetic runtime validation states.",
+        "Placeholder symbols and local award colors are not source icon or token evidence.",
+        "Decoration-only reward styling remains rejected as system evidence."
+      ],
+      "candidateDecision": "Keep the color.reward group as a semantic candidate; defer status-specific raw values and source-state acceptance.",
+      "candidateTokenActions": [
+        "Keep color.reward.default as the source-observed reward module role.",
+        "Keep color.reward.locked, unlocked, new, and inProgress as runtime-tested candidates.",
+        "Defer real status-color review until award source states are captured or explicitly reviewed."
+      ],
+      "nextAction": "Review source-backed award status meaning before extracting or accepting reward colors.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.metric",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "strong",
+      "sourceBackedRoles": [
+        "Activity metric label, value, unit, and supporting metric hierarchy are visible in captured source evidence.",
+        "The source separates current progress value from supporting Steps and Distance values.",
+        "Metric typography roles are strongly source-backed as semantic hierarchy, not raw font values."
+      ],
+      "runtimeAssumptions": [
+        "Exact font family, size, weight, line-height, and letter spacing remain runtime CSS assumptions.",
+        "Localization and extreme-value handling remain Storybook runtime validation, not source visual evidence.",
+        "Metric color and typography raw values are not extracted."
+      ],
+      "candidateDecision": "Keep typography.metric candidates; treat value/unit/label/caption roles as source-backed semantic roles with pending raw values.",
+      "candidateTokenActions": [
+        "Keep typography.metric.value, unit, label, and caption as distinct candidates.",
+        "Do not merge metric typography into generic card typography.",
+        "Defer raw font values and responsive type scaling rules."
+      ],
+      "nextAction": "Review source typography metadata or variables before any raw typography token extraction.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.record",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "strong",
+      "sourceBackedRoles": [
+        "Workout rows show completed-record title, duration, and date metadata in captured source evidence.",
+        "Record typography is distinct from compact metric display.",
+        "The title and metadata hierarchy supports WorkoutItem as completed behavior record."
+      ],
+      "runtimeAssumptions": [
+        "Missing duration/date typography is synthetic runtime validation.",
+        "Exact record font values and metadata color values are not source-reviewed.",
+        "Interactive target typography remains web adaptation behavior."
+      ],
+      "candidateDecision": "Keep typography.record candidates; keep record title and metadata separated from MetricCard typography.",
+      "candidateTokenActions": [
+        "Keep typography.record.title and metadata as source-backed semantic roles.",
+        "Keep typography.record.label and unavailable as runtime candidate roles.",
+        "Do not merge record typography into typography.metric."
+      ],
+      "nextAction": "Review source typography metadata for workout records before extracting raw font values.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "spacing.summary",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "The captured Summary Dashboard shows section order and broad vertical rhythm across Activity, Workouts, Trends, and Awards.",
+        "Summary spacing supports scan order and optional module previewing.",
+        "Source evidence confirms spacing relationships only qualitatively."
+      ],
+      "runtimeAssumptions": [
+        "Exact padding, section gap, module gap, and header gap are local runtime CSS assumptions.",
+        "Desktop/web adaptation spacing does not come from source evidence.",
+        "Spacing values are not extracted or accepted."
+      ],
+      "candidateDecision": "Keep spacing.summary candidates as semantic spacing roles; defer raw spacing values.",
+      "candidateTokenActions": [
+        "Keep spacing.summary.padding, sectionGap, moduleGap, and headerGap as separate candidates.",
+        "Do not collapse summary spacing into component spacing yet.",
+        "Defer numeric spacing values and breakpoint behavior."
+      ],
+      "nextAction": "Review source layout metadata and responsive runtime constraints before accepting spacing tokens.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "density.dashboard",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "The source Summary Dashboard is a compact daily review surface with multiple modules visible in one scroll flow.",
+        "Density supports quick scanning across Goal, Record, Trend, and Reward evidence.",
+        "Source evidence backs the density direction but not transferable density values."
+      ],
+      "runtimeAssumptions": [
+        "CoreOnly, composed, and modulePreview density roles are runtime validation scaffolding.",
+        "Web viewport density is not source visual evidence.",
+        "No density scale or numeric density value is accepted."
+      ],
+      "candidateDecision": "Keep density.dashboard candidates; defer density scale acceptance until source and transferability review.",
+      "candidateTokenActions": [
+        "Keep density.dashboard.compact, composed, and modulePreview.",
+        "Do not promote dashboard density as a design-system rule yet.",
+        "Defer migration experiments for habit, learning, focus, or training products."
+      ],
+      "nextAction": "Test source-backed dashboard density against transferability and accessibility before promotion.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "state.unavailable",
+      "priority": "high",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "weak",
+      "sourceBackedRoles": [
+        "Captured source evidence includes low or incomplete-looking progress and reward preview content, but not a confirmed unavailable-state system.",
+        "Insufficient, missing, empty, and unavailable states are mostly runtime-derived.",
+        "Source evidence does not yet establish a stable unavailable visual treatment."
+      ],
+      "runtimeAssumptions": [
+        "Missing trend data, missing award data, missing workout metadata, and unavailable progress are synthetic runtime states.",
+        "Unavailable text, surface, border, and indicator roles are not source-reviewed.",
+        "Runtime CSS muted treatments are rejected as source evidence."
+      ],
+      "candidateDecision": "Keep state.unavailable candidates as necessary runtime roles; do not treat them as source-backed visual tokens yet.",
+      "candidateTokenActions": [
+        "Keep state.unavailable.text, surface, border, and indicator as candidates.",
+        "Defer source-backed separation between empty, unavailable, insufficient, and missing.",
+        "Do not merge state.unavailable into color.surface or color.trend until source behavior is clearer."
+      ],
+      "nextAction": "Capture or review explicit source unavailable and insufficient-data states before accepting these tokens.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "Second twentieth-cycle execution review. It uses existing captured source evidence only and does not extract raw values, update CSS, or promote tokens."
+}

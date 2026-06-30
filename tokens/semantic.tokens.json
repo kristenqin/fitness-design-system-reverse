@@ -49,9 +49,10 @@
           "Components/MetricCard/GoalCompleted"
         ],
         "description": "Progress has reached the goal.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "pending": {
         "value": "{color.source.pending}",
@@ -62,9 +63,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/CoreOnly"
         ],
         "description": "Progress exists but is not complete.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "low": {
         "value": "{color.source.pending}",
@@ -75,9 +77,10 @@
           "Patterns/SummaryDashboard/LowProgress"
         ],
         "description": "Progress is far below expected state.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "empty": {
         "value": "{color.source.pending}",
@@ -87,9 +90,10 @@
           "Components/ProgressRing/Empty"
         ],
         "description": "Progress has no recorded value.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "overachieved": {
         "value": "{color.source.pending}",
@@ -100,9 +104,10 @@
           "Components/MetricCard/Overachieved"
         ],
         "description": "Progress has exceeded the target.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "unavailable": {
         "value": "{color.source.pending}",
@@ -112,9 +117,10 @@
           "Components/ProgressRing/Unavailable"
         ],
         "description": "Progress value is unavailable and should not imply zero.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       }
     },
     "metric": {
@@ -202,9 +208,10 @@
           "Components/TrendCard/Improving"
         ],
         "description": "Trend direction is improving.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "negative": {
         "value": "{color.source.pending}",
@@ -214,9 +221,10 @@
           "Components/TrendCard/Declining"
         ],
         "description": "Trend direction is declining.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "neutral": {
         "value": "{color.source.pending}",
@@ -226,9 +234,10 @@
           "Components/TrendCard/Neutral"
         ],
         "description": "Trend direction is stable or inconclusive.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "insufficientData": {
         "value": "{color.source.pending}",
@@ -239,9 +248,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/MissingTrendData"
         ],
         "description": "Trend interpretation lacks enough data and should not read as failure.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "default": {
         "value": "{color.source.pending}",
@@ -251,9 +261,10 @@
           "Components/TrendCard/Default"
         ],
         "description": "Default trend signal color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       }
     },
     "reward": {
@@ -265,9 +276,10 @@
           "Components/AwardBadge/Default"
         ],
         "description": "Default reward evidence color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "locked": {
         "value": "{color.source.pending}",
@@ -277,9 +289,10 @@
           "Components/AwardBadge/Locked"
         ],
         "description": "Locked reward evidence color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "unlocked": {
         "value": "{color.source.pending}",
@@ -289,9 +302,10 @@
           "Components/AwardBadge/Unlocked"
         ],
         "description": "Unlocked reward evidence color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "new": {
         "value": "{color.source.pending}",
@@ -301,9 +315,10 @@
           "Components/AwardBadge/New"
         ],
         "description": "Newly earned reward evidence color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "inProgress": {
         "value": "{color.source.pending}",
@@ -313,9 +328,10 @@
           "Components/AwardBadge/InProgress"
         ],
         "description": "In-progress reward evidence color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       }
     },
     "surface": {
@@ -396,9 +412,10 @@
           "Style System/Typography/MetricRoles"
         ],
         "description": "Large numeric value in metric surfaces.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       },
       "unit": {
         "value": "{font.source.pending}",
@@ -409,9 +426,10 @@
           "Style System/Typography/MetricRoles"
         ],
         "description": "Unit next to metric value.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -422,9 +440,10 @@
           "Style System/Typography/MetricRoles"
         ],
         "description": "Metric name or compact label.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -435,9 +454,10 @@
           "Style System/Typography/MetricRoles"
         ],
         "description": "Metric supporting caption.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       }
     },
     "card": {
@@ -479,9 +499,10 @@
           "Components/WorkoutItem/LongTitle"
         ],
         "description": "Completed record title typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -491,9 +512,10 @@
           "Components/WorkoutItem/Default"
         ],
         "description": "Completed record duration and date metadata typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -503,9 +525,10 @@
           "Components/WorkoutItem/Default"
         ],
         "description": "Completed record metadata label typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -516,9 +539,10 @@
           "Components/WorkoutItem/MissingDate"
         ],
         "description": "Completed record unavailable metadata typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong"
       }
     },
     "trend": {
@@ -638,9 +662,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/CoreOnly"
         ],
         "description": "SummaryDashboard shell padding role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "sectionGap": {
         "value": "{space.source.pending}",
@@ -650,9 +675,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
         ],
         "description": "Vertical section rhythm for SummaryDashboard modules.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "moduleGap": {
         "value": "{space.source.pending}",
@@ -662,9 +688,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward"
         ],
         "description": "Internal gap for optional SummaryDashboard modules.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "headerGap": {
         "value": "{space.source.pending}",
@@ -674,9 +701,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/CoreOnly"
         ],
         "description": "Header spacing role for SummaryDashboard.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       }
     },
     "component": {
@@ -744,9 +772,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/CoreOnly"
         ],
         "description": "Density role for the smallest SummaryDashboard core.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "composed": {
         "value": "{space.source.pending}",
@@ -756,9 +785,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
         ],
         "description": "Density role for SummaryDashboard with optional semantic modules.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       },
       "modulePreview": {
         "value": "{space.source.pending}",
@@ -768,9 +798,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward"
         ],
         "description": "Density role for preview-sized optional modules.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "partial"
       }
     }
   },
@@ -843,9 +874,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"
         ],
         "description": "Text role for unavailable or missing data.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "weak"
       },
       "surface": {
         "value": "{color.source.pending}",
@@ -856,9 +888,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"
         ],
         "description": "Surface role for unavailable or missing data.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "weak"
       },
       "border": {
         "value": "{color.source.pending}",
@@ -869,9 +902,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"
         ],
         "description": "Border role for unavailable or missing data containers.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "weak"
       },
       "indicator": {
         "value": "{color.source.pending}",
@@ -882,9 +916,10 @@
           "Components/TrendCard/InsufficientData"
         ],
         "description": "Indicator role for unavailable or insufficient data.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "high"
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "weak"
       }
     },
     "interactive": {
