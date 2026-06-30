@@ -2,13 +2,26 @@
   "status": "runtime-evidence-mapped",
   "rawValueStatus": "pending",
   "promotionStatus": "not-promoted",
-  "sourceRefs": ["figma-node-143-23952", "screenshot-summary-dashboard-143-23952"],
+  "sourceRefs": [
+    "figma-node-143-23952",
+    "screenshot-summary-dashboard-143-23952"
+  ],
   "tokenGroups": [
     {
       "group": "color.progress",
       "semanticRole": "Color roles for goal-relative progress states.",
-      "componentEvidence": ["progress-ring", "summary-dashboard"],
-      "runtimeStates": ["default", "low-progress", "completed", "empty", "overachieved", "unavailable"],
+      "componentEvidence": [
+        "progress-ring",
+        "summary-dashboard"
+      ],
+      "runtimeStates": [
+        "default",
+        "low-progress",
+        "completed",
+        "empty",
+        "overachieved",
+        "unavailable"
+      ],
       "candidateTokens": [
         "color.progress.pending",
         "color.progress.low",
@@ -20,13 +33,25 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "color.metric",
       "semanticRole": "Color roles for compact metric display states.",
-      "componentEvidence": ["metric-card"],
-      "runtimeStates": ["default", "loading", "empty", "error", "goal-completed", "overachieved", "interactive-target"],
+      "componentEvidence": [
+        "metric-card"
+      ],
+      "runtimeStates": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "goal-completed",
+        "overachieved",
+        "interactive-target"
+      ],
       "candidateTokens": [
         "color.metric.value",
         "color.metric.label",
@@ -38,13 +63,25 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "medium",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "color.trend",
       "semanticRole": "Color roles for trend direction, confidence, and interpretation states.",
-      "componentEvidence": ["trend-card", "summary-dashboard"],
-      "runtimeStates": ["default", "improving", "declining", "neutral", "insufficient-data", "missing-trend-data"],
+      "componentEvidence": [
+        "trend-card",
+        "summary-dashboard"
+      ],
+      "runtimeStates": [
+        "default",
+        "improving",
+        "declining",
+        "neutral",
+        "insufficient-data",
+        "missing-trend-data"
+      ],
       "candidateTokens": [
         "color.trend.positive",
         "color.trend.negative",
@@ -55,13 +92,25 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "color.reward",
       "semanticRole": "Color roles for reward status and achievement evidence.",
-      "componentEvidence": ["award-badge", "summary-dashboard"],
-      "runtimeStates": ["default", "locked", "unlocked", "new", "in-progress", "missing-award-data"],
+      "componentEvidence": [
+        "award-badge",
+        "summary-dashboard"
+      ],
+      "runtimeStates": [
+        "default",
+        "locked",
+        "unlocked",
+        "new",
+        "in-progress",
+        "missing-award-data"
+      ],
       "candidateTokens": [
         "color.reward.default",
         "color.reward.locked",
@@ -72,13 +121,28 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "color.surface",
       "semanticRole": "Surface roles for dashboard shell, cards, optional modules, and unavailable states.",
-      "componentEvidence": ["summary-dashboard", "progress-ring", "metric-card", "workout-item", "trend-card", "award-badge"],
-      "runtimeEvidence": ["CoreOnly", "WithTrendAndAward", "FullSemanticLoop", "MissingTrendData", "MissingAwardData"],
+      "componentEvidence": [
+        "summary-dashboard",
+        "progress-ring",
+        "metric-card",
+        "workout-item",
+        "trend-card",
+        "award-badge"
+      ],
+      "runtimeEvidence": [
+        "CoreOnly",
+        "WithTrendAndAward",
+        "FullSemanticLoop",
+        "MissingTrendData",
+        "MissingAwardData"
+      ],
       "candidateTokens": [
         "color.surface.canvas",
         "color.surface.panel",
@@ -89,13 +153,24 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "medium",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "typography.metric",
       "semanticRole": "Typography roles for compact metric values, units, labels, and captions.",
-      "componentEvidence": ["metric-card", "progress-ring"],
-      "runtimeStates": ["default", "long-text", "extreme-value", "goal-completed", "overachieved"],
+      "componentEvidence": [
+        "metric-card",
+        "progress-ring"
+      ],
+      "runtimeStates": [
+        "default",
+        "long-text",
+        "extreme-value",
+        "goal-completed",
+        "overachieved"
+      ],
       "candidateTokens": [
         "typography.metric.value",
         "typography.metric.unit",
@@ -105,13 +180,24 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "typography.record",
       "semanticRole": "Typography roles for completed behavior record title and metadata.",
-      "componentEvidence": ["workout-item"],
-      "runtimeStates": ["default", "long-title", "missing-duration", "missing-date", "interactive-target", "unavailable"],
+      "componentEvidence": [
+        "workout-item"
+      ],
+      "runtimeStates": [
+        "default",
+        "long-title",
+        "missing-duration",
+        "missing-date",
+        "interactive-target",
+        "unavailable"
+      ],
       "candidateTokens": [
         "typography.record.title",
         "typography.record.metadata",
@@ -121,13 +207,24 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "typography.trend",
       "semanticRole": "Typography roles for trend subject, direction label, interpretation copy, and metadata.",
-      "componentEvidence": ["trend-card"],
-      "runtimeStates": ["default", "improving", "declining", "neutral", "insufficient-data", "long-explanation"],
+      "componentEvidence": [
+        "trend-card"
+      ],
+      "runtimeStates": [
+        "default",
+        "improving",
+        "declining",
+        "neutral",
+        "insufficient-data",
+        "long-explanation"
+      ],
       "candidateTokens": [
         "typography.trend.title",
         "typography.trend.direction",
@@ -137,13 +234,24 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "medium",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "typography.reward",
       "semanticRole": "Typography roles for reward title, status, description, and progress evidence.",
-      "componentEvidence": ["award-badge"],
-      "runtimeStates": ["default", "locked", "unlocked", "new", "in-progress", "long-title"],
+      "componentEvidence": [
+        "award-badge"
+      ],
+      "runtimeStates": [
+        "default",
+        "locked",
+        "unlocked",
+        "new",
+        "in-progress",
+        "long-title"
+      ],
       "candidateTokens": [
         "typography.reward.title",
         "typography.reward.status",
@@ -153,13 +261,21 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "medium",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "spacing.summary",
       "semanticRole": "Spacing roles for SummaryDashboard shell, module gaps, and section rhythm.",
-      "componentEvidence": ["summary-dashboard"],
-      "runtimeEvidence": ["CoreOnly", "WithTrendAndAward", "FullSemanticLoop"],
+      "componentEvidence": [
+        "summary-dashboard"
+      ],
+      "runtimeEvidence": [
+        "CoreOnly",
+        "WithTrendAndAward",
+        "FullSemanticLoop"
+      ],
       "candidateTokens": [
         "spacing.summary.padding",
         "spacing.summary.sectionGap",
@@ -169,13 +285,25 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "spacing.component",
       "semanticRole": "Spacing roles inside reusable component candidates.",
-      "componentEvidence": ["progress-ring", "metric-card", "workout-item", "trend-card", "award-badge"],
-      "runtimeStates": ["component-default", "component-long-text", "component-missing-data"],
+      "componentEvidence": [
+        "progress-ring",
+        "metric-card",
+        "workout-item",
+        "trend-card",
+        "award-badge"
+      ],
+      "runtimeStates": [
+        "component-default",
+        "component-long-text",
+        "component-missing-data"
+      ],
       "candidateTokens": [
         "spacing.component.padding",
         "spacing.component.gap",
@@ -185,13 +313,23 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "medium",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "density.dashboard",
       "semanticRole": "Density roles for compact summary surfaces with required and optional modules.",
-      "componentEvidence": ["summary-dashboard", "concept-loop"],
-      "runtimeEvidence": ["CoreOnly", "WithTrendCard", "WithAwardBadge", "FullSemanticLoop"],
+      "componentEvidence": [
+        "summary-dashboard",
+        "concept-loop"
+      ],
+      "runtimeEvidence": [
+        "CoreOnly",
+        "WithTrendCard",
+        "WithAwardBadge",
+        "FullSemanticLoop"
+      ],
       "candidateTokens": [
         "density.dashboard.compact",
         "density.dashboard.composed",
@@ -200,13 +338,25 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "radius.policy",
       "semanticRole": "Radius policy candidates for shell, card, control, and round indicator surfaces.",
-      "componentEvidence": ["summary-dashboard", "progress-ring", "metric-card", "workout-item", "trend-card", "award-badge"],
-      "runtimeEvidence": ["local runtime CSS only", "no source-reviewed radius policy"],
+      "componentEvidence": [
+        "summary-dashboard",
+        "progress-ring",
+        "metric-card",
+        "workout-item",
+        "trend-card",
+        "award-badge"
+      ],
+      "runtimeEvidence": [
+        "local runtime CSS only",
+        "no source-reviewed radius policy"
+      ],
       "candidateTokens": [
         "radius.policy.card",
         "radius.policy.module",
@@ -216,13 +366,30 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "deferred",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "state.unavailable",
       "semanticRole": "State roles for missing, unavailable, insufficient, or empty runtime evidence.",
-      "componentEvidence": ["progress-ring", "metric-card", "workout-item", "trend-card", "award-badge", "summary-dashboard"],
-      "runtimeStates": ["unavailable", "empty", "missing-duration", "missing-date", "insufficient-data", "missing-trend-data", "missing-award-data"],
+      "componentEvidence": [
+        "progress-ring",
+        "metric-card",
+        "workout-item",
+        "trend-card",
+        "award-badge",
+        "summary-dashboard"
+      ],
+      "runtimeStates": [
+        "unavailable",
+        "empty",
+        "missing-duration",
+        "missing-date",
+        "insufficient-data",
+        "missing-trend-data",
+        "missing-award-data"
+      ],
       "candidateTokens": [
         "state.unavailable.text",
         "state.unavailable.surface",
@@ -232,13 +399,23 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "high",
+      "sourceReviewStatus": "planned"
     },
     {
       "group": "state.interactive",
       "semanticRole": "State roles for keyboard-visible interactive targets and action affordance.",
-      "componentEvidence": ["metric-card", "workout-item", "trend-card", "award-badge"],
-      "runtimeStates": ["interactive-target", "button-rendered-component-states"],
+      "componentEvidence": [
+        "metric-card",
+        "workout-item",
+        "trend-card",
+        "award-badge"
+      ],
+      "runtimeStates": [
+        "interactive-target",
+        "button-rendered-component-states"
+      ],
       "candidateTokens": [
         "state.interactive.focusRing",
         "state.interactive.border",
@@ -248,7 +425,9 @@
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
       "rawValueStatus": "pending",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "sourceReviewPriority": "medium",
+      "sourceReviewStatus": "planned"
     }
   ],
   "notes": "This matrix maps semantic token candidates to runtime evidence only. It does not extract raw Figma values, connect tokens to CSS, or promote any token."

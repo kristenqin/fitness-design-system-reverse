@@ -127,3 +127,28 @@ Mapped groups:
 - `state.unavailable`, `state.interactive`
 
 All raw values remain pending. This cycle does not connect tokens to CSS, does not read Figma variables, does not validate contrast, and does not promote any style-system rule.
+
+## Source Visual Evidence Notes
+
+Nineteenth-cycle source visual evidence planning prioritizes which semantic token groups should be reviewed against existing captured source evidence before any raw values are extracted.
+
+High-priority groups:
+
+- `color.progress`, `color.trend`, `color.reward`
+- `typography.metric`, `typography.record`
+- `spacing.summary`
+- `density.dashboard`
+- `state.unavailable`
+
+Medium-priority groups:
+
+- `color.metric`, `color.surface`
+- `typography.trend`, `typography.reward`
+- `spacing.component`
+- `state.interactive`
+
+Deferred:
+
+- `radius.policy`
+
+Runtime CSS remains local implementation styling. Current colors, typography sizes, spacing, density, radius, and interactive treatments are not source-reviewed token values. This planning cycle does not read Figma, extract variables, write raw values, connect tokens to CSS, or promote any visual rule.

@@ -128,16 +128,18 @@
       "id": "style-token-system-candidate",
       "type": "style-system",
       "evidenceStatus": "runtime-evidence-mapped",
+      "sourceReviewStatus": "planned",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "blockers": [
+        "Source visual evidence review is planned but not executed.",
         "Raw source token values are not extracted or reviewed.",
-        "Token names are mapped to runtime roles but not validated against Figma variables.",
+        "Token names are mapped to runtime roles but not validated against Figma variables or source screenshots.",
         "CSS is still local runtime styling.",
         "Accessibility contrast is not reviewed.",
         "Migration experiments have not tested token transferability."
       ],
-      "nextAction": "Use registry/style-token-evidence-matrix.json to plan source-backed style evidence review before extracting raw values or promoting tokens."
+      "nextAction": "Use registry/source-visual-evidence-priority-matrix.json to run a constrained source visual evidence review before extracting raw values or promoting tokens."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

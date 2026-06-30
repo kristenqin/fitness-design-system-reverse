@@ -1,0 +1,159 @@
+{
+  "status": "source-visual-evidence-review-planned",
+  "rawValueStatus": "pending",
+  "promotionStatus": "not-promoted",
+  "sourceRefs": ["figma-node-143-23952", "screenshot-summary-dashboard-143-23952"],
+  "priorities": [
+    {
+      "tokenGroup": "color.progress",
+      "priority": "high",
+      "reason": "Progress color carries the primary Goal / Progress meaning and needs source-backed state separation before any token extraction.",
+      "runtimeEvidence": ["ProgressRing states", "SummaryDashboard core runtime"],
+      "sourceEvidenceNeeded": "Confirm which source visual roles distinguish pending, low, completed, overachieved, empty, and unavailable progress without extracting raw values yet.",
+      "nextReviewQuestion": "Which progress state colors are meaning-bearing source evidence versus local runtime styling?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.metric",
+      "priority": "medium",
+      "reason": "Metric color supports compact current-value hierarchy, but it is secondary to progress, trend, reward, and unavailable-state meaning.",
+      "runtimeEvidence": ["MetricCard states", "Typography Metric Roles"],
+      "sourceEvidenceNeeded": "Confirm source visual hierarchy for metric label, value, caption, error, completed, and overachieved roles.",
+      "nextReviewQuestion": "Which metric color roles are stable across activity stats and optional modules?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.trend",
+      "priority": "high",
+      "reason": "Trend direction and data confidence need source-backed meaning before trend tokens can be trusted.",
+      "runtimeEvidence": ["TrendCard direction states", "SummaryDashboard WithTrendCard", "MissingTrendData"],
+      "sourceEvidenceNeeded": "Confirm source treatment for trend direction, trend education, insufficient data, and action emphasis.",
+      "nextReviewQuestion": "Does source evidence distinguish improving, declining, neutral, and insufficient trend states visually?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.reward",
+      "priority": "high",
+      "reason": "Reward status must remain achievement evidence rather than decorative color, so source-backed status roles need review.",
+      "runtimeEvidence": ["AwardBadge status states", "SummaryDashboard WithAwardBadge", "MissingAwardData"],
+      "sourceEvidenceNeeded": "Confirm source treatment for locked, unlocked, new, in-progress, and default reward evidence.",
+      "nextReviewQuestion": "Which reward colors communicate status, and which are decorative source-specific polish?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.surface",
+      "priority": "medium",
+      "reason": "Surface roles shape the dashboard reading order, but raw surface values should wait until meaning-bearing state colors are prioritized.",
+      "runtimeEvidence": ["SummaryDashboard CoreOnly", "WithTrendAndAward", "FullSemanticLoop"],
+      "sourceEvidenceNeeded": "Confirm source hierarchy between canvas, panel, card, optional module, and missing-state surfaces.",
+      "nextReviewQuestion": "Which surface roles are transferable pattern structure rather than source-specific dark styling?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.metric",
+      "priority": "high",
+      "reason": "Metric typography carries scan priority for the required SummaryDashboard core.",
+      "runtimeEvidence": ["MetricCard Default", "MetricCard LongChineseText", "MetricCard ExtremeValue", "Typography Metric Roles"],
+      "sourceEvidenceNeeded": "Confirm source hierarchy for metric value, unit, label, and caption without copying raw font values.",
+      "nextReviewQuestion": "Which metric typography roles are essential for compact scanning and localization pressure?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.record",
+      "priority": "high",
+      "reason": "Record typography separates completed behavior evidence from generic metric display.",
+      "runtimeEvidence": ["WorkoutItem Default", "WorkoutItem LongTitle", "WorkoutItem missing metadata states"],
+      "sourceEvidenceNeeded": "Confirm source hierarchy for workout title, duration, date, labels, and unavailable metadata.",
+      "nextReviewQuestion": "Which record typography roles preserve completed-record semantics?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.trend",
+      "priority": "medium",
+      "reason": "Trend typography supports interpretation, but source text model remains less confirmed than metric and record hierarchy.",
+      "runtimeEvidence": ["TrendCard Default", "TrendCard LongExplanation", "TrendCard direction states"],
+      "sourceEvidenceNeeded": "Confirm source hierarchy for trend subject, direction label, explanation, and action text.",
+      "nextReviewQuestion": "Which trend typography roles are source-backed versus synthetic runtime scaffolding?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.reward",
+      "priority": "medium",
+      "reason": "Reward typography supports status readability, but exact award content and source states remain unreviewed.",
+      "runtimeEvidence": ["AwardBadge status states", "AwardBadge LongTitle"],
+      "sourceEvidenceNeeded": "Confirm source hierarchy for award title, status, description, and progress evidence.",
+      "nextReviewQuestion": "Which reward typography roles prevent AwardBadge from becoming decoration-only?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "spacing.summary",
+      "priority": "high",
+      "reason": "SummaryDashboard density and module order depend on source-backed summary spacing before promotion can be considered.",
+      "runtimeEvidence": ["SummaryDashboard CoreOnly", "WithTrendAndAward", "FullSemanticLoop"],
+      "sourceEvidenceNeeded": "Confirm source spacing relationships between header, activity core, optional modules, and missing states.",
+      "nextReviewQuestion": "Which spacing roles preserve summary scanning without turning the surface into a source clone?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "spacing.component",
+      "priority": "medium",
+      "reason": "Component interior spacing matters, but pattern-level SummaryDashboard spacing should be reviewed first.",
+      "runtimeEvidence": ["MetricCard", "WorkoutItem", "TrendCard", "AwardBadge component states"],
+      "sourceEvidenceNeeded": "Confirm source evidence for component padding, internal gaps, inline gaps, and compact stacks.",
+      "nextReviewQuestion": "Which component spacing roles transfer across metric, record, trend, and reward surfaces?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "density.dashboard",
+      "priority": "high",
+      "reason": "Dashboard density determines whether the concept loop can remain scannable when optional modules are present.",
+      "runtimeEvidence": ["CoreOnly", "WithTrendCard", "WithAwardBadge", "FullSemanticLoop"],
+      "sourceEvidenceNeeded": "Confirm source evidence for compact versus composed dashboard density and optional module preview density.",
+      "nextReviewQuestion": "Can source-backed density support Goal -> Behavior -> Record -> Trend -> Reward without full app-shell scope?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "radius.policy",
+      "priority": "deferred",
+      "reason": "Radius is visible in runtime CSS, but project policy says it should not be inherited automatically from source styling.",
+      "runtimeEvidence": ["local runtime CSS only", "component surfaces", "round indicators"],
+      "sourceEvidenceNeeded": "Defer source radius review until color, typography, spacing, density, and state treatment are reviewed.",
+      "nextReviewQuestion": "Should radius become a transferable policy or remain implementation-local after source evidence review?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "state.unavailable",
+      "priority": "high",
+      "reason": "Unavailable and missing states affect accessibility, semantic truthfulness, and product trust across the loop.",
+      "runtimeEvidence": ["ProgressRing Unavailable", "WorkoutItem missing metadata", "TrendCard InsufficientData", "MissingTrendData", "MissingAwardData"],
+      "sourceEvidenceNeeded": "Confirm source treatment for unavailable progress, missing metadata, insufficient trend data, and empty reward data.",
+      "nextReviewQuestion": "How does the source distinguish unavailable, insufficient, empty, and missing without implying failure?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "state.interactive",
+      "priority": "medium",
+      "reason": "Interactive affordance needs accessibility review, but most current interactive states are synthetic runtime targets.",
+      "runtimeEvidence": ["MetricCard InteractiveTarget", "WorkoutItem InteractiveTarget", "TrendCard action text", "AwardBadge action text"],
+      "sourceEvidenceNeeded": "Confirm source evidence for action emphasis, focus treatment, and target affordance after state semantics are stable.",
+      "nextReviewQuestion": "Which interactive roles are source-backed and which are web adaptation behavior?",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "This matrix plans source-backed visual evidence review only. It does not read Figma, extract raw values, connect tokens to CSS, or promote tokens."
+}
