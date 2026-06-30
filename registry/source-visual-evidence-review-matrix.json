@@ -1,5 +1,5 @@
 {
-  "status": "high-priority-source-visual-evidence-reviewed-draft",
+  "status": "high-and-medium-priority-source-visual-evidence-reviewed-draft",
   "readAdditionalFigmaNodes": false,
   "extractedRawValues": false,
   "rawValueStatus": "pending",
@@ -208,7 +208,157 @@
       "nextAction": "Capture or review explicit source unavailable and insufficient-data states before accepting these tokens.",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.metric",
+      "priority": "medium",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "Metric value, label, and supporting text color hierarchy are visible in Activity and workout-related source contexts.",
+        "Metric color supports compact current-value scanning but is secondary to the high-priority progress role.",
+        "Source evidence supports metric color roles qualitatively, not raw values."
+      ],
+      "runtimeAssumptions": [
+        "Metric error, completed, overachieved, loading, empty, and interactive colors are runtime validation assumptions.",
+        "The local MetricCard color palette is not source token evidence.",
+        "Metric state colors should not be accepted until source states or variables are reviewed."
+      ],
+      "candidateDecision": "Keep color.metric candidates; treat value, label, and caption roles as source-backed in role only and keep state colors runtime-only.",
+      "candidateTokenActions": [
+        "Keep color.metric.value, label, and caption as source-visible semantic roles.",
+        "Keep color.metric.error, completed, and overachieved as runtime-tested candidates only.",
+        "Do not merge color.metric into color.progress."
+      ],
+      "nextAction": "Review source-backed metric state behavior and contrast before extracting metric color values.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "color.surface",
+      "priority": "medium",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "Dashboard canvas, card-like modules, workout rows, Trends Box, and Awards module surfaces are source-visible.",
+        "Surface roles help preserve reading order across SummaryDashboard modules.",
+        "Source evidence supports surface hierarchy qualitatively, not raw values."
+      ],
+      "runtimeAssumptions": [
+        "Runtime canvas, panel, card, module, and unavailable surface colors are local CSS assumptions.",
+        "Web-adapted surface layering is not source visual evidence.",
+        "Unavailable surfaces should not be accepted from runtime styling."
+      ],
+      "candidateDecision": "Keep color.surface candidates; defer raw values and avoid treating local dark styling as source token evidence.",
+      "candidateTokenActions": [
+        "Keep color.surface.canvas, panel, card, module, and unavailable as separate candidates.",
+        "Do not merge color.surface.unavailable into state.unavailable yet.",
+        "Defer surface contrast and transferability review."
+      ],
+      "nextAction": "Review source-backed surface hierarchy and accessibility contrast before accepting surface tokens.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.trend",
+      "priority": "medium",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "Trends section heading, explanatory copy, and Get Started action are visible in captured source evidence.",
+        "Trend typography supports interpretation over time rather than current metric display.",
+        "Source evidence supports title and explanation roles more than direction-state labels."
+      ],
+      "runtimeAssumptions": [
+        "Trend direction labels, long-explanation behavior, and metadata typography are runtime validation assumptions.",
+        "Exact font size, weight, line-height, and action styling are not source-reviewed.",
+        "No chart or sparkline typography rule is reviewed."
+      ],
+      "candidateDecision": "Keep typography.trend candidates; defer direction and metadata acceptance until source trend states are reviewed.",
+      "candidateTokenActions": [
+        "Keep typography.trend.title and explanation as source-visible semantic roles.",
+        "Keep typography.trend.direction and metadata as runtime-only candidates.",
+        "Do not merge typography.trend into typography.metric or generic card typography."
+      ],
+      "nextAction": "Review source-backed TrendCard states or trend metadata before extracting trend typography values.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "typography.reward",
+      "priority": "medium",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "Award item title and progress-like supporting text are visible in the Awards section.",
+        "Reward typography supports achievement evidence rather than decoration-only icon treatment.",
+        "Source evidence supports some reward text hierarchy but not status-state typography."
+      ],
+      "runtimeAssumptions": [
+        "Locked, unlocked, new, in-progress, long-title, status, and description typography are runtime validation assumptions.",
+        "Placeholder award symbol styling is not source typography evidence.",
+        "Exact reward typography values are not source-reviewed."
+      ],
+      "candidateDecision": "Keep typography.reward candidates; defer status and description acceptance until source reward states are reviewed.",
+      "candidateTokenActions": [
+        "Keep typography.reward.title and progress as source-visible semantic roles.",
+        "Keep typography.reward.status and description as runtime-only candidates.",
+        "Do not merge typography.reward into typography.trend or generic card typography."
+      ],
+      "nextAction": "Review source-backed award state text and accessibility contrast before extracting reward typography values.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "spacing.component",
+      "priority": "medium",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "sourceBackedRoles": [
+        "Internal spacing is visible inside Activity, workout rows, Trends Box, and Awards items.",
+        "Component spacing supports compact scanning within repeated component surfaces.",
+        "Source evidence supports spacing relationships qualitatively, not raw values."
+      ],
+      "runtimeAssumptions": [
+        "Component padding, vertical gaps, inline gaps, and compact gaps are local runtime CSS assumptions.",
+        "Web component spacing and responsive wrapping are not source evidence.",
+        "Exact component spacing values are not extracted."
+      ],
+      "candidateDecision": "Keep spacing.component candidates; do not merge into spacing.summary and defer numeric spacing values.",
+      "candidateTokenActions": [
+        "Keep spacing.component.padding, gap, inlineGap, and compactGap as separate candidates.",
+        "Keep spacing.component distinct from spacing.summary.",
+        "Defer breakpoint and density interaction rules."
+      ],
+      "nextAction": "Review component spacing across source-backed components before defining a spacing scale.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "tokenGroup": "state.interactive",
+      "priority": "medium",
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "weak",
+      "sourceBackedRoles": [
+        "Show More, Get Started, Back, share, and navigation actions are visible in captured source evidence.",
+        "Source evidence confirms action presence but not web focus, keyboard, or native button state treatment.",
+        "Interactive affordance remains mostly runtime adaptation."
+      ],
+      "runtimeAssumptions": [
+        "Focus rings, hover styles, button borders, and interactive surfaces are runtime CSS assumptions.",
+        "MetricCard and WorkoutItem interactive targets are synthetic runtime validation states.",
+        "Source action colors must not be treated as accepted web interaction tokens."
+      ],
+      "candidateDecision": "Keep state.interactive candidates as runtime/accessibility candidates; do not accept focus or interactive surface tokens.",
+      "candidateTokenActions": [
+        "Keep state.interactive.focusRing, border, text, and surface as candidates.",
+        "Do not merge state.interactive into color.surface or state.unavailable.",
+        "Defer web interaction policy until accessibility review."
+      ],
+      "nextAction": "Run accessibility and keyboard interaction review before accepting interactive state tokens.",
+      "rawValueStatus": "pending",
+      "promotionStatus": "not-promoted"
     }
   ],
-  "notes": "Second twentieth-cycle execution review. It uses existing captured source evidence only and does not extract raw values, update CSS, or promote tokens."
+  "notes": "Twentieth-cycle high-priority groups and twenty-first-cycle medium-priority groups have reviewed-draft source visual evidence. radius.policy remains deferred. This matrix does not read Figma, extract raw values, connect tokens to CSS, or promote tokens."
 }

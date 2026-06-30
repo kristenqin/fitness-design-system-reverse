@@ -133,9 +133,10 @@
           "Components/MetricCard/ExtremeValue"
         ],
         "description": "Primary metric value color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "label": {
         "value": "{color.source.pending}",
@@ -145,9 +146,10 @@
           "Components/MetricCard/Default"
         ],
         "description": "Metric label color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "caption": {
         "value": "{color.source.pending}",
@@ -158,9 +160,10 @@
           "Components/MetricCard/LongChineseText"
         ],
         "description": "Metric supporting caption color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "error": {
         "value": "{color.source.pending}",
@@ -170,9 +173,10 @@
           "Components/MetricCard/Error"
         ],
         "description": "Metric error state color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "completed": {
         "value": "{color.source.pending}",
@@ -182,9 +186,10 @@
           "Components/MetricCard/GoalCompleted"
         ],
         "description": "Metric goal-completed color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "overachieved": {
         "value": "{color.source.pending}",
@@ -194,9 +199,10 @@
           "Components/MetricCard/Overachieved"
         ],
         "description": "Metric overachieved color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       }
     },
     "trend": {
@@ -343,9 +349,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/CoreOnly"
         ],
         "description": "Outer runtime canvas color role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "panel": {
         "value": "{color.source.pending}",
@@ -355,9 +362,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/CoreOnly"
         ],
         "description": "Summary dashboard panel surface role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "card": {
         "value": "{color.source.pending}",
@@ -370,9 +378,10 @@
           "Components/AwardBadge/Default"
         ],
         "description": "Card-like component surface role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "module": {
         "value": "{color.source.pending}",
@@ -382,9 +391,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/WithTrendAndAward"
         ],
         "description": "Optional module container surface role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "unavailable": {
         "value": "{color.source.pending}",
@@ -395,9 +405,10 @@
           "Patterns/SummaryDashboard/SemanticComposition/MissingAwardData"
         ],
         "description": "Unavailable or missing module surface role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       }
     }
   },
@@ -554,9 +565,10 @@
           "Components/TrendCard/Default"
         ],
         "description": "Trend subject title typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "direction": {
         "value": "{font.source.pending}",
@@ -568,9 +580,10 @@
           "Components/TrendCard/Neutral"
         ],
         "description": "Trend direction label typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "explanation": {
         "value": "{font.source.pending}",
@@ -580,9 +593,10 @@
           "Components/TrendCard/LongExplanation"
         ],
         "description": "Trend interpretation copy typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -592,9 +606,10 @@
           "Components/TrendCard/Default"
         ],
         "description": "Trend time range or support metadata typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       }
     },
     "reward": {
@@ -607,9 +622,10 @@
           "Components/AwardBadge/LongTitle"
         ],
         "description": "Reward title typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "status": {
         "value": "{font.source.pending}",
@@ -622,9 +638,10 @@
           "Components/AwardBadge/InProgress"
         ],
         "description": "Reward status label typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "description": {
         "value": "{font.source.pending}",
@@ -634,9 +651,10 @@
           "Components/AwardBadge/Default"
         ],
         "description": "Reward explanation typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "progress": {
         "value": "{font.source.pending}",
@@ -646,9 +664,10 @@
           "Components/AwardBadge/InProgress"
         ],
         "description": "Reward progress evidence typography role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       }
     }
   },
@@ -718,9 +737,10 @@
           "Components/AwardBadge/Default"
         ],
         "description": "Base component interior padding role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "gap": {
         "value": "{space.source.pending}",
@@ -731,9 +751,10 @@
           "Components/TrendCard/Default"
         ],
         "description": "Base component internal vertical gap role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "inlineGap": {
         "value": "{space.source.pending}",
@@ -744,9 +765,10 @@
           "Components/AwardBadge/Default"
         ],
         "description": "Inline gap between component body regions.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       },
       "compactGap": {
         "value": "{space.source.pending}",
@@ -756,9 +778,10 @@
           "Components/MetricCard/Default"
         ],
         "description": "Compact metric stack gap role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "partial"
       }
     }
   },
@@ -932,9 +955,10 @@
           "Components/WorkoutItem/InteractiveTarget"
         ],
         "description": "Focus-visible indicator role for interactive candidates.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "weak"
       },
       "border": {
         "value": "{color.source.pending}",
@@ -945,9 +969,10 @@
           "Components/WorkoutItem/InteractiveTarget"
         ],
         "description": "Interactive target border role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "weak"
       },
       "text": {
         "value": "{color.source.pending}",
@@ -958,9 +983,10 @@
           "Components/AwardBadge/Default"
         ],
         "description": "Interactive action text role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "weak"
       },
       "surface": {
         "value": "{color.source.pending}",
@@ -971,9 +997,10 @@
           "Components/WorkoutItem/InteractiveTarget"
         ],
         "description": "Interactive surface role.",
-        "sourceReviewStatus": "planned",
+        "sourceReviewStatus": "reviewed-draft",
         "rawValueStatus": "pending",
-        "sourceReviewPriority": "medium"
+        "sourceReviewPriority": "medium",
+        "sourceEvidenceStrength": "weak"
       }
     }
   },

@@ -128,18 +128,18 @@
       "id": "style-token-system-candidate",
       "type": "style-system",
       "evidenceStatus": "source-evidence-reviewed-draft",
-      "sourceReviewStatus": "high-priority-reviewed-draft",
+      "sourceReviewStatus": "high-and-medium-priority-reviewed-draft",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Only high-priority token groups have source visual evidence review.",
+        "High and medium priority token groups have source visual evidence review, but radius policy remains deferred.",
         "Raw source token values are not extracted or reviewed.",
         "Several states remain weakly source-backed.",
         "CSS is still local runtime styling.",
         "Accessibility contrast is not reviewed.",
         "Migration experiments have not tested token transferability."
       ],
-      "nextAction": "Review medium-priority source visual groups or run a focused state evidence cycle before extracting raw values or promoting tokens."
+      "nextAction": "Keep radius.policy deferred and run accessibility contrast or state-evidence planning before extracting raw values or promoting tokens."
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

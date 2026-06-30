@@ -1,5 +1,5 @@
 {
-  "status": "high-priority-source-visual-evidence-reviewed-draft",
+  "status": "high-and-medium-priority-source-visual-evidence-reviewed-draft",
   "rawValueStatus": "pending",
   "promotionStatus": "not-promoted",
   "sourceRefs": [
@@ -35,7 +35,9 @@
       "nextReviewQuestion": "Which metric color roles are stable across activity stats and optional modules?",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "candidateDecision": "Keep semantic metric color candidates; value hierarchy is source-visible, while state colors remain runtime-only."
     },
     {
       "tokenGroup": "color.trend",
@@ -84,7 +86,9 @@
       "nextReviewQuestion": "Which surface roles are transferable pattern structure rather than source-specific dark styling?",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "candidateDecision": "Keep semantic surface candidates; source shows hierarchy, but raw surface values and transferable policy remain pending."
     },
     {
       "tokenGroup": "typography.metric",
@@ -134,7 +138,9 @@
       "nextReviewQuestion": "Which trend typography roles are source-backed versus synthetic runtime scaffolding?",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "candidateDecision": "Keep trend typography candidates; source supports explanatory trend copy, while direction and metadata roles remain runtime-only."
     },
     {
       "tokenGroup": "typography.reward",
@@ -148,7 +154,9 @@
       "nextReviewQuestion": "Which reward typography roles prevent AwardBadge from becoming decoration-only?",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "candidateDecision": "Keep reward typography candidates; source supports title and progress evidence, while status taxonomy remains runtime-only."
     },
     {
       "tokenGroup": "spacing.summary",
@@ -181,7 +189,9 @@
       "nextReviewQuestion": "Which component spacing roles transfer across metric, record, trend, and reward surfaces?",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "partial",
+      "candidateDecision": "Keep component spacing candidates; source shows internal spacing relationships, but numeric values remain pending."
     },
     {
       "tokenGroup": "density.dashboard",
@@ -249,8 +259,10 @@
       "nextReviewQuestion": "Which interactive roles are source-backed and which are web adaptation behavior?",
       "rawValueStatus": "pending",
       "promotionStatus": "not-promoted",
-      "sourceReviewStatus": "planned"
+      "sourceReviewStatus": "reviewed-draft",
+      "sourceEvidenceStrength": "weak",
+      "candidateDecision": "Keep interactive state candidates for accessibility planning only; source evidence is weak for web focus and target treatment."
     }
   ],
-  "notes": "High-priority groups have reviewed-draft source visual evidence. Medium and deferred groups remain planned. This matrix does not read Figma, extract raw values, connect tokens to CSS, or promote tokens."
+  "notes": "High-priority and medium-priority groups have reviewed-draft source visual evidence. radius.policy remains planned/deferred. This matrix does not read Figma, extract raw values, connect tokens to CSS, or promote tokens."
 }

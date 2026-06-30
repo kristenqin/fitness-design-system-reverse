@@ -169,3 +169,18 @@ Reviewed strengths:
 - `state.unavailable`: weak source evidence; unavailable, missing, empty, and insufficient visual treatment remains synthetic runtime coverage.
 
 The review explicitly rejects local runtime CSS values as source evidence. No raw hex, font, spacing, radius, or variable values were extracted. No token was accepted, no token was connected to CSS, and no component or pattern was promoted.
+
+## Medium-priority Source Visual Evidence Notes
+
+Twenty-first-cycle source visual evidence execution reviews only the medium-priority groups from the nineteenth-cycle plan, using existing captured Summary Dashboard evidence.
+
+Reviewed strengths:
+
+- `color.metric`: partial source evidence for metric value, label, and supporting color hierarchy; metric state colors remain runtime-only.
+- `color.surface`: partial source evidence for dashboard, card, module, and row surface hierarchy; raw surface values remain pending.
+- `typography.trend`: partial source evidence for Trends heading, explanation, and action text; direction and metadata roles remain runtime-only.
+- `typography.reward`: partial source evidence for award title and progress-like supporting text; reward status typography remains runtime-only.
+- `spacing.component`: partial source evidence for component interior spacing relationships; numeric spacing remains pending.
+- `state.interactive`: weak source evidence for actions; web focus, keyboard, hover, and target treatment remain runtime/accessibility assumptions.
+
+`radius.policy` remains deferred and was not reviewed. This cycle does not read Figma, extract variables, write raw values, connect tokens to CSS, change runtime styling, or promote any visual rule.

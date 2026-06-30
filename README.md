@@ -140,6 +140,7 @@ reviews/
   SummaryDashboard.optional-modules-review.md
   SummaryDashboard.promotion-review.md
   SourceVisualEvidence.execution-review.md
+  SourceVisualEvidence.medium-priority-review.md
   SourceVisualEvidence.review-plan.md
   StyleSystem.token-evidence-review.md
   TrendCard.runtime-plan.md
