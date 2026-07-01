@@ -1,0 +1,147 @@
+{
+  "status": "reviewed",
+  "scope": "typography-token-transferability-review",
+  "sourceOfTruth": [
+    "tokens/semantic.tokens.json",
+    "registry/typography-token-value-verification-matrix.json",
+    "registry/typography-raw-value-review-matrix.json"
+  ],
+  "reviewedTokens": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title",
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable"
+  ],
+  "transferabilityStatus": "reviewed-with-constraints",
+  "cssIntegrationStatus": "blocked",
+  "promotionStatus": "not-promoted",
+  "reviewEntries": [
+    {
+      "token": "typography.metric.value",
+      "currentValueStatus": "verified",
+      "roleClarity": "high",
+      "reusePotential": "medium",
+      "sourceSpecificRisk": "medium",
+      "semanticStability": "stable-role-candidate",
+      "transferabilityStatus": "transferable-with-constraints",
+      "constraints": [
+        "Metric value scale is clear, but source-specific display emphasis must be normalized before CSS integration.",
+        "Needs validation against non-fitness metric surfaces before becoming a general metric typography rule."
+      ],
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "currentValueStatus": "verified",
+      "roleClarity": "high",
+      "reusePotential": "medium",
+      "sourceSpecificRisk": "medium",
+      "semanticStability": "stable-role-candidate",
+      "transferabilityStatus": "transferable-with-constraints",
+      "constraints": [
+        "Unit typography depends on proximity to metric values.",
+        "Needs layout-independent validation before CSS integration."
+      ],
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "currentValueStatus": "verified",
+      "roleClarity": "high",
+      "reusePotential": "medium",
+      "sourceSpecificRisk": "medium",
+      "semanticStability": "stable-role-candidate",
+      "transferabilityStatus": "transferable-with-constraints",
+      "constraints": [
+        "Metric label role is source-backed, but label density and localization pressure need review.",
+        "Should not silently cover record labels or unavailable labels."
+      ],
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.title",
+      "currentValueStatus": "verified",
+      "roleClarity": "high",
+      "reusePotential": "high",
+      "sourceSpecificRisk": "low",
+      "semanticStability": "stable-role-candidate",
+      "transferabilityStatus": "transferable-candidate",
+      "constraints": [
+        "Keep scoped to completed behavior record titles until more product surfaces are reviewed."
+      ],
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.duration",
+      "currentValueStatus": "verified",
+      "roleClarity": "high",
+      "reusePotential": "medium",
+      "sourceSpecificRisk": "medium",
+      "semanticStability": "stable-role-candidate",
+      "transferabilityStatus": "transferable-with-constraints",
+      "constraints": [
+        "Duration is visually prominent and may encode source-specific hierarchy.",
+        "Requires hierarchy normalization before CSS integration."
+      ],
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "currentValueStatus": "verified",
+      "roleClarity": "high",
+      "reusePotential": "high",
+      "sourceSpecificRisk": "low",
+      "semanticStability": "stable-role-candidate",
+      "transferabilityStatus": "transferable-candidate",
+      "constraints": [
+        "Keep scoped to record date metadata until broader record metadata surfaces are reviewed."
+      ],
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "blockedTokenChecks": [
+    {
+      "token": "typography.metric.caption",
+      "transferabilityStatus": "blocked-from-transfer",
+      "reason": "Current evidence does not support transferability for this blocked typography token.",
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.metadata",
+      "transferabilityStatus": "blocked-from-transfer",
+      "reason": "Split-required old token remains excluded from transfer.",
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.label",
+      "transferabilityStatus": "blocked-from-transfer",
+      "reason": "Current evidence does not support transferability for this blocked typography token.",
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.unavailable",
+      "transferabilityStatus": "blocked-from-transfer",
+      "reason": "Current evidence does not support transferability for this blocked typography token.",
+      "cssIntegrationReadiness": "not-ready",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "Verified typography token values are reviewed for transferability. CSS integration and promotion remain blocked."
+}

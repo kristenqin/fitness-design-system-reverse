@@ -511,7 +511,11 @@
         "valueSourceStatus": "acceptance-candidate",
         "tokenValueVerificationStatus": "verified",
         "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
-        "valueMatchesReviewMatrix": true
+        "valueMatchesReviewMatrix": true,
+        "transferabilityReviewStatus": "reviewed",
+        "transferabilityStatus": "transferable-with-constraints",
+        "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
+        "cssIntegrationReadiness": "not-ready"
       },
       "unit": {
         "value": {
@@ -556,7 +560,11 @@
         "valueSourceStatus": "acceptance-candidate",
         "tokenValueVerificationStatus": "verified",
         "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
-        "valueMatchesReviewMatrix": true
+        "valueMatchesReviewMatrix": true,
+        "transferabilityReviewStatus": "reviewed",
+        "transferabilityStatus": "transferable-with-constraints",
+        "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
+        "cssIntegrationReadiness": "not-ready"
       },
       "label": {
         "value": {
@@ -601,7 +609,11 @@
         "valueSourceStatus": "acceptance-candidate",
         "tokenValueVerificationStatus": "verified",
         "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
-        "valueMatchesReviewMatrix": true
+        "valueMatchesReviewMatrix": true,
+        "transferabilityReviewStatus": "reviewed",
+        "transferabilityStatus": "transferable-with-constraints",
+        "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
+        "cssIntegrationReadiness": "not-ready"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -633,7 +645,9 @@
         "cssIntegrationStatus": "blocked",
         "promotionStatus": "not-promoted",
         "tokenValueVerificationStatus": "verified-blocked",
-        "valueStillPending": true
+        "valueStillPending": true,
+        "transferabilityReviewStatus": "reviewed-blocked",
+        "transferabilityStatus": "blocked-from-transfer"
       }
     },
     "card": {
@@ -709,7 +723,11 @@
         "valueSourceStatus": "acceptance-candidate",
         "tokenValueVerificationStatus": "verified",
         "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
-        "valueMatchesReviewMatrix": true
+        "valueMatchesReviewMatrix": true,
+        "transferabilityReviewStatus": "reviewed",
+        "transferabilityStatus": "transferable-candidate",
+        "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
+        "cssIntegrationReadiness": "not-ready"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -746,7 +764,9 @@
         "cssIntegrationStatus": "blocked",
         "promotionStatus": "not-promoted",
         "tokenValueVerificationStatus": "verified-blocked",
-        "valueStillPending": true
+        "valueStillPending": true,
+        "transferabilityReviewStatus": "reviewed-blocked",
+        "transferabilityStatus": "blocked-from-transfer"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -777,7 +797,9 @@
         "cssIntegrationStatus": "blocked",
         "promotionStatus": "not-promoted",
         "tokenValueVerificationStatus": "verified-blocked",
-        "valueStillPending": true
+        "valueStillPending": true,
+        "transferabilityReviewStatus": "reviewed-blocked",
+        "transferabilityStatus": "blocked-from-transfer"
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -809,7 +831,9 @@
         "cssIntegrationStatus": "blocked",
         "promotionStatus": "not-promoted",
         "tokenValueVerificationStatus": "verified-blocked",
-        "valueStillPending": true
+        "valueStillPending": true,
+        "transferabilityReviewStatus": "reviewed-blocked",
+        "transferabilityStatus": "blocked-from-transfer"
       },
       "duration": {
         "value": {
@@ -854,7 +878,11 @@
         "valueSourceStatus": "acceptance-candidate",
         "tokenValueVerificationStatus": "verified",
         "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
-        "valueMatchesReviewMatrix": true
+        "valueMatchesReviewMatrix": true,
+        "transferabilityReviewStatus": "reviewed",
+        "transferabilityStatus": "transferable-with-constraints",
+        "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
+        "cssIntegrationReadiness": "not-ready"
       },
       "date": {
         "value": {
@@ -899,7 +927,11 @@
         "valueSourceStatus": "acceptance-candidate",
         "tokenValueVerificationStatus": "verified",
         "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
-        "valueMatchesReviewMatrix": true
+        "valueMatchesReviewMatrix": true,
+        "transferabilityReviewStatus": "reviewed",
+        "transferabilityStatus": "transferable-candidate",
+        "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
+        "cssIntegrationReadiness": "not-ready"
       }
     },
     "trend": {

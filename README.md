@@ -111,6 +111,7 @@ decisions/
   ADR-016-plan-typography-semantic-token-value-update.md
   ADR-017-execute-typography-semantic-token-value-update.md
   ADR-018-verify-typography-token-values-before-css-integration.md
+  ADR-019-review-typography-token-transferability-before-css-integration.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -143,6 +144,7 @@ registry/
   typography-raw-value-extraction-plan.json
   typography-raw-value-review-matrix.json
   typography-token-value-verification-matrix.json
+  typography-token-transferability-matrix.json
   typography-semantic-token-value-update-execution.json
   typography-semantic-token-update-plan.json
 reviews/
@@ -167,6 +169,7 @@ reviews/
   TypographyRawValue.review-matrix-preparation.md
   TypographySemanticToken.value-update-execution.md
   TypographySemanticToken.update-plan.md
+  TypographyToken.transferability-review.md
   TypographyTokenValue.verification-review.md
   WorkoutItem.runtime-plan.md
 scripts/

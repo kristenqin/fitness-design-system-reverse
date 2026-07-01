@@ -380,3 +380,30 @@ Blocked tokens confirmed pending:
 - `typography.record.unavailable`
 
 The six verified values match the review matrix and contain only allowed typography fields. This verification does not change token values, connect tokens to CSS, accept tokens, or promote the style system.
+
+## Typography Token Transferability Review Notes
+
+Thirty-first-cycle review evaluates whether the verified typography token values can safely enter future CSS integration planning.
+
+Transferable candidates:
+
+- `typography.record.title`
+- `typography.record.date`
+
+Transferable with constraints:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.duration`
+
+Blocked from transfer:
+
+- `typography.metric.caption`
+- `typography.record.metadata`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+Metric typography carries source-specific display emphasis and needs risk handling before CSS integration. `typography.record.duration` needs hierarchy normalization before CSS integration.
+
+No token value changes in this review. CSS integration, token acceptance, and promotion remain blocked.

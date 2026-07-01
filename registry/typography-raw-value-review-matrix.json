@@ -125,7 +125,11 @@
       "semanticTokenStatusAfterWrite": "candidate",
       "semanticTokenValueVerificationStatus": "verified",
       "semanticTokenValueMatchesReviewMatrix": true,
-      "semanticTokenStatusAfterVerification": "candidate"
+      "semanticTokenStatusAfterVerification": "candidate",
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilityStatus": "transferable-with-constraints",
+      "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json",
+      "cssIntegrationReadiness": "not-ready"
     },
     {
       "token": "typography.metric.unit",
@@ -207,7 +211,11 @@
       "semanticTokenStatusAfterWrite": "candidate",
       "semanticTokenValueVerificationStatus": "verified",
       "semanticTokenValueMatchesReviewMatrix": true,
-      "semanticTokenStatusAfterVerification": "candidate"
+      "semanticTokenStatusAfterVerification": "candidate",
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilityStatus": "transferable-with-constraints",
+      "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json",
+      "cssIntegrationReadiness": "not-ready"
     },
     {
       "token": "typography.metric.label",
@@ -294,7 +302,11 @@
       "semanticTokenStatusAfterWrite": "candidate",
       "semanticTokenValueVerificationStatus": "verified",
       "semanticTokenValueMatchesReviewMatrix": true,
-      "semanticTokenStatusAfterVerification": "candidate"
+      "semanticTokenStatusAfterVerification": "candidate",
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilityStatus": "transferable-with-constraints",
+      "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json",
+      "cssIntegrationReadiness": "not-ready"
     },
     {
       "token": "typography.metric.caption",
@@ -361,7 +373,9 @@
       "semanticTokenUpdateBlockReason": "No source-backed metric caption role was found in the constrained source read.",
       "semanticTokenValueUpdateStatus": "blocked",
       "semanticTokenValueVerificationStatus": "verified-blocked",
-      "valueStillPending": true
+      "valueStillPending": true,
+      "transferabilityReviewStatus": "reviewed-blocked",
+      "transferabilityStatus": "blocked-from-transfer"
     },
     {
       "token": "typography.record.title",
@@ -443,7 +457,11 @@
       "semanticTokenStatusAfterWrite": "candidate",
       "semanticTokenValueVerificationStatus": "verified",
       "semanticTokenValueMatchesReviewMatrix": true,
-      "semanticTokenStatusAfterVerification": "candidate"
+      "semanticTokenStatusAfterVerification": "candidate",
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilityStatus": "transferable-candidate",
+      "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json",
+      "cssIntegrationReadiness": "not-ready"
     },
     {
       "token": "typography.record.metadata",
@@ -562,7 +580,9 @@
       "semanticTokenUpdateBlockReason": "Old metadata token is split-required and retained only until cleanup or migration planning.",
       "semanticTokenValueUpdateStatus": "blocked",
       "semanticTokenValueVerificationStatus": "verified-blocked",
-      "valueStillPending": true
+      "valueStillPending": true,
+      "transferabilityReviewStatus": "reviewed-blocked",
+      "transferabilityStatus": "blocked-from-transfer"
     },
     {
       "token": "typography.record.label",
@@ -630,7 +650,9 @@
       "semanticTokenUpdateBlockReason": "No source-backed record label role was found separate from title, duration, or date.",
       "semanticTokenValueUpdateStatus": "blocked",
       "semanticTokenValueVerificationStatus": "verified-blocked",
-      "valueStillPending": true
+      "valueStillPending": true,
+      "transferabilityReviewStatus": "reviewed-blocked",
+      "transferabilityStatus": "blocked-from-transfer"
     },
     {
       "token": "typography.record.unavailable",
@@ -699,7 +721,9 @@
       "semanticTokenUpdateBlockReason": "Unavailable record typography is runtime-derived and rejected for source-backed semantic token update.",
       "semanticTokenValueUpdateStatus": "blocked",
       "semanticTokenValueVerificationStatus": "verified-blocked",
-      "valueStillPending": true
+      "valueStillPending": true,
+      "transferabilityReviewStatus": "reviewed-blocked",
+      "transferabilityStatus": "blocked-from-transfer"
     },
     {
       "tokenGroup": "typography.record",
@@ -783,7 +807,11 @@
       "semanticTokenStatusAfterWrite": "candidate",
       "semanticTokenValueVerificationStatus": "verified",
       "semanticTokenValueMatchesReviewMatrix": true,
-      "semanticTokenStatusAfterVerification": "candidate"
+      "semanticTokenStatusAfterVerification": "candidate",
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilityStatus": "transferable-with-constraints",
+      "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json",
+      "cssIntegrationReadiness": "not-ready"
     },
     {
       "tokenGroup": "typography.record",
@@ -867,7 +895,11 @@
       "semanticTokenStatusAfterWrite": "candidate",
       "semanticTokenValueVerificationStatus": "verified",
       "semanticTokenValueMatchesReviewMatrix": true,
-      "semanticTokenStatusAfterVerification": "candidate"
+      "semanticTokenStatusAfterVerification": "candidate",
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilityStatus": "transferable-candidate",
+      "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json",
+      "cssIntegrationReadiness": "not-ready"
     }
   ],
   "notes": "Raw typography values remain review-matrix evidence. Six planned semantic token values were written as candidate token values. CSS integration, acceptance, and promotion remain blocked.",

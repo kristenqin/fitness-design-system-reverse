@@ -252,7 +252,21 @@
       ],
       "verifiedBlockedTokens": [
         "typography.metric.caption"
-      ]
+      ],
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilitySummary": {
+        "transferableCandidates": [],
+        "transferableWithConstraints": [
+          "typography.metric.value",
+          "typography.metric.unit",
+          "typography.metric.label"
+        ],
+        "blockedFromTransfer": [
+          "typography.metric.caption"
+        ],
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
+      }
     },
     {
       "group": "typography.record",
@@ -354,7 +368,24 @@
         "typography.record.metadata",
         "typography.record.label",
         "typography.record.unavailable"
-      ]
+      ],
+      "transferabilityReviewStatus": "reviewed",
+      "transferabilitySummary": {
+        "transferableCandidates": [
+          "typography.record.title",
+          "typography.record.date"
+        ],
+        "transferableWithConstraints": [
+          "typography.record.duration"
+        ],
+        "blockedFromTransfer": [
+          "typography.record.metadata",
+          "typography.record.label",
+          "typography.record.unavailable"
+        ],
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
+      }
     },
     {
       "group": "typography.trend",

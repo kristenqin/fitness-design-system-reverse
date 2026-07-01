@@ -102,5 +102,7 @@
       "verificationStatus": "passed"
     }
   ],
-  "notes": "Six planned typography semantic token values match the review matrix. Blocked typography tokens remain pending. CSS integration and promotion remain blocked."
+  "notes": "Six planned typography semantic token values match the review matrix. Blocked typography tokens remain pending. CSS integration and promotion remain blocked.",
+  "transferabilityReviewStatus": "reviewed",
+  "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json"
 }

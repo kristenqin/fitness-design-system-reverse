@@ -84,5 +84,7 @@
   ],
   "notes": "Execution records write status only. Values were copied from the review matrix into tokens/semantic.tokens.json for planned candidates; blocked tokens remain pending.",
   "tokenValueVerificationStatus": "verified",
-  "tokenValueVerificationTarget": "registry/typography-token-value-verification-matrix.json"
+  "tokenValueVerificationTarget": "registry/typography-token-value-verification-matrix.json",
+  "transferabilityReviewStatus": "reviewed",
+  "transferabilityReviewTarget": "registry/typography-token-transferability-matrix.json"
 }
