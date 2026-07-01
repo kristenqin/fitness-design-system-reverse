@@ -271,3 +271,28 @@ Not found or rejected entries:
 `typography.record.metadata` remains pending review because duration and date are source-backed metadata roles with different observed typography sizes. A later acceptance review must decide whether to split or constrain that token role.
 
 `tokens/semantic.tokens.json` remains pending with `{font.source.pending}` values. CSS remains local runtime styling. No token is accepted, connected to CSS, or promoted by this source read.
+
+## Typography Raw-value Acceptance Review Notes
+
+Twenty-sixth-cycle acceptance review evaluates the observed raw typography fields already stored in `registry/typography-raw-value-review-matrix.json`.
+
+Acceptance candidates:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+
+Pending split decision:
+
+- `typography.record.metadata`
+
+`typography.record.metadata` currently combines duration and date evidence, but those roles have different observed font sizes. A later schema decision should consider splitting the role into `typography.record.duration` and `typography.record.date`.
+
+Not found or rejected:
+
+- `typography.metric.caption`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+Acceptance-candidate does not mean accepted. `tokens/semantic.tokens.json` values remain `{font.source.pending}`. CSS integration, semantic token writes, and promotion remain blocked.

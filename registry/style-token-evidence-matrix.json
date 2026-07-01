@@ -208,7 +208,24 @@
       "futureExtractionAllowed": false,
       "rawValueReviewStatus": "source-read-executed-to-review-matrix",
       "semanticTokenWriteStatus": "blocked",
-      "cssIntegrationStatus": "blocked"
+      "cssIntegrationStatus": "blocked",
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceSummary": {
+        "acceptanceCandidates": [
+          "typography.metric.value",
+          "typography.metric.unit",
+          "typography.metric.label",
+          "typography.record.title"
+        ],
+        "pendingSplitDecision": [
+          "typography.record.metadata"
+        ],
+        "notFoundOrRejected": [
+          "typography.metric.caption",
+          "typography.record.label",
+          "typography.record.unavailable"
+        ]
+      }
     },
     {
       "group": "typography.record",
@@ -246,7 +263,24 @@
       "futureExtractionAllowed": false,
       "rawValueReviewStatus": "source-read-executed-to-review-matrix",
       "semanticTokenWriteStatus": "blocked",
-      "cssIntegrationStatus": "blocked"
+      "cssIntegrationStatus": "blocked",
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceSummary": {
+        "acceptanceCandidates": [
+          "typography.metric.value",
+          "typography.metric.unit",
+          "typography.metric.label",
+          "typography.record.title"
+        ],
+        "pendingSplitDecision": [
+          "typography.record.metadata"
+        ],
+        "notFoundOrRejected": [
+          "typography.metric.caption",
+          "typography.record.label",
+          "typography.record.unavailable"
+        ]
+      }
     },
     {
       "group": "typography.trend",

@@ -78,7 +78,7 @@
       },
       "rawValueStatus": "observed-pending-review",
       "reviewStatus": "source-read-completed",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "acceptance-candidate",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -114,7 +114,10 @@
           }
         ],
         "evidenceNotes": "Primary numeric value observed in mapped Stats node. Secondary numeric values use a smaller size and remain evidence for hierarchy, not a separate semantic token write."
-      }
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "Source role is matched, observed typography fields are constrained to allowed typography fields, and the role is distinct enough to plan a future semantic token update review.",
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
     },
     {
       "token": "typography.metric.unit",
@@ -144,7 +147,7 @@
       },
       "rawValueStatus": "observed-pending-review",
       "reviewStatus": "source-read-completed",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "acceptance-candidate",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -185,7 +188,10 @@
           }
         ],
         "evidenceNotes": "Metric unit text observed adjacent to numeric metric values in the mapped Stats node."
-      }
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "Source role is matched for units adjacent to metric values, and observed typography fields are constrained to allowed typography fields.",
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
     },
     {
       "token": "typography.metric.label",
@@ -215,7 +221,7 @@
       },
       "rawValueStatus": "observed-pending-review",
       "reviewStatus": "source-read-completed",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "acceptance-candidate",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -261,7 +267,10 @@
           }
         ],
         "evidenceNotes": "Metric labels observed as distinct text roles inside the mapped Stats node."
-      }
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "Source role is matched across Move, Steps, and Distance labels, and the role is distinct from value and unit text.",
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
     },
     {
       "token": "typography.metric.caption",
@@ -291,7 +300,7 @@
       },
       "rawValueStatus": "pending",
       "reviewStatus": "not-found",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "not-found",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -320,7 +329,10 @@
         "readAdditionalFigmaNodes": false,
         "extractedFigmaVariables": false,
         "reason": "No distinct source-backed metric caption text role was found in the mapped Stats node. Observed text resolves to metric label, value, or unit."
-      }
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "No source-backed metric caption role was found in the mapped Stats node, so this entry is not eligible for semantic token update.",
+      "semanticTokenUpdateEligibility": "not-eligible"
     },
     {
       "token": "typography.record.title",
@@ -350,7 +362,7 @@
       },
       "rawValueStatus": "observed-pending-review",
       "reviewStatus": "source-read-completed",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "acceptance-candidate",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -391,7 +403,10 @@
           }
         ],
         "evidenceNotes": "Workout record title observed in both mapped Card nodes."
-      }
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "Source role is matched across repeated workout card titles, and the title role is distinct from record metadata.",
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
     },
     {
       "token": "typography.record.metadata",
@@ -424,7 +439,7 @@
       },
       "rawValueStatus": "observed-pending-review",
       "reviewStatus": "source-read-completed",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "pending-split-decision",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -482,6 +497,18 @@
       },
       "fieldNotes": {
         "fontSize": "Mixed source sizes: duration is 30px and date is 16px. Keep pending review; consider splitting metadata roles before acceptance."
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "Duration and date are both source-backed record metadata, but they have different observed font sizes and require a split-or-merge decision before any semantic token update plan.",
+      "semanticTokenUpdateEligibility": "blocked",
+      "splitProposal": {
+        "reason": "Duration and date have different observed font sizes.",
+        "proposedTokens": [
+          "typography.record.duration",
+          "typography.record.date"
+        ],
+        "schemaChangeRequired": true,
+        "semanticTokenUpdateEligibility": "blocked"
       }
     },
     {
@@ -512,7 +539,7 @@
       },
       "rawValueStatus": "pending",
       "reviewStatus": "not-found",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "not-found",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -542,7 +569,10 @@
         "readAdditionalFigmaNodes": false,
         "extractedFigmaVariables": false,
         "reason": "No distinct record label was found that can be separated from record title or metadata in the mapped Card nodes."
-      }
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "No distinct source-backed record label was found separate from title or metadata, so this entry is not eligible for semantic token update.",
+      "semanticTokenUpdateEligibility": "not-eligible"
     },
     {
       "token": "typography.record.unavailable",
@@ -572,7 +602,7 @@
       },
       "rawValueStatus": "pending",
       "reviewStatus": "rejected",
-      "acceptanceStatus": "not-reviewed",
+      "acceptanceStatus": "rejected",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -603,12 +633,19 @@
         "readAdditionalFigmaNodes": false,
         "extractedFigmaVariables": false,
         "reason": "No source-backed unavailable record state exists in the mapped Card nodes. The unavailable role remains runtime-derived and cannot receive observed raw values."
-      }
+      },
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceReason": "No source-backed unavailable record state was found; the unavailable role remains runtime-derived and is not eligible for semantic token update.",
+      "semanticTokenUpdateEligibility": "not-eligible"
     }
   ],
   "notes": "Prepared review matrix only. No Figma read, raw-value extraction, semantic token value write, CSS integration, acceptance, or promotion occurred.",
   "readAdditionalFigmaNodes": false,
   "extractedFigmaVariables": false,
   "semanticTokenWriteStatus": "blocked",
-  "cssIntegrationStatus": "blocked"
+  "cssIntegrationStatus": "blocked",
+  "acceptanceReviewStatus": "reviewed",
+  "acceptanceCandidateCount": 4,
+  "pendingSplitDecisionCount": 1,
+  "notFoundOrRejectedCount": 3
 }

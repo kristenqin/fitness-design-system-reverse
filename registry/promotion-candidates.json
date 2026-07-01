@@ -132,22 +132,24 @@
       "rawValueStatus": "pending-semantic-token-values",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Typography raw values, if observed, exist only in registry/typography-raw-value-review-matrix.json.",
+        "Acceptance candidates are evidence only and are not accepted semantic token values.",
+        "typography.record.metadata requires a split decision before any token update.",
+        "typography.metric.caption, typography.record.label, and typography.record.unavailable are not eligible for semantic token update.",
         "semantic.tokens.json values remain pending placeholders.",
-        "No typography raw value has passed acceptance review.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred.",
         "CSS is still local runtime styling."
       ],
-      "nextAction": "Review observed typography matrix values, decide whether metadata roles need splitting, and keep semantic token values pending until a separate acceptance gate.",
+      "nextAction": "Plan a semantic token update review for acceptance candidates only after resolving the record metadata split decision; keep semantic token values pending.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
       "rawValueReviewStatus": "source-read-executed-to-review-matrix",
       "semanticTokenWriteStatus": "blocked",
-      "cssIntegrationStatus": "blocked"
+      "cssIntegrationStatus": "blocked",
+      "acceptanceReviewStatus": "reviewed"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

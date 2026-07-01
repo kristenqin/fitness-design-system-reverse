@@ -473,5 +473,9 @@
   "executionStatus": "source-read-executed-to-review-matrix",
   "executionTarget": "registry/typography-raw-value-review-matrix.json",
   "semanticTokenWriteStatus": "blocked",
-  "cssIntegrationStatus": "blocked"
+  "cssIntegrationStatus": "blocked",
+  "acceptanceReviewStatus": "reviewed",
+  "acceptanceCandidateCount": 4,
+  "pendingSplitDecisionCount": 1,
+  "notFoundOrRejectedCount": 3
 }

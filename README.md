@@ -106,6 +106,7 @@ decisions/
   ADR-011-token-readiness-gate-before-raw-values.md
   ADR-012-constrained-typography-raw-value-plan.md
   ADR-013-typography-raw-value-review-matrix-before-extraction.md
+  ADR-014-typography-raw-values-require-acceptance-before-token-update.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -151,6 +152,7 @@ reviews/
   StyleSystem.token-evidence-review.md
   TokenReadiness.gate-review.md
   TrendCard.runtime-plan.md
+  TypographyRawValue.acceptance-review.md
   TypographyRawValue.extraction-plan.md
   TypographyRawValue.execution-review.md
   TypographyRawValue.review-matrix-preparation.md

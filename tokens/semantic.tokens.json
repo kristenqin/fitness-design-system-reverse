@@ -489,7 +489,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "acceptance-candidate"
       },
       "unit": {
         "value": "{font.source.pending}",
@@ -512,7 +514,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "acceptance-candidate"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -535,7 +539,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "acceptance-candidate"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -558,7 +564,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "not-found"
       }
     },
     "card": {
@@ -612,7 +620,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "acceptance-candidate"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -634,7 +644,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "pending-split-decision"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -656,7 +668,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "not-found"
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -679,7 +693,9 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked"
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "rejected"
       }
     },
     "trend": {
