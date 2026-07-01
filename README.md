@@ -152,6 +152,7 @@ reviews/
   TokenReadiness.gate-review.md
   TrendCard.runtime-plan.md
   TypographyRawValue.extraction-plan.md
+  TypographyRawValue.execution-review.md
   TypographyRawValue.review-matrix-preparation.md
   WorkoutItem.runtime-plan.md
 scripts/

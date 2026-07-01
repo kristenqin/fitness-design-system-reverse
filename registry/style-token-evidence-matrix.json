@@ -194,7 +194,7 @@
       ],
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
-      "rawValueStatus": "pending",
+      "rawValueStatus": "pending-semantic-token-values",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
@@ -205,7 +205,10 @@
       "rawValuePlanScope": "constrained-typography-only",
       "rawValueReviewMatrixStatus": "prepared",
       "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-      "futureExtractionAllowed": false
+      "futureExtractionAllowed": false,
+      "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked"
     },
     {
       "group": "typography.record",
@@ -229,7 +232,7 @@
       ],
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
-      "rawValueStatus": "pending",
+      "rawValueStatus": "pending-semantic-token-values",
       "promotionStatus": "not-promoted",
       "sourceReviewPriority": "high",
       "sourceReviewStatus": "reviewed-draft",
@@ -240,7 +243,10 @@
       "rawValuePlanScope": "constrained-typography-only",
       "rawValueReviewMatrixStatus": "prepared",
       "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-      "futureExtractionAllowed": false
+      "futureExtractionAllowed": false,
+      "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked"
     },
     {
       "group": "typography.trend",

@@ -487,7 +487,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       },
       "unit": {
         "value": "{font.source.pending}",
@@ -508,7 +510,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -529,7 +533,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -550,7 +556,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       }
     },
     "card": {
@@ -602,7 +610,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -622,7 +632,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -642,7 +654,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -663,7 +677,9 @@
         "rawValuePlanScope": "constrained-typography-only",
         "rawValueReviewMatrixStatus": "prepared",
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-        "futureExtractionAllowed": false
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked"
       }
     },
     "trend": {

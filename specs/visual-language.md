@@ -247,3 +247,27 @@ Prepared token entries:
 The matrix allows only typography fields: font family, font style, font size, font weight, line height, letter spacing, text case, and text decoration. All future raw values remain null and pending.
 
 The review matrix is a preparation artifact only. It does not read Figma, extract raw values, write semantic token values, integrate CSS, accept tokens, or promote any asset.
+
+## Typography Raw-value Review Execution Notes
+
+Twenty-fifth-cycle execution performs a constrained source typography read against already mapped Summary Dashboard nodes only.
+
+Observed raw typography fields were written only to `registry/typography-raw-value-review-matrix.json`.
+
+Observed entries:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+- `typography.record.metadata`
+
+Not found or rejected entries:
+
+- `typography.metric.caption`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+`typography.record.metadata` remains pending review because duration and date are source-backed metadata roles with different observed typography sizes. A later acceptance review must decide whether to split or constrain that token role.
+
+`tokens/semantic.tokens.json` remains pending with `{font.source.pending}` values. CSS remains local runtime styling. No token is accepted, connected to CSS, or promoted by this source read.

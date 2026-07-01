@@ -129,22 +129,25 @@
       "type": "style-system",
       "evidenceStatus": "source-evidence-reviewed-draft",
       "sourceReviewStatus": "high-and-medium-priority-reviewed-draft",
-      "rawValueStatus": "pending",
+      "rawValueStatus": "pending-semantic-token-values",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Typography raw-value review matrix is prepared but no raw values are extracted.",
-        "Future raw values must first land in registry/typography-raw-value-review-matrix.json.",
-        "semantic.tokens.json values remain pending.",
+        "Typography raw values, if observed, exist only in registry/typography-raw-value-review-matrix.json.",
+        "semantic.tokens.json values remain pending placeholders.",
+        "No typography raw value has passed acceptance review.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred.",
         "CSS is still local runtime styling."
       ],
-      "nextAction": "Use the prepared typography raw-value review matrix as the first landing zone before any future semantic token value update.",
+      "nextAction": "Review observed typography matrix values, decide whether metadata roles need splitting, and keep semantic token values pending until a separate acceptance gate.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
-      "rawValueReviewMatrixStatus": "prepared"
+      "rawValueReviewMatrixStatus": "prepared",
+      "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

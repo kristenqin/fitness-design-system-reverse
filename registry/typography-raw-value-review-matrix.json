@@ -1,11 +1,11 @@
 {
-  "status": "prepared",
+  "status": "source-read-executed-to-review-matrix",
   "scope": "constrained-typography-review-matrix",
-  "rawValueStatus": "pending",
+  "rawValueStatus": "review-matrix-populated",
   "promotionStatus": "not-promoted",
   "semanticTokenWritePolicy": "do-not-write-raw-values-directly",
   "futureExtractionAllowed": false,
-  "sourceReadStatus": "not-started",
+  "sourceReadStatus": "completed",
   "allowedTokenGroups": [
     "typography.metric",
     "typography.record"
@@ -67,17 +67,17 @@
         "textDecoration"
       ],
       "futureRawValues": {
-        "fontFamily": null,
-        "fontStyle": null,
-        "fontSize": null,
-        "fontWeight": null,
-        "lineHeight": null,
+        "fontFamily": "SF_Pro",
+        "fontStyle": "Regular",
+        "fontSize": "24px",
+        "fontWeight": 400,
+        "lineHeight": "normal",
         "letterSpacing": null,
         "textCase": null,
         "textDecoration": null
       },
-      "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "rawValueStatus": "observed-pending-review",
+      "reviewStatus": "source-read-completed",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -97,7 +97,24 @@
         "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "The value cannot be separated from decorative Activity color or progress styling."
-      ]
+      ],
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25113",
+        "sourceRoleMatched": true,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "textNodeRefs": [
+          {
+            "nodeId": "143:25117",
+            "text": "24/300",
+            "role": "primary metric value"
+          }
+        ],
+        "evidenceNotes": "Primary numeric value observed in mapped Stats node. Secondary numeric values use a smaller size and remain evidence for hierarchy, not a separate semantic token write."
+      }
     },
     {
       "token": "typography.metric.unit",
@@ -116,17 +133,17 @@
         "textDecoration"
       ],
       "futureRawValues": {
-        "fontFamily": null,
-        "fontStyle": null,
-        "fontSize": null,
-        "fontWeight": null,
-        "lineHeight": null,
+        "fontFamily": "SF_Pro",
+        "fontStyle": "Regular",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": "normal",
         "letterSpacing": null,
         "textCase": null,
         "textDecoration": null
       },
-      "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "rawValueStatus": "observed-pending-review",
+      "reviewStatus": "source-read-completed",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -146,7 +163,29 @@
         "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "The unit style cannot be distinguished from the primary numeric value role."
-      ]
+      ],
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25113",
+        "sourceRoleMatched": true,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "textNodeRefs": [
+          {
+            "nodeId": "143:25118",
+            "text": "CAL",
+            "role": "metric unit"
+          },
+          {
+            "nodeId": "143:25126",
+            "text": "KM",
+            "role": "metric unit"
+          }
+        ],
+        "evidenceNotes": "Metric unit text observed adjacent to numeric metric values in the mapped Stats node."
+      }
     },
     {
       "token": "typography.metric.label",
@@ -165,17 +204,17 @@
         "textDecoration"
       ],
       "futureRawValues": {
-        "fontFamily": null,
-        "fontStyle": null,
-        "fontSize": null,
-        "fontWeight": null,
-        "lineHeight": null,
+        "fontFamily": "SF_Pro",
+        "fontStyle": "Regular",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": "normal",
         "letterSpacing": null,
         "textCase": null,
         "textDecoration": null
       },
-      "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "rawValueStatus": "observed-pending-review",
+      "reviewStatus": "source-read-completed",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -195,7 +234,34 @@
         "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "The label is actually a section heading, action label, or completed record label rather than a compact metric label."
-      ]
+      ],
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25113",
+        "sourceRoleMatched": true,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "textNodeRefs": [
+          {
+            "nodeId": "143:25115",
+            "text": "Move",
+            "role": "metric label"
+          },
+          {
+            "nodeId": "143:25120",
+            "text": "Steps",
+            "role": "metric label"
+          },
+          {
+            "nodeId": "143:25123",
+            "text": "Distance",
+            "role": "metric label"
+          }
+        ],
+        "evidenceNotes": "Metric labels observed as distinct text roles inside the mapped Stats node."
+      }
     },
     {
       "token": "typography.metric.caption",
@@ -224,7 +290,7 @@
         "textDecoration": null
       },
       "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "reviewStatus": "not-found",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -244,7 +310,17 @@
         "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "The caption role is only synthetic runtime text and not source-observed."
-      ]
+      ],
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25113",
+        "sourceRoleMatched": false,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "reason": "No distinct source-backed metric caption text role was found in the mapped Stats node. Observed text resolves to metric label, value, or unit."
+      }
     },
     {
       "token": "typography.record.title",
@@ -263,17 +339,17 @@
         "textDecoration"
       ],
       "futureRawValues": {
-        "fontFamily": null,
-        "fontStyle": null,
-        "fontSize": null,
-        "fontWeight": null,
-        "lineHeight": null,
+        "fontFamily": "SF_Pro",
+        "fontStyle": "Regular",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": "normal",
         "letterSpacing": null,
         "textCase": null,
         "textDecoration": null
       },
-      "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "rawValueStatus": "observed-pending-review",
+      "reviewStatus": "source-read-completed",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -293,7 +369,29 @@
         "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "The text role is a section heading, metric label, or action label rather than a completed record title."
-      ]
+      ],
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25136,143:25151",
+        "sourceRoleMatched": true,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "textNodeRefs": [
+          {
+            "nodeId": "143:25144",
+            "text": "Traditional Strength Training",
+            "role": "record title"
+          },
+          {
+            "nodeId": "143:25159",
+            "text": "Traditional Strength Training",
+            "role": "record title"
+          }
+        ],
+        "evidenceNotes": "Workout record title observed in both mapped Card nodes."
+      }
     },
     {
       "token": "typography.record.metadata",
@@ -312,17 +410,20 @@
         "textDecoration"
       ],
       "futureRawValues": {
-        "fontFamily": null,
-        "fontStyle": null,
-        "fontSize": null,
-        "fontWeight": null,
-        "lineHeight": null,
+        "fontFamily": "SF_Pro",
+        "fontStyle": "Regular",
+        "fontSize": [
+          "30px",
+          "16px"
+        ],
+        "fontWeight": 400,
+        "lineHeight": "normal",
         "letterSpacing": null,
         "textCase": null,
         "textDecoration": null
       },
-      "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "rawValueStatus": "observed-pending-review",
+      "reviewStatus": "source-read-completed",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -342,7 +443,46 @@
         "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "Duration and date cannot be distinguished from current metric values or unrelated summary metadata."
-      ]
+      ],
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25136,143:25151",
+        "sourceRoleMatched": true,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "textNodeRefs": [
+          {
+            "nodeId": "143:25146",
+            "text": "0:02",
+            "role": "record duration metadata",
+            "fontSize": "30px"
+          },
+          {
+            "nodeId": "143:25148",
+            "text": "8/9/22",
+            "role": "record date metadata",
+            "fontSize": "16px"
+          },
+          {
+            "nodeId": "143:25161",
+            "text": "0:02",
+            "role": "record duration metadata",
+            "fontSize": "30px"
+          },
+          {
+            "nodeId": "143:25163",
+            "text": "8/9/22",
+            "role": "record date metadata",
+            "fontSize": "16px"
+          }
+        ],
+        "evidenceNotes": "Workout record metadata was found, but duration and date use different source sizes. This entry remains pending review and must not collapse both roles into one accepted token without a later split-or-merge decision."
+      },
+      "fieldNotes": {
+        "fontSize": "Mixed source sizes: duration is 30px and date is 16px. Keep pending review; consider splitting metadata roles before acceptance."
+      }
     },
     {
       "token": "typography.record.label",
@@ -371,7 +511,7 @@
         "textDecoration": null
       },
       "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "reviewStatus": "not-found",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -392,7 +532,17 @@
         "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "A distinct source label role is not observed beyond title and metadata."
-      ]
+      ],
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25136,143:25151",
+        "sourceRoleMatched": false,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "reason": "No distinct record label was found that can be separated from record title or metadata in the mapped Card nodes."
+      }
     },
     {
       "token": "typography.record.unavailable",
@@ -421,7 +571,7 @@
         "textDecoration": null
       },
       "rawValueStatus": "pending",
-      "reviewStatus": "not-started",
+      "reviewStatus": "rejected",
       "acceptanceStatus": "not-reviewed",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
@@ -443,8 +593,22 @@
         "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
         "Unavailable record metadata remains synthetic and lacks source-backed typography evidence."
       ],
-      "planningRisk": "Mostly runtime-derived; reject if future review cannot confirm a source-backed unavailable record typography state."
+      "planningRisk": "Mostly runtime-derived; reject if future review cannot confirm a source-backed unavailable record typography state.",
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25136,143:25151",
+        "sourceRoleMatched": false,
+        "sourceReadStatus": "completed",
+        "readMethod": "get_design_context",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "reason": "No source-backed unavailable record state exists in the mapped Card nodes. The unavailable role remains runtime-derived and cannot receive observed raw values."
+      }
     }
   ],
-  "notes": "Prepared review matrix only. No Figma read, raw-value extraction, semantic token value write, CSS integration, acceptance, or promotion occurred."
+  "notes": "Prepared review matrix only. No Figma read, raw-value extraction, semantic token value write, CSS integration, acceptance, or promotion occurred.",
+  "readAdditionalFigmaNodes": false,
+  "extractedFigmaVariables": false,
+  "semanticTokenWriteStatus": "blocked",
+  "cssIntegrationStatus": "blocked"
 }

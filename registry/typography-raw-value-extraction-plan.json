@@ -1,7 +1,7 @@
 {
   "status": "planned",
   "scope": "constrained-typography-only",
-  "rawValueStatus": "pending",
+  "rawValueStatus": "review-matrix-populated",
   "promotionStatus": "not-promoted",
   "allowedTokenGroups": [
     "typography.metric",
@@ -469,5 +469,9 @@
   "notes": "This is a planning artifact only. It does not read Figma, extract variables, write raw typography values, update CSS, accept tokens, or promote assets.",
   "reviewMatrixStatus": "prepared",
   "reviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
-  "futureExtractionAllowed": false
+  "futureExtractionAllowed": false,
+  "executionStatus": "source-read-executed-to-review-matrix",
+  "executionTarget": "registry/typography-raw-value-review-matrix.json",
+  "semanticTokenWriteStatus": "blocked",
+  "cssIntegrationStatus": "blocked"
 }
