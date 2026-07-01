@@ -1,10 +1,10 @@
 {
-  "status": "planned",
+  "status": "executed",
   "scope": "typography-semantic-token-update-plan",
   "sourceValueLocation": "registry/typography-raw-value-review-matrix.json",
   "targetFile": "tokens/semantic.tokens.json",
-  "writeValuesInThisCycle": false,
-  "semanticTokenWriteStatus": "blocked",
+  "writeValuesInThisCycle": true,
+  "semanticTokenWriteStatus": "written-for-planned-candidates",
   "cssIntegrationStatus": "blocked",
   "promotionStatus": "not-promoted",
   "allowedUpdateCandidates": [
@@ -45,10 +45,11 @@
         "Confirm CSS integration remains blocked until a later CSS integration review.",
         "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
       ],
-      "writeStatus": "planned-not-written",
-      "semanticTokenWriteStatus": "blocked",
+      "writeStatus": "written-from-review-matrix",
+      "semanticTokenWriteStatus": "written",
       "cssIntegrationStatus": "blocked",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "statusAfterWrite": "candidate"
     },
     {
       "token": "typography.metric.unit",
@@ -66,10 +67,11 @@
         "Confirm CSS integration remains blocked until a later CSS integration review.",
         "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
       ],
-      "writeStatus": "planned-not-written",
-      "semanticTokenWriteStatus": "blocked",
+      "writeStatus": "written-from-review-matrix",
+      "semanticTokenWriteStatus": "written",
       "cssIntegrationStatus": "blocked",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "statusAfterWrite": "candidate"
     },
     {
       "token": "typography.metric.label",
@@ -87,10 +89,11 @@
         "Confirm CSS integration remains blocked until a later CSS integration review.",
         "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
       ],
-      "writeStatus": "planned-not-written",
-      "semanticTokenWriteStatus": "blocked",
+      "writeStatus": "written-from-review-matrix",
+      "semanticTokenWriteStatus": "written",
       "cssIntegrationStatus": "blocked",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "statusAfterWrite": "candidate"
     },
     {
       "token": "typography.record.title",
@@ -108,10 +111,11 @@
         "Confirm CSS integration remains blocked until a later CSS integration review.",
         "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
       ],
-      "writeStatus": "planned-not-written",
-      "semanticTokenWriteStatus": "blocked",
+      "writeStatus": "written-from-review-matrix",
+      "semanticTokenWriteStatus": "written",
       "cssIntegrationStatus": "blocked",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "statusAfterWrite": "candidate"
     },
     {
       "token": "typography.record.duration",
@@ -129,10 +133,11 @@
         "Confirm CSS integration remains blocked until a later CSS integration review.",
         "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
       ],
-      "writeStatus": "planned-not-written",
-      "semanticTokenWriteStatus": "blocked",
+      "writeStatus": "written-from-review-matrix",
+      "semanticTokenWriteStatus": "written",
       "cssIntegrationStatus": "blocked",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "statusAfterWrite": "candidate"
     },
     {
       "token": "typography.record.date",
@@ -150,11 +155,13 @@
         "Confirm CSS integration remains blocked until a later CSS integration review.",
         "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
       ],
-      "writeStatus": "planned-not-written",
-      "semanticTokenWriteStatus": "blocked",
+      "writeStatus": "written-from-review-matrix",
+      "semanticTokenWriteStatus": "written",
       "cssIntegrationStatus": "blocked",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "statusAfterWrite": "candidate"
     }
   ],
-  "notes": "This plan maps acceptance-candidate typography entries to future semantic token value update targets. It does not write token values, connect CSS, accept tokens, or promote assets."
+  "notes": "This plan maps acceptance-candidate typography entries to future semantic token value update targets. It does not write token values, connect CSS, accept tokens, or promote assets.",
+  "executionTarget": "tokens/semantic.tokens.json"
 }

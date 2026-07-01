@@ -336,3 +336,25 @@ Blocked tokens:
 - `typography.record.unavailable`
 
 Raw values remain only in `registry/typography-raw-value-review-matrix.json`. `tokens/semantic.tokens.json` values remain `{font.source.pending}`. CSS integration and promotion remain blocked.
+
+## Typography Semantic Token Value Update Execution Notes
+
+Twenty-ninth-cycle execution writes typography composite values for six planned semantic token candidates.
+
+Updated tokens:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+- `typography.record.duration`
+- `typography.record.date`
+
+Blocked tokens remain pending:
+
+- `typography.metric.caption`
+- `typography.record.metadata`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+The written values come only from `registry/typography-raw-value-review-matrix.json`. Updated tokens remain candidates. CSS integration, token acceptance, and promotion remain blocked.

@@ -1,0 +1,86 @@
+{
+  "status": "executed",
+  "scope": "typography-semantic-token-value-update-execution",
+  "sourceValueLocation": "registry/typography-raw-value-review-matrix.json",
+  "targetFile": "tokens/semantic.tokens.json",
+  "updatedTokens": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title",
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable"
+  ],
+  "semanticTokenWriteStatus": "written-for-planned-candidates",
+  "cssIntegrationStatus": "blocked",
+  "promotionStatus": "not-promoted",
+  "executionEntries": [
+    {
+      "token": "typography.metric.value",
+      "sourceReviewMatrixEntry": "typography.metric.value",
+      "targetSemanticToken": "typography.metric.value",
+      "valueWritten": true,
+      "writeStatus": "written-from-review-matrix",
+      "statusAfterWrite": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "sourceReviewMatrixEntry": "typography.metric.unit",
+      "targetSemanticToken": "typography.metric.unit",
+      "valueWritten": true,
+      "writeStatus": "written-from-review-matrix",
+      "statusAfterWrite": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "sourceReviewMatrixEntry": "typography.metric.label",
+      "targetSemanticToken": "typography.metric.label",
+      "valueWritten": true,
+      "writeStatus": "written-from-review-matrix",
+      "statusAfterWrite": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.title",
+      "sourceReviewMatrixEntry": "typography.record.title",
+      "targetSemanticToken": "typography.record.title",
+      "valueWritten": true,
+      "writeStatus": "written-from-review-matrix",
+      "statusAfterWrite": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.duration",
+      "sourceReviewMatrixEntry": "typography.record.duration",
+      "targetSemanticToken": "typography.record.duration",
+      "valueWritten": true,
+      "writeStatus": "written-from-review-matrix",
+      "statusAfterWrite": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "sourceReviewMatrixEntry": "typography.record.date",
+      "targetSemanticToken": "typography.record.date",
+      "valueWritten": true,
+      "writeStatus": "written-from-review-matrix",
+      "statusAfterWrite": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "Execution records write status only. Values were copied from the review matrix into tokens/semantic.tokens.json for planned candidates; blocked tokens remain pending."
+}

@@ -129,20 +129,19 @@
       "type": "style-system",
       "evidenceStatus": "source-evidence-reviewed-draft",
       "sourceReviewStatus": "high-and-medium-priority-reviewed-draft",
-      "rawValueStatus": "pending-semantic-token-values",
+      "rawValueStatus": "semantic-token-values-written-for-typography-candidates",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Semantic token update plan is prepared, but token values remain pending.",
-        "Raw typography values remain review-matrix evidence only.",
-        "No semantic token value has been written.",
+        "Typography semantic token values are written only for six planned candidates.",
+        "Updated typography tokens remain candidate tokens and are not promoted.",
         "CSS integration remains blocked.",
-        "typography.metric.caption, typography.record.metadata, typography.record.label, and typography.record.unavailable remain blocked from update.",
+        "typography.metric.caption, typography.record.metadata, typography.record.label, and typography.record.unavailable remain blocked from value update.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred."
       ],
-      "nextAction": "Run an explicit typography token value update cycle for the six planned candidates before any CSS integration or promotion review.",
+      "nextAction": "Review typography token value transferability and accessibility before any CSS integration or promotion review.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -151,7 +150,8 @@
       "cssIntegrationStatus": "blocked",
       "acceptanceReviewStatus": "reviewed",
       "splitDecisionStatus": "record-metadata-reviewed",
-      "semanticTokenUpdatePlanStatus": "planned"
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenValueUpdateStatus": "written-for-planned-typography-candidates"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

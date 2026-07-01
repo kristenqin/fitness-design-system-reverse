@@ -469,7 +469,16 @@
   "typography": {
     "metric": {
       "value": {
-        "value": "{font.source.pending}",
+        "value": {
+          "fontFamily": "SF_Pro",
+          "fontStyle": "Regular",
+          "fontSize": "24px",
+          "fontWeight": 400,
+          "lineHeight": "normal",
+          "letterSpacing": null,
+          "textCase": null,
+          "textDecoration": null
+        },
         "type": "typography",
         "status": "candidate",
         "evidenceRefs": [
@@ -478,7 +487,7 @@
         ],
         "description": "Large numeric value in metric surfaces.",
         "sourceReviewStatus": "reviewed-draft",
-        "rawValueStatus": "pending",
+        "rawValueStatus": "semantic-token-value-written",
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
@@ -489,17 +498,29 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked",
+        "semanticTokenWriteStatus": "written",
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "acceptance-candidate",
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "semanticTokenValueUpdateStatus": "written-from-review-matrix",
+        "valueSource": "registry/typography-raw-value-review-matrix.json",
+        "valueSourceStatus": "acceptance-candidate"
       },
       "unit": {
-        "value": "{font.source.pending}",
+        "value": {
+          "fontFamily": "SF_Pro",
+          "fontStyle": "Regular",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "normal",
+          "letterSpacing": null,
+          "textCase": null,
+          "textDecoration": null
+        },
         "type": "typography",
         "status": "candidate",
         "evidenceRefs": [
@@ -508,7 +529,7 @@
         ],
         "description": "Unit next to metric value.",
         "sourceReviewStatus": "reviewed-draft",
-        "rawValueStatus": "pending",
+        "rawValueStatus": "semantic-token-value-written",
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
@@ -519,17 +540,29 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked",
+        "semanticTokenWriteStatus": "written",
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "acceptance-candidate",
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "semanticTokenValueUpdateStatus": "written-from-review-matrix",
+        "valueSource": "registry/typography-raw-value-review-matrix.json",
+        "valueSourceStatus": "acceptance-candidate"
       },
       "label": {
-        "value": "{font.source.pending}",
+        "value": {
+          "fontFamily": "SF_Pro",
+          "fontStyle": "Regular",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "normal",
+          "letterSpacing": null,
+          "textCase": null,
+          "textDecoration": null
+        },
         "type": "typography",
         "status": "candidate",
         "evidenceRefs": [
@@ -538,7 +571,7 @@
         ],
         "description": "Metric name or compact label.",
         "sourceReviewStatus": "reviewed-draft",
-        "rawValueStatus": "pending",
+        "rawValueStatus": "semantic-token-value-written",
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
@@ -549,14 +582,17 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked",
+        "semanticTokenWriteStatus": "written",
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "acceptance-candidate",
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "semanticTokenValueUpdateStatus": "written-from-review-matrix",
+        "valueSource": "registry/typography-raw-value-review-matrix.json",
+        "valueSourceStatus": "acceptance-candidate"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -583,7 +619,10 @@
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "not-found",
         "semanticTokenUpdatePlanStatus": "blocked",
-        "semanticTokenUpdateBlockReason": "No source-backed metric caption role was found in the constrained source read."
+        "semanticTokenUpdateBlockReason": "No source-backed metric caption role was found in the constrained source read.",
+        "semanticTokenValueUpdateStatus": "blocked",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       }
     },
     "card": {
@@ -617,7 +656,16 @@
     },
     "record": {
       "title": {
-        "value": "{font.source.pending}",
+        "value": {
+          "fontFamily": "SF_Pro",
+          "fontStyle": "Regular",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "normal",
+          "letterSpacing": null,
+          "textCase": null,
+          "textDecoration": null
+        },
         "type": "typography",
         "status": "candidate",
         "evidenceRefs": [
@@ -626,7 +674,7 @@
         ],
         "description": "Completed record title typography role.",
         "sourceReviewStatus": "reviewed-draft",
-        "rawValueStatus": "pending",
+        "rawValueStatus": "semantic-token-value-written",
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
@@ -637,14 +685,17 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked",
+        "semanticTokenWriteStatus": "written",
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "acceptance-candidate",
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "semanticTokenValueUpdateStatus": "written-from-review-matrix",
+        "valueSource": "registry/typography-raw-value-review-matrix.json",
+        "valueSourceStatus": "acceptance-candidate"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -676,7 +727,10 @@
           "typography.record.date"
         ],
         "semanticTokenUpdatePlanStatus": "blocked",
-        "semanticTokenUpdateBlockReason": "Old metadata token is split-required and retained only until cleanup or migration planning."
+        "semanticTokenUpdateBlockReason": "Old metadata token is split-required and retained only until cleanup or migration planning.",
+        "semanticTokenValueUpdateStatus": "blocked",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -702,7 +756,10 @@
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "not-found",
         "semanticTokenUpdatePlanStatus": "blocked",
-        "semanticTokenUpdateBlockReason": "No source-backed record label role was found separate from title, duration, or date."
+        "semanticTokenUpdateBlockReason": "No source-backed record label role was found separate from title, duration, or date.",
+        "semanticTokenValueUpdateStatus": "blocked",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -729,14 +786,26 @@
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "rejected",
         "semanticTokenUpdatePlanStatus": "blocked",
-        "semanticTokenUpdateBlockReason": "Unavailable record typography is runtime-derived and rejected for source-backed semantic token update."
+        "semanticTokenUpdateBlockReason": "Unavailable record typography is runtime-derived and rejected for source-backed semantic token update.",
+        "semanticTokenValueUpdateStatus": "blocked",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "duration": {
-        "value": "{font.source.pending}",
+        "value": {
+          "fontFamily": "SF_Pro",
+          "fontStyle": "Regular",
+          "fontSize": "30px",
+          "fontWeight": 400,
+          "lineHeight": "normal",
+          "letterSpacing": null,
+          "textCase": null,
+          "textDecoration": null
+        },
         "type": "typography",
         "status": "candidate",
         "sourceReviewStatus": "reviewed-draft",
-        "rawValueStatus": "pending",
+        "rawValueStatus": "semantic-token-value-written",
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
@@ -747,7 +816,7 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked",
+        "semanticTokenWriteStatus": "written",
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "acceptance-candidate",
         "splitDecisionStatus": "reviewed",
@@ -759,14 +828,26 @@
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "semanticTokenValueUpdateStatus": "written-from-review-matrix",
+        "valueSource": "registry/typography-raw-value-review-matrix.json",
+        "valueSourceStatus": "acceptance-candidate"
       },
       "date": {
-        "value": "{font.source.pending}",
+        "value": {
+          "fontFamily": "SF_Pro",
+          "fontStyle": "Regular",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": "normal",
+          "letterSpacing": null,
+          "textCase": null,
+          "textDecoration": null
+        },
         "type": "typography",
         "status": "candidate",
         "sourceReviewStatus": "reviewed-draft",
-        "rawValueStatus": "pending",
+        "rawValueStatus": "semantic-token-value-written",
         "sourceReviewPriority": "high",
         "sourceEvidenceStrength": "strong",
         "gateStatus": "reviewed",
@@ -777,7 +858,7 @@
         "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
         "futureExtractionAllowed": false,
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
-        "semanticTokenWriteStatus": "blocked",
+        "semanticTokenWriteStatus": "written",
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "acceptance-candidate",
         "splitDecisionStatus": "reviewed",
@@ -789,7 +870,10 @@
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "semanticTokenValueUpdateStatus": "written-from-review-matrix",
+        "valueSource": "registry/typography-raw-value-review-matrix.json",
+        "valueSourceStatus": "acceptance-candidate"
       }
     },
     "trend": {

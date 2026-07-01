@@ -234,6 +234,15 @@
       ],
       "blockedFromSemanticTokenUpdate": [
         "typography.metric.caption"
+      ],
+      "semanticTokenValueUpdateStatus": "written-for-planned-candidates",
+      "updatedSemanticTokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "blockedFromSemanticTokenValueUpdate": [
+        "typography.metric.caption"
       ]
     },
     {
@@ -311,6 +320,17 @@
         "typography.record.date"
       ],
       "blockedFromSemanticTokenUpdate": [
+        "typography.record.metadata",
+        "typography.record.label",
+        "typography.record.unavailable"
+      ],
+      "semanticTokenValueUpdateStatus": "written-for-planned-candidates",
+      "updatedSemanticTokens": [
+        "typography.record.title",
+        "typography.record.duration",
+        "typography.record.date"
+      ],
+      "blockedFromSemanticTokenValueUpdate": [
         "typography.record.metadata",
         "typography.record.label",
         "typography.record.unavailable"
