@@ -132,17 +132,17 @@
       "rawValueStatus": "pending-semantic-token-values",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Record metadata split decision is reviewed, but semantic token values remain pending.",
-        "New tokens typography.record.duration and typography.record.date are candidates only.",
-        "typography.record.metadata remains as split-required until cleanup or migration plan.",
-        "Acceptance candidates are evidence only and are not accepted semantic token values.",
+        "Semantic token update plan is prepared, but token values remain pending.",
+        "Raw typography values remain review-matrix evidence only.",
+        "No semantic token value has been written.",
+        "CSS integration remains blocked.",
+        "typography.metric.caption, typography.record.metadata, typography.record.label, and typography.record.unavailable remain blocked from update.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
-        "radius.policy remains deferred.",
-        "CSS is still local runtime styling."
+        "radius.policy remains deferred."
       ],
-      "nextAction": "Plan a semantic token update review for split record metadata candidates while keeping typography.record.metadata until cleanup or migration is scoped.",
+      "nextAction": "Run an explicit typography token value update cycle for the six planned candidates before any CSS integration or promotion review.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -150,7 +150,8 @@
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "acceptanceReviewStatus": "reviewed",
-      "splitDecisionStatus": "record-metadata-reviewed"
+      "splitDecisionStatus": "record-metadata-reviewed",
+      "semanticTokenUpdatePlanStatus": "planned"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

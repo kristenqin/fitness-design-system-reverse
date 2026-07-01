@@ -117,7 +117,9 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "Source role is matched, observed typography fields are constrained to allowed typography fields, and the role is distinct enough to plan a future semantic token update review.",
-      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan",
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json"
     },
     {
       "token": "typography.metric.unit",
@@ -191,7 +193,9 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "Source role is matched for units adjacent to metric values, and observed typography fields are constrained to allowed typography fields.",
-      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan",
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json"
     },
     {
       "token": "typography.metric.label",
@@ -270,7 +274,9 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "Source role is matched across Move, Steps, and Distance labels, and the role is distinct from value and unit text.",
-      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan",
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json"
     },
     {
       "token": "typography.metric.caption",
@@ -332,7 +338,9 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "No source-backed metric caption role was found in the mapped Stats node, so this entry is not eligible for semantic token update.",
-      "semanticTokenUpdateEligibility": "not-eligible"
+      "semanticTokenUpdateEligibility": "not-eligible",
+      "semanticTokenUpdatePlanStatus": "blocked",
+      "semanticTokenUpdateBlockReason": "No source-backed metric caption role was found in the constrained source read."
     },
     {
       "token": "typography.record.title",
@@ -406,7 +414,9 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "Source role is matched across repeated workout card titles, and the title role is distinct from record metadata.",
-      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan"
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan",
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json"
     },
     {
       "token": "typography.record.metadata",
@@ -520,7 +530,9 @@
         ],
         "reason": "Duration and date are both source-backed record metadata roles, but the observed metadata evidence shows different font sizes, so one shared typography.record.metadata token is too broad for safe semantic token update planning.",
         "semanticTokenUpdateEligibility": "blocked-until-split-token-update-plan"
-      }
+      },
+      "semanticTokenUpdatePlanStatus": "blocked",
+      "semanticTokenUpdateBlockReason": "Old metadata token is split-required and retained only until cleanup or migration planning."
     },
     {
       "token": "typography.record.label",
@@ -583,7 +595,9 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "No distinct source-backed record label was found separate from title or metadata, so this entry is not eligible for semantic token update.",
-      "semanticTokenUpdateEligibility": "not-eligible"
+      "semanticTokenUpdateEligibility": "not-eligible",
+      "semanticTokenUpdatePlanStatus": "blocked",
+      "semanticTokenUpdateBlockReason": "No source-backed record label role was found separate from title, duration, or date."
     },
     {
       "token": "typography.record.unavailable",
@@ -647,7 +661,9 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "No source-backed unavailable record state was found; the unavailable role remains runtime-derived and is not eligible for semantic token update.",
-      "semanticTokenUpdateEligibility": "not-eligible"
+      "semanticTokenUpdateEligibility": "not-eligible",
+      "semanticTokenUpdatePlanStatus": "blocked",
+      "semanticTokenUpdateBlockReason": "Unavailable record typography is runtime-derived and rejected for source-backed semantic token update."
     },
     {
       "tokenGroup": "typography.record",
@@ -723,7 +739,9 @@
           }
         ],
         "evidenceNotes": "Duration entry is split from existing typography.record.metadata evidence; no new source read occurred."
-      }
+      },
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json"
     },
     {
       "tokenGroup": "typography.record",
@@ -799,10 +817,12 @@
           }
         ],
         "evidenceNotes": "Date entry is split from existing typography.record.metadata evidence; no new source read occurred."
-      }
+      },
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json"
     }
   ],
-  "notes": "Prepared review matrix only. No Figma read, raw-value extraction, semantic token value write, CSS integration, acceptance, or promotion occurred.",
+  "notes": "Raw typography values remain review-matrix evidence only. Semantic token values are still pending. CSS integration, acceptance, and promotion remain blocked.",
   "readAdditionalFigmaNodes": false,
   "extractedFigmaVariables": false,
   "semanticTokenWriteStatus": "blocked",

@@ -108,6 +108,7 @@ decisions/
   ADR-013-typography-raw-value-review-matrix-before-extraction.md
   ADR-014-typography-raw-values-require-acceptance-before-token-update.md
   ADR-015-split-record-metadata-typography.md
+  ADR-016-plan-typography-semantic-token-value-update.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -139,6 +140,7 @@ registry/
   typography-record-metadata-split-decision.json
   typography-raw-value-extraction-plan.json
   typography-raw-value-review-matrix.json
+  typography-semantic-token-update-plan.json
 reviews/
   AwardBadge.runtime-plan.md
   ComponentState.accessibility-review.md
@@ -159,6 +161,7 @@ reviews/
   TypographyRawValue.extraction-plan.md
   TypographyRawValue.execution-review.md
   TypographyRawValue.review-matrix-preparation.md
+  TypographySemanticToken.update-plan.md
   WorkoutItem.runtime-plan.md
 scripts/
   validate-project.ts

@@ -225,7 +225,16 @@
           "typography.record.label",
           "typography.record.unavailable"
         ]
-      }
+      },
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdateCandidates": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "blockedFromSemanticTokenUpdate": [
+        "typography.metric.caption"
+      ]
     },
     {
       "group": "typography.record",
@@ -294,7 +303,18 @@
         "reason": "Duration and date are both source-backed record metadata roles, but the observed metadata evidence shows different font sizes, so one shared typography.record.metadata token is too broad for safe semantic token update planning.",
         "semanticTokenWriteStatus": "blocked",
         "promotionStatus": "not-promoted"
-      }
+      },
+      "semanticTokenUpdatePlanStatus": "planned",
+      "semanticTokenUpdateCandidates": [
+        "typography.record.title",
+        "typography.record.duration",
+        "typography.record.date"
+      ],
+      "blockedFromSemanticTokenUpdate": [
+        "typography.record.metadata",
+        "typography.record.label",
+        "typography.record.unavailable"
+      ]
     },
     {
       "group": "typography.trend",

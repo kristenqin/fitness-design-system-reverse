@@ -1,0 +1,160 @@
+{
+  "status": "planned",
+  "scope": "typography-semantic-token-update-plan",
+  "sourceValueLocation": "registry/typography-raw-value-review-matrix.json",
+  "targetFile": "tokens/semantic.tokens.json",
+  "writeValuesInThisCycle": false,
+  "semanticTokenWriteStatus": "blocked",
+  "cssIntegrationStatus": "blocked",
+  "promotionStatus": "not-promoted",
+  "allowedUpdateCandidates": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title",
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable",
+    "typography.trend.*",
+    "typography.reward.*",
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "updatePlanEntries": [
+    {
+      "token": "typography.metric.value",
+      "sourceReviewMatrixEntry": "typography.metric.value",
+      "sourceAcceptanceStatus": "acceptance-candidate",
+      "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+      "targetSemanticToken": "typography.metric.value",
+      "currentSemanticValue": "{font.source.pending}",
+      "futureWritePolicy": "requires-explicit-token-value-update-cycle",
+      "preWriteChecks": [
+        "Confirm source review matrix entry remains acceptance-candidate.",
+        "Confirm current semantic token value is still {font.source.pending}.",
+        "Confirm no blocked fields are included in the future token value update.",
+        "Confirm update is performed only in an explicit token value update cycle.",
+        "Confirm CSS integration remains blocked until a later CSS integration review.",
+        "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
+      ],
+      "writeStatus": "planned-not-written",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "sourceReviewMatrixEntry": "typography.metric.unit",
+      "sourceAcceptanceStatus": "acceptance-candidate",
+      "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+      "targetSemanticToken": "typography.metric.unit",
+      "currentSemanticValue": "{font.source.pending}",
+      "futureWritePolicy": "requires-explicit-token-value-update-cycle",
+      "preWriteChecks": [
+        "Confirm source review matrix entry remains acceptance-candidate.",
+        "Confirm current semantic token value is still {font.source.pending}.",
+        "Confirm no blocked fields are included in the future token value update.",
+        "Confirm update is performed only in an explicit token value update cycle.",
+        "Confirm CSS integration remains blocked until a later CSS integration review.",
+        "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
+      ],
+      "writeStatus": "planned-not-written",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "sourceReviewMatrixEntry": "typography.metric.label",
+      "sourceAcceptanceStatus": "acceptance-candidate",
+      "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+      "targetSemanticToken": "typography.metric.label",
+      "currentSemanticValue": "{font.source.pending}",
+      "futureWritePolicy": "requires-explicit-token-value-update-cycle",
+      "preWriteChecks": [
+        "Confirm source review matrix entry remains acceptance-candidate.",
+        "Confirm current semantic token value is still {font.source.pending}.",
+        "Confirm no blocked fields are included in the future token value update.",
+        "Confirm update is performed only in an explicit token value update cycle.",
+        "Confirm CSS integration remains blocked until a later CSS integration review.",
+        "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
+      ],
+      "writeStatus": "planned-not-written",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.title",
+      "sourceReviewMatrixEntry": "typography.record.title",
+      "sourceAcceptanceStatus": "acceptance-candidate",
+      "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+      "targetSemanticToken": "typography.record.title",
+      "currentSemanticValue": "{font.source.pending}",
+      "futureWritePolicy": "requires-explicit-token-value-update-cycle",
+      "preWriteChecks": [
+        "Confirm source review matrix entry remains acceptance-candidate.",
+        "Confirm current semantic token value is still {font.source.pending}.",
+        "Confirm no blocked fields are included in the future token value update.",
+        "Confirm update is performed only in an explicit token value update cycle.",
+        "Confirm CSS integration remains blocked until a later CSS integration review.",
+        "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
+      ],
+      "writeStatus": "planned-not-written",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.duration",
+      "sourceReviewMatrixEntry": "typography.record.duration",
+      "sourceAcceptanceStatus": "acceptance-candidate",
+      "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+      "targetSemanticToken": "typography.record.duration",
+      "currentSemanticValue": "{font.source.pending}",
+      "futureWritePolicy": "requires-explicit-token-value-update-cycle",
+      "preWriteChecks": [
+        "Confirm source review matrix entry remains acceptance-candidate.",
+        "Confirm current semantic token value is still {font.source.pending}.",
+        "Confirm no blocked fields are included in the future token value update.",
+        "Confirm update is performed only in an explicit token value update cycle.",
+        "Confirm CSS integration remains blocked until a later CSS integration review.",
+        "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
+      ],
+      "writeStatus": "planned-not-written",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "sourceReviewMatrixEntry": "typography.record.date",
+      "sourceAcceptanceStatus": "acceptance-candidate",
+      "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+      "targetSemanticToken": "typography.record.date",
+      "currentSemanticValue": "{font.source.pending}",
+      "futureWritePolicy": "requires-explicit-token-value-update-cycle",
+      "preWriteChecks": [
+        "Confirm source review matrix entry remains acceptance-candidate.",
+        "Confirm current semantic token value is still {font.source.pending}.",
+        "Confirm no blocked fields are included in the future token value update.",
+        "Confirm update is performed only in an explicit token value update cycle.",
+        "Confirm CSS integration remains blocked until a later CSS integration review.",
+        "Confirm promotion remains blocked until token value, contrast, accessibility, and transferability reviews are complete."
+      ],
+      "writeStatus": "planned-not-written",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "This plan maps acceptance-candidate typography entries to future semantic token value update targets. It does not write token values, connect CSS, accept tokens, or promote assets."
+}

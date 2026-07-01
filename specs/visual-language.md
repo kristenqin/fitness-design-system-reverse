@@ -314,3 +314,25 @@ Reason:
 - one shared metadata token is too broad for a safe semantic token update plan
 
 The new tokens are candidates only. Their values remain `{font.source.pending}`. No CSS integration, token acceptance, or promotion occurs in this split decision.
+
+## Typography Semantic Token Update Plan Notes
+
+Twenty-eighth-cycle planning defines which typography candidates may enter a future semantic token value update cycle.
+
+Allowed update candidates:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+- `typography.record.duration`
+- `typography.record.date`
+
+Blocked tokens:
+
+- `typography.metric.caption`
+- `typography.record.metadata`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+Raw values remain only in `registry/typography-raw-value-review-matrix.json`. `tokens/semantic.tokens.json` values remain `{font.source.pending}`. CSS integration and promotion remain blocked.

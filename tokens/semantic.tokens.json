@@ -491,7 +491,12 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "acceptance-candidate"
+        "acceptanceStatus": "acceptance-candidate",
+        "semanticTokenUpdatePlanStatus": "planned",
+        "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
+        "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "unit": {
         "value": "{font.source.pending}",
@@ -516,7 +521,12 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "acceptance-candidate"
+        "acceptanceStatus": "acceptance-candidate",
+        "semanticTokenUpdatePlanStatus": "planned",
+        "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
+        "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "label": {
         "value": "{font.source.pending}",
@@ -541,7 +551,12 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "acceptance-candidate"
+        "acceptanceStatus": "acceptance-candidate",
+        "semanticTokenUpdatePlanStatus": "planned",
+        "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
+        "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -566,7 +581,9 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "not-found"
+        "acceptanceStatus": "not-found",
+        "semanticTokenUpdatePlanStatus": "blocked",
+        "semanticTokenUpdateBlockReason": "No source-backed metric caption role was found in the constrained source read."
       }
     },
     "card": {
@@ -622,7 +639,12 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "acceptance-candidate"
+        "acceptanceStatus": "acceptance-candidate",
+        "semanticTokenUpdatePlanStatus": "planned",
+        "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
+        "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -652,7 +674,9 @@
         "replacementCandidates": [
           "typography.record.duration",
           "typography.record.date"
-        ]
+        ],
+        "semanticTokenUpdatePlanStatus": "blocked",
+        "semanticTokenUpdateBlockReason": "Old metadata token is split-required and retained only until cleanup or migration planning."
       },
       "label": {
         "value": "{font.source.pending}",
@@ -676,7 +700,9 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "not-found"
+        "acceptanceStatus": "not-found",
+        "semanticTokenUpdatePlanStatus": "blocked",
+        "semanticTokenUpdateBlockReason": "No source-backed record label role was found separate from title, duration, or date."
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -701,7 +727,9 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "rejected"
+        "acceptanceStatus": "rejected",
+        "semanticTokenUpdatePlanStatus": "blocked",
+        "semanticTokenUpdateBlockReason": "Unavailable record typography is runtime-derived and rejected for source-backed semantic token update."
       },
       "duration": {
         "value": "{font.source.pending}",
@@ -726,7 +754,12 @@
         "evidenceRefs": [
           "Components/WorkoutItem/Default"
         ],
-        "description": "Completed record duration typography role split from metadata."
+        "description": "Completed record duration typography role split from metadata.",
+        "semanticTokenUpdatePlanStatus": "planned",
+        "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
+        "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       },
       "date": {
         "value": "{font.source.pending}",
@@ -751,7 +784,12 @@
         "evidenceRefs": [
           "Components/WorkoutItem/Default"
         ],
-        "description": "Completed record date typography role split from metadata."
+        "description": "Completed record date typography role split from metadata.",
+        "semanticTokenUpdatePlanStatus": "planned",
+        "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
+        "futureValueSource": "registry/typography-raw-value-review-matrix.json",
+        "cssIntegrationStatus": "blocked",
+        "promotionStatus": "not-promoted"
       }
     },
     "trend": {
