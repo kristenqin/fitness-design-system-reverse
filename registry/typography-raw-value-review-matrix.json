@@ -439,7 +439,7 @@
       },
       "rawValueStatus": "observed-pending-review",
       "reviewStatus": "source-read-completed",
-      "acceptanceStatus": "pending-split-decision",
+      "acceptanceStatus": "split-required",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
       "promotionStatus": "not-promoted",
@@ -500,7 +500,7 @@
       },
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "Duration and date are both source-backed record metadata, but they have different observed font sizes and require a split-or-merge decision before any semantic token update plan.",
-      "semanticTokenUpdateEligibility": "blocked",
+      "semanticTokenUpdateEligibility": "blocked-until-split-token-update-plan",
       "splitProposal": {
         "reason": "Duration and date have different observed font sizes.",
         "proposedTokens": [
@@ -509,6 +509,17 @@
         ],
         "schemaChangeRequired": true,
         "semanticTokenUpdateEligibility": "blocked"
+      },
+      "splitDecisionStatus": "reviewed",
+      "splitDecision": {
+        "decision": "split-record-metadata",
+        "sourceToken": "typography.record.metadata",
+        "proposedTokens": [
+          "typography.record.duration",
+          "typography.record.date"
+        ],
+        "reason": "Duration and date are both source-backed record metadata roles, but the observed metadata evidence shows different font sizes, so one shared typography.record.metadata token is too broad for safe semantic token update planning.",
+        "semanticTokenUpdateEligibility": "blocked-until-split-token-update-plan"
       }
     },
     {
@@ -637,6 +648,158 @@
       "acceptanceReviewStatus": "reviewed",
       "acceptanceReason": "No source-backed unavailable record state was found; the unavailable role remains runtime-derived and is not eligible for semantic token update.",
       "semanticTokenUpdateEligibility": "not-eligible"
+    },
+    {
+      "tokenGroup": "typography.record",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "rawValueStatus": "observed-pending-review",
+      "reviewStatus": "source-read-completed",
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceStatus": "acceptance-candidate",
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "Duration and date cannot be distinguished from current metric values or unrelated summary metadata."
+      ],
+      "splitDecisionStatus": "reviewed",
+      "token": "typography.record.duration",
+      "sourceRole": "Workout record duration metadata",
+      "futureRawValues": {
+        "fontFamily": "SF_Pro",
+        "fontStyle": "Regular",
+        "fontSize": "30px",
+        "fontWeight": 400,
+        "lineHeight": "normal",
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25136,143:25151",
+        "sourceRoleMatched": true,
+        "sourceReadStatus": "completed-from-existing-review-matrix-evidence",
+        "readMethod": "existing-review-matrix-evidence",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "textNodeRefs": [
+          {
+            "nodeId": "143:25146",
+            "text": "0:02",
+            "role": "record duration metadata",
+            "fontSize": "30px"
+          },
+          {
+            "nodeId": "143:25161",
+            "text": "0:02",
+            "role": "record duration metadata",
+            "fontSize": "30px"
+          }
+        ],
+        "evidenceNotes": "Duration entry is split from existing typography.record.metadata evidence; no new source read occurred."
+      }
+    },
+    {
+      "tokenGroup": "typography.record",
+      "priority": "primary",
+      "sourceEvidenceStrength": "strong",
+      "plannedFields": [
+        "fontFamily",
+        "fontStyle",
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "letterSpacing",
+        "textCase",
+        "textDecoration"
+      ],
+      "rawValueStatus": "observed-pending-review",
+      "reviewStatus": "source-read-completed",
+      "acceptanceReviewStatus": "reviewed",
+      "acceptanceStatus": "acceptance-candidate",
+      "semanticTokenUpdateEligibility": "requires-semantic-token-update-plan",
+      "semanticTokenWriteStatus": "blocked",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted",
+      "evidenceRequired": [
+        "Existing captured Summary Dashboard source evidence must identify the text role.",
+        "The planned token must match the role defined in the typography raw-value extraction plan.",
+        "Future source read must remain constrained to typography fields only.",
+        "Future values must be recorded in this review matrix before any semantic token file update.",
+        "Reviewer must confirm the value is transferable role evidence, not source-specific polish."
+      ],
+      "rejectionCriteria": [
+        "The source role cannot be matched to the planned semantic token.",
+        "The value requires reading additional Figma nodes outside the approved scope.",
+        "The value comes from local runtime CSS or Storybook implementation instead of source evidence.",
+        "The extraction includes blocked fields such as color, spacing, layout geometry, radius, or CSS variables.",
+        "The value is written directly to tokens/semantic.tokens.json before review acceptance.",
+        "The token would be accepted, promoted, or connected to CSS during review-matrix preparation.",
+        "Duration and date cannot be distinguished from current metric values or unrelated summary metadata."
+      ],
+      "splitDecisionStatus": "reviewed",
+      "token": "typography.record.date",
+      "sourceRole": "Workout record date metadata",
+      "futureRawValues": {
+        "fontFamily": "SF_Pro",
+        "fontStyle": "Regular",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "normal",
+        "letterSpacing": null,
+        "textCase": null,
+        "textDecoration": null
+      },
+      "sourceReadEvidence": {
+        "sourceRef": "figma-node-143-23952",
+        "sourceNodeRef": "143:25136,143:25151",
+        "sourceRoleMatched": true,
+        "sourceReadStatus": "completed-from-existing-review-matrix-evidence",
+        "readMethod": "existing-review-matrix-evidence",
+        "readAdditionalFigmaNodes": false,
+        "extractedFigmaVariables": false,
+        "textNodeRefs": [
+          {
+            "nodeId": "143:25148",
+            "text": "8/9/22",
+            "role": "record date metadata",
+            "fontSize": "16px"
+          },
+          {
+            "nodeId": "143:25163",
+            "text": "8/9/22",
+            "role": "record date metadata",
+            "fontSize": "16px"
+          }
+        ],
+        "evidenceNotes": "Date entry is split from existing typography.record.metadata evidence; no new source read occurred."
+      }
     }
   ],
   "notes": "Prepared review matrix only. No Figma read, raw-value extraction, semantic token value write, CSS integration, acceptance, or promotion occurred.",
@@ -647,5 +810,6 @@
   "acceptanceReviewStatus": "reviewed",
   "acceptanceCandidateCount": 4,
   "pendingSplitDecisionCount": 1,
-  "notFoundOrRejectedCount": 3
+  "notFoundOrRejectedCount": 3,
+  "splitDecisionStatus": "record-metadata-reviewed"
 }

@@ -1,0 +1,79 @@
+{
+  "status": "reviewed",
+  "decision": "split-record-metadata",
+  "sourceToken": "typography.record.metadata",
+  "proposedTokens": [
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "reason": "Duration and date are both source-backed record metadata roles, but the observed metadata evidence shows different font sizes, so one shared typography.record.metadata token is too broad for safe semantic token update planning.",
+  "sourceEvidence": {
+    "sourceRef": "figma-node-143-23952",
+    "sourceNodeRefs": [
+      "143:25136",
+      "143:25151"
+    ],
+    "duration": {
+      "role": "Workout record duration metadata",
+      "observedFontSize": "30px",
+      "textNodeRefs": [
+        {
+          "nodeId": "143:25146",
+          "text": "0:02"
+        },
+        {
+          "nodeId": "143:25161",
+          "text": "0:02"
+        }
+      ]
+    },
+    "date": {
+      "role": "Workout record date metadata",
+      "observedFontSize": "16px",
+      "textNodeRefs": [
+        {
+          "nodeId": "143:25148",
+          "text": "8/9/22"
+        },
+        {
+          "nodeId": "143:25163",
+          "text": "8/9/22"
+        }
+      ]
+    },
+    "readAdditionalFigmaNodes": false,
+    "extractedFigmaVariables": false,
+    "notes": "Evidence is reused from existing typography raw-value review matrix entries; no new source read occurred in this cycle."
+  },
+  "oldTokenPolicy": {
+    "token": "typography.record.metadata",
+    "status": "split-required",
+    "semanticTokenValuePolicy": "keep-pending",
+    "doNotDeleteYet": true
+  },
+  "newTokenPolicy": {
+    "typography.record.duration": {
+      "status": "candidate",
+      "value": "{font.source.pending}",
+      "semanticTokenWriteStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    "typography.record.date": {
+      "status": "candidate",
+      "value": "{font.source.pending}",
+      "semanticTokenWriteStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    }
+  },
+  "blockedActions": [
+    "Reading new Figma source",
+    "Extracting Figma variables",
+    "Writing raw values into tokens/semantic.tokens.json",
+    "Deleting typography.record.metadata before cleanup or migration planning",
+    "Marking typography.record.duration or typography.record.date as accepted",
+    "Connecting typography tokens to CSS",
+    "Promoting typography tokens, components, or SummaryDashboard"
+  ],
+  "nextAction": "Create a semantic token update plan for typography.record.duration and typography.record.date while keeping all values pending until explicitly approved.",
+  "promotionStatus": "not-promoted"
+}

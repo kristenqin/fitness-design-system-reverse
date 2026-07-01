@@ -245,7 +245,9 @@
         "typography.record.title",
         "typography.record.metadata",
         "typography.record.label",
-        "typography.record.unavailable"
+        "typography.record.unavailable",
+        "typography.record.duration",
+        "typography.record.date"
       ],
       "sourceStatus": "captured",
       "runtimeStatus": "runtime-evidence-mapped",
@@ -280,6 +282,18 @@
           "typography.record.label",
           "typography.record.unavailable"
         ]
+      },
+      "splitDecisionStatus": "reviewed",
+      "splitSummary": {
+        "sourceToken": "typography.record.metadata",
+        "decision": "split-record-metadata",
+        "proposedTokens": [
+          "typography.record.duration",
+          "typography.record.date"
+        ],
+        "reason": "Duration and date are both source-backed record metadata roles, but the observed metadata evidence shows different font sizes, so one shared typography.record.metadata token is too broad for safe semantic token update planning.",
+        "semanticTokenWriteStatus": "blocked",
+        "promotionStatus": "not-promoted"
       }
     },
     {

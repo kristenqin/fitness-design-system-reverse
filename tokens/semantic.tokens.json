@@ -646,7 +646,13 @@
         "rawValueReviewStatus": "source-read-executed-to-review-matrix",
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
-        "acceptanceStatus": "pending-split-decision"
+        "acceptanceStatus": "pending-split-decision",
+        "splitDecisionStatus": "reviewed",
+        "splitStatus": "split-required",
+        "replacementCandidates": [
+          "typography.record.duration",
+          "typography.record.date"
+        ]
       },
       "label": {
         "value": "{font.source.pending}",
@@ -696,6 +702,56 @@
         "semanticTokenWriteStatus": "blocked",
         "acceptanceReviewStatus": "reviewed",
         "acceptanceStatus": "rejected"
+      },
+      "duration": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "sourceReviewStatus": "reviewed-draft",
+        "rawValueStatus": "pending",
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "acceptance-candidate",
+        "splitDecisionStatus": "reviewed",
+        "evidenceRefs": [
+          "Components/WorkoutItem/Default"
+        ],
+        "description": "Completed record duration typography role split from metadata."
+      },
+      "date": {
+        "value": "{font.source.pending}",
+        "type": "typography",
+        "status": "candidate",
+        "sourceReviewStatus": "reviewed-draft",
+        "rawValueStatus": "pending",
+        "sourceReviewPriority": "high",
+        "sourceEvidenceStrength": "strong",
+        "gateStatus": "reviewed",
+        "readinessStatus": "ready-for-constrained-raw-value-plan",
+        "rawValuePlanStatus": "planned",
+        "rawValuePlanScope": "constrained-typography-only",
+        "rawValueReviewMatrixStatus": "prepared",
+        "rawValueReviewMatrixTarget": "registry/typography-raw-value-review-matrix.json",
+        "futureExtractionAllowed": false,
+        "rawValueReviewStatus": "source-read-executed-to-review-matrix",
+        "semanticTokenWriteStatus": "blocked",
+        "acceptanceReviewStatus": "reviewed",
+        "acceptanceStatus": "acceptance-candidate",
+        "splitDecisionStatus": "reviewed",
+        "evidenceRefs": [
+          "Components/WorkoutItem/Default"
+        ],
+        "description": "Completed record date typography role split from metadata."
       }
     },
     "trend": {

@@ -296,3 +296,21 @@ Not found or rejected:
 - `typography.record.unavailable`
 
 Acceptance-candidate does not mean accepted. `tokens/semantic.tokens.json` values remain `{font.source.pending}`. CSS integration, semantic token writes, and promotion remain blocked.
+
+## Typography Record Metadata Split Notes
+
+Twenty-seventh-cycle review resolves the pending split decision for `typography.record.metadata`.
+
+Decision:
+
+- split `typography.record.metadata`
+- keep the old token as `split-required`
+- add candidate tokens `typography.record.duration` and `typography.record.date`
+
+Reason:
+
+- duration metadata is observed at `30px`
+- date metadata is observed at `16px`
+- one shared metadata token is too broad for a safe semantic token update plan
+
+The new tokens are candidates only. Their values remain `{font.source.pending}`. No CSS integration, token acceptance, or promotion occurs in this split decision.

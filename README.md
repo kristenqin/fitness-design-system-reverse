@@ -107,6 +107,7 @@ decisions/
   ADR-012-constrained-typography-raw-value-plan.md
   ADR-013-typography-raw-value-review-matrix-before-extraction.md
   ADR-014-typography-raw-values-require-acceptance-before-token-update.md
+  ADR-015-split-record-metadata-typography.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -135,6 +136,7 @@ registry/
   summary-dashboard-semantic-composition-plan.json
   source-map.json
   token-readiness-gate-matrix.json
+  typography-record-metadata-split-decision.json
   typography-raw-value-extraction-plan.json
   typography-raw-value-review-matrix.json
 reviews/
@@ -152,6 +154,7 @@ reviews/
   StyleSystem.token-evidence-review.md
   TokenReadiness.gate-review.md
   TrendCard.runtime-plan.md
+  TypographyRecordMetadata.split-decision.md
   TypographyRawValue.acceptance-review.md
   TypographyRawValue.extraction-plan.md
   TypographyRawValue.execution-review.md

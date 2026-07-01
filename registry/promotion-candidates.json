@@ -132,24 +132,25 @@
       "rawValueStatus": "pending-semantic-token-values",
       "promotionStatus": "not-promoted",
       "blockers": [
+        "Record metadata split decision is reviewed, but semantic token values remain pending.",
+        "New tokens typography.record.duration and typography.record.date are candidates only.",
+        "typography.record.metadata remains as split-required until cleanup or migration plan.",
         "Acceptance candidates are evidence only and are not accepted semantic token values.",
-        "typography.record.metadata requires a split decision before any token update.",
-        "typography.metric.caption, typography.record.label, and typography.record.unavailable are not eligible for semantic token update.",
-        "semantic.tokens.json values remain pending placeholders.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred.",
         "CSS is still local runtime styling."
       ],
-      "nextAction": "Plan a semantic token update review for acceptance candidates only after resolving the record metadata split decision; keep semantic token values pending.",
+      "nextAction": "Plan a semantic token update review for split record metadata candidates while keeping typography.record.metadata until cleanup or migration is scoped.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
       "rawValueReviewStatus": "source-read-executed-to-review-matrix",
       "semanticTokenWriteStatus": "blocked",
       "cssIntegrationStatus": "blocked",
-      "acceptanceReviewStatus": "reviewed"
+      "acceptanceReviewStatus": "reviewed",
+      "splitDecisionStatus": "record-metadata-reviewed"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."
