@@ -1,0 +1,106 @@
+{
+  "status": "verified",
+  "scope": "typography-token-value-verification",
+  "sourceOfTruth": "registry/typography-raw-value-review-matrix.json",
+  "targetFile": "tokens/semantic.tokens.json",
+  "verifiedTokens": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title",
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "blockedTokensVerified": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable"
+  ],
+  "verificationStatus": "passed",
+  "cssIntegrationStatus": "blocked",
+  "promotionStatus": "not-promoted",
+  "verificationEntries": [
+    {
+      "token": "typography.metric.value",
+      "sourceReviewMatrixEntry": "typography.metric.value",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "allowedFieldsOnly": true,
+      "statusAfterVerification": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "sourceReviewMatrixEntry": "typography.metric.unit",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "allowedFieldsOnly": true,
+      "statusAfterVerification": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "sourceReviewMatrixEntry": "typography.metric.label",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "allowedFieldsOnly": true,
+      "statusAfterVerification": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.title",
+      "sourceReviewMatrixEntry": "typography.record.title",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "allowedFieldsOnly": true,
+      "statusAfterVerification": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.duration",
+      "sourceReviewMatrixEntry": "typography.record.duration",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "allowedFieldsOnly": true,
+      "statusAfterVerification": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "sourceReviewMatrixEntry": "typography.record.date",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "allowedFieldsOnly": true,
+      "statusAfterVerification": "candidate",
+      "cssIntegrationStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "blockedTokenChecks": [
+    {
+      "token": "typography.metric.caption",
+      "valueStillPending": true,
+      "semanticTokenValueUpdateStatus": "blocked",
+      "verificationStatus": "passed"
+    },
+    {
+      "token": "typography.record.metadata",
+      "valueStillPending": true,
+      "semanticTokenValueUpdateStatus": "blocked",
+      "verificationStatus": "passed"
+    },
+    {
+      "token": "typography.record.label",
+      "valueStillPending": true,
+      "semanticTokenValueUpdateStatus": "blocked",
+      "verificationStatus": "passed"
+    },
+    {
+      "token": "typography.record.unavailable",
+      "valueStillPending": true,
+      "semanticTokenValueUpdateStatus": "blocked",
+      "verificationStatus": "passed"
+    }
+  ],
+  "notes": "Six planned typography semantic token values match the review matrix. Blocked typography tokens remain pending. CSS integration and promotion remain blocked."
+}

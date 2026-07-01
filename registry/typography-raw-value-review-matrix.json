@@ -122,7 +122,10 @@
       "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
       "semanticTokenValueUpdateStatus": "written-from-review-matrix",
       "semanticTokenValueTarget": "tokens/semantic.tokens.json",
-      "semanticTokenStatusAfterWrite": "candidate"
+      "semanticTokenStatusAfterWrite": "candidate",
+      "semanticTokenValueVerificationStatus": "verified",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "semanticTokenStatusAfterVerification": "candidate"
     },
     {
       "token": "typography.metric.unit",
@@ -201,7 +204,10 @@
       "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
       "semanticTokenValueUpdateStatus": "written-from-review-matrix",
       "semanticTokenValueTarget": "tokens/semantic.tokens.json",
-      "semanticTokenStatusAfterWrite": "candidate"
+      "semanticTokenStatusAfterWrite": "candidate",
+      "semanticTokenValueVerificationStatus": "verified",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "semanticTokenStatusAfterVerification": "candidate"
     },
     {
       "token": "typography.metric.label",
@@ -285,7 +291,10 @@
       "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
       "semanticTokenValueUpdateStatus": "written-from-review-matrix",
       "semanticTokenValueTarget": "tokens/semantic.tokens.json",
-      "semanticTokenStatusAfterWrite": "candidate"
+      "semanticTokenStatusAfterWrite": "candidate",
+      "semanticTokenValueVerificationStatus": "verified",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "semanticTokenStatusAfterVerification": "candidate"
     },
     {
       "token": "typography.metric.caption",
@@ -350,7 +359,9 @@
       "semanticTokenUpdateEligibility": "not-eligible",
       "semanticTokenUpdatePlanStatus": "blocked",
       "semanticTokenUpdateBlockReason": "No source-backed metric caption role was found in the constrained source read.",
-      "semanticTokenValueUpdateStatus": "blocked"
+      "semanticTokenValueUpdateStatus": "blocked",
+      "semanticTokenValueVerificationStatus": "verified-blocked",
+      "valueStillPending": true
     },
     {
       "token": "typography.record.title",
@@ -429,7 +440,10 @@
       "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
       "semanticTokenValueUpdateStatus": "written-from-review-matrix",
       "semanticTokenValueTarget": "tokens/semantic.tokens.json",
-      "semanticTokenStatusAfterWrite": "candidate"
+      "semanticTokenStatusAfterWrite": "candidate",
+      "semanticTokenValueVerificationStatus": "verified",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "semanticTokenStatusAfterVerification": "candidate"
     },
     {
       "token": "typography.record.metadata",
@@ -546,7 +560,9 @@
       },
       "semanticTokenUpdatePlanStatus": "blocked",
       "semanticTokenUpdateBlockReason": "Old metadata token is split-required and retained only until cleanup or migration planning.",
-      "semanticTokenValueUpdateStatus": "blocked"
+      "semanticTokenValueUpdateStatus": "blocked",
+      "semanticTokenValueVerificationStatus": "verified-blocked",
+      "valueStillPending": true
     },
     {
       "token": "typography.record.label",
@@ -612,7 +628,9 @@
       "semanticTokenUpdateEligibility": "not-eligible",
       "semanticTokenUpdatePlanStatus": "blocked",
       "semanticTokenUpdateBlockReason": "No source-backed record label role was found separate from title, duration, or date.",
-      "semanticTokenValueUpdateStatus": "blocked"
+      "semanticTokenValueUpdateStatus": "blocked",
+      "semanticTokenValueVerificationStatus": "verified-blocked",
+      "valueStillPending": true
     },
     {
       "token": "typography.record.unavailable",
@@ -679,7 +697,9 @@
       "semanticTokenUpdateEligibility": "not-eligible",
       "semanticTokenUpdatePlanStatus": "blocked",
       "semanticTokenUpdateBlockReason": "Unavailable record typography is runtime-derived and rejected for source-backed semantic token update.",
-      "semanticTokenValueUpdateStatus": "blocked"
+      "semanticTokenValueUpdateStatus": "blocked",
+      "semanticTokenValueVerificationStatus": "verified-blocked",
+      "valueStillPending": true
     },
     {
       "tokenGroup": "typography.record",
@@ -760,7 +780,10 @@
       "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
       "semanticTokenValueUpdateStatus": "written-from-review-matrix",
       "semanticTokenValueTarget": "tokens/semantic.tokens.json",
-      "semanticTokenStatusAfterWrite": "candidate"
+      "semanticTokenStatusAfterWrite": "candidate",
+      "semanticTokenValueVerificationStatus": "verified",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "semanticTokenStatusAfterVerification": "candidate"
     },
     {
       "tokenGroup": "typography.record",
@@ -841,7 +864,10 @@
       "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
       "semanticTokenValueUpdateStatus": "written-from-review-matrix",
       "semanticTokenValueTarget": "tokens/semantic.tokens.json",
-      "semanticTokenStatusAfterWrite": "candidate"
+      "semanticTokenStatusAfterWrite": "candidate",
+      "semanticTokenValueVerificationStatus": "verified",
+      "semanticTokenValueMatchesReviewMatrix": true,
+      "semanticTokenStatusAfterVerification": "candidate"
     }
   ],
   "notes": "Raw typography values remain review-matrix evidence. Six planned semantic token values were written as candidate token values. CSS integration, acceptance, and promotion remain blocked.",

@@ -129,13 +129,13 @@
       "type": "style-system",
       "evidenceStatus": "source-evidence-reviewed-draft",
       "sourceReviewStatus": "high-and-medium-priority-reviewed-draft",
-      "rawValueStatus": "semantic-token-values-written-for-typography-candidates",
+      "rawValueStatus": "semantic-token-values-written-and-verified-for-typography-candidates",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Typography semantic token values are written only for six planned candidates.",
-        "Updated typography tokens remain candidate tokens and are not promoted.",
+        "Typography semantic token values are written and verified only for six planned candidates.",
+        "Verified typography tokens remain candidate tokens and are not promoted.",
         "CSS integration remains blocked.",
-        "typography.metric.caption, typography.record.metadata, typography.record.label, and typography.record.unavailable remain blocked from value update.",
+        "typography.metric.caption, typography.record.metadata, typography.record.label, and typography.record.unavailable remain blocked.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
@@ -151,7 +151,8 @@
       "acceptanceReviewStatus": "reviewed",
       "splitDecisionStatus": "record-metadata-reviewed",
       "semanticTokenUpdatePlanStatus": "planned",
-      "semanticTokenValueUpdateStatus": "written-for-planned-typography-candidates"
+      "semanticTokenValueUpdateStatus": "written-for-planned-typography-candidates",
+      "tokenValueVerificationStatus": "verified"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

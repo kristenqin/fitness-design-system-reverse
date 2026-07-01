@@ -162,6 +162,8 @@
       "statusAfterWrite": "candidate"
     }
   ],
-  "notes": "This plan maps acceptance-candidate typography entries to future semantic token value update targets. It does not write token values, connect CSS, accept tokens, or promote assets.",
-  "executionTarget": "tokens/semantic.tokens.json"
+  "notes": "This plan has been executed for six planned candidates. CSS integration and promotion remain blocked.",
+  "executionTarget": "tokens/semantic.tokens.json",
+  "tokenValueVerificationStatus": "verified",
+  "tokenValueVerificationTarget": "registry/typography-token-value-verification-matrix.json"
 }

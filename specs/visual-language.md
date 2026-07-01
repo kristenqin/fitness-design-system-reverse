@@ -358,3 +358,25 @@ Blocked tokens remain pending:
 - `typography.record.unavailable`
 
 The written values come only from `registry/typography-raw-value-review-matrix.json`. Updated tokens remain candidates. CSS integration, token acceptance, and promotion remain blocked.
+
+## Typography Token Value Verification Notes
+
+Thirtieth-cycle verification checks the written typography semantic token values against `registry/typography-raw-value-review-matrix.json`.
+
+Verified tokens:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+- `typography.record.duration`
+- `typography.record.date`
+
+Blocked tokens confirmed pending:
+
+- `typography.metric.caption`
+- `typography.record.metadata`
+- `typography.record.label`
+- `typography.record.unavailable`
+
+The six verified values match the review matrix and contain only allowed typography fields. This verification does not change token values, connect tokens to CSS, accept tokens, or promote the style system.

@@ -243,6 +243,15 @@
       ],
       "blockedFromSemanticTokenValueUpdate": [
         "typography.metric.caption"
+      ],
+      "tokenValueVerificationStatus": "verified",
+      "verifiedSemanticTokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "verifiedBlockedTokens": [
+        "typography.metric.caption"
       ]
     },
     {
@@ -331,6 +340,17 @@
         "typography.record.date"
       ],
       "blockedFromSemanticTokenValueUpdate": [
+        "typography.record.metadata",
+        "typography.record.label",
+        "typography.record.unavailable"
+      ],
+      "tokenValueVerificationStatus": "verified",
+      "verifiedSemanticTokens": [
+        "typography.record.title",
+        "typography.record.duration",
+        "typography.record.date"
+      ],
+      "verifiedBlockedTokens": [
         "typography.record.metadata",
         "typography.record.label",
         "typography.record.unavailable"

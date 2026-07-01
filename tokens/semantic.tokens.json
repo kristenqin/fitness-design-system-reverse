@@ -508,7 +508,10 @@
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
-        "valueSourceStatus": "acceptance-candidate"
+        "valueSourceStatus": "acceptance-candidate",
+        "tokenValueVerificationStatus": "verified",
+        "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
+        "valueMatchesReviewMatrix": true
       },
       "unit": {
         "value": {
@@ -550,7 +553,10 @@
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
-        "valueSourceStatus": "acceptance-candidate"
+        "valueSourceStatus": "acceptance-candidate",
+        "tokenValueVerificationStatus": "verified",
+        "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
+        "valueMatchesReviewMatrix": true
       },
       "label": {
         "value": {
@@ -592,7 +598,10 @@
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
-        "valueSourceStatus": "acceptance-candidate"
+        "valueSourceStatus": "acceptance-candidate",
+        "tokenValueVerificationStatus": "verified",
+        "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
+        "valueMatchesReviewMatrix": true
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -622,7 +631,9 @@
         "semanticTokenUpdateBlockReason": "No source-backed metric caption role was found in the constrained source read.",
         "semanticTokenValueUpdateStatus": "blocked",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "tokenValueVerificationStatus": "verified-blocked",
+        "valueStillPending": true
       }
     },
     "card": {
@@ -695,7 +706,10 @@
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
-        "valueSourceStatus": "acceptance-candidate"
+        "valueSourceStatus": "acceptance-candidate",
+        "tokenValueVerificationStatus": "verified",
+        "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
+        "valueMatchesReviewMatrix": true
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -730,7 +744,9 @@
         "semanticTokenUpdateBlockReason": "Old metadata token is split-required and retained only until cleanup or migration planning.",
         "semanticTokenValueUpdateStatus": "blocked",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "tokenValueVerificationStatus": "verified-blocked",
+        "valueStillPending": true
       },
       "label": {
         "value": "{font.source.pending}",
@@ -759,7 +775,9 @@
         "semanticTokenUpdateBlockReason": "No source-backed record label role was found separate from title, duration, or date.",
         "semanticTokenValueUpdateStatus": "blocked",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "tokenValueVerificationStatus": "verified-blocked",
+        "valueStillPending": true
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -789,7 +807,9 @@
         "semanticTokenUpdateBlockReason": "Unavailable record typography is runtime-derived and rejected for source-backed semantic token update.",
         "semanticTokenValueUpdateStatus": "blocked",
         "cssIntegrationStatus": "blocked",
-        "promotionStatus": "not-promoted"
+        "promotionStatus": "not-promoted",
+        "tokenValueVerificationStatus": "verified-blocked",
+        "valueStillPending": true
       },
       "duration": {
         "value": {
@@ -831,7 +851,10 @@
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
-        "valueSourceStatus": "acceptance-candidate"
+        "valueSourceStatus": "acceptance-candidate",
+        "tokenValueVerificationStatus": "verified",
+        "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
+        "valueMatchesReviewMatrix": true
       },
       "date": {
         "value": {
@@ -873,7 +896,10 @@
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
-        "valueSourceStatus": "acceptance-candidate"
+        "valueSourceStatus": "acceptance-candidate",
+        "tokenValueVerificationStatus": "verified",
+        "tokenValueVerificationSource": "registry/typography-token-value-verification-matrix.json",
+        "valueMatchesReviewMatrix": true
       }
     },
     "trend": {

@@ -110,6 +110,7 @@ decisions/
   ADR-015-split-record-metadata-typography.md
   ADR-016-plan-typography-semantic-token-value-update.md
   ADR-017-execute-typography-semantic-token-value-update.md
+  ADR-018-verify-typography-token-values-before-css-integration.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -141,6 +142,7 @@ registry/
   typography-record-metadata-split-decision.json
   typography-raw-value-extraction-plan.json
   typography-raw-value-review-matrix.json
+  typography-token-value-verification-matrix.json
   typography-semantic-token-value-update-execution.json
   typography-semantic-token-update-plan.json
 reviews/
@@ -165,6 +167,7 @@ reviews/
   TypographyRawValue.review-matrix-preparation.md
   TypographySemanticToken.value-update-execution.md
   TypographySemanticToken.update-plan.md
+  TypographyTokenValue.verification-review.md
   WorkoutItem.runtime-plan.md
 scripts/
   validate-project.ts
