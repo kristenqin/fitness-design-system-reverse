@@ -282,7 +282,21 @@
         "typography.metric.unit",
         "typography.metric.label"
       ],
-      "selectorBlockedTokens": []
+      "selectorBlockedTokens": [],
+      "runtimeValidationStatus": "reviewed-with-followups",
+      "runtimeValidationSummary": {
+        "validatedConnectedTokens": [
+          "typography.metric.value",
+          "typography.metric.unit",
+          "typography.metric.label"
+        ],
+        "followupRisks": [
+          "Metric unit and label use absolute source values and need visual review.",
+          "Metric typography may overfit source dashboard emphasis."
+        ],
+        "cssIntegrationStatus": "runtime-validated-constrained",
+        "promotionStatus": "not-promoted"
+      }
     },
     {
       "group": "typography.record",
@@ -420,7 +434,20 @@
       "selectorBlockedTokens": [
         "typography.record.duration",
         "typography.record.date"
-      ]
+      ],
+      "runtimeValidationStatus": "reviewed-with-selector-blockers",
+      "runtimeValidationSummary": {
+        "validatedConnectedTokens": [
+          "typography.record.title"
+        ],
+        "selectorBlockedTokens": [
+          "typography.record.duration",
+          "typography.record.date"
+        ],
+        "selectorBlockReason": "Duration and date cannot be distinguished without TSX selector changes.",
+        "cssIntegrationStatus": "runtime-validated-constrained",
+        "promotionStatus": "not-promoted"
+      }
     },
     {
       "group": "typography.trend",

@@ -90,6 +90,37 @@ Still open:
 
 Promotion decision remains unchanged: do not promote.
 
+## Typography CSS Runtime Validation Notes
+
+The thirty-fourth cycle reviews the constrained typography CSS integration from the previous cycle.
+
+Runtime-reviewed connected tokens:
+
+- `typography.metric.value` -> `.sdr-metric-card strong`
+- `typography.metric.unit` -> `.sdr-metric-card small`
+- `typography.metric.label` -> `.sdr-metric-card p`
+- `typography.record.title` -> `.sdr-workout-item__body strong`
+
+Selector-blocked as designed:
+
+- `typography.record.duration`
+- `typography.record.date`
+
+What improved:
+
+- Connected typography selectors now have a runtime validation record.
+- Duration and date remain unconnected because the current WorkoutItem selectors cannot distinguish those roles without TSX changes.
+- Existing MetricCard, WorkoutItem, SummaryDashboard, and Style System/Typography stories are identified as follow-up validation surfaces.
+
+Still open:
+
+- Metric unit and label use absolute source values and need visual review.
+- Metric typography may overfit source dashboard emphasis.
+- Runtime validation does not accept or promote tokens.
+- No component implementation or Storybook story has been updated.
+
+Promotion decision remains unchanged: do not promote.
+
 ## Seventeenth Cycle Update
 
 The seventeenth cycle added optional semantic runtime composition for TrendCard and AwardBadge:

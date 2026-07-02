@@ -1,0 +1,139 @@
+{
+  "status": "reviewed",
+  "scope": "typography-css-runtime-validation",
+  "sourceExecution": "registry/typography-css-integration-execution.json",
+  "targetCssFile": "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+  "validatedConnectedTokens": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title"
+  ],
+  "validatedSelectorBlockedTokens": [
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "runtimeValidationStatus": "reviewed-with-followups",
+  "cssIntegrationStatus": "runtime-validated-constrained",
+  "promotionStatus": "not-promoted",
+  "validationEntries": [
+    {
+      "token": "typography.metric.value",
+      "selector": ".sdr-metric-card strong",
+      "selectorExists": true,
+      "usesPlannedCssVariables": true,
+      "storyCoverage": [
+        "Components/MetricCard/Default",
+        "Components/MetricCard/LongChineseText",
+        "Components/MetricCard/ExtremeValue",
+        "Components/MetricCard/GoalCompleted",
+        "Components/MetricCard/Overachieved",
+        "Patterns/SummaryDashboard/Default",
+        "Style System/Typography/MetricRoles"
+      ],
+      "runtimeRisk": "needs-visual-review: metric typography now uses absolute source values and may overfit dashboard emphasis.",
+      "validationStatus": "reviewed-with-followups",
+      "followups": [
+        "Metric unit and label use absolute source values and need visual review.",
+        "Metric typography may overfit source dashboard emphasis.",
+        "Run visual review across MetricCard and SummaryDashboard runtime stories."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "selector": ".sdr-metric-card small",
+      "selectorExists": true,
+      "usesPlannedCssVariables": true,
+      "storyCoverage": [
+        "Components/MetricCard/Default",
+        "Components/MetricCard/ExtremeValue",
+        "Components/MetricCard/GoalCompleted",
+        "Components/MetricCard/Overachieved",
+        "Patterns/SummaryDashboard/Default",
+        "Style System/Typography/MetricRoles"
+      ],
+      "runtimeRisk": "needs-visual-review: metric typography now uses absolute source values and may overfit dashboard emphasis.",
+      "validationStatus": "reviewed-with-followups",
+      "followups": [
+        "Metric unit and label use absolute source values and need visual review.",
+        "Metric typography may overfit source dashboard emphasis.",
+        "Run visual review across MetricCard and SummaryDashboard runtime stories."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "selector": ".sdr-metric-card p",
+      "selectorExists": true,
+      "usesPlannedCssVariables": true,
+      "storyCoverage": [
+        "Components/MetricCard/Default",
+        "Components/MetricCard/LongChineseText",
+        "Components/MetricCard/ExtremeValue",
+        "Patterns/SummaryDashboard/Default",
+        "Patterns/SummaryDashboard/LowProgress"
+      ],
+      "runtimeRisk": "needs-visual-review: metric typography now uses absolute source values and may overfit dashboard emphasis.",
+      "validationStatus": "reviewed-with-followups",
+      "followups": [
+        "Metric unit and label use absolute source values and need visual review.",
+        "Metric typography may overfit source dashboard emphasis.",
+        "Run visual review across MetricCard and SummaryDashboard runtime stories."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.title",
+      "selector": ".sdr-workout-item__body strong",
+      "selectorExists": true,
+      "usesPlannedCssVariables": true,
+      "storyCoverage": [
+        "Components/WorkoutItem/Default",
+        "Components/WorkoutItem/LongTitle",
+        "Components/WorkoutItem/InteractiveTarget",
+        "Components/WorkoutItem/Unavailable",
+        "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
+      ],
+      "runtimeRisk": "low: record title selector is distinct and role-aligned.",
+      "validationStatus": "reviewed",
+      "followups": [
+        "Confirm record title hierarchy in WorkoutItem runtime stories after CSS integration.",
+        "Keep duration/date selector work out of scope until semantic selectors exist."
+      ],
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "selectorBlockedEntries": [
+    {
+      "token": "typography.record.duration",
+      "cssVariablesWritten": true,
+      "selectorConnected": false,
+      "reason": "Duration and date cannot be distinguished without TSX selector changes; shared dd selector must not receive either token.",
+      "validationStatus": "blocked-as-designed",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "cssVariablesWritten": true,
+      "selectorConnected": false,
+      "reason": "Duration and date cannot be distinguished without TSX selector changes; shared dd selector must not receive either token.",
+      "validationStatus": "blocked-as-designed",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable",
+    "typography.trend.*",
+    "typography.reward.*",
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "notes": "Constrained typography CSS integration is runtime-reviewed. Connected selectors use planned variables. Record duration and date remain selector-blocked as designed."
+}

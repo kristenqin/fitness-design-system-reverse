@@ -46,7 +46,9 @@
       "targetSelector": ".sdr-metric-card strong",
       "runtimeCssStatus": "connected",
       "rollbackPolicy": "Remove metric value variable usage from .sdr-metric-card strong and keep local runtime styling.",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "runtimeValidationStatus": "reviewed-with-followups",
+      "runtimeValidationRisk": "needs-visual-review"
     },
     {
       "token": "typography.metric.unit",
@@ -55,7 +57,9 @@
       "targetSelector": ".sdr-metric-card small",
       "runtimeCssStatus": "connected",
       "rollbackPolicy": "Remove metric unit variable usage from .sdr-metric-card small and keep local runtime styling.",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "runtimeValidationStatus": "reviewed-with-followups",
+      "runtimeValidationRisk": "needs-visual-review"
     },
     {
       "token": "typography.metric.label",
@@ -64,7 +68,9 @@
       "targetSelector": ".sdr-metric-card p",
       "runtimeCssStatus": "connected",
       "rollbackPolicy": "Remove metric label variable usage from .sdr-metric-card p and keep local runtime styling.",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "runtimeValidationStatus": "reviewed-with-followups",
+      "runtimeValidationRisk": "needs-visual-review"
     },
     {
       "token": "typography.record.title",
@@ -73,7 +79,8 @@
       "targetSelector": ".sdr-workout-item__body strong",
       "runtimeCssStatus": "connected",
       "rollbackPolicy": "Remove record title variable usage from .sdr-workout-item__body strong and keep local runtime styling.",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "runtimeValidationStatus": "reviewed"
     },
     {
       "token": "typography.record.duration",
@@ -82,7 +89,8 @@
       "targetSelector": null,
       "runtimeCssStatus": "variables-written-not-connected",
       "rollbackPolicy": "Remove record duration variables if future selector support is not added; no selector rollback is required in this cycle.",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "runtimeValidationStatus": "blocked-as-designed"
     },
     {
       "token": "typography.record.date",
@@ -91,8 +99,12 @@
       "targetSelector": null,
       "runtimeCssStatus": "variables-written-not-connected",
       "rollbackPolicy": "Remove record date variables if future selector support is not added; no selector rollback is required in this cycle.",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "runtimeValidationStatus": "blocked-as-designed"
     }
   ],
-  "notes": "CSS variables were written for six planned typography tokens. Only safe existing selectors were connected. Record duration and date variables remain unconnected because selectors cannot distinguish those roles without TSX changes."
+  "notes": "CSS variables were written for six planned typography tokens. Only safe existing selectors were connected. Record duration and date variables remain unconnected because selectors cannot distinguish those roles without TSX changes.",
+  "runtimeValidationStatus": "reviewed-with-followups",
+  "runtimeValidationTarget": "registry/typography-css-runtime-validation-matrix.json",
+  "cssIntegrationStatus": "runtime-validated-constrained"
 }

@@ -504,7 +504,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "connected-constrained",
+        "cssIntegrationStatus": "runtime-validated-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -521,7 +521,9 @@
         "plannedCssVariablePrefix": "--reverse-typography",
         "runtimeCssStatus": "connected",
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
-        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
+        "runtimeValidationStatus": "reviewed-with-followups",
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
       },
       "unit": {
         "value": {
@@ -559,7 +561,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "connected-constrained",
+        "cssIntegrationStatus": "runtime-validated-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -576,7 +578,9 @@
         "plannedCssVariablePrefix": "--reverse-typography",
         "runtimeCssStatus": "connected",
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
-        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
+        "runtimeValidationStatus": "reviewed-with-followups",
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
       },
       "label": {
         "value": {
@@ -614,7 +618,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "connected-constrained",
+        "cssIntegrationStatus": "runtime-validated-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -631,7 +635,9 @@
         "plannedCssVariablePrefix": "--reverse-typography",
         "runtimeCssStatus": "connected",
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
-        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
+        "runtimeValidationStatus": "reviewed-with-followups",
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -736,7 +742,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "connected-constrained",
+        "cssIntegrationStatus": "runtime-validated-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -753,7 +759,9 @@
         "plannedCssVariablePrefix": "--reverse-typography",
         "runtimeCssStatus": "connected",
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
-        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
+        "runtimeValidationStatus": "reviewed",
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -920,7 +928,9 @@
         "plannedCssVariablePrefix": "--reverse-typography",
         "runtimeCssStatus": "not-connected-selector-missing",
         "cssIntegrationExecutionStatus": "blocked-selector-missing",
-        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
+        "runtimeValidationStatus": "blocked-as-designed",
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
       },
       "date": {
         "value": {
@@ -975,7 +985,9 @@
         "plannedCssVariablePrefix": "--reverse-typography",
         "runtimeCssStatus": "not-connected-selector-missing",
         "cssIntegrationExecutionStatus": "blocked-selector-missing",
-        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
+        "runtimeValidationStatus": "blocked-as-designed",
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
       }
     },
     "trend": {

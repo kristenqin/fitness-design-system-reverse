@@ -467,3 +467,23 @@ Selector-blocked tokens:
 Duration and date variables are not connected because the current WorkoutItem runtime selectors cannot distinguish those roles without TSX changes. They must not be forced onto the shared `.sdr-workout-item__metadata dd` selector.
 
 No semantic token value, TSX file, or Storybook story changes in this execution. Tokens remain candidates, runtime validation is required next, and promotion remains blocked.
+
+## Typography CSS Runtime Validation Notes
+
+Thirty-fourth-cycle validation reviews the constrained typography CSS runtime state without changing CSS, TSX, Storybook, or semantic token values.
+
+Runtime-reviewed connected tokens:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+
+Selector-blocked as designed:
+
+- `typography.record.duration`
+- `typography.record.date`
+
+The connected selectors use planned `--reverse-typography-*` variables. Duration and date remain unconnected because the current WorkoutItem runtime selectors cannot distinguish those roles without TSX changes.
+
+Metric unit and label now use absolute source values and need visual review. Metric typography may overfit source dashboard emphasis. Tokens remain candidates, and promotion remains blocked.

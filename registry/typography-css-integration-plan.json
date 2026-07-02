@@ -26,7 +26,7 @@
   "writeCssInThisCycle": true,
   "componentImplementationChangeAllowed": false,
   "storybookChangeAllowed": false,
-  "cssIntegrationStatus": "written-for-supported-selectors",
+  "cssIntegrationStatus": "runtime-validated-constrained",
   "promotionStatus": "not-promoted",
   "cssVariablePrefix": "--reverse-typography",
   "plannedCssVariables": [
@@ -220,5 +220,7 @@
     }
   ],
   "notes": "This plan prepares typography CSS integration only. CSS, components, stories, token values, acceptance, and promotion remain unchanged.",
-  "executionTarget": "src/reverse-components/summary-dashboard/SummaryDashboard.css"
+  "executionTarget": "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+  "runtimeValidationStatus": "reviewed-with-followups",
+  "runtimeValidationTarget": "registry/typography-css-runtime-validation-matrix.json"
 }
