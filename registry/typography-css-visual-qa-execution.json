@@ -1,0 +1,150 @@
+{
+  "status": "reviewed",
+  "scope": "typography-css-visual-qa-execution",
+  "sourcePlan": "registry/typography-css-visual-qa-plan.json",
+  "sourceRuntimeValidation": "registry/typography-css-runtime-validation-matrix.json",
+  "visualQaExecutionStatus": "reviewed-with-warnings",
+  "cssChangeStatus": "not-changed",
+  "tsxChangeStatus": "not-changed",
+  "storybookChangeStatus": "not-changed",
+  "tokenValueChangeStatus": "not-changed",
+  "promotionStatus": "not-promoted",
+  "overallVisualQaResult": "warning",
+  "promotionReadiness": "not-ready",
+  "qaResults": [
+    {
+      "surface": "MetricCard",
+      "result": "warning",
+      "tokensReviewed": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "storiesReviewed": [
+        "Components/MetricCard/Default",
+        "Components/MetricCard/LongChineseText",
+        "Components/MetricCard/ExtremeValue",
+        "Components/MetricCard/Loading",
+        "Components/MetricCard/Empty",
+        "Components/MetricCard/Error",
+        "Components/MetricCard/GoalCompleted",
+        "Components/MetricCard/Overachieved",
+        "Components/MetricCard/InteractiveTarget"
+      ],
+      "findings": [
+        "Metric typography remains usable as candidate runtime evidence.",
+        "Metric value remains the dominant metric role in planned story coverage.",
+        "Metric unit and label remain legible candidates but need normalization review."
+      ],
+      "blockers": [],
+      "followups": [
+        "Plan metric typography normalization before promotion.",
+        "Review unit/label primitive sharing without merging semantic roles.",
+        "Check long localized labels and extreme values in visual QA screenshots before promotion."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "surface": "WorkoutItem",
+      "result": "pass-with-notes",
+      "tokensReviewed": [
+        "typography.record.title"
+      ],
+      "storiesReviewed": [
+        "Components/WorkoutItem/Default",
+        "Components/WorkoutItem/LongTitle",
+        "Components/WorkoutItem/MissingDuration",
+        "Components/WorkoutItem/MissingDate",
+        "Components/WorkoutItem/InteractiveTarget",
+        "Components/WorkoutItem/Unavailable"
+      ],
+      "findings": [
+        "Record title remains acceptable as candidate runtime evidence.",
+        "Record title remains role-aligned with completed-record semantics.",
+        "Duration/date remain selector-blocked as designed."
+      ],
+      "blockers": [],
+      "followups": [
+        "Create selector strategy before connecting duration/date.",
+        "Confirm title hierarchy in a future visual QA screenshot pass."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "surface": "SummaryDashboard",
+      "result": "warning",
+      "tokensReviewed": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label",
+        "typography.record.title"
+      ],
+      "storiesReviewed": [
+        "Patterns/SummaryDashboard/Default",
+        "Patterns/SummaryDashboard/LowProgress",
+        "Patterns/SummaryDashboard/SemanticComposition/CoreOnly",
+        "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
+      ],
+      "findings": [
+        "SummaryDashboard remains usable as constrained runtime evidence.",
+        "Metric typography can change dashboard hierarchy and density.",
+        "FullSemanticLoop remains a summary pattern and not a promoted source clone."
+      ],
+      "blockers": [],
+      "followups": [
+        "Review metric hierarchy in SummaryDashboard visual QA screenshots.",
+        "Confirm connected typography does not crowd ProgressRing or optional modules.",
+        "Keep duration/date selector work out of scope until selector strategy exists."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "surface": "Style System/Typography/MetricRoles",
+      "result": "warning",
+      "tokensReviewed": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "storiesReviewed": [
+        "Style System/Typography/MetricRoles"
+      ],
+      "findings": [
+        "Metric role display can expose candidate value/unit/label separation.",
+        "Metric unit and value scale relationship may need future normalization.",
+        "The story remains runtime evidence only, not promotion evidence."
+      ],
+      "blockers": [],
+      "followups": [
+        "Review unit/label primitive sharing without merging semantic roles.",
+        "Ensure future visual QA labels this as candidate evidence only."
+      ],
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "selectorBlockedResults": [
+    {
+      "token": "typography.record.duration",
+      "result": "blocked-as-designed",
+      "cssVariablesWritten": true,
+      "selectorConnected": false,
+      "reason": "Current WorkoutItem selectors cannot distinguish duration/date without TSX selector changes.",
+      "followups": [
+        "Create selector strategy before connection."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "result": "blocked-as-designed",
+      "cssVariablesWritten": true,
+      "selectorConnected": false,
+      "reason": "Current WorkoutItem selectors cannot distinguish duration/date without TSX selector changes.",
+      "followups": [
+        "Create selector strategy before connection."
+      ],
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "Visual QA execution reviewed planned runtime surfaces. Results remain warning-level overall. No CSS, TSX, Storybook, token value, acceptance, or promotion change occurs in this cycle."
+}

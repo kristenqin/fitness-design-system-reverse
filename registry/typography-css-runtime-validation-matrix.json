@@ -40,7 +40,10 @@
       ],
       "promotionStatus": "not-promoted",
       "visualQaRequired": true,
-      "visualQaRiskLevel": "high"
+      "visualQaRiskLevel": "high",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "warning",
+      "visualQaFollowupRequired": true
     },
     {
       "token": "typography.metric.unit",
@@ -64,7 +67,10 @@
       ],
       "promotionStatus": "not-promoted",
       "visualQaRequired": true,
-      "visualQaRiskLevel": "high"
+      "visualQaRiskLevel": "high",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "warning",
+      "visualQaFollowupRequired": true
     },
     {
       "token": "typography.metric.label",
@@ -87,7 +93,10 @@
       ],
       "promotionStatus": "not-promoted",
       "visualQaRequired": true,
-      "visualQaRiskLevel": "high"
+      "visualQaRiskLevel": "high",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "warning",
+      "visualQaFollowupRequired": true
     },
     {
       "token": "typography.record.title",
@@ -109,7 +118,10 @@
       ],
       "promotionStatus": "not-promoted",
       "visualQaRequired": true,
-      "visualQaRiskLevel": "medium"
+      "visualQaRiskLevel": "medium",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "pass-with-notes",
+      "visualQaFollowupRequired": true
     }
   ],
   "selectorBlockedEntries": [
@@ -121,7 +133,9 @@
       "validationStatus": "blocked-as-designed",
       "promotionStatus": "not-promoted",
       "visualQaRequired": false,
-      "selectorStrategyRequired": true
+      "selectorStrategyRequired": true,
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "blocked-as-designed"
     },
     {
       "token": "typography.record.date",
@@ -131,7 +145,9 @@
       "validationStatus": "blocked-as-designed",
       "promotionStatus": "not-promoted",
       "visualQaRequired": false,
-      "selectorStrategyRequired": true
+      "selectorStrategyRequired": true,
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "blocked-as-designed"
     }
   ],
   "blockedTokens": [
@@ -149,5 +165,8 @@
   ],
   "notes": "Constrained typography CSS integration is runtime-reviewed. Connected selectors use planned variables. Record duration and date remain selector-blocked as designed.",
   "visualQaPlanStatus": "planned",
-  "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json"
+  "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
+  "visualQaExecutionStatus": "reviewed-with-warnings",
+  "visualQaExecutionTarget": "registry/typography-css-visual-qa-execution.json",
+  "overallVisualQaResult": "warning"
 }

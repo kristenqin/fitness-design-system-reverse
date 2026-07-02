@@ -70,7 +70,9 @@
         "Metric label remains legible with long localized copy.",
         "Card layout remains stable for extreme values and state variants."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "warning"
     },
     {
       "surface": "WorkoutItem",
@@ -101,7 +103,9 @@
         "Duration/date typography is not falsely token-connected.",
         "Missing metadata states remain understandable."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "pass-with-notes"
     },
     {
       "surface": "SummaryDashboard",
@@ -134,7 +138,9 @@
         "FullSemanticLoop remains a summary pattern, not a source clone.",
         "Selector-blocked duration/date remain unconnected."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "warning"
     },
     {
       "surface": "Style System/Typography/MetricRoles",
@@ -158,8 +164,13 @@
         "Typography roles remain candidates and do not imply accepted tokens.",
         "No color, spacing, density, state, or radius token claims are introduced."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaExecutionStatus": "reviewed",
+      "visualQaResult": "warning"
     }
   ],
-  "notes": "This plan prepares visual QA only. No visual QA execution, CSS change, TSX change, Storybook change, token value change, acceptance, or promotion occurs in this cycle."
+  "notes": "This plan prepares visual QA only. No visual QA execution, CSS change, TSX change, Storybook change, token value change, acceptance, or promotion occurs in this cycle.",
+  "visualQaExecutionStatus": "reviewed-with-warnings",
+  "visualQaExecutionTarget": "registry/typography-css-visual-qa-execution.json",
+  "overallVisualQaResult": "warning"
 }

@@ -154,6 +154,33 @@ This cycle does not execute visual QA, change CSS, change TSX, change Storybook 
 
 Promotion decision remains unchanged: do not promote.
 
+## Typography CSS Visual QA Execution Notes
+
+The thirty-sixth cycle executes and records visual QA for constrained typography CSS integration.
+
+Results:
+
+- `MetricCard`: warning
+- `WorkoutItem`: pass-with-notes
+- `SummaryDashboard`: warning
+- `Style System/Typography/MetricRoles`: warning
+
+Selector-blocked as designed:
+
+- `typography.record.duration`
+- `typography.record.date`
+
+Findings:
+
+- Metric typography remains usable as candidate runtime evidence.
+- Metric unit and label still require visual normalization review.
+- Metric typography may overfit source dashboard emphasis.
+- Record title remains acceptable as candidate runtime evidence.
+
+This cycle does not change CSS, TSX, Storybook stories, or semantic token values.
+
+Promotion decision remains unchanged: do not promote.
+
 ## Seventeenth Cycle Update
 
 The seventeenth cycle added optional semantic runtime composition for TrendCard and AwardBadge:

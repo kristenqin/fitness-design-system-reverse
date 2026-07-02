@@ -132,13 +132,12 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Typography CSS visual QA is planned but not executed.",
-        "Metric unit and label use absolute source values and require visual QA.",
+        "Typography CSS visual QA is reviewed with warnings.",
+        "Metric unit and label still require visual normalization review.",
         "Metric typography may overfit source dashboard emphasis.",
         "record.duration and record.date remain selector-blocked and require a selector strategy before connection.",
-        "Component implementation has not been updated.",
-        "Storybook stories have not been updated.",
         "Typography tokens remain candidate tokens.",
+        "No token is accepted or promoted.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
         "Spacing and density still require transferability review.",
@@ -161,7 +160,9 @@
       "cssIntegrationExecutionStatus": "written-for-supported-selectors",
       "runtimeValidationStatus": "reviewed-with-followups",
       "visualQaPlanStatus": "planned",
-      "visualQaExecutionStatus": "not-started"
+      "visualQaExecutionStatus": "reviewed-with-warnings",
+      "overallVisualQaResult": "warning",
+      "promotionReadiness": "not-ready"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

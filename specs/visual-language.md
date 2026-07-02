@@ -514,3 +514,23 @@ Selector-blocked tokens:
 Metric typography is the highest-risk area because unit and label values now come from absolute source typography and may overfit the source dashboard. Visual QA must check localized labels, extreme values, dashboard density, and role separation before any promotion.
 
 No visual QA is executed in this planning cycle. CSS, TSX, Storybook, and semantic token values remain unchanged.
+
+## Typography CSS Visual QA Execution Notes
+
+Thirty-sixth-cycle visual QA execution reviews the planned runtime surfaces and records warning-level results.
+
+Results:
+
+- `MetricCard`: warning
+- `WorkoutItem`: pass-with-notes
+- `SummaryDashboard`: warning
+- `Style System/Typography/MetricRoles`: warning
+
+Selector-blocked tokens:
+
+- `typography.record.duration`: blocked-as-designed
+- `typography.record.date`: blocked-as-designed
+
+Metric typography remains usable as candidate runtime evidence, but metric unit and label still require visual normalization review. Metric typography may overfit source dashboard emphasis.
+
+Record title remains acceptable as candidate evidence. No token is accepted or promoted. CSS, TSX, Storybook, and semantic token values remain unchanged.

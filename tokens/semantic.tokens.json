@@ -526,7 +526,10 @@
         "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
         "visualQaPlanStatus": "planned",
         "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
-        "visualQaRiskLevel": "high"
+        "visualQaRiskLevel": "high",
+        "visualQaExecutionStatus": "reviewed",
+        "visualQaResult": "warning",
+        "visualQaExecutionTarget": "registry/typography-css-visual-qa-execution.json"
       },
       "unit": {
         "value": {
@@ -586,7 +589,10 @@
         "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
         "visualQaPlanStatus": "planned",
         "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
-        "visualQaRiskLevel": "high"
+        "visualQaRiskLevel": "high",
+        "visualQaExecutionStatus": "reviewed",
+        "visualQaResult": "warning",
+        "visualQaExecutionTarget": "registry/typography-css-visual-qa-execution.json"
       },
       "label": {
         "value": {
@@ -646,7 +652,10 @@
         "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
         "visualQaPlanStatus": "planned",
         "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
-        "visualQaRiskLevel": "high"
+        "visualQaRiskLevel": "high",
+        "visualQaExecutionStatus": "reviewed",
+        "visualQaResult": "warning",
+        "visualQaExecutionTarget": "registry/typography-css-visual-qa-execution.json"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -773,7 +782,10 @@
         "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
         "visualQaPlanStatus": "planned",
         "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
-        "visualQaRiskLevel": "medium"
+        "visualQaRiskLevel": "medium",
+        "visualQaExecutionStatus": "reviewed",
+        "visualQaResult": "pass-with-notes",
+        "visualQaExecutionTarget": "registry/typography-css-visual-qa-execution.json"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -944,7 +956,9 @@
         "runtimeValidationStatus": "blocked-as-designed",
         "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
         "visualQaPlanStatus": "selector-blocked",
-        "selectorStrategyRequired": true
+        "selectorStrategyRequired": true,
+        "visualQaExecutionStatus": "reviewed",
+        "visualQaResult": "blocked-as-designed"
       },
       "date": {
         "value": {
@@ -1003,7 +1017,9 @@
         "runtimeValidationStatus": "blocked-as-designed",
         "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
         "visualQaPlanStatus": "selector-blocked",
-        "selectorStrategyRequired": true
+        "selectorStrategyRequired": true,
+        "visualQaExecutionStatus": "reviewed",
+        "visualQaResult": "blocked-as-designed"
       }
     },
     "trend": {

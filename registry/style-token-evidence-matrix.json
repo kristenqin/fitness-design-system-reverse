@@ -311,8 +311,21 @@
           "Long localized labels and extreme values may compress card layout."
         ],
         "visualQaExecutionStatus": "not-started",
-        "promotionStatus": "not-promoted"
-      }
+        "promotionStatus": "not-promoted",
+        "result": "warning",
+        "findings": [
+          "Metric typography remains usable as candidate runtime evidence.",
+          "Metric unit and label still require visual normalization review.",
+          "Metric typography may overfit source dashboard emphasis."
+        ],
+        "blockers": [],
+        "followups": [
+          "Plan metric typography normalization before promotion.",
+          "Review unit/label primitive sharing without merging semantic roles."
+        ]
+      },
+      "visualQaExecutionStatus": "reviewed-with-warnings",
+      "visualQaResult": "warning"
     },
     {
       "group": "typography.record",
@@ -479,8 +492,19 @@
           "Duration/date must remain selector-blocked until semantic selectors exist."
         ],
         "visualQaExecutionStatus": "not-started",
-        "promotionStatus": "not-promoted"
-      }
+        "promotionStatus": "not-promoted",
+        "result": "pass-with-notes",
+        "findings": [
+          "Record title remains role-aligned as candidate runtime evidence.",
+          "Duration/date remain selector-blocked as designed."
+        ],
+        "blockers": [],
+        "followups": [
+          "Create selector strategy before connecting duration/date."
+        ]
+      },
+      "visualQaExecutionStatus": "reviewed-with-notes",
+      "visualQaResult": "pass-with-notes"
     },
     {
       "group": "typography.trend",
