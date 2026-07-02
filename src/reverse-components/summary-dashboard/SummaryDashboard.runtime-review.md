@@ -121,6 +121,39 @@ Still open:
 
 Promotion decision remains unchanged: do not promote.
 
+## Typography CSS Visual QA Plan Notes
+
+The thirty-fifth cycle plans visual QA for constrained typography CSS integration.
+
+Planned runtime surfaces:
+
+- `MetricCard`
+- `WorkoutItem`
+- `SummaryDashboard`
+- `Style System/Typography/MetricRoles`
+
+QA focus tokens:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+
+Selector-blocked tokens:
+
+- `typography.record.duration`
+- `typography.record.date`
+
+Main risk:
+
+- metric unit and label use absolute source values,
+- metric typography may overfit source dashboard emphasis,
+- long localized labels and extreme values may compress MetricCard layout.
+
+This cycle does not execute visual QA, change CSS, change TSX, change Storybook stories, or change semantic token values.
+
+Promotion decision remains unchanged: do not promote.
+
 ## Seventeenth Cycle Update
 
 The seventeenth cycle added optional semantic runtime composition for TrendCard and AwardBadge:

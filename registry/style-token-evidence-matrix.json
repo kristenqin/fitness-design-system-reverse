@@ -296,6 +296,22 @@
         ],
         "cssIntegrationStatus": "runtime-validated-constrained",
         "promotionStatus": "not-promoted"
+      },
+      "visualQaPlanStatus": "planned",
+      "visualQaSummary": {
+        "riskLevel": "high",
+        "qaFocusTokens": [
+          "typography.metric.value",
+          "typography.metric.unit",
+          "typography.metric.label"
+        ],
+        "primaryRisks": [
+          "Metric unit and label use absolute source values.",
+          "Metric typography may overfit source dashboard emphasis.",
+          "Long localized labels and extreme values may compress card layout."
+        ],
+        "visualQaExecutionStatus": "not-started",
+        "promotionStatus": "not-promoted"
       }
     },
     {
@@ -446,6 +462,23 @@
         ],
         "selectorBlockReason": "Duration and date cannot be distinguished without TSX selector changes.",
         "cssIntegrationStatus": "runtime-validated-constrained",
+        "promotionStatus": "not-promoted"
+      },
+      "visualQaPlanStatus": "planned",
+      "visualQaSummary": {
+        "riskLevel": "medium",
+        "qaFocusTokens": [
+          "typography.record.title"
+        ],
+        "selectorBlockedTokens": [
+          "typography.record.duration",
+          "typography.record.date"
+        ],
+        "primaryRisks": [
+          "Record title must remain role-aligned.",
+          "Duration/date must remain selector-blocked until semantic selectors exist."
+        ],
+        "visualQaExecutionStatus": "not-started",
         "promotionStatus": "not-promoted"
       }
     },

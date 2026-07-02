@@ -1,0 +1,165 @@
+{
+  "status": "planned",
+  "scope": "typography-css-visual-qa-plan",
+  "sourceRuntimeValidation": "registry/typography-css-runtime-validation-matrix.json",
+  "targetRuntimeSurfaces": [
+    "MetricCard",
+    "WorkoutItem",
+    "SummaryDashboard",
+    "Style System/Typography/MetricRoles"
+  ],
+  "visualQaStatus": "planned-not-executed",
+  "cssChangeAllowed": false,
+  "tsxChangeAllowed": false,
+  "storybookChangeAllowed": false,
+  "tokenValueChangeAllowed": false,
+  "promotionStatus": "not-promoted",
+  "qaFocusTokens": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title"
+  ],
+  "selectorBlockedTokens": [
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable",
+    "typography.trend.*",
+    "typography.reward.*",
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "qaEntries": [
+    {
+      "surface": "MetricCard",
+      "qaStatus": "planned",
+      "riskLevel": "high",
+      "tokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "selectorBlockedTokens": [],
+      "primaryRisks": [
+        "Metric unit and label use absolute source values.",
+        "Metric typography may overfit source dashboard emphasis.",
+        "Long localized labels and extreme values may compress card layout."
+      ],
+      "storiesToReview": [
+        "Components/MetricCard/Default",
+        "Components/MetricCard/LongChineseText",
+        "Components/MetricCard/ExtremeValue",
+        "Components/MetricCard/Loading",
+        "Components/MetricCard/Empty",
+        "Components/MetricCard/Error",
+        "Components/MetricCard/GoalCompleted",
+        "Components/MetricCard/Overachieved",
+        "Components/MetricCard/InteractiveTarget"
+      ],
+      "acceptanceCriteria": [
+        "Metric value remains dominant without clipping or overflow.",
+        "Metric unit remains readable and visually subordinate to value.",
+        "Metric label remains legible with long localized copy.",
+        "Card layout remains stable for extreme values and state variants."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "surface": "WorkoutItem",
+      "qaStatus": "planned",
+      "riskLevel": "medium",
+      "tokens": [
+        "typography.record.title"
+      ],
+      "selectorBlockedTokens": [
+        "typography.record.duration",
+        "typography.record.date"
+      ],
+      "primaryRisks": [
+        "Record title must remain role-aligned and readable.",
+        "Duration/date must remain selector-blocked until semantic selectors exist."
+      ],
+      "storiesToReview": [
+        "Components/WorkoutItem/Default",
+        "Components/WorkoutItem/LongTitle",
+        "Components/WorkoutItem/MissingDuration",
+        "Components/WorkoutItem/MissingDate",
+        "Components/WorkoutItem/InteractiveTarget",
+        "Components/WorkoutItem/Unavailable"
+      ],
+      "acceptanceCriteria": [
+        "Record title remains visually distinct from metadata.",
+        "Long title remains readable without breaking row layout.",
+        "Duration/date typography is not falsely token-connected.",
+        "Missing metadata states remain understandable."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "surface": "SummaryDashboard",
+      "qaStatus": "planned",
+      "riskLevel": "medium-high",
+      "tokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label",
+        "typography.record.title"
+      ],
+      "selectorBlockedTokens": [
+        "typography.record.duration",
+        "typography.record.date"
+      ],
+      "primaryRisks": [
+        "Metric typography may alter dashboard hierarchy after CSS integration.",
+        "SummaryDashboard density may change with absolute metric label and unit values.",
+        "Record title should remain aligned when optional modules are composed."
+      ],
+      "storiesToReview": [
+        "Patterns/SummaryDashboard/Default",
+        "Patterns/SummaryDashboard/LowProgress",
+        "Patterns/SummaryDashboard/SemanticComposition/CoreOnly",
+        "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
+      ],
+      "acceptanceCriteria": [
+        "Required core remains scannable.",
+        "Metric cards do not crowd ProgressRing or optional modules.",
+        "FullSemanticLoop remains a summary pattern, not a source clone.",
+        "Selector-blocked duration/date remain unconnected."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "surface": "Style System/Typography/MetricRoles",
+      "qaStatus": "planned",
+      "riskLevel": "medium",
+      "tokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "selectorBlockedTokens": [],
+      "primaryRisks": [
+        "Metric role display must reveal source-value pressure without implying promotion.",
+        "Metric unit and value scale relationship may need future normalization."
+      ],
+      "storiesToReview": [
+        "Style System/Typography/MetricRoles"
+      ],
+      "acceptanceCriteria": [
+        "Metric role story clearly separates value, unit, and label roles.",
+        "Typography roles remain candidates and do not imply accepted tokens.",
+        "No color, spacing, density, state, or radius token claims are introduced."
+      ],
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "This plan prepares visual QA only. No visual QA execution, CSS change, TSX change, Storybook change, token value change, acceptance, or promotion occurs in this cycle."
+}

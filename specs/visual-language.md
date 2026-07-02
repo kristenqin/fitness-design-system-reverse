@@ -487,3 +487,30 @@ Selector-blocked as designed:
 The connected selectors use planned `--reverse-typography-*` variables. Duration and date remain unconnected because the current WorkoutItem runtime selectors cannot distinguish those roles without TSX changes.
 
 Metric unit and label now use absolute source values and need visual review. Metric typography may overfit source dashboard emphasis. Tokens remain candidates, and promotion remains blocked.
+
+## Typography CSS Visual QA Plan Notes
+
+Thirty-fifth-cycle planning defines the visual QA scope for constrained typography CSS integration.
+
+Planned QA surfaces:
+
+- `MetricCard`
+- `WorkoutItem`
+- `SummaryDashboard`
+- `Style System/Typography/MetricRoles`
+
+QA focus tokens:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+
+Selector-blocked tokens:
+
+- `typography.record.duration`
+- `typography.record.date`
+
+Metric typography is the highest-risk area because unit and label values now come from absolute source typography and may overfit the source dashboard. Visual QA must check localized labels, extreme values, dashboard density, and role separation before any promotion.
+
+No visual QA is executed in this planning cycle. CSS, TSX, Storybook, and semantic token values remain unchanged.

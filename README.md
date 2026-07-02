@@ -115,6 +115,7 @@ decisions/
   ADR-020-plan-typography-css-integration.md
   ADR-021-execute-constrained-typography-css-integration.md
   ADR-022-validate-constrained-typography-css-runtime.md
+  ADR-023-plan-typography-css-visual-qa-before-promotion.md
 docs/
   reverse-workflow.md
   storybook-classification.md
@@ -149,6 +150,7 @@ registry/
   typography-css-integration-plan.json
   typography-css-integration-execution.json
   typography-css-runtime-validation-matrix.json
+  typography-css-visual-qa-plan.json
   typography-token-value-verification-matrix.json
   typography-token-transferability-matrix.json
   typography-semantic-token-value-update-execution.json
@@ -178,6 +180,7 @@ reviews/
   TypographyCSS.integration-plan.md
   TypographyCSS.integration-execution.md
   TypographyCSS.runtime-validation-review.md
+  TypographyCSS.visual-qa-plan.md
   TypographyToken.transferability-review.md
   TypographyTokenValue.verification-review.md
   WorkoutItem.runtime-plan.md

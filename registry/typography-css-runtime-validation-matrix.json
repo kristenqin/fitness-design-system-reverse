@@ -38,7 +38,9 @@
         "Metric typography may overfit source dashboard emphasis.",
         "Run visual review across MetricCard and SummaryDashboard runtime stories."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaRequired": true,
+      "visualQaRiskLevel": "high"
     },
     {
       "token": "typography.metric.unit",
@@ -60,7 +62,9 @@
         "Metric typography may overfit source dashboard emphasis.",
         "Run visual review across MetricCard and SummaryDashboard runtime stories."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaRequired": true,
+      "visualQaRiskLevel": "high"
     },
     {
       "token": "typography.metric.label",
@@ -81,7 +85,9 @@
         "Metric typography may overfit source dashboard emphasis.",
         "Run visual review across MetricCard and SummaryDashboard runtime stories."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaRequired": true,
+      "visualQaRiskLevel": "high"
     },
     {
       "token": "typography.record.title",
@@ -101,7 +107,9 @@
         "Confirm record title hierarchy in WorkoutItem runtime stories after CSS integration.",
         "Keep duration/date selector work out of scope until semantic selectors exist."
       ],
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaRequired": true,
+      "visualQaRiskLevel": "medium"
     }
   ],
   "selectorBlockedEntries": [
@@ -111,7 +119,9 @@
       "selectorConnected": false,
       "reason": "Duration and date cannot be distinguished without TSX selector changes; shared dd selector must not receive either token.",
       "validationStatus": "blocked-as-designed",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaRequired": false,
+      "selectorStrategyRequired": true
     },
     {
       "token": "typography.record.date",
@@ -119,7 +129,9 @@
       "selectorConnected": false,
       "reason": "Duration and date cannot be distinguished without TSX selector changes; shared dd selector must not receive either token.",
       "validationStatus": "blocked-as-designed",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "visualQaRequired": false,
+      "selectorStrategyRequired": true
     }
   ],
   "blockedTokens": [
@@ -135,5 +147,7 @@
     "state.*",
     "radius.policy"
   ],
-  "notes": "Constrained typography CSS integration is runtime-reviewed. Connected selectors use planned variables. Record duration and date remain selector-blocked as designed."
+  "notes": "Constrained typography CSS integration is runtime-reviewed. Connected selectors use planned variables. Record duration and date remain selector-blocked as designed.",
+  "visualQaPlanStatus": "planned",
+  "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json"
 }

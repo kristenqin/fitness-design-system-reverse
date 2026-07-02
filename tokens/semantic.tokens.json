@@ -523,7 +523,10 @@
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
         "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
         "runtimeValidationStatus": "reviewed-with-followups",
-        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
+        "visualQaPlanStatus": "planned",
+        "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
+        "visualQaRiskLevel": "high"
       },
       "unit": {
         "value": {
@@ -580,7 +583,10 @@
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
         "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
         "runtimeValidationStatus": "reviewed-with-followups",
-        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
+        "visualQaPlanStatus": "planned",
+        "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
+        "visualQaRiskLevel": "high"
       },
       "label": {
         "value": {
@@ -637,7 +643,10 @@
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
         "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
         "runtimeValidationStatus": "reviewed-with-followups",
-        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
+        "visualQaPlanStatus": "planned",
+        "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
+        "visualQaRiskLevel": "high"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -761,7 +770,10 @@
         "cssIntegrationExecutionStatus": "written-for-supported-selectors",
         "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
         "runtimeValidationStatus": "reviewed",
-        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
+        "visualQaPlanStatus": "planned",
+        "visualQaPlanTarget": "registry/typography-css-visual-qa-plan.json",
+        "visualQaRiskLevel": "medium"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -930,7 +942,9 @@
         "cssIntegrationExecutionStatus": "blocked-selector-missing",
         "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
         "runtimeValidationStatus": "blocked-as-designed",
-        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
+        "visualQaPlanStatus": "selector-blocked",
+        "selectorStrategyRequired": true
       },
       "date": {
         "value": {
@@ -987,7 +1001,9 @@
         "cssIntegrationExecutionStatus": "blocked-selector-missing",
         "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json",
         "runtimeValidationStatus": "blocked-as-designed",
-        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json"
+        "runtimeValidationSource": "registry/typography-css-runtime-validation-matrix.json",
+        "visualQaPlanStatus": "selector-blocked",
+        "selectorStrategyRequired": true
       }
     },
     "trend": {

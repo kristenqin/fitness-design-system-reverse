@@ -132,10 +132,10 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Typography CSS runtime validation is reviewed but has follow-up visual risks.",
-        "Metric unit and label use absolute source values and need visual review.",
-        "record.duration and record.date remain selector-blocked.",
-        "Runtime validation does not promote tokens.",
+        "Typography CSS visual QA is planned but not executed.",
+        "Metric unit and label use absolute source values and require visual QA.",
+        "Metric typography may overfit source dashboard emphasis.",
+        "record.duration and record.date remain selector-blocked and require a selector strategy before connection.",
         "Component implementation has not been updated.",
         "Storybook stories have not been updated.",
         "Typography tokens remain candidate tokens.",
@@ -159,7 +159,9 @@
       "transferabilityReviewStatus": "reviewed",
       "cssIntegrationPlanStatus": "planned",
       "cssIntegrationExecutionStatus": "written-for-supported-selectors",
-      "runtimeValidationStatus": "reviewed-with-followups"
+      "runtimeValidationStatus": "reviewed-with-followups",
+      "visualQaPlanStatus": "planned",
+      "visualQaExecutionStatus": "not-started"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."
