@@ -208,7 +208,7 @@
       "futureExtractionAllowed": false,
       "rawValueReviewStatus": "source-read-executed-to-review-matrix",
       "semanticTokenWriteStatus": "blocked",
-      "cssIntegrationStatus": "planned-not-written",
+      "cssIntegrationStatus": "connected-constrained",
       "acceptanceReviewStatus": "reviewed",
       "acceptanceSummary": {
         "acceptanceCandidates": [
@@ -275,7 +275,14 @@
       ],
       "blockedFromCssIntegration": [
         "typography.metric.caption"
-      ]
+      ],
+      "cssIntegrationExecutionStatus": "written-for-supported-selectors",
+      "selectorConnectedTokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "selectorBlockedTokens": []
     },
     {
       "group": "typography.record",
@@ -315,7 +322,7 @@
       "futureExtractionAllowed": false,
       "rawValueReviewStatus": "source-read-executed-to-review-matrix",
       "semanticTokenWriteStatus": "blocked",
-      "cssIntegrationStatus": "planned-not-written",
+      "cssIntegrationStatus": "partially-connected-constrained",
       "acceptanceReviewStatus": "reviewed",
       "acceptanceSummary": {
         "acceptanceCandidates": [
@@ -405,6 +412,14 @@
         "typography.record.metadata",
         "typography.record.label",
         "typography.record.unavailable"
+      ],
+      "cssIntegrationExecutionStatus": "written-for-supported-selectors",
+      "selectorConnectedTokens": [
+        "typography.record.title"
+      ],
+      "selectorBlockedTokens": [
+        "typography.record.duration",
+        "typography.record.date"
       ]
     },
     {

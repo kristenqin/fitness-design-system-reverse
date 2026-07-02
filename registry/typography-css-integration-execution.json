@@ -1,0 +1,98 @@
+{
+  "status": "executed-constrained",
+  "scope": "typography-css-integration-execution",
+  "sourcePlan": "registry/typography-css-integration-plan.json",
+  "targetFile": "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+  "cssWriteStatus": "written-for-supported-selectors",
+  "componentImplementationChangeStatus": "not-changed",
+  "storybookChangeStatus": "not-changed",
+  "promotionStatus": "not-promoted",
+  "cssVariablesWritten": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title",
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "selectorConnectedTokens": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title"
+  ],
+  "selectorBlockedTokens": [
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable",
+    "typography.trend.*",
+    "typography.reward.*",
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "executionEntries": [
+    {
+      "token": "typography.metric.value",
+      "cssVariableWriteStatus": "written",
+      "selectorUsageStatus": "connected",
+      "targetSelector": ".sdr-metric-card strong",
+      "runtimeCssStatus": "connected",
+      "rollbackPolicy": "Remove metric value variable usage from .sdr-metric-card strong and keep local runtime styling.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "cssVariableWriteStatus": "written",
+      "selectorUsageStatus": "connected",
+      "targetSelector": ".sdr-metric-card small",
+      "runtimeCssStatus": "connected",
+      "rollbackPolicy": "Remove metric unit variable usage from .sdr-metric-card small and keep local runtime styling.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "cssVariableWriteStatus": "written",
+      "selectorUsageStatus": "connected",
+      "targetSelector": ".sdr-metric-card p",
+      "runtimeCssStatus": "connected",
+      "rollbackPolicy": "Remove metric label variable usage from .sdr-metric-card p and keep local runtime styling.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.title",
+      "cssVariableWriteStatus": "written",
+      "selectorUsageStatus": "connected",
+      "targetSelector": ".sdr-workout-item__body strong",
+      "runtimeCssStatus": "connected",
+      "rollbackPolicy": "Remove record title variable usage from .sdr-workout-item__body strong and keep local runtime styling.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.duration",
+      "cssVariableWriteStatus": "written",
+      "selectorUsageStatus": "blocked-selector-missing",
+      "targetSelector": null,
+      "runtimeCssStatus": "variables-written-not-connected",
+      "rollbackPolicy": "Remove record duration variables if future selector support is not added; no selector rollback is required in this cycle.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "cssVariableWriteStatus": "written",
+      "selectorUsageStatus": "blocked-selector-missing",
+      "targetSelector": null,
+      "runtimeCssStatus": "variables-written-not-connected",
+      "rollbackPolicy": "Remove record date variables if future selector support is not added; no selector rollback is required in this cycle.",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "CSS variables were written for six planned typography tokens. Only safe existing selectors were connected. Record duration and date variables remain unconnected because selectors cannot distinguish those roles without TSX changes."
+}

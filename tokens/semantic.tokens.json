@@ -504,7 +504,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "planned-not-written",
+        "cssIntegrationStatus": "connected-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -519,7 +519,9 @@
         "cssIntegrationPlanStatus": "planned",
         "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
         "plannedCssVariablePrefix": "--reverse-typography",
-        "runtimeCssStatus": "not-connected"
+        "runtimeCssStatus": "connected",
+        "cssIntegrationExecutionStatus": "written-for-supported-selectors",
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
       },
       "unit": {
         "value": {
@@ -557,7 +559,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "planned-not-written",
+        "cssIntegrationStatus": "connected-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -572,7 +574,9 @@
         "cssIntegrationPlanStatus": "planned",
         "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
         "plannedCssVariablePrefix": "--reverse-typography",
-        "runtimeCssStatus": "not-connected"
+        "runtimeCssStatus": "connected",
+        "cssIntegrationExecutionStatus": "written-for-supported-selectors",
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
       },
       "label": {
         "value": {
@@ -610,7 +614,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "planned-not-written",
+        "cssIntegrationStatus": "connected-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -625,7 +629,9 @@
         "cssIntegrationPlanStatus": "planned",
         "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
         "plannedCssVariablePrefix": "--reverse-typography",
-        "runtimeCssStatus": "not-connected"
+        "runtimeCssStatus": "connected",
+        "cssIntegrationExecutionStatus": "written-for-supported-selectors",
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -730,7 +736,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "planned-not-written",
+        "cssIntegrationStatus": "connected-constrained",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -745,7 +751,9 @@
         "cssIntegrationPlanStatus": "planned",
         "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
         "plannedCssVariablePrefix": "--reverse-typography",
-        "runtimeCssStatus": "not-connected"
+        "runtimeCssStatus": "connected",
+        "cssIntegrationExecutionStatus": "written-for-supported-selectors",
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -895,7 +903,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "planned-not-written",
+        "cssIntegrationStatus": "variables-written-not-connected",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -910,7 +918,9 @@
         "cssIntegrationPlanStatus": "planned",
         "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
         "plannedCssVariablePrefix": "--reverse-typography",
-        "runtimeCssStatus": "not-connected"
+        "runtimeCssStatus": "not-connected-selector-missing",
+        "cssIntegrationExecutionStatus": "blocked-selector-missing",
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
       },
       "date": {
         "value": {
@@ -948,7 +958,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "planned-not-written",
+        "cssIntegrationStatus": "variables-written-not-connected",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -963,7 +973,9 @@
         "cssIntegrationPlanStatus": "planned",
         "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
         "plannedCssVariablePrefix": "--reverse-typography",
-        "runtimeCssStatus": "not-connected"
+        "runtimeCssStatus": "not-connected-selector-missing",
+        "cssIntegrationExecutionStatus": "blocked-selector-missing",
+        "cssIntegrationExecutionTarget": "registry/typography-css-integration-execution.json"
       }
     },
     "trend": {

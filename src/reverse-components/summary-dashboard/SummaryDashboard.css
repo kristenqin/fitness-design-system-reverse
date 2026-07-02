@@ -1,4 +1,52 @@
 .sdr-runtime-shell {
+  --reverse-typography-metric-value-font-family: SF_Pro;
+  --reverse-typography-metric-value-font-style: normal;
+  --reverse-typography-metric-value-font-size: 24px;
+  --reverse-typography-metric-value-font-weight: 400;
+  --reverse-typography-metric-value-line-height: normal;
+  --reverse-typography-metric-value-letter-spacing: normal;
+  --reverse-typography-metric-value-text-case: none;
+  --reverse-typography-metric-value-text-decoration: none;
+  --reverse-typography-metric-unit-font-family: SF_Pro;
+  --reverse-typography-metric-unit-font-style: normal;
+  --reverse-typography-metric-unit-font-size: 18px;
+  --reverse-typography-metric-unit-font-weight: 400;
+  --reverse-typography-metric-unit-line-height: normal;
+  --reverse-typography-metric-unit-letter-spacing: normal;
+  --reverse-typography-metric-unit-text-case: none;
+  --reverse-typography-metric-unit-text-decoration: none;
+  --reverse-typography-metric-label-font-family: SF_Pro;
+  --reverse-typography-metric-label-font-style: normal;
+  --reverse-typography-metric-label-font-size: 18px;
+  --reverse-typography-metric-label-font-weight: 400;
+  --reverse-typography-metric-label-line-height: normal;
+  --reverse-typography-metric-label-letter-spacing: normal;
+  --reverse-typography-metric-label-text-case: none;
+  --reverse-typography-metric-label-text-decoration: none;
+  --reverse-typography-record-title-font-family: SF_Pro;
+  --reverse-typography-record-title-font-style: normal;
+  --reverse-typography-record-title-font-size: 18px;
+  --reverse-typography-record-title-font-weight: 400;
+  --reverse-typography-record-title-line-height: normal;
+  --reverse-typography-record-title-letter-spacing: normal;
+  --reverse-typography-record-title-text-case: none;
+  --reverse-typography-record-title-text-decoration: none;
+  --reverse-typography-record-duration-font-family: SF_Pro;
+  --reverse-typography-record-duration-font-style: normal;
+  --reverse-typography-record-duration-font-size: 30px;
+  --reverse-typography-record-duration-font-weight: 400;
+  --reverse-typography-record-duration-line-height: normal;
+  --reverse-typography-record-duration-letter-spacing: normal;
+  --reverse-typography-record-duration-text-case: none;
+  --reverse-typography-record-duration-text-decoration: none;
+  --reverse-typography-record-date-font-family: SF_Pro;
+  --reverse-typography-record-date-font-style: normal;
+  --reverse-typography-record-date-font-size: 16px;
+  --reverse-typography-record-date-font-weight: 400;
+  --reverse-typography-record-date-line-height: normal;
+  --reverse-typography-record-date-letter-spacing: normal;
+  --reverse-typography-record-date-text-case: none;
+  --reverse-typography-record-date-text-decoration: none;
   min-height: 100vh;
   padding: 32px;
   box-sizing: border-box;
@@ -275,8 +323,7 @@
   text-align: center;
 }
 
-.sdr-progress-ring figcaption span,
-.sdr-metric-card p {
+.sdr-progress-ring figcaption span {
   color: #cfd4cc;
   font-size: 14px;
   line-height: 1.25;
@@ -288,8 +335,7 @@
   line-height: 1;
 }
 
-.sdr-progress-ring figcaption small,
-.sdr-metric-card small {
+.sdr-progress-ring figcaption small {
   margin-left: 3px;
   font-size: 0.62em;
 }
@@ -317,8 +363,44 @@
   margin: 4px 0;
   overflow-wrap: anywhere;
   color: #f8fbf6;
-  font-size: 26px;
-  line-height: 1.05;
+  font-family:
+    var(--reverse-typography-metric-value-font-family), Inter, ui-sans-serif,
+    system-ui, sans-serif;
+  font-size: var(--reverse-typography-metric-value-font-size);
+  font-style: var(--reverse-typography-metric-value-font-style);
+  font-weight: var(--reverse-typography-metric-value-font-weight);
+  line-height: var(--reverse-typography-metric-value-line-height);
+  letter-spacing: var(--reverse-typography-metric-value-letter-spacing);
+  text-decoration: var(--reverse-typography-metric-value-text-decoration);
+  text-transform: var(--reverse-typography-metric-value-text-case);
+}
+
+.sdr-metric-card small {
+  margin-left: 3px;
+  font-family:
+    var(--reverse-typography-metric-unit-font-family), Inter, ui-sans-serif,
+    system-ui, sans-serif;
+  font-size: var(--reverse-typography-metric-unit-font-size);
+  font-style: var(--reverse-typography-metric-unit-font-style);
+  font-weight: var(--reverse-typography-metric-unit-font-weight);
+  line-height: var(--reverse-typography-metric-unit-line-height);
+  letter-spacing: var(--reverse-typography-metric-unit-letter-spacing);
+  text-decoration: var(--reverse-typography-metric-unit-text-decoration);
+  text-transform: var(--reverse-typography-metric-unit-text-case);
+}
+
+.sdr-metric-card p {
+  color: #cfd4cc;
+  font-family:
+    var(--reverse-typography-metric-label-font-family), Inter, ui-sans-serif,
+    system-ui, sans-serif;
+  font-size: var(--reverse-typography-metric-label-font-size);
+  font-style: var(--reverse-typography-metric-label-font-style);
+  font-weight: var(--reverse-typography-metric-label-font-weight);
+  line-height: var(--reverse-typography-metric-label-line-height);
+  letter-spacing: var(--reverse-typography-metric-label-letter-spacing);
+  text-decoration: var(--reverse-typography-metric-label-text-decoration);
+  text-transform: var(--reverse-typography-metric-label-text-case);
 }
 
 .sdr-metric-card--low strong {
@@ -407,8 +489,16 @@
   margin-top: 4px;
   overflow-wrap: anywhere;
   color: #f8fbf6;
-  font-size: 18px;
-  line-height: 1.18;
+  font-family:
+    var(--reverse-typography-record-title-font-family), Inter, ui-sans-serif,
+    system-ui, sans-serif;
+  font-size: var(--reverse-typography-record-title-font-size);
+  font-style: var(--reverse-typography-record-title-font-style);
+  font-weight: var(--reverse-typography-record-title-font-weight);
+  line-height: var(--reverse-typography-record-title-line-height);
+  letter-spacing: var(--reverse-typography-record-title-letter-spacing);
+  text-decoration: var(--reverse-typography-record-title-text-decoration);
+  text-transform: var(--reverse-typography-record-title-text-case);
 }
 
 .sdr-workout-item__metadata {

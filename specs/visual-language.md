@@ -438,3 +438,32 @@ Blocked from CSS integration:
 Planned CSS variables use the prefix `--reverse-typography` and follow `--reverse-typography-{group}-{role}-{field}`.
 
 This cycle does not write CSS, change token values, update components, add Storybook stories, accept tokens, or promote the style system.
+
+## Typography CSS Integration Execution Notes
+
+Thirty-third-cycle execution writes scoped typography CSS variables in `src/reverse-components/summary-dashboard/SummaryDashboard.css`.
+
+Variables were written for:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+- `typography.record.duration`
+- `typography.record.date`
+
+Selector-connected tokens:
+
+- `typography.metric.value` -> `.sdr-metric-card strong`
+- `typography.metric.unit` -> `.sdr-metric-card small`
+- `typography.metric.label` -> `.sdr-metric-card p`
+- `typography.record.title` -> `.sdr-workout-item__body strong`
+
+Selector-blocked tokens:
+
+- `typography.record.duration`
+- `typography.record.date`
+
+Duration and date variables are not connected because the current WorkoutItem runtime selectors cannot distinguish those roles without TSX changes. They must not be forced onto the shared `.sdr-workout-item__metadata dd` selector.
+
+No semantic token value, TSX file, or Storybook story changes in this execution. Tokens remain candidates, runtime validation is required next, and promotion remains blocked.

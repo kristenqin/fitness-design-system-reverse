@@ -132,10 +132,11 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Typography CSS integration is planned but not written.",
-        "Runtime CSS has not been updated.",
+        "Typography CSS integration is constrained and only connected to safe existing selectors.",
+        "record.duration and record.date variables are written but not connected because selectors are missing.",
+        "Runtime validation has not been completed after CSS integration.",
         "Component implementation has not been updated.",
-        "Storybook runtime validation has not run against CSS-integrated tokens.",
+        "Storybook stories have not been updated.",
         "Typography tokens remain candidate tokens.",
         "Color groups still require contrast review.",
         "State groups still require stronger state evidence.",
@@ -148,14 +149,15 @@
       "rawValueReviewMatrixStatus": "prepared",
       "rawValueReviewStatus": "source-read-executed-to-review-matrix",
       "semanticTokenWriteStatus": "blocked",
-      "cssIntegrationStatus": "planned-not-written",
+      "cssIntegrationStatus": "partially-connected-constrained",
       "acceptanceReviewStatus": "reviewed",
       "splitDecisionStatus": "record-metadata-reviewed",
       "semanticTokenUpdatePlanStatus": "planned",
       "semanticTokenValueUpdateStatus": "written-for-planned-typography-candidates",
       "tokenValueVerificationStatus": "verified",
       "transferabilityReviewStatus": "reviewed",
-      "cssIntegrationPlanStatus": "planned"
+      "cssIntegrationPlanStatus": "planned",
+      "cssIntegrationExecutionStatus": "written-for-supported-selectors"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."
