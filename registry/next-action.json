@@ -1,0 +1,44 @@
+{
+  "cycle": 38,
+  "name": "Metric Typography Normalization Plan",
+  "mode": "plan",
+  "workflow": "design-system-reverse",
+  "objective": "Plan metric typography normalization after typography CSS visual QA warnings without changing CSS, TSX, Storybook, or token values.",
+  "allowedChanges": [
+    ".agent/workflows/**",
+    "registry/**",
+    "reviews/**",
+    "specs/**",
+    "decisions/**",
+    "scripts/verify-workflow-cycle.mjs"
+  ],
+  "blockedChanges": [
+    "src/**/*.css",
+    "src/**/*.tsx",
+    "src/**/*.stories.tsx",
+    "stories/**",
+    "tokens/semantic.tokens.json"
+  ],
+  "constraints": {
+    "cssChangeAllowed": false,
+    "tsxChangeAllowed": false,
+    "storybookChangeAllowed": false,
+    "tokenValueChangeAllowed": false,
+    "promotionAllowed": false,
+    "acceptedStatusAllowed": false
+  },
+  "forbiddenStatusValues": [
+    "accepted",
+    "promoted"
+  ],
+  "requiredVerification": [
+    "node scripts/verify-workflow-cycle.mjs"
+  ],
+  "promotionStatus": "not-promoted",
+  "notes": [
+    "This next action is a planning cycle only.",
+    "Do not enter Metric Typography Normalization execution in the workflow automation scaffold cycle.",
+    "Do not write token values, CSS, TSX, or Storybook files."
+  ]
+}
+

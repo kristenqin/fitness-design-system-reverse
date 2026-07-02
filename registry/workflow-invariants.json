@@ -1,0 +1,43 @@
+{
+  "workflow": "design-system-reverse",
+  "status": "active",
+  "promotionStatus": "not-promoted",
+  "forbiddenStatusValues": [
+    "accepted",
+    "promoted"
+  ],
+  "blockedTokenGroups": [
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy",
+    "typography.trend.*",
+    "typography.reward.*",
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable"
+  ],
+  "cssChangeRequiresExplicitCycleType": [
+    "css-integration-execution",
+    "runtime-css-validation",
+    "visual-qa-execution"
+  ],
+  "tsxChangeRequiresExplicitCycleType": [
+    "component-runtime-execution",
+    "pattern-runtime-composition",
+    "accessibility-runtime-adjustment"
+  ],
+  "storybookChangeRequiresExplicitCycleType": [
+    "storybook-runtime-validation",
+    "component-runtime-execution",
+    "pattern-runtime-composition"
+  ],
+  "tokenValueChangeRequiresExplicitCycleType": [
+    "semantic-token-value-update-execution"
+  ],
+  "defaultPromotionPolicy": "Promotion requires an explicit promotion cycle and must remain not-promoted otherwise.",
+  "defaultAcceptancePolicy": "Accepted status requires an explicit acceptance cycle and must remain blocked otherwise."
+}
+
