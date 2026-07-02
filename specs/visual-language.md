@@ -407,3 +407,34 @@ Blocked from transfer:
 Metric typography carries source-specific display emphasis and needs risk handling before CSS integration. `typography.record.duration` needs hierarchy normalization before CSS integration.
 
 No token value changes in this review. CSS integration, token acceptance, and promotion remain blocked.
+
+## Typography CSS Integration Plan Notes
+
+Thirty-second-cycle planning defines how transferability-reviewed typography tokens may later connect to runtime CSS.
+
+Planned CSS integration tokens:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+- `typography.record.title`
+- `typography.record.duration`
+- `typography.record.date`
+
+Blocked from CSS integration:
+
+- `typography.metric.caption`
+- `typography.record.metadata`
+- `typography.record.label`
+- `typography.record.unavailable`
+- `typography.trend.*`
+- `typography.reward.*`
+- `color.*`
+- `spacing.*`
+- `density.dashboard`
+- `state.*`
+- `radius.policy`
+
+Planned CSS variables use the prefix `--reverse-typography` and follow `--reverse-typography-{group}-{role}-{field}`.
+
+This cycle does not write CSS, change token values, update components, add Storybook stories, accept tokens, or promote the style system.

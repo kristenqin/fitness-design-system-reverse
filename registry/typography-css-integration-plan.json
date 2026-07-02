@@ -1,0 +1,205 @@
+{
+  "status": "planned",
+  "scope": "typography-css-integration-plan",
+  "sourceTokens": [
+    "typography.metric.value",
+    "typography.metric.unit",
+    "typography.metric.label",
+    "typography.record.title",
+    "typography.record.duration",
+    "typography.record.date"
+  ],
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.metadata",
+    "typography.record.label",
+    "typography.record.unavailable",
+    "typography.trend.*",
+    "typography.reward.*",
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "targetFilePlanned": "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+  "writeCssInThisCycle": false,
+  "componentImplementationChangeAllowed": false,
+  "storybookChangeAllowed": false,
+  "cssIntegrationStatus": "planned-not-written",
+  "promotionStatus": "not-promoted",
+  "cssVariablePrefix": "--reverse-typography",
+  "plannedCssVariables": [
+    {
+      "token": "typography.metric.value",
+      "sourceSemanticToken": "tokens/semantic.tokens.json#typography.metric.value",
+      "cssVariables": [
+        "--reverse-typography-metric-value-font-family",
+        "--reverse-typography-metric-value-font-style",
+        "--reverse-typography-metric-value-font-size",
+        "--reverse-typography-metric-value-font-weight",
+        "--reverse-typography-metric-value-line-height",
+        "--reverse-typography-metric-value-letter-spacing",
+        "--reverse-typography-metric-value-text-case",
+        "--reverse-typography-metric-value-text-decoration"
+      ],
+      "targetRuntimeSurface": [
+        ".sdr-metric-card strong",
+        ".sdr-type-metric-value"
+      ],
+      "integrationCandidateStatus": "constrained-plan-candidate",
+      "sourceTransferabilityStatus": "transferable-with-constraints",
+      "cssWriteStatus": "planned-not-written",
+      "componentChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "rollbackPolicy": "Remove planned metric value CSS variables and revert affected runtime selectors to local styling.",
+      "validationRequired": [
+        "Verify MetricCard Default, ExtremeValue, LongChineseText, Loading, Empty, Error, GoalCompleted, Overachieved, and InteractiveTarget stories.",
+        "Confirm metric value emphasis does not overfit the source dashboard."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "sourceSemanticToken": "tokens/semantic.tokens.json#typography.metric.unit",
+      "cssVariables": [
+        "--reverse-typography-metric-unit-font-family",
+        "--reverse-typography-metric-unit-font-style",
+        "--reverse-typography-metric-unit-font-size",
+        "--reverse-typography-metric-unit-font-weight",
+        "--reverse-typography-metric-unit-line-height",
+        "--reverse-typography-metric-unit-letter-spacing",
+        "--reverse-typography-metric-unit-text-case",
+        "--reverse-typography-metric-unit-text-decoration"
+      ],
+      "targetRuntimeSurface": [
+        ".sdr-metric-card small",
+        ".sdr-type-metric-unit"
+      ],
+      "integrationCandidateStatus": "constrained-plan-candidate",
+      "sourceTransferabilityStatus": "transferable-with-constraints",
+      "cssWriteStatus": "planned-not-written",
+      "componentChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "rollbackPolicy": "Remove planned metric unit CSS variables and revert affected runtime selectors to local styling.",
+      "validationRequired": [
+        "Verify unit alignment near metric values in MetricCard stories.",
+        "Confirm unit typography remains readable across compact and extreme values."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "sourceSemanticToken": "tokens/semantic.tokens.json#typography.metric.label",
+      "cssVariables": [
+        "--reverse-typography-metric-label-font-family",
+        "--reverse-typography-metric-label-font-style",
+        "--reverse-typography-metric-label-font-size",
+        "--reverse-typography-metric-label-font-weight",
+        "--reverse-typography-metric-label-line-height",
+        "--reverse-typography-metric-label-letter-spacing",
+        "--reverse-typography-metric-label-text-case",
+        "--reverse-typography-metric-label-text-decoration"
+      ],
+      "targetRuntimeSurface": [
+        ".sdr-metric-card p"
+      ],
+      "integrationCandidateStatus": "constrained-plan-candidate",
+      "sourceTransferabilityStatus": "transferable-with-constraints",
+      "cssWriteStatus": "planned-not-written",
+      "componentChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "rollbackPolicy": "Remove planned metric label CSS variables and revert affected runtime selectors to local styling.",
+      "validationRequired": [
+        "Verify metric labels under long localized text and compact card widths.",
+        "Confirm metric label styling is not used for record labels or unavailable text."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.title",
+      "sourceSemanticToken": "tokens/semantic.tokens.json#typography.record.title",
+      "cssVariables": [
+        "--reverse-typography-record-title-font-family",
+        "--reverse-typography-record-title-font-style",
+        "--reverse-typography-record-title-font-size",
+        "--reverse-typography-record-title-font-weight",
+        "--reverse-typography-record-title-line-height",
+        "--reverse-typography-record-title-letter-spacing",
+        "--reverse-typography-record-title-text-case",
+        "--reverse-typography-record-title-text-decoration"
+      ],
+      "targetRuntimeSurface": [
+        ".sdr-workout-item__body strong"
+      ],
+      "integrationCandidateStatus": "direct-plan-candidate",
+      "sourceTransferabilityStatus": "transferable-candidate",
+      "cssWriteStatus": "planned-not-written",
+      "componentChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "rollbackPolicy": "Remove planned record title CSS variables and revert WorkoutItem title selector to local styling.",
+      "validationRequired": [
+        "Verify WorkoutItem Default, LongTitle, InteractiveTarget, and unavailable variants.",
+        "Confirm completed-record title remains the primary object of WorkoutItem."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.duration",
+      "sourceSemanticToken": "tokens/semantic.tokens.json#typography.record.duration",
+      "cssVariables": [
+        "--reverse-typography-record-duration-font-family",
+        "--reverse-typography-record-duration-font-style",
+        "--reverse-typography-record-duration-font-size",
+        "--reverse-typography-record-duration-font-weight",
+        "--reverse-typography-record-duration-line-height",
+        "--reverse-typography-record-duration-letter-spacing",
+        "--reverse-typography-record-duration-text-case",
+        "--reverse-typography-record-duration-text-decoration"
+      ],
+      "targetRuntimeSurface": [
+        ".sdr-workout-item__metadata dd for Duration"
+      ],
+      "integrationCandidateStatus": "constrained-plan-candidate",
+      "sourceTransferabilityStatus": "transferable-with-constraints",
+      "cssWriteStatus": "planned-not-written",
+      "componentChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "rollbackPolicy": "Remove planned record duration CSS variables and revert WorkoutItem metadata selector to local styling.",
+      "validationRequired": [
+        "Verify duration hierarchy against title and date in WorkoutItem stories.",
+        "Confirm duration prominence does not overfit the source card hierarchy."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.record.date",
+      "sourceSemanticToken": "tokens/semantic.tokens.json#typography.record.date",
+      "cssVariables": [
+        "--reverse-typography-record-date-font-family",
+        "--reverse-typography-record-date-font-style",
+        "--reverse-typography-record-date-font-size",
+        "--reverse-typography-record-date-font-weight",
+        "--reverse-typography-record-date-line-height",
+        "--reverse-typography-record-date-letter-spacing",
+        "--reverse-typography-record-date-text-case",
+        "--reverse-typography-record-date-text-decoration"
+      ],
+      "targetRuntimeSurface": [
+        ".sdr-workout-item__metadata dd for Date"
+      ],
+      "integrationCandidateStatus": "direct-plan-candidate",
+      "sourceTransferabilityStatus": "transferable-candidate",
+      "cssWriteStatus": "planned-not-written",
+      "componentChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "rollbackPolicy": "Remove planned record date CSS variables and revert WorkoutItem metadata selector to local styling.",
+      "validationRequired": [
+        "Verify date readability in Default, MissingDuration, MissingDate, and InteractiveTarget stories.",
+        "Confirm date metadata remains subordinate to record title."
+      ],
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "notes": "This plan prepares typography CSS integration only. CSS, components, stories, token values, acceptance, and promotion remain unchanged."
+}

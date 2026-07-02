@@ -504,7 +504,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "blocked",
+        "cssIntegrationStatus": "planned-not-written",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -515,7 +515,11 @@
         "transferabilityReviewStatus": "reviewed",
         "transferabilityStatus": "transferable-with-constraints",
         "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
-        "cssIntegrationReadiness": "not-ready"
+        "cssIntegrationReadiness": "not-ready",
+        "cssIntegrationPlanStatus": "planned",
+        "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+        "plannedCssVariablePrefix": "--reverse-typography",
+        "runtimeCssStatus": "not-connected"
       },
       "unit": {
         "value": {
@@ -553,7 +557,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "blocked",
+        "cssIntegrationStatus": "planned-not-written",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -564,7 +568,11 @@
         "transferabilityReviewStatus": "reviewed",
         "transferabilityStatus": "transferable-with-constraints",
         "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
-        "cssIntegrationReadiness": "not-ready"
+        "cssIntegrationReadiness": "not-ready",
+        "cssIntegrationPlanStatus": "planned",
+        "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+        "plannedCssVariablePrefix": "--reverse-typography",
+        "runtimeCssStatus": "not-connected"
       },
       "label": {
         "value": {
@@ -602,7 +610,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "blocked",
+        "cssIntegrationStatus": "planned-not-written",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -613,7 +621,11 @@
         "transferabilityReviewStatus": "reviewed",
         "transferabilityStatus": "transferable-with-constraints",
         "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
-        "cssIntegrationReadiness": "not-ready"
+        "cssIntegrationReadiness": "not-ready",
+        "cssIntegrationPlanStatus": "planned",
+        "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+        "plannedCssVariablePrefix": "--reverse-typography",
+        "runtimeCssStatus": "not-connected"
       },
       "caption": {
         "value": "{font.source.pending}",
@@ -647,7 +659,9 @@
         "tokenValueVerificationStatus": "verified-blocked",
         "valueStillPending": true,
         "transferabilityReviewStatus": "reviewed-blocked",
-        "transferabilityStatus": "blocked-from-transfer"
+        "transferabilityStatus": "blocked-from-transfer",
+        "cssIntegrationPlanStatus": "blocked",
+        "cssIntegrationBlockReason": "No source-backed caption role exists for CSS integration planning."
       }
     },
     "card": {
@@ -716,7 +730,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "blocked",
+        "cssIntegrationStatus": "planned-not-written",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -727,7 +741,11 @@
         "transferabilityReviewStatus": "reviewed",
         "transferabilityStatus": "transferable-candidate",
         "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
-        "cssIntegrationReadiness": "not-ready"
+        "cssIntegrationReadiness": "not-ready",
+        "cssIntegrationPlanStatus": "planned",
+        "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+        "plannedCssVariablePrefix": "--reverse-typography",
+        "runtimeCssStatus": "not-connected"
       },
       "metadata": {
         "value": "{font.source.pending}",
@@ -766,7 +784,9 @@
         "tokenValueVerificationStatus": "verified-blocked",
         "valueStillPending": true,
         "transferabilityReviewStatus": "reviewed-blocked",
-        "transferabilityStatus": "blocked-from-transfer"
+        "transferabilityStatus": "blocked-from-transfer",
+        "cssIntegrationPlanStatus": "blocked",
+        "cssIntegrationBlockReason": "Split-required old token remains excluded from CSS integration planning."
       },
       "label": {
         "value": "{font.source.pending}",
@@ -799,7 +819,9 @@
         "tokenValueVerificationStatus": "verified-blocked",
         "valueStillPending": true,
         "transferabilityReviewStatus": "reviewed-blocked",
-        "transferabilityStatus": "blocked-from-transfer"
+        "transferabilityStatus": "blocked-from-transfer",
+        "cssIntegrationPlanStatus": "blocked",
+        "cssIntegrationBlockReason": "No distinct source-backed record label role exists for CSS integration planning."
       },
       "unavailable": {
         "value": "{font.source.pending}",
@@ -833,7 +855,9 @@
         "tokenValueVerificationStatus": "verified-blocked",
         "valueStillPending": true,
         "transferabilityReviewStatus": "reviewed-blocked",
-        "transferabilityStatus": "blocked-from-transfer"
+        "transferabilityStatus": "blocked-from-transfer",
+        "cssIntegrationPlanStatus": "blocked",
+        "cssIntegrationBlockReason": "Unavailable typography is runtime-derived and excluded from source-backed CSS integration planning."
       },
       "duration": {
         "value": {
@@ -871,7 +895,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "blocked",
+        "cssIntegrationStatus": "planned-not-written",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -882,7 +906,11 @@
         "transferabilityReviewStatus": "reviewed",
         "transferabilityStatus": "transferable-with-constraints",
         "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
-        "cssIntegrationReadiness": "not-ready"
+        "cssIntegrationReadiness": "not-ready",
+        "cssIntegrationPlanStatus": "planned",
+        "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+        "plannedCssVariablePrefix": "--reverse-typography",
+        "runtimeCssStatus": "not-connected"
       },
       "date": {
         "value": {
@@ -920,7 +948,7 @@
         "semanticTokenUpdatePlanStatus": "planned",
         "semanticTokenUpdatePlanTarget": "registry/typography-semantic-token-update-plan.json",
         "futureValueSource": "registry/typography-raw-value-review-matrix.json",
-        "cssIntegrationStatus": "blocked",
+        "cssIntegrationStatus": "planned-not-written",
         "promotionStatus": "not-promoted",
         "semanticTokenValueUpdateStatus": "written-from-review-matrix",
         "valueSource": "registry/typography-raw-value-review-matrix.json",
@@ -931,7 +959,11 @@
         "transferabilityReviewStatus": "reviewed",
         "transferabilityStatus": "transferable-candidate",
         "transferabilityReviewSource": "registry/typography-token-transferability-matrix.json",
-        "cssIntegrationReadiness": "not-ready"
+        "cssIntegrationReadiness": "not-ready",
+        "cssIntegrationPlanStatus": "planned",
+        "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+        "plannedCssVariablePrefix": "--reverse-typography",
+        "runtimeCssStatus": "not-connected"
       }
     },
     "trend": {

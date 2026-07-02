@@ -21,7 +21,7 @@
     "typography.record.unavailable"
   ],
   "transferabilityStatus": "reviewed-with-constraints",
-  "cssIntegrationStatus": "blocked",
+  "cssIntegrationStatus": "planned-not-written",
   "promotionStatus": "not-promoted",
   "reviewEntries": [
     {
@@ -37,7 +37,10 @@
         "Needs validation against non-fitness metric surfaces before becoming a general metric typography rule."
       ],
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "planned",
+      "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+      "cssIntegrationStatus": "planned-not-written"
     },
     {
       "token": "typography.metric.unit",
@@ -52,7 +55,10 @@
         "Needs layout-independent validation before CSS integration."
       ],
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "planned",
+      "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+      "cssIntegrationStatus": "planned-not-written"
     },
     {
       "token": "typography.metric.label",
@@ -67,7 +73,10 @@
         "Should not silently cover record labels or unavailable labels."
       ],
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "planned",
+      "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+      "cssIntegrationStatus": "planned-not-written"
     },
     {
       "token": "typography.record.title",
@@ -81,7 +90,10 @@
         "Keep scoped to completed behavior record titles until more product surfaces are reviewed."
       ],
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "planned",
+      "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+      "cssIntegrationStatus": "planned-not-written"
     },
     {
       "token": "typography.record.duration",
@@ -96,7 +108,10 @@
         "Requires hierarchy normalization before CSS integration."
       ],
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "planned",
+      "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+      "cssIntegrationStatus": "planned-not-written"
     },
     {
       "token": "typography.record.date",
@@ -110,7 +125,10 @@
         "Keep scoped to record date metadata until broader record metadata surfaces are reviewed."
       ],
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "planned",
+      "cssIntegrationPlanTarget": "registry/typography-css-integration-plan.json",
+      "cssIntegrationStatus": "planned-not-written"
     }
   ],
   "blockedTokenChecks": [
@@ -119,28 +137,32 @@
       "transferabilityStatus": "blocked-from-transfer",
       "reason": "Current evidence does not support transferability for this blocked typography token.",
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "blocked"
     },
     {
       "token": "typography.record.metadata",
       "transferabilityStatus": "blocked-from-transfer",
       "reason": "Split-required old token remains excluded from transfer.",
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "blocked"
     },
     {
       "token": "typography.record.label",
       "transferabilityStatus": "blocked-from-transfer",
       "reason": "Current evidence does not support transferability for this blocked typography token.",
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "blocked"
     },
     {
       "token": "typography.record.unavailable",
       "transferabilityStatus": "blocked-from-transfer",
       "reason": "Current evidence does not support transferability for this blocked typography token.",
       "cssIntegrationReadiness": "not-ready",
-      "promotionStatus": "not-promoted"
+      "promotionStatus": "not-promoted",
+      "cssIntegrationPlanStatus": "blocked"
     }
   ],
   "notes": "Verified typography token values are reviewed for transferability. CSS integration and promotion remain blocked."
