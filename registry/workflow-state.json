@@ -3,6 +3,10 @@
   "workflowMode": "repo-file-driven-local-agent",
   "currentCycle": 36,
   "currentCycleName": "Typography CSS Visual QA Execution",
+  "lastBusinessCycle": 36,
+  "lastWorkflowCycle": 37,
+  "nextCycle": 38,
+  "nextCycleName": "Metric Typography Normalization Plan",
   "typographyCssVisualQaExecution": "reviewed-with-warnings",
   "overallVisualQaResult": "warning",
   "promotionReadiness": "not-ready",
@@ -14,4 +18,3 @@
     "Future local Agent cycles must read registry/next-action.json before making changes."
   ]
 }
-

@@ -4,7 +4,21 @@
   "promotionStatus": "not-promoted",
   "forbiddenStatusValues": [
     "accepted",
-    "promoted"
+    "promoted",
+    "ready-for-promotion",
+    "production-ready",
+    "style-system-ready",
+    "css-promoted",
+    "token-promoted",
+    "component-promoted",
+    "pattern-promoted"
+  ],
+  "forbiddenTextPatterns": [
+    "\\bpromotionStatus\\s*[:=]\\s*[\"']?promoted\\b",
+    "\\bacceptanceStatus\\s*[:=]\\s*[\"']?accepted\\b",
+    "\\bstatus\\s*[:=]\\s*[\"']?promoted\\b",
+    "\\bready-for-promotion\\b",
+    "\\bproduction-ready\\b"
   ],
   "blockedTokenGroups": [
     "color.*",
@@ -40,4 +54,3 @@
   "defaultPromotionPolicy": "Promotion requires an explicit promotion cycle and must remain not-promoted otherwise.",
   "defaultAcceptancePolicy": "Accepted status requires an explicit acceptance cycle and must remain blocked otherwise."
 }
-

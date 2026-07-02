@@ -5,14 +5,19 @@
   "workflow": "design-system-reverse",
   "objective": "Plan metric typography normalization after typography CSS visual QA warnings without changing CSS, TSX, Storybook, or token values.",
   "allowedChanges": [
-    ".agent/workflows/**",
-    "registry/**",
-    "reviews/**",
+    "registry/metric-typography-normalization-plan.json",
+    "reviews/MetricTypography.normalization-plan.md",
+    "registry/style-token-evidence-matrix.json",
     "specs/**",
-    "decisions/**",
-    "scripts/verify-workflow-cycle.mjs"
+    "registry/promotion-candidates.json",
+    "registry/workflow-state.json",
+    "registry/workflow-ledger.json",
+    "registry/next-action.json",
+    "decisions/ADR-026-plan-metric-typography-normalization.md"
   ],
   "blockedChanges": [
+    ".agent/workflows/**",
+    "scripts/verify-workflow-cycle.mjs",
     "src/**/*.css",
     "src/**/*.tsx",
     "src/**/*.stories.tsx",
@@ -29,7 +34,14 @@
   },
   "forbiddenStatusValues": [
     "accepted",
-    "promoted"
+    "promoted",
+    "ready-for-promotion",
+    "production-ready",
+    "style-system-ready",
+    "css-promoted",
+    "token-promoted",
+    "component-promoted",
+    "pattern-promoted"
   ],
   "requiredVerification": [
     "node scripts/verify-workflow-cycle.mjs"
@@ -41,4 +53,3 @@
     "Do not write token values, CSS, TSX, or Storybook files."
   ]
 }
-

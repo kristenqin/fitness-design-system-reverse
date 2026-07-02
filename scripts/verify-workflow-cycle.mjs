@@ -37,6 +37,10 @@ function matchesAny(filePath, patterns = []) {
   return patterns.some((pattern) => globToRegExp(pattern).test(filePath));
 }
 
+function isMarkdownLike(filePath) {
+  return [".md", ".mdx", ".txt"].includes(path.extname(filePath));
+}
+
 function getChangedFiles() {
   return unique([
     ...gitLines(["diff", "--name-only"]),
@@ -95,6 +99,10 @@ if (nextAction && invariants) {
     ...(invariants.forbiddenStatusValues ?? []),
     ...(nextAction.forbiddenStatusValues ?? [])
   ]);
+  const forbiddenTextPatterns = (invariants.forbiddenTextPatterns ?? []).map((pattern) => ({
+    pattern,
+    regex: new RegExp(pattern, "i")
+  }));
   const cycleMode = nextAction.mode;
 
   for (const filePath of changedFiles) {
@@ -141,6 +149,19 @@ if (nextAction && invariants) {
       }
     });
   }
+
+  for (const filePath of changedFiles.filter(isMarkdownLike)) {
+    const absolutePath = path.join(repoRoot, filePath);
+    if (!existsSync(absolutePath)) {
+      continue;
+    }
+    const text = readFileSync(absolutePath, "utf8");
+    for (const { pattern, regex } of forbiddenTextPatterns) {
+      if (regex.test(text)) {
+        failures.push(`${filePath} matches forbidden text pattern: ${pattern}`);
+      }
+    }
+  }
 }
 
 if (failures.length) {
@@ -157,4 +178,3 @@ if (changedFiles.length) {
 } else {
   console.log("No changed files detected.");
 }
-
