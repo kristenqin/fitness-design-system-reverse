@@ -8,7 +8,7 @@
     "registry/metric-typography-normalization-plan.json",
     "reviews/MetricTypography.normalization-plan.md",
     "registry/style-token-evidence-matrix.json",
-    "specs/**",
+    "specs/visual-language.md",
     "registry/promotion-candidates.json",
     "registry/workflow-state.json",
     "registry/workflow-ledger.json",
@@ -45,6 +45,11 @@
   ],
   "requiredVerification": [
     "node scripts/verify-workflow-cycle.mjs"
+  ],
+  "requiredDeliverables": [
+    "registry/metric-typography-normalization-plan.json",
+    "reviews/MetricTypography.normalization-plan.md",
+    "decisions/ADR-026-plan-metric-typography-normalization.md"
   ],
   "promotionStatus": "not-promoted",
   "notes": [

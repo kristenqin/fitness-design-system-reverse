@@ -34,9 +34,7 @@
     "typography.record.unavailable"
   ],
   "cssChangeRequiresExplicitCycleType": [
-    "css-integration-execution",
-    "runtime-css-validation",
-    "visual-qa-execution"
+    "css-integration-execution"
   ],
   "tsxChangeRequiresExplicitCycleType": [
     "component-runtime-execution",

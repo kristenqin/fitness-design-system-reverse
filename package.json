@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "validate": "tsx scripts/validate-project.ts",
+    "verify:workflow": "node scripts/verify-workflow-cycle.mjs",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "tsc --noEmit && npm run validate"

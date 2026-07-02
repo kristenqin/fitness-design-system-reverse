@@ -95,6 +95,7 @@ const changedFiles = getChangedFiles();
 if (nextAction && invariants) {
   const allowedChanges = nextAction.allowedChanges ?? [];
   const blockedChanges = nextAction.blockedChanges ?? [];
+  const requiredDeliverables = nextAction.requiredDeliverables ?? [];
   const forbiddenStatusValues = unique([
     ...(invariants.forbiddenStatusValues ?? []),
     ...(nextAction.forbiddenStatusValues ?? [])
@@ -111,6 +112,12 @@ if (nextAction && invariants) {
     }
     if (matchesAny(filePath, blockedChanges)) {
       failures.push(`Changed file matches next-action.blockedChanges: ${filePath}`);
+    }
+  }
+
+  for (const filePath of requiredDeliverables) {
+    if (!existsSync(path.join(repoRoot, filePath))) {
+      failures.push(`Required deliverable is missing: ${filePath}`);
     }
   }
 
