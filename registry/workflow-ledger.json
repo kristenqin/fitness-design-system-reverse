@@ -37,7 +37,23 @@
         "reviews/LocalWorkflow.automation-scaffold.md",
         "decisions/ADR-025-local-agent-workflow-automation.md"
       ]
+    },
+    {
+      "cycle": 38,
+      "name": "Metric Typography Normalization Plan",
+      "mode": "plan",
+      "result": "planned",
+      "businessStateAdvanced": true,
+      "cssChangeStatus": "not-changed",
+      "tsxChangeStatus": "not-changed",
+      "storybookChangeStatus": "not-changed",
+      "tokenValueChangeStatus": "not-changed",
+      "promotionStatus": "not-promoted",
+      "artifacts": [
+        "registry/metric-typography-normalization-plan.json",
+        "reviews/MetricTypography.normalization-plan.md",
+        "decisions/ADR-026-plan-metric-typography-normalization.md"
+      ]
     }
   ]
 }
-

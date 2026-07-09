@@ -1,0 +1,116 @@
+{
+  "status": "planned",
+  "cycle": 38,
+  "scope": "metric-typography-normalization-plan",
+  "sourceInputs": [
+    "registry/typography-css-visual-qa-execution.json",
+    "reviews/TypographyCSS.visual-qa-execution.md",
+    "registry/typography-css-runtime-validation-matrix.json",
+    "registry/style-token-evidence-matrix.json",
+    "registry/promotion-candidates.json",
+    "specs/visual-language.md"
+  ],
+  "problem": "Metric typography is connected and visually reviewed with warnings. Metric unit and label need normalization review before any future CSS adjustment or promotion review.",
+  "planMode": "planning-only",
+  "writeCssInThisCycle": false,
+  "writeTsxInThisCycle": false,
+  "writeStorybookInThisCycle": false,
+  "writeTokenValuesInThisCycle": false,
+  "promotionStatus": "not-promoted",
+  "normalizationTargets": [
+    {
+      "token": "typography.metric.value",
+      "currentRole": "dominant compact metric value",
+      "visualQaResult": "warning",
+      "normalizationRole": "anchor-role",
+      "plannedReview": [
+        "Preserve value as the hierarchy anchor for MetricCard.",
+        "Check whether source-sized value typography overwhelms card density in SummaryDashboard.",
+        "Compare extreme value and localized label pressure before any CSS adjustment."
+      ],
+      "plannedAction": "review-before-css-adjustment",
+      "cssChangeStatus": "blocked",
+      "tokenValueChangeStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "currentRole": "metric unit paired with value",
+      "visualQaResult": "warning",
+      "normalizationRole": "scale-relationship-review",
+      "plannedReview": [
+        "Review unit scale against metric value without merging semantic roles.",
+        "Check whether unit and label can share primitive characteristics while keeping separate semantic tokens.",
+        "Evaluate whether unit typography overfits the captured dashboard source."
+      ],
+      "plannedAction": "plan-ratio-normalization",
+      "cssChangeStatus": "blocked",
+      "tokenValueChangeStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "currentRole": "compact metric label",
+      "visualQaResult": "warning",
+      "normalizationRole": "label-density-review",
+      "plannedReview": [
+        "Review long localized labels against MetricCard density.",
+        "Check whether label typography can align with unit primitive behavior without losing role clarity.",
+        "Keep label semantics distinct from caption because caption remains blocked."
+      ],
+      "plannedAction": "plan-label-normalization",
+      "cssChangeStatus": "blocked",
+      "tokenValueChangeStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "referenceOnlyTokens": [
+    {
+      "token": "typography.record.title",
+      "reason": "Record title passed visual QA with notes and remains a reference point for hierarchy comparison, not a metric normalization target.",
+      "plannedAction": "observe-only",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "blockedTokens": [
+    {
+      "token": "typography.metric.caption",
+      "reason": "Caption was not found or not eligible in the typography raw-value acceptance review.",
+      "plannedAction": "keep-blocked"
+    },
+    {
+      "token": "typography.record.duration",
+      "reason": "Duration remains selector-blocked and requires a separate selector strategy before connection.",
+      "plannedAction": "defer-to-selector-strategy"
+    },
+    {
+      "token": "typography.record.date",
+      "reason": "Date remains selector-blocked and requires a separate selector strategy before connection.",
+      "plannedAction": "defer-to-selector-strategy"
+    }
+  ],
+  "normalizationQuestions": [
+    "Should metric unit and label share any typography primitives while staying separate semantic roles?",
+    "Does metric value source sizing create density or hierarchy issues in SummaryDashboard?",
+    "Which story surfaces should be used for a later normalization execution: MetricCard only, or MetricCard plus SummaryDashboard?",
+    "What screenshot or runtime evidence is needed before allowing CSS adjustment?"
+  ],
+  "requiredNextEvidence": [
+    "MetricCard Default, LongChineseText, and ExtremeValue visual review.",
+    "SummaryDashboard Default and FullSemanticLoop density review.",
+    "Style System/Typography/MetricRoles role separation review."
+  ],
+  "recommendedNextCycle": {
+    "name": "Metric Typography Normalization Execution Plan",
+    "mode": "plan-or-execution-boundary-review",
+    "notes": "Decide whether the next step should remain planning or allow a narrowly scoped CSS normalization execution."
+  },
+  "blockedActions": [
+    "Do not change CSS in this cycle.",
+    "Do not change TSX in this cycle.",
+    "Do not change Storybook stories in this cycle.",
+    "Do not change semantic token values in this cycle.",
+    "Do not promote typography tokens or the style system in this cycle."
+  ]
+}
+

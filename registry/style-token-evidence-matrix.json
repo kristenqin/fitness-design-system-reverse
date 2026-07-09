@@ -325,7 +325,24 @@
         ]
       },
       "visualQaExecutionStatus": "reviewed-with-warnings",
-      "visualQaResult": "warning"
+      "visualQaResult": "warning",
+      "metricTypographyNormalizationPlanStatus": "planned",
+      "metricTypographyNormalizationPlanTarget": "registry/metric-typography-normalization-plan.json",
+      "normalizationPlanScope": "metric-value-unit-label-only",
+      "normalizationPlanTokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "normalizationBlockedTokens": [
+        "typography.metric.caption"
+      ],
+      "normalizationPlanSummary": {
+        "primaryRisk": "Metric unit and label need normalization review before future CSS adjustment.",
+        "cssChangeStatus": "blocked",
+        "tokenValueChangeStatus": "blocked",
+        "promotionStatus": "not-promoted"
+      }
     },
     {
       "group": "typography.record",
@@ -504,7 +521,20 @@
         ]
       },
       "visualQaExecutionStatus": "reviewed-with-notes",
-      "visualQaResult": "pass-with-notes"
+      "visualQaResult": "pass-with-notes",
+      "metricTypographyNormalizationPlanImpact": "reference-only",
+      "metricTypographyNormalizationPlanTarget": "registry/metric-typography-normalization-plan.json",
+      "selectorStrategyStillRequired": true,
+      "normalizationPlanSummary": {
+        "recordTitleRole": "reference-only hierarchy comparison",
+        "selectorBlockedTokens": [
+          "typography.record.duration",
+          "typography.record.date"
+        ],
+        "cssChangeStatus": "blocked",
+        "tokenValueChangeStatus": "blocked",
+        "promotionStatus": "not-promoted"
+      }
     },
     {
       "group": "typography.trend",

@@ -132,6 +132,7 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
+        "Metric typography normalization is planned but not executed.",
         "Typography CSS visual QA is reviewed with warnings.",
         "Metric unit and label still require visual normalization review.",
         "Metric typography may overfit source dashboard emphasis.",
@@ -143,7 +144,7 @@
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred."
       ],
-      "nextAction": "Review typography token value transferability and accessibility before any CSS integration or promotion review.",
+      "nextAction": "Use the metric typography normalization plan before allowing any further CSS adjustment or promotion review.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -162,7 +163,9 @@
       "visualQaPlanStatus": "planned",
       "visualQaExecutionStatus": "reviewed-with-warnings",
       "overallVisualQaResult": "warning",
-      "promotionReadiness": "not-ready"
+      "promotionReadiness": "not-ready",
+      "metricTypographyNormalizationPlanStatus": "planned",
+      "metricTypographyNormalizationPlanTarget": "registry/metric-typography-normalization-plan.json"
     }
   ],
   "notes": "Promotion status is intentionally separate from sourceStatus. runtime-tested-minimum does not mean promoted."

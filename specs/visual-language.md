@@ -534,3 +534,29 @@ Selector-blocked tokens:
 Metric typography remains usable as candidate runtime evidence, but metric unit and label still require visual normalization review. Metric typography may overfit source dashboard emphasis.
 
 Record title remains acceptable as candidate evidence. No token is accepted or promoted. CSS, TSX, Storybook, and semantic token values remain unchanged.
+
+## Metric Typography Normalization Plan Notes
+
+Thirty-eighth-cycle planning defines a normalization boundary for metric typography after warning-level visual QA.
+
+Normalization planning covers:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+
+The metric value remains the hierarchy anchor. Metric unit and label need ratio, density, and primitive-sharing review, but their semantic roles must remain separate.
+
+Reference-only:
+
+- `typography.record.title`
+
+Blocked from this normalization scope:
+
+- `typography.metric.caption`
+- `typography.record.duration`
+- `typography.record.date`
+
+`typography.record.duration` and `typography.record.date` still require a selector strategy before connection. They must not be folded into metric normalization.
+
+This cycle plans normalization only. CSS, TSX, Storybook, and semantic token values remain unchanged. Promotion remains blocked.

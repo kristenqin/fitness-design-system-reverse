@@ -46,6 +46,17 @@
   "requiredVerification": [
     "node scripts/verify-workflow-cycle.mjs"
   ],
+  "requiredReads": [
+    "registry/typography-css-visual-qa-execution.json",
+    "reviews/TypographyCSS.visual-qa-execution.md",
+    "registry/typography-css-runtime-validation-matrix.json",
+    "registry/style-token-evidence-matrix.json",
+    "registry/promotion-candidates.json",
+    "specs/visual-language.md",
+    "registry/workflow-state.json",
+    "registry/workflow-ledger.json",
+    "registry/workflow-invariants.json"
+  ],
   "requiredDeliverables": [
     "registry/metric-typography-normalization-plan.json",
     "reviews/MetricTypography.normalization-plan.md",
