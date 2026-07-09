@@ -627,3 +627,29 @@ Blocked from the future execution boundary:
 - color, spacing, density, state, and radius tokens
 
 This cycle does not write CSS. It only plans the CSS execution boundary. TSX, Storybook, semantic token values, and promotion state remain unchanged.
+
+## Metric Typography CSS Execution Notes
+
+Forty-second-cycle execution applies the planned selector-level metric typography normalization.
+
+Changed selectors:
+
+- `.sdr-metric-card small`
+- `.sdr-metric-card p`
+
+Preserved selector:
+
+- `.sdr-metric-card strong`
+
+The metric value remains the hierarchy anchor. Metric unit and metric label now use selector-level supporting caps so the source typography values do not dominate the compact MetricCard runtime surface.
+
+Unchanged:
+
+- TSX files
+- Storybook stories
+- semantic token values
+- record duration/date selectors
+- typography trend and reward tokens
+- color, spacing, density, state, and radius tokens
+
+This is a CSS execution result only. Runtime validation is still required, and promotion remains blocked.

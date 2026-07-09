@@ -380,10 +380,10 @@
   font-family:
     var(--reverse-typography-metric-unit-font-family), Inter, ui-sans-serif,
     system-ui, sans-serif;
-  font-size: var(--reverse-typography-metric-unit-font-size);
+  font-size: min(var(--reverse-typography-metric-unit-font-size), 0.82rem);
   font-style: var(--reverse-typography-metric-unit-font-style);
   font-weight: var(--reverse-typography-metric-unit-font-weight);
-  line-height: var(--reverse-typography-metric-unit-line-height);
+  line-height: 1.15;
   letter-spacing: var(--reverse-typography-metric-unit-letter-spacing);
   text-decoration: var(--reverse-typography-metric-unit-text-decoration);
   text-transform: var(--reverse-typography-metric-unit-text-case);
@@ -394,10 +394,10 @@
   font-family:
     var(--reverse-typography-metric-label-font-family), Inter, ui-sans-serif,
     system-ui, sans-serif;
-  font-size: var(--reverse-typography-metric-label-font-size);
+  font-size: min(var(--reverse-typography-metric-label-font-size), 0.78rem);
   font-style: var(--reverse-typography-metric-label-font-style);
   font-weight: var(--reverse-typography-metric-label-font-weight);
-  line-height: var(--reverse-typography-metric-label-line-height);
+  line-height: 1.25;
   letter-spacing: var(--reverse-typography-metric-label-letter-spacing);
   text-decoration: var(--reverse-typography-metric-label-text-decoration);
   text-transform: var(--reverse-typography-metric-label-text-case);

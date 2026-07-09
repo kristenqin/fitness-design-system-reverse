@@ -1,0 +1,79 @@
+{
+  "status": "executed",
+  "cycle": 42,
+  "scope": "metric-typography-css-execution",
+  "sourcePlan": "registry/metric-typography-css-execution-plan.json",
+  "targetCssFile": "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+  "cssChangeStatus": "changed",
+  "tsxChangeStatus": "not-changed",
+  "storybookChangeStatus": "not-changed",
+  "tokenValueChangeStatus": "not-changed",
+  "promotionStatus": "not-promoted",
+  "executionBoundary": {
+    "changedSelectors": [
+      ".sdr-metric-card small",
+      ".sdr-metric-card p"
+    ],
+    "unchangedAllowedSelector": ".sdr-metric-card strong",
+    "blockedSelectorsNotChanged": [
+      ".sdr-workout-item__metadata dd",
+      ".sdr-workout-item__body strong",
+      ".sdr-progress-ring",
+      ".sdr-trend-card",
+      ".sdr-award-badge"
+    ]
+  },
+  "executionEntries": [
+    {
+      "token": "typography.metric.value",
+      "selector": ".sdr-metric-card strong",
+      "executionResult": "preserved-as-hierarchy-anchor",
+      "cssChanged": false,
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "selector": ".sdr-metric-card small",
+      "executionResult": "selector-level-supporting-normalization-written",
+      "cssChanged": true,
+      "changes": [
+        "font-size now caps the source token value with a supporting metric size.",
+        "line-height now uses a compact supporting value."
+      ],
+      "semanticTokenValueChanged": false,
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "selector": ".sdr-metric-card p",
+      "executionResult": "selector-level-supporting-normalization-written",
+      "cssChanged": true,
+      "changes": [
+        "font-size now caps the source token value with a compact label size.",
+        "line-height now uses a compact supporting copy value."
+      ],
+      "semanticTokenValueChanged": false,
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "blockedTokensNotChanged": [
+    "typography.metric.caption",
+    "typography.record.title",
+    "typography.record.duration",
+    "typography.record.date",
+    "typography.trend.*",
+    "typography.reward.*",
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "nextRecommendedCycle": {
+    "cycleName": "Metric Typography CSS Runtime Validation",
+    "mode": "runtime-css-validation",
+    "cssExecutionAllowed": false,
+    "purpose": "Validate the selector-level metric typography CSS execution in runtime surfaces."
+  }
+}
+

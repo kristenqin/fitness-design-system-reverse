@@ -1,31 +1,31 @@
 {
-  "cycle": 41,
-  "name": "Metric Typography CSS Execution Plan",
-  "mode": "plan",
+  "cycle": 42,
+  "name": "Metric Typography CSS Execution",
+  "mode": "css-integration-execution",
   "workflow": "design-system-reverse",
-  "objective": "Define the exact CSS execution boundary for metric typography normalization, without writing CSS, TSX, Storybook, or token values.",
+  "objective": "Execute narrowly scoped MetricCard metric typography CSS normalization without changing TSX, Storybook, or semantic token values.",
   "allowedChanges": [
-    "registry/metric-typography-css-execution-plan.json",
-    "reviews/MetricTypography.css-execution-plan.md",
+    "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+    "registry/metric-typography-css-execution.json",
+    "reviews/MetricTypography.css-execution.md",
     "registry/style-token-evidence-matrix.json",
     "specs/visual-language.md",
     "registry/promotion-candidates.json",
     "registry/workflow-state.json",
     "registry/workflow-ledger.json",
     "registry/next-action.json",
-    "decisions/ADR-029-plan-metric-typography-css-execution.md"
+    "decisions/ADR-030-execute-metric-typography-css.md"
   ],
   "blockedChanges": [
     ".agent/workflows/**",
     "scripts/verify-workflow-cycle.mjs",
-    "src/**/*.css",
     "src/**/*.tsx",
     "src/**/*.stories.tsx",
     "stories/**",
     "tokens/semantic.tokens.json"
   ],
   "constraints": {
-    "cssChangeAllowed": false,
+    "cssChangeAllowed": true,
     "tsxChangeAllowed": false,
     "storybookChangeAllowed": false,
     "tokenValueChangeAllowed": false,
@@ -47,6 +47,9 @@
     "node scripts/verify-workflow-cycle.mjs"
   ],
   "requiredReads": [
+    "registry/metric-typography-css-execution-plan.json",
+    "reviews/MetricTypography.css-execution-plan.md",
+    "decisions/ADR-029-plan-metric-typography-css-execution.md",
     "registry/metric-typography-normalization-adjustment-plan.json",
     "reviews/MetricTypography.adjustment-plan.md",
     "decisions/ADR-028-plan-metric-typography-adjustment.md",
@@ -67,14 +70,14 @@
     "registry/workflow-invariants.json"
   ],
   "requiredDeliverables": [
-    "registry/metric-typography-css-execution-plan.json",
-    "reviews/MetricTypography.css-execution-plan.md",
-    "decisions/ADR-029-plan-metric-typography-css-execution.md"
+    "registry/metric-typography-css-execution.json",
+    "reviews/MetricTypography.css-execution.md",
+    "decisions/ADR-030-execute-metric-typography-css.md"
   ],
   "promotionStatus": "not-promoted",
   "notes": [
-    "This next action is a CSS execution planning cycle only.",
-    "Do not write CSS in this cycle.",
-    "Do not write token values, CSS, TSX, or Storybook files."
+    "This next action is a narrowly scoped CSS execution cycle.",
+    "Only MetricCard metric typography selectors may change.",
+    "Do not write token values, TSX, or Storybook files."
   ]
 }

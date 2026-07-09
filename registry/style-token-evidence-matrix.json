@@ -388,6 +388,29 @@
         "cssChangeStatus": "planned-not-written",
         "tokenValueChangeStatus": "blocked",
         "promotionStatus": "not-promoted"
+      },
+      "metricTypographyCssExecutionStatus": "executed",
+      "metricTypographyCssExecutionTarget": "registry/metric-typography-css-execution.json",
+      "metricTypographyCssExecutionSummary": {
+        "targetCssFile": "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+        "changedSelectors": [
+          ".sdr-metric-card small",
+          ".sdr-metric-card p"
+        ],
+        "unchangedSelectors": [
+          ".sdr-metric-card strong"
+        ],
+        "updatedTokens": [
+          "typography.metric.unit",
+          "typography.metric.label"
+        ],
+        "unchangedTokens": [
+          "typography.metric.value"
+        ],
+        "cssChangeStatus": "changed",
+        "tokenValueChangeStatus": "not-changed",
+        "runtimeValidationStatus": "not-started",
+        "promotionStatus": "not-promoted"
       }
     },
     {

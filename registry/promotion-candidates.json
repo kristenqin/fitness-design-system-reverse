@@ -132,12 +132,9 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Metric typography CSS execution is planned but not written.",
-        "Metric typography adjustment is planned but not executed.",
-        "Metric typography execution boundary review blocks CSS execution until an adjustment proposal exists.",
-        "Metric typography normalization is planned but not executed.",
+        "Metric typography CSS execution is complete but runtime validation is still required.",
         "Typography CSS visual QA is reviewed with warnings.",
-        "Metric unit and label still require visual normalization review.",
+        "Metric unit and label still require runtime validation after selector-level CSS execution.",
         "Metric typography may overfit source dashboard emphasis.",
         "record.duration and record.date remain selector-blocked and require a selector strategy before connection.",
         "Typography tokens remain candidate tokens.",
@@ -147,7 +144,7 @@
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred."
       ],
-      "nextAction": "Run a narrowly scoped metric typography CSS execution cycle before any promotion review.",
+      "nextAction": "Run metric typography CSS runtime validation before any promotion review.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -175,6 +172,9 @@
       "metricTypographyAdjustmentPlanTarget": "registry/metric-typography-normalization-adjustment-plan.json",
       "metricTypographyCssExecutionPlanStatus": "planned",
       "metricTypographyCssExecutionPlanTarget": "registry/metric-typography-css-execution-plan.json",
+      "metricTypographyCssExecutionStatus": "executed",
+      "metricTypographyCssExecutionTarget": "registry/metric-typography-css-execution.json",
+      "metricTypographyCssRuntimeValidationStatus": "not-started",
       "cssExecutionAllowedNext": false
     }
   ],
