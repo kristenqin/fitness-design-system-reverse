@@ -1,0 +1,103 @@
+{
+  "status": "planned",
+  "cycle": 40,
+  "scope": "metric-typography-normalization-adjustment-plan",
+  "sourceBoundary": "registry/metric-typography-normalization-execution-boundary.json",
+  "sourcePlan": "registry/metric-typography-normalization-plan.json",
+  "sourceVisualQa": "registry/typography-css-visual-qa-execution.json",
+  "writeCssInThisCycle": false,
+  "writeTsxInThisCycle": false,
+  "writeStorybookInThisCycle": false,
+  "writeTokenValuesInThisCycle": false,
+  "promotionStatus": "not-promoted",
+  "adjustmentDecision": "plan-shared-primitives-with-separated-semantic-roles",
+  "cssExecutionAllowedInThisCycle": false,
+  "adjustmentTargets": [
+    {
+      "token": "typography.metric.value",
+      "semanticRole": "metric hierarchy anchor",
+      "adjustmentPolicy": "preserve-anchor-role",
+      "primitiveSharing": "none-with-unit-or-label",
+      "plannedCssBehavior": "keep as the dominant metric role unless a later CSS execution plan defines a density-safe adjustment.",
+      "riskToValidateLater": [
+        "Extreme values can widen compact cards.",
+        "SummaryDashboard density can become too metric-heavy."
+      ],
+      "cssChangeStatus": "blocked",
+      "tokenValueChangeStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "semanticRole": "metric value support unit",
+      "adjustmentPolicy": "candidate-shared-supporting-primitive",
+      "primitiveSharing": "may-share-supporting-metric-primitives-with-typography.metric.label",
+      "plannedCssBehavior": "review as a supporting role paired with value; do not merge semantic identity with label.",
+      "riskToValidateLater": [
+        "Unit can compete with value if scale remains too strong.",
+        "Unit can become too quiet if normalized only for label density."
+      ],
+      "cssChangeStatus": "blocked",
+      "tokenValueChangeStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "semanticRole": "compact metric label",
+      "adjustmentPolicy": "candidate-shared-supporting-primitive",
+      "primitiveSharing": "may-share-supporting-metric-primitives-with-typography.metric.unit",
+      "plannedCssBehavior": "review as compact supporting copy; do not merge with caption because caption remains blocked.",
+      "riskToValidateLater": [
+        "Long localized labels can compress MetricCard layout.",
+        "Label can lose clarity if reduced too far."
+      ],
+      "cssChangeStatus": "blocked",
+      "tokenValueChangeStatus": "blocked",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "primitiveSharingPlan": {
+    "candidatePrimitive": "metric-supporting-typography",
+    "semanticTokenSeparationRequired": true,
+    "appliesTo": [
+      "typography.metric.unit",
+      "typography.metric.label"
+    ],
+    "doesNotApplyTo": [
+      "typography.metric.value",
+      "typography.metric.caption"
+    ],
+    "fieldsToReviewBeforeCssExecution": [
+      "fontFamily",
+      "fontStyle",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing"
+    ],
+    "fieldsNotWrittenInThisCycle": [
+      "fontSize",
+      "color",
+      "spacing",
+      "radius"
+    ]
+  },
+  "blockedTokens": [
+    "typography.metric.caption",
+    "typography.record.duration",
+    "typography.record.date",
+    "typography.trend.*",
+    "typography.reward.*",
+    "color.*",
+    "spacing.*",
+    "density.dashboard",
+    "state.*",
+    "radius.policy"
+  ],
+  "nextRecommendedCycle": {
+    "cycleName": "Metric Typography CSS Execution Plan",
+    "mode": "plan",
+    "cssExecutionAllowed": false,
+    "purpose": "Define the exact CSS execution boundary and selector-level changes before any style write."
+  }
+}
+

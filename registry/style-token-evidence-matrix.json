@@ -357,6 +357,19 @@
         "cssChangeStatus": "blocked",
         "tokenValueChangeStatus": "blocked",
         "promotionStatus": "not-promoted"
+      },
+      "metricTypographyAdjustmentPlanStatus": "planned",
+      "metricTypographyAdjustmentPlanTarget": "registry/metric-typography-normalization-adjustment-plan.json",
+      "metricTypographyAdjustmentSummary": {
+        "decision": "Keep metric semantic tokens separated while planning a shared supporting primitive for unit and label.",
+        "hierarchyAnchor": "typography.metric.value",
+        "candidateSharedPrimitiveTokens": [
+          "typography.metric.unit",
+          "typography.metric.label"
+        ],
+        "cssChangeStatus": "blocked",
+        "tokenValueChangeStatus": "blocked",
+        "promotionStatus": "not-promoted"
       }
     },
     {
@@ -552,6 +565,8 @@
       },
       "metricTypographyExecutionBoundaryImpact": "out-of-scope-reference-only",
       "metricTypographyExecutionBoundaryTarget": "registry/metric-typography-normalization-execution-boundary.json",
+      "metricTypographyAdjustmentPlanImpact": "out-of-scope-reference-only",
+      "metricTypographyAdjustmentPlanTarget": "registry/metric-typography-normalization-adjustment-plan.json",
       "selectorStrategyStillRequired": true
     },
     {

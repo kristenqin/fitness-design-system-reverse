@@ -132,6 +132,7 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
+        "Metric typography adjustment is planned but not executed.",
         "Metric typography execution boundary review blocks CSS execution until an adjustment proposal exists.",
         "Metric typography normalization is planned but not executed.",
         "Typography CSS visual QA is reviewed with warnings.",
@@ -145,7 +146,7 @@
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred."
       ],
-      "nextAction": "Create a metric typography normalization adjustment plan before allowing CSS execution or promotion review.",
+      "nextAction": "Create a metric typography CSS execution plan before any style write or promotion review.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -169,6 +170,8 @@
       "metricTypographyNormalizationPlanTarget": "registry/metric-typography-normalization-plan.json",
       "metricTypographyExecutionBoundaryStatus": "reviewed",
       "metricTypographyExecutionBoundaryTarget": "registry/metric-typography-normalization-execution-boundary.json",
+      "metricTypographyAdjustmentPlanStatus": "planned",
+      "metricTypographyAdjustmentPlanTarget": "registry/metric-typography-normalization-adjustment-plan.json",
       "cssExecutionAllowedNext": false
     }
   ],

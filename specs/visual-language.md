@@ -581,3 +581,22 @@ Out of scope:
 `typography.record.duration` and `typography.record.date` remain selector-blocked and require a separate selector strategy.
 
 This cycle does not change CSS, TSX, Storybook, or semantic token values. Promotion remains blocked.
+
+## Metric Typography Adjustment Plan Notes
+
+Fortieth-cycle planning defines the metric typography adjustment strategy without writing CSS.
+
+Adjustment decision:
+
+- `typography.metric.value` remains the hierarchy anchor.
+- `typography.metric.unit` and `typography.metric.label` may share a supporting metric primitive in a later plan.
+- Semantic token identities stay separated even if supporting primitives converge later.
+
+The shared primitive idea does not apply to:
+
+- `typography.metric.value`
+- `typography.metric.caption`
+- `typography.record.duration`
+- `typography.record.date`
+
+CSS execution is still blocked. The next step should be a CSS execution plan that defines selector-level write boundaries before any style change.
