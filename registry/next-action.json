@@ -1,19 +1,19 @@
 {
-  "cycle": 38,
-  "name": "Metric Typography Normalization Plan",
+  "cycle": 39,
+  "name": "Metric Typography Normalization Execution Boundary Review",
   "mode": "plan",
   "workflow": "design-system-reverse",
-  "objective": "Plan metric typography normalization after typography CSS visual QA warnings without changing CSS, TSX, Storybook, or token values.",
+  "objective": "Review whether metric typography normalization is ready for a narrowly scoped CSS execution cycle, without changing CSS, TSX, Storybook, or token values.",
   "allowedChanges": [
-    "registry/metric-typography-normalization-plan.json",
-    "reviews/MetricTypography.normalization-plan.md",
+    "registry/metric-typography-normalization-execution-boundary.json",
+    "reviews/MetricTypography.execution-boundary-review.md",
     "registry/style-token-evidence-matrix.json",
     "specs/visual-language.md",
     "registry/promotion-candidates.json",
     "registry/workflow-state.json",
     "registry/workflow-ledger.json",
     "registry/next-action.json",
-    "decisions/ADR-026-plan-metric-typography-normalization.md"
+    "decisions/ADR-027-metric-typography-normalization-boundary.md"
   ],
   "blockedChanges": [
     ".agent/workflows/**",
@@ -47,6 +47,9 @@
     "node scripts/verify-workflow-cycle.mjs"
   ],
   "requiredReads": [
+    "registry/metric-typography-normalization-plan.json",
+    "reviews/MetricTypography.normalization-plan.md",
+    "decisions/ADR-026-plan-metric-typography-normalization.md",
     "registry/typography-css-visual-qa-execution.json",
     "reviews/TypographyCSS.visual-qa-execution.md",
     "registry/typography-css-runtime-validation-matrix.json",
@@ -58,14 +61,14 @@
     "registry/workflow-invariants.json"
   ],
   "requiredDeliverables": [
-    "registry/metric-typography-normalization-plan.json",
-    "reviews/MetricTypography.normalization-plan.md",
-    "decisions/ADR-026-plan-metric-typography-normalization.md"
+    "registry/metric-typography-normalization-execution-boundary.json",
+    "reviews/MetricTypography.execution-boundary-review.md",
+    "decisions/ADR-027-metric-typography-normalization-boundary.md"
   ],
   "promotionStatus": "not-promoted",
   "notes": [
-    "This next action is a planning cycle only.",
-    "Do not enter Metric Typography Normalization execution in the workflow automation scaffold cycle.",
+    "This next action is a boundary review and planning cycle only.",
+    "Do not execute Metric Typography Normalization CSS changes in this cycle.",
     "Do not write token values, CSS, TSX, or Storybook files."
   ]
 }

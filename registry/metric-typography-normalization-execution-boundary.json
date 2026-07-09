@@ -1,0 +1,118 @@
+{
+  "status": "reviewed",
+  "cycle": 39,
+  "scope": "metric-typography-normalization-execution-boundary-review",
+  "sourcePlan": "registry/metric-typography-normalization-plan.json",
+  "sourceReview": "reviews/MetricTypography.normalization-plan.md",
+  "sourceDecision": "decisions/ADR-026-plan-metric-typography-normalization.md",
+  "sourceInputs": [
+    "registry/typography-css-visual-qa-execution.json",
+    "reviews/TypographyCSS.visual-qa-execution.md",
+    "registry/typography-css-runtime-validation-matrix.json",
+    "registry/style-token-evidence-matrix.json",
+    "registry/promotion-candidates.json",
+    "specs/visual-language.md"
+  ],
+  "boundaryDecision": "not-ready-for-css-execution",
+  "boundaryReason": "Metric value, unit, and label have a normalization plan, but the evidence still needs a more concrete ratio and density adjustment proposal before CSS execution is allowed.",
+  "cssExecutionAllowedNext": false,
+  "writeCssInThisCycle": false,
+  "writeTsxInThisCycle": false,
+  "writeStorybookInThisCycle": false,
+  "writeTokenValuesInThisCycle": false,
+  "promotionStatus": "not-promoted",
+  "targetTokens": [
+    {
+      "token": "typography.metric.value",
+      "boundaryRole": "hierarchy-anchor",
+      "currentEvidence": [
+        "Connected selector exists for MetricCard value.",
+        "Visual QA result is warning.",
+        "Value remains the dominant compact metric role."
+      ],
+      "executionBoundary": "defer-css-execution",
+      "requiredBeforeCssExecution": [
+        "Define whether the value size remains unchanged or receives a density-safe adjustment.",
+        "Confirm extreme value behavior in MetricCard and SummaryDashboard surfaces."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "boundaryRole": "value-paired-scale",
+      "currentEvidence": [
+        "Connected selector exists for MetricCard unit.",
+        "Visual QA flags unit and label as needing normalization review.",
+        "Unit may share primitive characteristics with label while keeping separate semantic role."
+      ],
+      "executionBoundary": "defer-css-execution",
+      "requiredBeforeCssExecution": [
+        "Define a unit-to-value scale relationship.",
+        "Decide whether unit and label should share font family, weight, or line-height primitives.",
+        "Keep semantic token identity separate from any shared primitive decision."
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "boundaryRole": "compact-label-density",
+      "currentEvidence": [
+        "Connected selector exists for MetricCard label.",
+        "Visual QA flags long localized labels and extreme values as density risks.",
+        "Label must not collapse into the blocked metric caption role."
+      ],
+      "executionBoundary": "defer-css-execution",
+      "requiredBeforeCssExecution": [
+        "Define label density behavior for long localized labels.",
+        "Decide whether label can share primitives with unit without merging semantic roles.",
+        "Confirm SummaryDashboard density remains balanced."
+      ],
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "outOfScopeTokens": [
+    {
+      "token": "typography.metric.caption",
+      "reason": "Caption remains blocked from the metric normalization scope."
+    },
+    {
+      "token": "typography.record.duration",
+      "reason": "Duration remains selector-blocked and needs a separate selector strategy."
+    },
+    {
+      "token": "typography.record.date",
+      "reason": "Date remains selector-blocked and needs a separate selector strategy."
+    },
+    {
+      "token": "color.*",
+      "reason": "Color groups still require contrast review and are outside this cycle."
+    },
+    {
+      "token": "spacing.*",
+      "reason": "Spacing groups still require transferability review and are outside this cycle."
+    },
+    {
+      "token": "state.*",
+      "reason": "State groups still require stronger state evidence and are outside this cycle."
+    },
+    {
+      "token": "radius.policy",
+      "reason": "Radius policy remains deferred and is outside this cycle."
+    }
+  ],
+  "nextRecommendedCycle": {
+    "cycleName": "Metric Typography Normalization Adjustment Plan",
+    "mode": "plan",
+    "purpose": "Define the exact metric value, unit, and label adjustment proposal before any CSS execution.",
+    "cssExecutionAllowed": false
+  },
+  "blockedActions": [
+    "Do not change CSS in this cycle.",
+    "Do not change TSX in this cycle.",
+    "Do not change Storybook stories in this cycle.",
+    "Do not change semantic token values in this cycle.",
+    "Do not connect duration or date selectors in this cycle.",
+    "Do not promote typography tokens or the style system in this cycle."
+  ]
+}
+

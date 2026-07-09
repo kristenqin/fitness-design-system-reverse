@@ -54,6 +54,24 @@
         "reviews/MetricTypography.normalization-plan.md",
         "decisions/ADR-026-plan-metric-typography-normalization.md"
       ]
+    },
+    {
+      "cycle": 39,
+      "name": "Metric Typography Normalization Execution Boundary Review",
+      "mode": "plan",
+      "result": "reviewed-boundary",
+      "businessStateAdvanced": true,
+      "cssExecutionAllowedNext": false,
+      "cssChangeStatus": "not-changed",
+      "tsxChangeStatus": "not-changed",
+      "storybookChangeStatus": "not-changed",
+      "tokenValueChangeStatus": "not-changed",
+      "promotionStatus": "not-promoted",
+      "artifacts": [
+        "registry/metric-typography-normalization-execution-boundary.json",
+        "reviews/MetricTypography.execution-boundary-review.md",
+        "decisions/ADR-027-metric-typography-normalization-boundary.md"
+      ]
     }
   ]
 }

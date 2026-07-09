@@ -342,6 +342,21 @@
         "cssChangeStatus": "blocked",
         "tokenValueChangeStatus": "blocked",
         "promotionStatus": "not-promoted"
+      },
+      "metricTypographyExecutionBoundaryStatus": "reviewed",
+      "metricTypographyExecutionBoundaryTarget": "registry/metric-typography-normalization-execution-boundary.json",
+      "cssExecutionBoundaryDecision": "not-ready-for-css-execution",
+      "cssExecutionAllowedNext": false,
+      "metricTypographyExecutionBoundarySummary": {
+        "reason": "A concrete adjustment proposal is still required before CSS execution.",
+        "targetTokens": [
+          "typography.metric.value",
+          "typography.metric.unit",
+          "typography.metric.label"
+        ],
+        "cssChangeStatus": "blocked",
+        "tokenValueChangeStatus": "blocked",
+        "promotionStatus": "not-promoted"
       }
     },
     {
@@ -534,7 +549,10 @@
         "cssChangeStatus": "blocked",
         "tokenValueChangeStatus": "blocked",
         "promotionStatus": "not-promoted"
-      }
+      },
+      "metricTypographyExecutionBoundaryImpact": "out-of-scope-reference-only",
+      "metricTypographyExecutionBoundaryTarget": "registry/metric-typography-normalization-execution-boundary.json",
+      "selectorStrategyStillRequired": true
     },
     {
       "group": "typography.trend",

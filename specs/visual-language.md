@@ -560,3 +560,24 @@ Blocked from this normalization scope:
 `typography.record.duration` and `typography.record.date` still require a selector strategy before connection. They must not be folded into metric normalization.
 
 This cycle plans normalization only. CSS, TSX, Storybook, and semantic token values remain unchanged. Promotion remains blocked.
+
+## Metric Typography Execution Boundary Notes
+
+Thirty-ninth-cycle boundary review checks whether metric typography normalization can move directly into CSS execution.
+
+Boundary decision:
+
+- CSS execution is not allowed yet.
+- `typography.metric.value`, `typography.metric.unit`, and `typography.metric.label` still need a concrete adjustment proposal.
+- Unit and label may share primitive characteristics later, but their semantic roles must remain separate.
+
+Out of scope:
+
+- `typography.metric.caption`
+- `typography.record.duration`
+- `typography.record.date`
+- color, spacing, state, and radius tokens
+
+`typography.record.duration` and `typography.record.date` remain selector-blocked and require a separate selector strategy.
+
+This cycle does not change CSS, TSX, Storybook, or semantic token values. Promotion remains blocked.
