@@ -1,12 +1,17 @@
 {
   "workflow": "design-system-reverse",
   "workflowMode": "repo-file-driven-local-agent",
+  "nextActionSchemaVersion": 2,
+  "dualTrackWorkflowStatus": "enabled",
+  "workflowGoalStatus": "active",
+  "workflowGoalRef": "registry/workflow-goal.json",
+  "workflowGoalScope": "summary-dashboard-only",
   "currentCycle": 42,
   "currentCycleName": "Metric Typography CSS Execution",
   "lastBusinessCycle": 42,
   "lastWorkflowCycle": 37,
-  "nextCycle": 42,
-  "nextCycleName": "Metric Typography CSS Execution",
+  "nextCycle": 43,
+  "nextCycleName": "Metric Typography CSS Runtime Validation",
   "metricTypographyNormalizationPlanStatus": "planned",
   "metricTypographyNormalizationExecutionBoundaryStatus": "reviewed",
   "metricTypographyNormalizationAdjustmentPlanStatus": "planned",
@@ -21,6 +26,9 @@
   "stateNotes": [
     "Local workflow automation scaffold records the current stable workflow state without advancing design-system business state.",
     "Typography CSS visual QA has warnings and does not create promotion readiness.",
-    "Future local Agent cycles must read registry/next-action.json before making changes."
+    "Future local Agent cycles must read registry/next-action.json before making changes.",
+    "Schema version 2 separates activeAction from nextRecommendedAction.",
+    "Reverse runtime high-fidelity work and design-system extraction are separate tracks.",
+    "SummaryDashboard is the only active object scope until the workflow goal is explicitly expanded."
   ]
 }

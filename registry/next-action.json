@@ -1,83 +1,151 @@
 {
-  "cycle": 42,
-  "name": "Metric Typography CSS Execution",
-  "mode": "css-integration-execution",
+  "schemaVersion": 2,
   "workflow": "design-system-reverse",
-  "objective": "Execute narrowly scoped MetricCard metric typography CSS normalization without changing TSX, Storybook, or semantic token values.",
-  "allowedChanges": [
-    "src/reverse-components/summary-dashboard/SummaryDashboard.css",
-    "registry/metric-typography-css-execution.json",
-    "reviews/MetricTypography.css-execution.md",
-    "registry/style-token-evidence-matrix.json",
-    "specs/visual-language.md",
-    "registry/promotion-candidates.json",
-    "registry/workflow-state.json",
-    "registry/workflow-ledger.json",
-    "registry/next-action.json",
-    "decisions/ADR-030-execute-metric-typography-css.md"
-  ],
-  "blockedChanges": [
-    ".agent/workflows/**",
-    "scripts/verify-workflow-cycle.mjs",
-    "src/**/*.tsx",
-    "src/**/*.stories.tsx",
-    "stories/**",
-    "tokens/semantic.tokens.json"
-  ],
-  "constraints": {
-    "cssChangeAllowed": true,
-    "tsxChangeAllowed": false,
-    "storybookChangeAllowed": false,
-    "tokenValueChangeAllowed": false,
-    "promotionAllowed": false,
-    "acceptedStatusAllowed": false
+  "workflowMode": "repo-file-driven-local-agent",
+  "actionSelectionPolicy": "Execute activeAction. Generate or update nextRecommendedAction during activeAction completion.",
+  "activeAction": {
+    "cycle": 43,
+    "name": "Metric Typography CSS Runtime Validation",
+    "mode": "storybook-runtime-validation",
+    "workflow": "design-system-reverse",
+    "objective": "Validate the Cycle 42 MetricCard metric typography CSS execution in runtime surfaces without changing CSS, TSX, Storybook, or semantic token values.",
+    "allowedChanges": [
+      "registry/metric-typography-css-runtime-validation.json",
+      "reviews/MetricTypography.css-runtime-validation.md",
+      "registry/style-token-evidence-matrix.json",
+      "specs/visual-language.md",
+      "registry/promotion-candidates.json",
+      "registry/workflow-state.json",
+      "registry/workflow-ledger.json",
+      "registry/next-action.json",
+      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
+    ],
+    "blockedChanges": [
+      ".agent/workflows/**",
+      "scripts/verify-workflow-cycle.mjs",
+      "src/**/*.css",
+      "src/**/*.tsx",
+      "src/**/*.stories.tsx",
+      "stories/**",
+      "tokens/semantic.tokens.json"
+    ],
+    "constraints": {
+      "cssChangeAllowed": false,
+      "tsxChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "tokenValueChangeAllowed": false,
+      "promotionAllowed": false,
+      "acceptedStatusAllowed": false
+    },
+    "forbiddenStatusValues": [
+      "accepted",
+      "promoted",
+      "ready-for-promotion",
+      "production-ready",
+      "style-system-ready",
+      "css-promoted",
+      "token-promoted",
+      "component-promoted",
+      "pattern-promoted"
+    ],
+    "requiredVerification": [
+      "node scripts/verify-workflow-cycle.mjs"
+    ],
+    "requiredReads": [
+      ".agent/workflows/design-system-reverse.workflow.md",
+      ".agent/workflows/guardrails.md",
+      ".agent/workflows/cycle-template.md",
+      ".agent/workflows/verifier.md",
+      "registry/workflow-state.json",
+      "registry/workflow-ledger.json",
+      "registry/next-action.json",
+      "registry/workflow-invariants.json",
+      "registry/workflow-goal.json",
+      "registry/metric-typography-css-execution.json",
+      "reviews/MetricTypography.css-execution.md",
+      "decisions/ADR-030-execute-metric-typography-css.md",
+      "registry/style-token-evidence-matrix.json",
+      "registry/promotion-candidates.json",
+      "specs/visual-language.md"
+    ],
+    "requiredDeliverables": [
+      "registry/metric-typography-css-runtime-validation.json",
+      "reviews/MetricTypography.css-runtime-validation.md",
+      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
+    ],
+    "runtimeValidationTargets": [
+      "MetricCard default runtime surface",
+      "MetricCard long localized label surface",
+      "MetricCard extreme value surface",
+      "SummaryDashboard semantic composition surface"
+    ],
+    "promotionStatus": "not-promoted",
+    "notes": [
+      "Validate whether metric unit and label normalization reduced visual pressure.",
+      "Do not change CSS, TSX, Storybook, or semantic token values in this validation cycle.",
+      "Generate the nextRecommendedAction during completion."
+    ]
   },
-  "forbiddenStatusValues": [
-    "accepted",
-    "promoted",
-    "ready-for-promotion",
-    "production-ready",
-    "style-system-ready",
-    "css-promoted",
-    "token-promoted",
-    "component-promoted",
-    "pattern-promoted"
-  ],
-  "requiredVerification": [
-    "node scripts/verify-workflow-cycle.mjs"
-  ],
-  "requiredReads": [
-    "registry/metric-typography-css-execution-plan.json",
-    "reviews/MetricTypography.css-execution-plan.md",
-    "decisions/ADR-029-plan-metric-typography-css-execution.md",
-    "registry/metric-typography-normalization-adjustment-plan.json",
-    "reviews/MetricTypography.adjustment-plan.md",
-    "decisions/ADR-028-plan-metric-typography-adjustment.md",
-    "registry/metric-typography-normalization-execution-boundary.json",
-    "reviews/MetricTypography.execution-boundary-review.md",
-    "decisions/ADR-027-metric-typography-normalization-boundary.md",
-    "registry/metric-typography-normalization-plan.json",
-    "reviews/MetricTypography.normalization-plan.md",
-    "decisions/ADR-026-plan-metric-typography-normalization.md",
-    "registry/typography-css-visual-qa-execution.json",
-    "reviews/TypographyCSS.visual-qa-execution.md",
-    "registry/typography-css-runtime-validation-matrix.json",
-    "registry/style-token-evidence-matrix.json",
-    "registry/promotion-candidates.json",
-    "specs/visual-language.md",
-    "registry/workflow-state.json",
-    "registry/workflow-ledger.json",
-    "registry/workflow-invariants.json"
-  ],
-  "requiredDeliverables": [
-    "registry/metric-typography-css-execution.json",
-    "reviews/MetricTypography.css-execution.md",
-    "decisions/ADR-030-execute-metric-typography-css.md"
-  ],
-  "promotionStatus": "not-promoted",
-  "notes": [
-    "This next action is a narrowly scoped CSS execution cycle.",
-    "Only MetricCard metric typography selectors may change.",
-    "Do not write token values, TSX, or Storybook files."
-  ]
+  "nextRecommendedAction": {
+    "status": "pending-active-action-result",
+    "reason": "Cycle 44 should be generated from the Cycle 43 runtime validation result.",
+    "promotionStatus": "not-promoted"
+  },
+  "transitionVerificationAction": {
+    "id": "workflow-dual-track-protocol-hardening",
+    "name": "Repo-Driven Dual-Track Workflow Protocol Hardening",
+    "mode": "workflow-hardening",
+    "workflow": "design-system-reverse",
+    "objective": "Migrate next-action to activeAction and nextRecommendedAction while keeping the next executable cycle pointed at Cycle 43.",
+    "allowedChanges": [
+      ".agent/workflows/design-system-reverse.workflow.md",
+      ".agent/workflows/guardrails.md",
+      ".agent/workflows/verifier.md",
+      ".agent/workflows/cycle-template.md",
+      "scripts/verify-workflow-cycle.mjs",
+      "registry/next-action.json",
+      "registry/workflow-state.json",
+      "registry/workflow-ledger.json",
+      "registry/workflow-invariants.json",
+      "registry/workflow-goal.json",
+      "reviews/LocalWorkflow.dual-track-protocol.md",
+      "decisions/ADR-031-repo-driven-dual-track-workflow.md"
+    ],
+    "blockedChanges": [
+      "src/**/*.css",
+      "src/**/*.tsx",
+      "src/**/*.stories.tsx",
+      "stories/**",
+      "tokens/semantic.tokens.json"
+    ],
+    "constraints": {
+      "cssChangeAllowed": false,
+      "tsxChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "tokenValueChangeAllowed": false,
+      "promotionAllowed": false,
+      "acceptedStatusAllowed": false
+    },
+    "forbiddenStatusValues": [
+      "accepted",
+      "promoted",
+      "ready-for-promotion",
+      "production-ready",
+      "style-system-ready",
+      "css-promoted",
+      "token-promoted",
+      "component-promoted",
+      "pattern-promoted"
+    ],
+    "requiredDeliverables": [
+      "registry/workflow-goal.json",
+      "reviews/LocalWorkflow.dual-track-protocol.md",
+      "decisions/ADR-031-repo-driven-dual-track-workflow.md"
+    ],
+    "promotionStatus": "not-promoted",
+    "notes": [
+      "This transition action verifies the protocol migration only.",
+      "Future business cycles must use activeAction as the executable action boundary."
+    ]
+  }
 }

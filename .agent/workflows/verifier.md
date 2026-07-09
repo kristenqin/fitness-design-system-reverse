@@ -20,16 +20,19 @@ The verifier reads:
 - `registry/workflow-invariants.json`
 - Git changed files from the local working tree
 
+For `registry/next-action.json` schema version 2, the verifier reads `activeAction` as the normal action boundary. A transition verification action may be used only for workflow protocol migration.
+
 ## Checks
 
 The verifier currently checks:
 
-- changed files are covered by `allowedChanges`
-- changed files do not match `blockedChanges`
+- changed files are covered by the selected action `allowedChanges`
+- changed files do not match the selected action `blockedChanges`
 - forbidden status values do not appear in changed JSON files except inside invariant policy fields
 - JSON files with `promotionStatus` keep it as `not-promoted`
 - token value files are not changed unless the current cycle explicitly allows token value changes
-- CSS, TSX, and Storybook paths are not changed unless the current cycle explicitly allows that file type
+- CSS, TSX, and Storybook paths are not changed unless the selected action explicitly allows that file type
+- schema version 2 includes both `activeAction` and `nextRecommendedAction`
 
 ## Output
 
@@ -39,4 +42,3 @@ The verifier prints:
 - `FAIL` with reasons when any guardrail is violated
 
 Passing the verifier does not promote anything. It only confirms that the local changes stayed inside the current cycle boundary.
-

@@ -9,6 +9,7 @@ Use this template when defining the next local Agent cycle.
 - Mode:
 - Objective:
 - Workflow layer:
+- Track: reverse-runtime | design-system | workflow-control
 
 ## Required Reads
 
@@ -18,6 +19,7 @@ Use this template when defining the next local Agent cycle.
 - registry/workflow-state.json
 - registry/next-action.json
 - registry/workflow-invariants.json
+- registry/workflow-goal.json
 - relevant registry, review, spec, token, and decision files for this cycle
 
 ## Allowed Changes
@@ -44,6 +46,13 @@ List exact file paths or glob patterns.
 - CSS write allowed:
 - TSX write allowed:
 - Storybook write allowed:
+
+## Next Action Policy
+
+- Update `registry/next-action.json`:
+- Active action after completion:
+- Next recommended action after completion:
+- Reason:
 
 ## Deliverables
 
@@ -75,4 +84,4 @@ Report:
 3. Blocked actions respected
 4. Verification result
 5. Promotion status
-
+6. Next action state

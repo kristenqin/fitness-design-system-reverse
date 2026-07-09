@@ -1,0 +1,57 @@
+{
+  "workflow": "design-system-reverse",
+  "status": "active",
+  "goalId": "summary-dashboard-workflow-template",
+  "goalName": "SummaryDashboard Reverse Design-System Workflow Template",
+  "primaryObjectScope": {
+    "sourceNodeScope": "SummaryDashboard only",
+    "registryPattern": "summary-dashboard",
+    "reverseSurface": "src/reverse-components/summary-dashboard",
+    "expansionPolicy": "Do not expand to other pages or Figma nodes until the SummaryDashboard workflow template is complete."
+  },
+  "goalStatement": "Use SummaryDashboard as the first complete example to run the reverse design-system workflow end to end, then reuse the workflow for future Figma nodes and design-system tasks.",
+  "tracks": {
+    "reverseRuntimeTrack": {
+      "purpose": "Pursue high-fidelity Figma restoration and runtime validation inside local reverse surfaces.",
+      "allowedOnlyWhenActiveCycleAllows": [
+        "CSS changes",
+        "TSX changes",
+        "Storybook changes",
+        "Figma evidence reads"
+      ],
+      "promotionMeaning": "High-fidelity restoration is evidence for review, not design-system promotion."
+    },
+    "designSystemTrack": {
+      "purpose": "Extract transferable components, patterns, semantic tokens, concept models, state rules, and accessibility rules.",
+      "promotionPolicy": "Promotion requires an explicit promotion cycle and remains blocked by default."
+    }
+  },
+  "successCriteria": [
+    "SummaryDashboard reverse surface has source-backed runtime validation for the scoped evidence.",
+    "Core candidate assets remain traceable through registry, contracts, reviews, runtime validation, and ADRs.",
+    "Storybook is used as runtime validation rather than a showcase.",
+    "Semantic tokens and CSS integration remain separated from promotion decisions.",
+    "The repo-file-driven workflow can advance one activeAction at a time and generate the next recommended action.",
+    "The completed workflow can be reused for later Figma nodes or design-system tasks."
+  ],
+  "outOfScopeUntilExplicitCycle": [
+    "Workout Detail page",
+    "Trends page",
+    "Awards page",
+    "BottomNav app shell",
+    "Other Figma nodes or pages",
+    "Automatic promotion",
+    "Automatic accepted status"
+  ],
+  "currentNextStep": {
+    "cycle": 43,
+    "name": "Metric Typography CSS Runtime Validation",
+    "source": "registry/next-action.json activeAction"
+  },
+  "promotionStatus": "not-promoted",
+  "notes": [
+    "This goal is the durable repo-level summary of the user-confirmed workflow intent.",
+    "Future agents should read this file before executing activeAction.",
+    "The workflow target is both high-fidelity reverse runtime validation and conservative transferable design-system extraction."
+  ]
+}

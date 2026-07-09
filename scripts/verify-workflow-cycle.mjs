@@ -71,8 +71,136 @@ function isPolicyPath(pathParts) {
     "blockedChanges",
     "defaultAcceptancePolicy",
     "defaultPromotionPolicy",
+    "promotionPolicy",
+    "acceptancePolicy",
     "notes"
   ].some((policyPath) => joined.includes(policyPath));
+}
+
+function getActionCandidates(nextAction) {
+  if (nextAction.activeAction) {
+    return [
+      {
+        label: "activeAction",
+        action: nextAction.activeAction
+      },
+      ...(nextAction.transitionVerificationAction
+        ? [
+            {
+              label: "transitionVerificationAction",
+              action: nextAction.transitionVerificationAction
+            }
+          ]
+        : [])
+    ];
+  }
+
+  return [
+    {
+      label: "legacy next-action",
+      action: nextAction
+    }
+  ];
+}
+
+function validateActionShape(nextAction, actionCandidates) {
+  const shapeFailures = [];
+
+  if (nextAction.activeAction && !nextAction.nextRecommendedAction) {
+    shapeFailures.push("next-action schema v2 requires nextRecommendedAction.");
+  }
+
+  for (const { label, action } of actionCandidates) {
+    for (const field of ["name", "mode", "allowedChanges", "blockedChanges", "requiredDeliverables"]) {
+      if (!(field in action)) {
+        shapeFailures.push(`${label} is missing required field: ${field}`);
+      }
+    }
+  }
+
+  return shapeFailures;
+}
+
+function evaluateActionBoundary({ action, label, invariants, changedFiles }) {
+  const actionFailures = [];
+  const allowedChanges = action.allowedChanges ?? [];
+  const blockedChanges = action.blockedChanges ?? [];
+  const requiredDeliverables = action.requiredDeliverables ?? [];
+  const forbiddenStatusValues = unique([
+    ...(invariants.forbiddenStatusValues ?? []),
+    ...(action.forbiddenStatusValues ?? [])
+  ]);
+  const forbiddenTextPatterns = (invariants.forbiddenTextPatterns ?? []).map((pattern) => ({
+    pattern,
+    regex: new RegExp(pattern, "i")
+  }));
+  const cycleMode = action.mode;
+
+  for (const filePath of changedFiles) {
+    if (!matchesAny(filePath, allowedChanges)) {
+      actionFailures.push(`Changed file is not allowed by ${label}.allowedChanges: ${filePath}`);
+    }
+    if (matchesAny(filePath, blockedChanges)) {
+      actionFailures.push(`Changed file matches ${label}.blockedChanges: ${filePath}`);
+    }
+  }
+
+  for (const filePath of requiredDeliverables) {
+    if (!existsSync(path.join(repoRoot, filePath))) {
+      actionFailures.push(`Required deliverable is missing for ${label}: ${filePath}`);
+    }
+  }
+
+  const cssChanged = changedFiles.some((filePath) => filePath.endsWith(".css"));
+  const tsxChanged = changedFiles.some((filePath) => filePath.endsWith(".tsx"));
+  const storybookChanged = changedFiles.some((filePath) => filePath.includes(".stories.") || filePath.startsWith("stories/"));
+  const tokenFileChanged = changedFiles.includes("tokens/semantic.tokens.json");
+
+  if (cssChanged && !(invariants.cssChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
+    actionFailures.push(`CSS changed but ${label}.mode "${cycleMode}" is not an explicit CSS change cycle.`);
+  }
+  if (tsxChanged && !(invariants.tsxChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
+    actionFailures.push(`TSX changed but ${label}.mode "${cycleMode}" is not an explicit TSX change cycle.`);
+  }
+  if (storybookChanged && !(invariants.storybookChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
+    actionFailures.push(`Storybook changed but ${label}.mode "${cycleMode}" is not an explicit Storybook change cycle.`);
+  }
+  if (tokenFileChanged && !(invariants.tokenValueChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
+    actionFailures.push(`tokens/semantic.tokens.json changed but ${label}.mode "${cycleMode}" is not an explicit token value change cycle.`);
+  }
+
+  for (const filePath of changedFiles.filter((filePath) => filePath.endsWith(".json"))) {
+    if (!existsSync(path.join(repoRoot, filePath))) {
+      continue;
+    }
+    const json = readJson(filePath);
+    walkJson(json, (value, pathParts) => {
+      if (typeof value !== "string") {
+        return;
+      }
+      if (pathParts.at(-1) === "promotionStatus" && value !== "not-promoted") {
+        actionFailures.push(`${filePath}:${pathParts.join(".")} must remain not-promoted.`);
+      }
+      if (forbiddenStatusValues.includes(value) && !isPolicyPath(pathParts)) {
+        actionFailures.push(`${filePath}:${pathParts.join(".")} uses forbidden status value "${value}".`);
+      }
+    });
+  }
+
+  for (const filePath of changedFiles.filter(isMarkdownLike)) {
+    const absolutePath = path.join(repoRoot, filePath);
+    if (!existsSync(absolutePath)) {
+      continue;
+    }
+    const text = readFileSync(absolutePath, "utf8");
+    for (const { pattern, regex } of forbiddenTextPatterns) {
+      if (regex.test(text)) {
+        actionFailures.push(`${filePath} matches forbidden text pattern: ${pattern}`);
+      }
+    }
+  }
+
+  return actionFailures;
 }
 
 const nextActionPath = "registry/next-action.json";
@@ -93,80 +221,28 @@ const invariants = failures.length ? null : readJson(invariantsPath);
 const changedFiles = getChangedFiles();
 
 if (nextAction && invariants) {
-  const allowedChanges = nextAction.allowedChanges ?? [];
-  const blockedChanges = nextAction.blockedChanges ?? [];
-  const requiredDeliverables = nextAction.requiredDeliverables ?? [];
-  const forbiddenStatusValues = unique([
-    ...(invariants.forbiddenStatusValues ?? []),
-    ...(nextAction.forbiddenStatusValues ?? [])
-  ]);
-  const forbiddenTextPatterns = (invariants.forbiddenTextPatterns ?? []).map((pattern) => ({
-    pattern,
-    regex: new RegExp(pattern, "i")
-  }));
-  const cycleMode = nextAction.mode;
+  const actionCandidates = getActionCandidates(nextAction);
+  failures.push(...validateActionShape(nextAction, actionCandidates));
 
-  for (const filePath of changedFiles) {
-    if (!matchesAny(filePath, allowedChanges)) {
-      failures.push(`Changed file is not allowed by next-action.allowedChanges: ${filePath}`);
-    }
-    if (matchesAny(filePath, blockedChanges)) {
-      failures.push(`Changed file matches next-action.blockedChanges: ${filePath}`);
-    }
-  }
+  if (!failures.length) {
+    const evaluated = actionCandidates.map((candidate) => ({
+      ...candidate,
+      failures: evaluateActionBoundary({
+        ...candidate,
+        invariants,
+        changedFiles
+      })
+    }));
+    const passingAction = evaluated.find((candidate) => candidate.failures.length === 0);
 
-  for (const filePath of requiredDeliverables) {
-    if (!existsSync(path.join(repoRoot, filePath))) {
-      failures.push(`Required deliverable is missing: ${filePath}`);
-    }
-  }
-
-  const cssChanged = changedFiles.some((filePath) => filePath.endsWith(".css"));
-  const tsxChanged = changedFiles.some((filePath) => filePath.endsWith(".tsx"));
-  const storybookChanged = changedFiles.some((filePath) => filePath.includes(".stories.") || filePath.startsWith("stories/"));
-  const tokenFileChanged = changedFiles.includes("tokens/semantic.tokens.json");
-
-  if (cssChanged && !(invariants.cssChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
-    failures.push(`CSS changed but cycle mode "${cycleMode}" is not an explicit CSS change cycle.`);
-  }
-  if (tsxChanged && !(invariants.tsxChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
-    failures.push(`TSX changed but cycle mode "${cycleMode}" is not an explicit TSX change cycle.`);
-  }
-  if (storybookChanged && !(invariants.storybookChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
-    failures.push(`Storybook changed but cycle mode "${cycleMode}" is not an explicit Storybook change cycle.`);
-  }
-  if (tokenFileChanged && !(invariants.tokenValueChangeRequiresExplicitCycleType ?? []).includes(cycleMode)) {
-    failures.push(`tokens/semantic.tokens.json changed but cycle mode "${cycleMode}" is not an explicit token value change cycle.`);
-  }
-
-  for (const filePath of changedFiles.filter((filePath) => filePath.endsWith(".json"))) {
-    if (!existsSync(path.join(repoRoot, filePath))) {
-      continue;
-    }
-    const json = readJson(filePath);
-    walkJson(json, (value, pathParts) => {
-      if (typeof value !== "string") {
-        return;
+    if (!passingAction) {
+      failures.push(...evaluated[0].failures);
+      for (const candidate of evaluated.slice(1)) {
+        failures.push(`Alternative ${candidate.label} also failed verification.`);
+        failures.push(...candidate.failures);
       }
-      if (pathParts.at(-1) === "promotionStatus" && value !== "not-promoted") {
-        failures.push(`${filePath}:${pathParts.join(".")} must remain not-promoted.`);
-      }
-      if (forbiddenStatusValues.includes(value) && !isPolicyPath(pathParts)) {
-        failures.push(`${filePath}:${pathParts.join(".")} uses forbidden status value "${value}".`);
-      }
-    });
-  }
-
-  for (const filePath of changedFiles.filter(isMarkdownLike)) {
-    const absolutePath = path.join(repoRoot, filePath);
-    if (!existsSync(absolutePath)) {
-      continue;
-    }
-    const text = readFileSync(absolutePath, "utf8");
-    for (const { pattern, regex } of forbiddenTextPatterns) {
-      if (regex.test(text)) {
-        failures.push(`${filePath} matches forbidden text pattern: ${pattern}`);
-      }
+    } else {
+      process.env.WORKFLOW_VERIFIED_ACTION = passingAction.label;
     }
   }
 }
@@ -180,6 +256,9 @@ if (failures.length) {
 }
 
 console.log("PASS workflow cycle verification");
+if (process.env.WORKFLOW_VERIFIED_ACTION) {
+  console.log(`Verified action boundary: ${process.env.WORKFLOW_VERIFIED_ACTION}.`);
+}
 if (changedFiles.length) {
   console.log(`Checked ${changedFiles.length} changed file(s).`);
 } else {

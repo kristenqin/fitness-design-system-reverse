@@ -126,6 +126,31 @@
         "reviews/MetricTypography.css-execution.md",
         "decisions/ADR-030-execute-metric-typography-css.md"
       ]
+    },
+    {
+      "cycle": "workflow-dual-track-protocol-hardening",
+      "name": "Repo-Driven Dual-Track Workflow Protocol Hardening",
+      "mode": "workflow-hardening",
+      "result": "schema-v2-enabled",
+      "businessStateAdvanced": false,
+      "nextExecutableCycle": 43,
+      "nextExecutableCycleName": "Metric Typography CSS Runtime Validation",
+      "cssChangeStatus": "not-changed",
+      "tsxChangeStatus": "not-changed",
+      "storybookChangeStatus": "not-changed",
+      "tokenValueChangeStatus": "not-changed",
+      "promotionStatus": "not-promoted",
+      "artifacts": [
+        ".agent/workflows/design-system-reverse.workflow.md",
+        ".agent/workflows/cycle-template.md",
+        ".agent/workflows/guardrails.md",
+        ".agent/workflows/verifier.md",
+        "registry/next-action.json",
+        "registry/workflow-goal.json",
+        "scripts/verify-workflow-cycle.mjs",
+        "reviews/LocalWorkflow.dual-track-protocol.md",
+        "decisions/ADR-031-repo-driven-dual-track-workflow.md"
+      ]
     }
   ]
 }

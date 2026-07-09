@@ -12,6 +12,8 @@ Captured source evidence only means the evidence exists in the repo. It does not
 
 Runtime validation only means a behavior or state has been exercised. It does not mean the component, token, pattern, or system asset is promoted.
 
+High-fidelity Figma restoration only means the reverse runtime surface is closer to the source evidence. It does not mean the restored decisions are transferable design-system rules.
+
 ## Workflow Boundary
 
 GitHub Issues are not the main workflow for this repo.
@@ -22,6 +24,13 @@ The local Agent must use repo files as the workflow source of truth:
 - `registry/workflow-ledger.json`
 - `registry/next-action.json`
 - `registry/workflow-invariants.json`
+- `registry/workflow-goal.json`
+
+For `registry/next-action.json` schema version 2:
+
+- execute `activeAction`
+- update `nextRecommendedAction` during completion
+- do not execute `nextRecommendedAction` until it is promoted into `activeAction` by a later workflow update
 
 ## File Change Guardrails
 
@@ -49,3 +58,6 @@ Each cycle advances one bounded workflow step.
 
 If a cycle is a plan, it must not execute implementation. If a cycle is execution, it must not expand into promotion. If a cycle is verification, it must not add new evidence or new runtime behavior.
 
+Reverse runtime work and design-system extraction must stay separate unless the current cycle explicitly bridges them.
+
+The active durable goal is SummaryDashboard-only. Do not expand to other Figma nodes, pages, app shell work, or product areas unless the current cycle explicitly changes `registry/workflow-goal.json`.

@@ -1,6 +1,10 @@
 {
   "workflow": "design-system-reverse",
   "status": "active",
+  "nextActionSchemaVersion": 2,
+  "actionBoundaryPolicy": "activeAction is the executable cycle boundary. nextRecommendedAction is advisory until it becomes activeAction.",
+  "dualTrackPolicy": "Reverse runtime high-fidelity restoration and design-system extraction are separate tracks unless a cycle explicitly bridges them.",
+  "goalBoundaryPolicy": "The active goal is SummaryDashboard-only unless registry/workflow-goal.json is explicitly updated by an allowed workflow-control cycle.",
   "promotionStatus": "not-promoted",
   "forbiddenStatusValues": [
     "accepted",
