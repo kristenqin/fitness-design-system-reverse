@@ -1,0 +1,103 @@
+{
+  "status": "planned",
+  "cycle": 41,
+  "scope": "metric-typography-css-execution-plan",
+  "sourceAdjustmentPlan": "registry/metric-typography-normalization-adjustment-plan.json",
+  "sourceBoundaryReview": "registry/metric-typography-normalization-execution-boundary.json",
+  "writeCssInThisCycle": false,
+  "writeTsxInThisCycle": false,
+  "writeStorybookInThisCycle": false,
+  "writeTokenValuesInThisCycle": false,
+  "promotionStatus": "not-promoted",
+  "cssExecutionPlanStatus": "planned",
+  "cssExecutionAllowedInThisCycle": false,
+  "cssExecutionCandidateNext": true,
+  "targetCssFile": "src/reverse-components/summary-dashboard/SummaryDashboard.css",
+  "executionBoundary": {
+    "allowedSelectorsForFutureExecution": [
+      ".sdr-metric-card strong",
+      ".sdr-metric-card small",
+      ".sdr-metric-card p"
+    ],
+    "blockedSelectors": [
+      ".sdr-workout-item__metadata dd",
+      ".sdr-workout-item__body strong",
+      ".sdr-progress-ring",
+      ".sdr-trend-card",
+      ".sdr-award-badge"
+    ],
+    "allowedTokenRolesForFutureExecution": [
+      "typography.metric.value",
+      "typography.metric.unit",
+      "typography.metric.label"
+    ],
+    "blockedTokenRoles": [
+      "typography.metric.caption",
+      "typography.record.duration",
+      "typography.record.date",
+      "typography.record.title",
+      "typography.trend.*",
+      "typography.reward.*",
+      "color.*",
+      "spacing.*",
+      "density.dashboard",
+      "state.*",
+      "radius.policy"
+    ]
+  },
+  "plannedCssExecutionEntries": [
+    {
+      "token": "typography.metric.value",
+      "selector": ".sdr-metric-card strong",
+      "executionIntent": "preserve hierarchy anchor and only adjust if needed for density-safe metric display.",
+      "allowedFutureChangeType": "css-variable-reference-or-metric-scope-override",
+      "blockedFutureChangeType": [
+        "semantic token value change",
+        "TSX selector change",
+        "Storybook story change",
+        "promotion status change"
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.unit",
+      "selector": ".sdr-metric-card small",
+      "executionIntent": "normalize as a supporting metric role that may share supporting primitives with metric label.",
+      "allowedFutureChangeType": "css-variable-reference-or-metric-scope-override",
+      "blockedFutureChangeType": [
+        "semantic token value change",
+        "TSX selector change",
+        "Storybook story change",
+        "promotion status change"
+      ],
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "token": "typography.metric.label",
+      "selector": ".sdr-metric-card p",
+      "executionIntent": "normalize as compact supporting copy that may share supporting primitives with metric unit.",
+      "allowedFutureChangeType": "css-variable-reference-or-metric-scope-override",
+      "blockedFutureChangeType": [
+        "semantic token value change",
+        "TSX selector change",
+        "Storybook story change",
+        "promotion status change"
+      ],
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "futureExecutionPrechecks": [
+    "Confirm changed selectors are limited to MetricCard metric typography selectors.",
+    "Confirm no TSX selector changes are needed.",
+    "Confirm semantic token values remain unchanged.",
+    "Run workflow verifier after CSS execution.",
+    "Run build after CSS execution if the execution cycle allows it."
+  ],
+  "nextRecommendedCycle": {
+    "cycleName": "Metric Typography CSS Execution",
+    "mode": "css-integration-execution",
+    "cssExecutionAllowed": true,
+    "scope": "metric-typography-selectors-only"
+  }
+}
+

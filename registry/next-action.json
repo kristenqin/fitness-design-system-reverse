@@ -1,19 +1,19 @@
 {
-  "cycle": 40,
-  "name": "Metric Typography Normalization Adjustment Plan",
+  "cycle": 41,
+  "name": "Metric Typography CSS Execution Plan",
   "mode": "plan",
   "workflow": "design-system-reverse",
-  "objective": "Define the metric typography adjustment strategy before any CSS execution, without changing CSS, TSX, Storybook, or token values.",
+  "objective": "Define the exact CSS execution boundary for metric typography normalization, without writing CSS, TSX, Storybook, or token values.",
   "allowedChanges": [
-    "registry/metric-typography-normalization-adjustment-plan.json",
-    "reviews/MetricTypography.adjustment-plan.md",
+    "registry/metric-typography-css-execution-plan.json",
+    "reviews/MetricTypography.css-execution-plan.md",
     "registry/style-token-evidence-matrix.json",
     "specs/visual-language.md",
     "registry/promotion-candidates.json",
     "registry/workflow-state.json",
     "registry/workflow-ledger.json",
     "registry/next-action.json",
-    "decisions/ADR-028-plan-metric-typography-adjustment.md"
+    "decisions/ADR-029-plan-metric-typography-css-execution.md"
   ],
   "blockedChanges": [
     ".agent/workflows/**",
@@ -47,6 +47,9 @@
     "node scripts/verify-workflow-cycle.mjs"
   ],
   "requiredReads": [
+    "registry/metric-typography-normalization-adjustment-plan.json",
+    "reviews/MetricTypography.adjustment-plan.md",
+    "decisions/ADR-028-plan-metric-typography-adjustment.md",
     "registry/metric-typography-normalization-execution-boundary.json",
     "reviews/MetricTypography.execution-boundary-review.md",
     "decisions/ADR-027-metric-typography-normalization-boundary.md",
@@ -64,14 +67,14 @@
     "registry/workflow-invariants.json"
   ],
   "requiredDeliverables": [
-    "registry/metric-typography-normalization-adjustment-plan.json",
-    "reviews/MetricTypography.adjustment-plan.md",
-    "decisions/ADR-028-plan-metric-typography-adjustment.md"
+    "registry/metric-typography-css-execution-plan.json",
+    "reviews/MetricTypography.css-execution-plan.md",
+    "decisions/ADR-029-plan-metric-typography-css-execution.md"
   ],
   "promotionStatus": "not-promoted",
   "notes": [
-    "This next action is an adjustment planning cycle only.",
-    "Do not execute Metric Typography Normalization CSS changes in this cycle.",
+    "This next action is a CSS execution planning cycle only.",
+    "Do not write CSS in this cycle.",
     "Do not write token values, CSS, TSX, or Storybook files."
   ]
 }

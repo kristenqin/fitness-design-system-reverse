@@ -90,6 +90,24 @@
         "reviews/MetricTypography.adjustment-plan.md",
         "decisions/ADR-028-plan-metric-typography-adjustment.md"
       ]
+    },
+    {
+      "cycle": 41,
+      "name": "Metric Typography CSS Execution Plan",
+      "mode": "plan",
+      "result": "planned",
+      "businessStateAdvanced": true,
+      "cssExecutionAllowedNext": true,
+      "cssChangeStatus": "not-changed",
+      "tsxChangeStatus": "not-changed",
+      "storybookChangeStatus": "not-changed",
+      "tokenValueChangeStatus": "not-changed",
+      "promotionStatus": "not-promoted",
+      "artifacts": [
+        "registry/metric-typography-css-execution-plan.json",
+        "reviews/MetricTypography.css-execution-plan.md",
+        "decisions/ADR-029-plan-metric-typography-css-execution.md"
+      ]
     }
   ]
 }

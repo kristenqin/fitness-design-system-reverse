@@ -600,3 +600,30 @@ The shared primitive idea does not apply to:
 - `typography.record.date`
 
 CSS execution is still blocked. The next step should be a CSS execution plan that defines selector-level write boundaries before any style change.
+
+## Metric Typography CSS Execution Plan Notes
+
+Forty-first-cycle planning defines the selector-level CSS execution boundary for metric typography normalization.
+
+Future CSS execution may target only:
+
+- `.sdr-metric-card strong`
+- `.sdr-metric-card small`
+- `.sdr-metric-card p`
+
+Future execution may address only:
+
+- `typography.metric.value`
+- `typography.metric.unit`
+- `typography.metric.label`
+
+Blocked from the future execution boundary:
+
+- `typography.metric.caption`
+- `typography.record.title`
+- `typography.record.duration`
+- `typography.record.date`
+- typography trend and reward tokens
+- color, spacing, density, state, and radius tokens
+
+This cycle does not write CSS. It only plans the CSS execution boundary. TSX, Storybook, semantic token values, and promotion state remain unchanged.
