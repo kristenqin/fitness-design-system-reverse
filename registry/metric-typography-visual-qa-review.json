@@ -1,0 +1,67 @@
+{
+  "status": "reviewed",
+  "cycle": 44,
+  "scope": "metric-typography-visual-qa-review",
+  "sourceEvidenceUsed": [
+    "assets/source-evidence/summary-dashboard-143-23952.png",
+    "registry/source-map.json",
+    "registry/metric-typography-css-execution.json",
+    "registry/metric-typography-css-runtime-validation.json"
+  ],
+  "readAdditionalFigmaNodes": false,
+  "generatedRuntimeScreenshots": false,
+  "visualQaTargets": [
+    {
+      "target": "MetricCard default visual pressure",
+      "sourceObservation": "Metric value is visually dominant while supporting unit and label are subordinate.",
+      "runtimeEvidence": "Cycle 43 Storybook build passed for MetricCard default runtime surface.",
+      "reviewDecision": "acceptable-with-evidence-limits",
+      "remainingRisk": "No runtime screenshot comparison was generated in this cycle.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "target": "MetricCard long localized label visual pressure",
+      "sourceObservation": "Source SummaryDashboard uses compact supporting labels around metric content.",
+      "runtimeEvidence": "Cycle 43 Storybook build passed for MetricCard long localized label surface.",
+      "reviewDecision": "needs-runtime-screenshot-review",
+      "remainingRisk": "Long localized labels may still compress compact metric cards.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "target": "MetricCard extreme value hierarchy",
+      "sourceObservation": "Source SummaryDashboard relies on strong value hierarchy with smaller supporting metric text.",
+      "runtimeEvidence": "Cycle 43 Storybook build passed for MetricCard extreme value surface.",
+      "reviewDecision": "acceptable-with-evidence-limits",
+      "remainingRisk": "Extreme value hierarchy still needs screenshot-level review.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "target": "SummaryDashboard metric density inside semantic composition",
+      "sourceObservation": "Source SummaryDashboard is dense, vertically stacked, and uses compact cards with clear hierarchy.",
+      "runtimeEvidence": "Cycle 43 Storybook build passed for SummaryDashboard semantic composition surface.",
+      "reviewDecision": "needs-summary-dashboard-alignment-plan",
+      "remainingRisk": "Metric typography cannot be judged in isolation from SummaryDashboard page density.",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "overallResult": "reviewed-with-evidence-limits",
+  "metricTypographyDecision": "continue-with-summary-dashboard-alignment",
+  "cssAdjustmentDecision": "no-immediate-css-adjustment",
+  "cssChangeStatus": "not-changed",
+  "tsxChangeStatus": "not-changed",
+  "storybookChangeStatus": "not-changed",
+  "tokenValueChangeStatus": "not-changed",
+  "promotionStatus": "not-promoted",
+  "nextRecommendedCycle": {
+    "cycle": 45,
+    "name": "SummaryDashboard Source Visual Alignment Plan",
+    "mode": "visual-alignment-plan",
+    "purpose": "Plan the next SummaryDashboard-level high-fidelity alignment pass before further CSS execution."
+  },
+  "notes": [
+    "Metric unit and label pressure appears reduced enough to continue at the SummaryDashboard alignment level.",
+    "This review does not prove pixel parity.",
+    "No source, CSS, TSX, Storybook, or semantic token value files changed in this cycle."
+  ]
+}
+

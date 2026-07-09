@@ -132,9 +132,8 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Metric typography CSS execution has runtime build validation, but visual QA review is still required.",
-        "Typography CSS visual QA is reviewed with warnings.",
-        "Metric unit and label still require visual QA after selector-level CSS execution.",
+        "Metric typography visual QA is reviewed with evidence limits and still lacks runtime screenshot comparison.",
+        "SummaryDashboard source visual alignment is not yet planned or executed.",
         "Metric typography may overfit source dashboard emphasis.",
         "record.duration and record.date remain selector-blocked and require a selector strategy before connection.",
         "Typography tokens remain candidate tokens.",
@@ -144,7 +143,7 @@
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred."
       ],
-      "nextAction": "Run metric typography visual QA review before any promotion review or further CSS adjustment.",
+      "nextAction": "Plan SummaryDashboard source visual alignment before any further CSS execution or promotion review.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -176,7 +175,9 @@
       "metricTypographyCssExecutionTarget": "registry/metric-typography-css-execution.json",
       "metricTypographyCssRuntimeValidationStatus": "validated-with-build-warnings",
       "metricTypographyCssRuntimeValidationTarget": "registry/metric-typography-css-runtime-validation.json",
-      "metricTypographyVisualQaReviewStatus": "recommended-next",
+      "metricTypographyVisualQaReviewStatus": "reviewed-with-evidence-limits",
+      "metricTypographyVisualQaReviewTarget": "registry/metric-typography-visual-qa-review.json",
+      "summaryDashboardVisualAlignmentPlanStatus": "recommended-next",
       "cssExecutionAllowedNext": false
     }
   ],

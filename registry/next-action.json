@@ -4,21 +4,23 @@
   "workflowMode": "repo-file-driven-local-agent",
   "actionSelectionPolicy": "Execute activeAction. Generate or update nextRecommendedAction during activeAction completion.",
   "activeAction": {
-    "cycle": 44,
-    "name": "Metric Typography Visual QA Review",
-    "mode": "visual-qa-review",
+    "cycle": 45,
+    "name": "SummaryDashboard Source Visual Alignment Plan",
+    "mode": "visual-alignment-plan",
     "workflow": "design-system-reverse",
-    "objective": "Review the Cycle 42 metric typography CSS execution after Cycle 43 runtime validation to determine whether metric unit and label visual pressure is acceptable before any further CSS adjustment or promotion review.",
+    "objective": "Plan the SummaryDashboard-level high-fidelity source visual alignment pass after metric typography visual QA, without changing CSS, TSX, Storybook, semantic token values, or reading new Figma nodes.",
     "allowedChanges": [
-      "registry/metric-typography-visual-qa-review.json",
-      "reviews/MetricTypography.visual-qa-review.md",
-      "registry/style-token-evidence-matrix.json",
-      "specs/visual-language.md",
+      "registry/summary-dashboard-source-visual-alignment-plan.json",
+      "reviews/SummaryDashboard.source-visual-alignment-plan.md",
+      "registry/pattern-composition-matrix.json",
+      "registry/module-priority-matrix.json",
       "registry/promotion-candidates.json",
+      "specs/page-patterns.md",
+      "specs/visual-language.md",
       "registry/workflow-state.json",
       "registry/workflow-ledger.json",
       "registry/next-action.json",
-      "decisions/ADR-033-review-metric-typography-visual-qa.md"
+      "decisions/ADR-034-plan-summary-dashboard-source-visual-alignment.md"
     ],
     "blockedChanges": [
       ".agent/workflows/**",
@@ -27,13 +29,16 @@
       "src/**/*.tsx",
       "src/**/*.stories.tsx",
       "stories/**",
-      "tokens/semantic.tokens.json"
+      "tokens/semantic.tokens.json",
+      "figma/**",
+      "assets/**"
     ],
     "constraints": {
       "cssChangeAllowed": false,
       "tsxChangeAllowed": false,
       "storybookChangeAllowed": false,
       "tokenValueChangeAllowed": false,
+      "figmaReadAllowed": false,
       "promotionAllowed": false,
       "acceptedStatusAllowed": false
     },
@@ -61,56 +66,57 @@
       "registry/next-action.json",
       "registry/workflow-invariants.json",
       "registry/workflow-goal.json",
-      "registry/metric-typography-css-execution.json",
-      "registry/metric-typography-css-runtime-validation.json",
-      "reviews/MetricTypography.css-execution.md",
-      "reviews/MetricTypography.css-runtime-validation.md",
-      "decisions/ADR-030-execute-metric-typography-css.md",
-      "decisions/ADR-032-validate-metric-typography-css-runtime.md",
-      "registry/style-token-evidence-matrix.json",
+      "registry/metric-typography-visual-qa-review.json",
+      "reviews/MetricTypography.visual-qa-review.md",
+      "registry/source-map.json",
+      "figma/node-map.json",
+      "registry/pattern-composition-matrix.json",
+      "registry/module-priority-matrix.json",
       "registry/promotion-candidates.json",
+      "specs/page-patterns.md",
       "specs/visual-language.md"
     ],
     "requiredDeliverables": [
-      "registry/metric-typography-visual-qa-review.json",
-      "reviews/MetricTypography.visual-qa-review.md",
-      "decisions/ADR-033-review-metric-typography-visual-qa.md"
+      "registry/summary-dashboard-source-visual-alignment-plan.json",
+      "reviews/SummaryDashboard.source-visual-alignment-plan.md",
+      "decisions/ADR-034-plan-summary-dashboard-source-visual-alignment.md"
     ],
-    "visualQaTargets": [
-      "MetricCard default visual pressure",
-      "MetricCard long localized label visual pressure",
-      "MetricCard extreme value hierarchy",
-      "SummaryDashboard metric density inside semantic composition"
+    "alignmentPlanTargets": [
+      "SummaryDashboard page density",
+      "Activity metric card hierarchy",
+      "Workouts optional module rhythm",
+      "Trend and Award optional semantic module placement",
+      "BottomNav deferred app shell boundary"
     ],
     "promotionStatus": "not-promoted",
     "notes": [
-      "Review visual pressure only; do not write CSS.",
-      "Do not change TSX, Storybook, or semantic token values.",
-      "Generate the nextRecommendedAction from the visual QA result."
+      "Plan only; do not execute visual alignment.",
+      "Do not read new Figma nodes or generate new screenshots.",
+      "Do not change CSS, TSX, Storybook, assets, figma maps, or semantic token values."
     ]
   },
   "nextRecommendedAction": {
     "status": "pending-active-action-result",
-    "reason": "Cycle 45 should be generated from the Cycle 44 visual QA result.",
+    "reason": "Cycle 46 should be generated from the SummaryDashboard source visual alignment plan.",
     "promotionStatus": "not-promoted"
   },
   "transitionVerificationAction": {
-    "id": "cycle-43-completion-verification",
-    "cycle": 43,
-    "name": "Metric Typography CSS Runtime Validation",
-    "mode": "storybook-runtime-validation",
+    "id": "cycle-44-completion-verification",
+    "cycle": 44,
+    "name": "Metric Typography Visual QA Review",
+    "mode": "visual-qa-review",
     "workflow": "design-system-reverse",
-    "objective": "Verify the committed Cycle 43 runtime validation changes while advancing activeAction to Cycle 44.",
+    "objective": "Verify the committed Cycle 44 visual QA review changes while advancing activeAction to Cycle 45.",
     "allowedChanges": [
-      "registry/metric-typography-css-runtime-validation.json",
-      "reviews/MetricTypography.css-runtime-validation.md",
+      "registry/metric-typography-visual-qa-review.json",
+      "reviews/MetricTypography.visual-qa-review.md",
       "registry/style-token-evidence-matrix.json",
       "specs/visual-language.md",
       "registry/promotion-candidates.json",
       "registry/workflow-state.json",
       "registry/workflow-ledger.json",
       "registry/next-action.json",
-      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
+      "decisions/ADR-033-review-metric-typography-visual-qa.md"
     ],
     "blockedChanges": [
       ".agent/workflows/**",
@@ -141,14 +147,14 @@
       "pattern-promoted"
     ],
     "requiredDeliverables": [
-      "registry/metric-typography-css-runtime-validation.json",
-      "reviews/MetricTypography.css-runtime-validation.md",
-      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
+      "registry/metric-typography-visual-qa-review.json",
+      "reviews/MetricTypography.visual-qa-review.md",
+      "decisions/ADR-033-review-metric-typography-visual-qa.md"
     ],
     "promotionStatus": "not-promoted",
     "notes": [
-      "This verification action is limited to Cycle 43 completion.",
-      "The next executable business cycle is activeAction Cycle 44."
+      "This verification action is limited to Cycle 44 completion.",
+      "The next executable business cycle is activeAction Cycle 45."
     ]
   }
 }

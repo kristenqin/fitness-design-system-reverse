@@ -430,6 +430,19 @@
         "cssChangeStatus": "not-changed",
         "tokenValueChangeStatus": "not-changed",
         "promotionStatus": "not-promoted"
+      },
+      "metricTypographyVisualQaReviewStatus": "reviewed-with-evidence-limits",
+      "metricTypographyVisualQaReviewTarget": "registry/metric-typography-visual-qa-review.json",
+      "metricTypographyVisualQaReviewSummary": {
+        "overallResult": "reviewed-with-evidence-limits",
+        "metricTypographyDecision": "continue-with-summary-dashboard-alignment",
+        "cssAdjustmentDecision": "no-immediate-css-adjustment",
+        "sourceEvidenceUsed": [
+          "assets/source-evidence/summary-dashboard-143-23952.png"
+        ],
+        "runtimeScreenshotStatus": "not-generated",
+        "visualParityStatus": "not-proven",
+        "promotionStatus": "not-promoted"
       }
     },
     {

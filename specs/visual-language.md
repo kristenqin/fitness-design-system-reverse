@@ -675,3 +675,22 @@ Both commands passed. Storybook build produced non-blocking package metadata and
 This proves runtime build stability. It does not prove pixel parity or source visual parity.
 
 Next step: run a metric typography visual QA review before any further CSS adjustment or design-system promotion review.
+
+## Metric Typography Visual QA Review Notes
+
+Forty-fourth-cycle visual QA reviews metric typography pressure after selector-level CSS execution and runtime validation.
+
+Source evidence used:
+
+- `assets/source-evidence/summary-dashboard-143-23952.png`
+
+Review result:
+
+- metric value remains the hierarchy anchor
+- metric unit and label pressure appears reduced enough to continue
+- no immediate metric-specific CSS adjustment is recommended
+- pixel parity and source visual parity remain unproven
+
+This review did not read additional Figma nodes and did not generate runtime screenshots.
+
+Next step: plan SummaryDashboard-level source visual alignment so metric typography can be judged in full page density and rhythm.

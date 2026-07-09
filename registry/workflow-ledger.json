@@ -174,6 +174,25 @@
         "reviews/MetricTypography.css-runtime-validation.md",
         "decisions/ADR-032-validate-metric-typography-css-runtime.md"
       ]
+    },
+    {
+      "cycle": 44,
+      "name": "Metric Typography Visual QA Review",
+      "mode": "visual-qa-review",
+      "result": "reviewed-with-evidence-limits",
+      "businessStateAdvanced": true,
+      "cssChangeStatus": "not-changed",
+      "tsxChangeStatus": "not-changed",
+      "storybookChangeStatus": "not-changed",
+      "tokenValueChangeStatus": "not-changed",
+      "promotionStatus": "not-promoted",
+      "nextRecommendedCycle": 45,
+      "nextRecommendedCycleName": "SummaryDashboard Source Visual Alignment Plan",
+      "artifacts": [
+        "registry/metric-typography-visual-qa-review.json",
+        "reviews/MetricTypography.visual-qa-review.md",
+        "decisions/ADR-033-review-metric-typography-visual-qa.md"
+      ]
     }
   ]
 }
