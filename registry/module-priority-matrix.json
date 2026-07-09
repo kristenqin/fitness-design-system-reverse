@@ -10,7 +10,8 @@
       "runtimeStatus": "runtime-tested-states",
       "compositionStatus": "required-core",
       "priority": "current-core",
-      "nextAction": "Keep as required SummaryDashboard core while source review, token review, and accessibility review remain pending."
+      "sourceVisualAlignmentStatus": "planned",
+      "nextAction": "Include in SummaryDashboard runtime visual baseline capture before further CSS execution."
     },
     {
       "id": "activity-metrics",
@@ -21,7 +22,8 @@
       "runtimeStatus": "runtime-tested-states",
       "compositionStatus": "required-core",
       "priority": "current-core",
-      "nextAction": "Keep as required SummaryDashboard core; do not promote until source-backed visual rules and accessibility behavior are reviewed."
+      "sourceVisualAlignmentStatus": "planned",
+      "nextAction": "Include in SummaryDashboard runtime visual baseline capture; do not promote until source-backed visual rules and accessibility behavior are reviewed."
     },
     {
       "id": "workouts",
@@ -32,7 +34,8 @@
       "runtimeStatus": "runtime-tested-minimum",
       "compositionStatus": "optional-supported",
       "priority": "validated-optional",
-      "nextAction": "Keep optional; validate full Workouts section behavior and source-reviewed record semantics before promotion."
+      "sourceVisualAlignmentStatus": "planned",
+      "nextAction": "Include optional Workouts rhythm in runtime visual baseline capture; keep optional and not promoted."
     },
     {
       "id": "trends",
@@ -44,7 +47,8 @@
       "runtimeStatus": "runtime-tested-minimum",
       "compositionStatus": "ready-for-runtime-composition",
       "priority": "ready-for-runtime-composition",
-      "nextAction": "Compose TrendCard in the next SummaryDashboard runtime pass only as an optional semantic module; do not promote."
+      "sourceVisualAlignmentStatus": "planned",
+      "nextAction": "Include TrendCard placement in SummaryDashboard visual baseline capture as an optional semantic module; do not promote."
     },
     {
       "id": "awards",
@@ -56,7 +60,8 @@
       "runtimeStatus": "runtime-tested-minimum",
       "compositionStatus": "ready-for-runtime-composition",
       "priority": "ready-for-runtime-composition",
-      "nextAction": "Compose AwardBadge in the next SummaryDashboard runtime pass only as an optional semantic module; do not promote."
+      "sourceVisualAlignmentStatus": "planned",
+      "nextAction": "Include AwardBadge placement in SummaryDashboard visual baseline capture as an optional semantic module; do not promote."
     },
     {
       "id": "bottom-nav",
@@ -67,6 +72,7 @@
       "runtimeStatus": "not-tested",
       "compositionStatus": "deferred-shell-module",
       "priority": "deferred",
+      "sourceVisualAlignmentStatus": "deferred",
       "nextAction": "Do not include in the current SummaryDashboard transferable core; revisit only if app-shell scope opens."
     }
   ],

@@ -694,3 +694,19 @@ Review result:
 This review did not read additional Figma nodes and did not generate runtime screenshots.
 
 Next step: plan SummaryDashboard-level source visual alignment so metric typography can be judged in full page density and rhythm.
+
+## SummaryDashboard Source Visual Alignment Plan Notes
+
+Forty-fifth-cycle planning shifts from metric-only visual QA to SummaryDashboard-level source visual alignment.
+
+Planned alignment targets:
+
+- SummaryDashboard page density
+- Activity metric card hierarchy
+- Workouts optional module rhythm
+- Trend and Award optional semantic module placement
+- BottomNav deferred app shell boundary
+
+The next workflow step should capture runtime visual baselines before additional CSS execution.
+
+This plan does not read new Figma nodes, generate screenshots, change CSS, change TSX, change Storybook, or write semantic token values.

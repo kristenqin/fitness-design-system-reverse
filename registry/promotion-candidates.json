@@ -117,6 +117,7 @@
       "runtimeStatus": "runtime-tested-optional-semantic-composition",
       "promotionStatus": "not-promoted",
       "blockers": [
+        "SummaryDashboard source visual alignment is planned but runtime visual baseline capture has not started.",
         "TrendCard and AwardBadge are composed into SummaryDashboard only as optional semantic modules with synthetic runtime validation data.",
         "Page-level accessibility, module density, ordering, and combined empty states remain drafted or minimally tested only.",
         "Source evidence remains captured, not reviewed.",
@@ -132,8 +133,8 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
+        "SummaryDashboard source visual alignment is planned but runtime visual baseline capture has not started.",
         "Metric typography visual QA is reviewed with evidence limits and still lacks runtime screenshot comparison.",
-        "SummaryDashboard source visual alignment is not yet planned or executed.",
         "Metric typography may overfit source dashboard emphasis.",
         "record.duration and record.date remain selector-blocked and require a selector strategy before connection.",
         "Typography tokens remain candidate tokens.",
@@ -143,7 +144,7 @@
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred."
       ],
-      "nextAction": "Plan SummaryDashboard source visual alignment before any further CSS execution or promotion review.",
+      "nextAction": "Capture SummaryDashboard runtime visual baselines before any further CSS execution or promotion review.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -177,7 +178,9 @@
       "metricTypographyCssRuntimeValidationTarget": "registry/metric-typography-css-runtime-validation.json",
       "metricTypographyVisualQaReviewStatus": "reviewed-with-evidence-limits",
       "metricTypographyVisualQaReviewTarget": "registry/metric-typography-visual-qa-review.json",
-      "summaryDashboardVisualAlignmentPlanStatus": "recommended-next",
+      "summaryDashboardVisualAlignmentPlanStatus": "planned",
+      "summaryDashboardVisualAlignmentPlanTarget": "registry/summary-dashboard-source-visual-alignment-plan.json",
+      "summaryDashboardRuntimeVisualBaselineStatus": "recommended-next",
       "cssExecutionAllowedNext": false
     }
   ],

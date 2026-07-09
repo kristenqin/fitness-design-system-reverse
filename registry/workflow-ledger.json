@@ -193,6 +193,25 @@
         "reviews/MetricTypography.visual-qa-review.md",
         "decisions/ADR-033-review-metric-typography-visual-qa.md"
       ]
+    },
+    {
+      "cycle": 45,
+      "name": "SummaryDashboard Source Visual Alignment Plan",
+      "mode": "visual-alignment-plan",
+      "result": "planned",
+      "businessStateAdvanced": true,
+      "cssChangeStatus": "not-changed",
+      "tsxChangeStatus": "not-changed",
+      "storybookChangeStatus": "not-changed",
+      "tokenValueChangeStatus": "not-changed",
+      "promotionStatus": "not-promoted",
+      "nextRecommendedCycle": 46,
+      "nextRecommendedCycleName": "SummaryDashboard Runtime Visual Baseline Capture",
+      "artifacts": [
+        "registry/summary-dashboard-source-visual-alignment-plan.json",
+        "reviews/SummaryDashboard.source-visual-alignment-plan.md",
+        "decisions/ADR-034-plan-summary-dashboard-source-visual-alignment.md"
+      ]
     }
   ]
 }

@@ -3,12 +3,16 @@
     {
       "id": "summary-dashboard",
       "runtimeSurface": "src/reverse-components/summary-dashboard/SummaryDashboard.semantic-composition.stories.tsx",
+      "sourceVisualAlignmentPlanStatus": "planned",
+      "sourceVisualAlignmentPlanTarget": "registry/summary-dashboard-source-visual-alignment-plan.json",
+      "sourceVisualAlignmentNextAction": "Capture runtime visual baselines before further CSS execution.",
       "modules": [
         {
           "id": "activity-progress",
           "component": "ProgressRing",
           "compositionStatus": "runtime-tested",
           "requirementStatus": "required-core",
+          "sourceVisualAlignmentStatus": "planned",
           "promotionStatus": "not-promoted",
           "notes": "Primary goal-relative progress signal in the current reverse surface."
         },
@@ -17,6 +21,7 @@
           "component": "MetricCard",
           "compositionStatus": "runtime-tested",
           "requirementStatus": "required-core",
+          "sourceVisualAlignmentStatus": "planned",
           "promotionStatus": "not-promoted",
           "notes": "Compact activity metric display in the current reverse surface."
         },
@@ -25,6 +30,7 @@
           "component": "WorkoutItem",
           "compositionStatus": "runtime-tested-optional-module",
           "requirementStatus": "optional-supported",
+          "sourceVisualAlignmentStatus": "planned",
           "promotionStatus": "not-promoted",
           "notes": "Optional Workouts module can be omitted, empty, or populated with WorkoutItem records."
         },
@@ -33,6 +39,7 @@
           "component": "TrendCard",
           "compositionStatus": "runtime-tested-optional-semantic-module",
           "requirementStatus": "optional-semantic-module",
+          "sourceVisualAlignmentStatus": "planned",
           "promotionStatus": "not-promoted",
           "notes": "Captured in source evidence and minimum component runtime-tested. Seventeenth-cycle runtime composition validates TrendCard inside SummaryDashboard only as an optional semantic module."
         },
@@ -41,6 +48,7 @@
           "component": "AwardBadge",
           "compositionStatus": "runtime-tested-optional-semantic-module",
           "requirementStatus": "optional-semantic-module",
+          "sourceVisualAlignmentStatus": "planned",
           "promotionStatus": "not-promoted",
           "notes": "Captured in source evidence and minimum component runtime-tested. Seventeenth-cycle runtime composition validates AwardBadge inside SummaryDashboard only as an optional semantic module."
         },
@@ -49,6 +57,7 @@
           "component": "source-app-shell",
           "compositionStatus": "deferred-shell-module",
           "requirementStatus": "deferred",
+          "sourceVisualAlignmentStatus": "deferred",
           "promotionStatus": "not-promoted",
           "notes": "Visible in source evidence as app shell navigation, but not part of the current SummaryDashboard transferable core."
         }

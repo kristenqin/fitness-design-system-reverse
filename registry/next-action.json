@@ -4,11 +4,108 @@
   "workflowMode": "repo-file-driven-local-agent",
   "actionSelectionPolicy": "Execute activeAction. Generate or update nextRecommendedAction during activeAction completion.",
   "activeAction": {
+    "cycle": 46,
+    "name": "SummaryDashboard Runtime Visual Baseline Capture",
+    "mode": "visual-baseline-capture",
+    "workflow": "design-system-reverse",
+    "objective": "Capture local runtime visual baselines for SummaryDashboard and MetricCard surfaces so future high-fidelity source alignment can compare runtime evidence against the captured SummaryDashboard source screenshot.",
+    "allowedChanges": [
+      "assets/runtime-evidence/summary-dashboard/**",
+      "registry/summary-dashboard-runtime-visual-baseline.json",
+      "reviews/SummaryDashboard.runtime-visual-baseline.md",
+      "registry/pattern-composition-matrix.json",
+      "registry/promotion-candidates.json",
+      "specs/page-patterns.md",
+      "specs/visual-language.md",
+      "registry/workflow-state.json",
+      "registry/workflow-ledger.json",
+      "registry/next-action.json",
+      "decisions/ADR-035-capture-summary-dashboard-runtime-visual-baseline.md"
+    ],
+    "blockedChanges": [
+      ".agent/workflows/**",
+      "scripts/verify-workflow-cycle.mjs",
+      "src/**/*.css",
+      "src/**/*.tsx",
+      "src/**/*.stories.tsx",
+      "stories/**",
+      "tokens/semantic.tokens.json",
+      "figma/**",
+      "assets/source-evidence/**"
+    ],
+    "constraints": {
+      "cssChangeAllowed": false,
+      "tsxChangeAllowed": false,
+      "storybookChangeAllowed": false,
+      "tokenValueChangeAllowed": false,
+      "figmaReadAllowed": false,
+      "runtimeScreenshotCaptureAllowed": true,
+      "promotionAllowed": false,
+      "acceptedStatusAllowed": false
+    },
+    "forbiddenStatusValues": [
+      "accepted",
+      "promoted",
+      "ready-for-promotion",
+      "production-ready",
+      "style-system-ready",
+      "css-promoted",
+      "token-promoted",
+      "component-promoted",
+      "pattern-promoted"
+    ],
+    "requiredVerification": [
+      "node scripts/verify-workflow-cycle.mjs"
+    ],
+    "requiredReads": [
+      ".agent/workflows/design-system-reverse.workflow.md",
+      ".agent/workflows/guardrails.md",
+      ".agent/workflows/cycle-template.md",
+      ".agent/workflows/verifier.md",
+      "registry/workflow-state.json",
+      "registry/workflow-ledger.json",
+      "registry/next-action.json",
+      "registry/workflow-invariants.json",
+      "registry/workflow-goal.json",
+      "registry/summary-dashboard-source-visual-alignment-plan.json",
+      "reviews/SummaryDashboard.source-visual-alignment-plan.md",
+      "assets/source-evidence/summary-dashboard-143-23952.png",
+      "registry/pattern-composition-matrix.json",
+      "registry/promotion-candidates.json",
+      "specs/page-patterns.md",
+      "specs/visual-language.md"
+    ],
+    "requiredDeliverables": [
+      "assets/runtime-evidence/summary-dashboard/",
+      "registry/summary-dashboard-runtime-visual-baseline.json",
+      "reviews/SummaryDashboard.runtime-visual-baseline.md",
+      "decisions/ADR-035-capture-summary-dashboard-runtime-visual-baseline.md"
+    ],
+    "runtimeBaselineTargets": [
+      "Components/MetricCard/Default",
+      "Components/MetricCard/LongChineseText",
+      "Components/MetricCard/ExtremeValue",
+      "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
+    ],
+    "promotionStatus": "not-promoted",
+    "notes": [
+      "Capture runtime screenshots only from existing stories.",
+      "Do not read new Figma nodes.",
+      "Do not change CSS, TSX, Storybook, source evidence, Figma maps, or semantic token values."
+    ]
+  },
+  "nextRecommendedAction": {
+    "status": "pending-active-action-result",
+    "reason": "Cycle 47 should be generated from the runtime visual baseline capture result.",
+    "promotionStatus": "not-promoted"
+  },
+  "transitionVerificationAction": {
+    "id": "cycle-45-completion-verification",
     "cycle": 45,
     "name": "SummaryDashboard Source Visual Alignment Plan",
     "mode": "visual-alignment-plan",
     "workflow": "design-system-reverse",
-    "objective": "Plan the SummaryDashboard-level high-fidelity source visual alignment pass after metric typography visual QA, without changing CSS, TSX, Storybook, semantic token values, or reading new Figma nodes.",
+    "objective": "Verify the committed Cycle 45 visual alignment plan changes while advancing activeAction to Cycle 46.",
     "allowedChanges": [
       "registry/summary-dashboard-source-visual-alignment-plan.json",
       "reviews/SummaryDashboard.source-visual-alignment-plan.md",
@@ -53,108 +150,15 @@
       "component-promoted",
       "pattern-promoted"
     ],
-    "requiredVerification": [
-      "node scripts/verify-workflow-cycle.mjs"
-    ],
-    "requiredReads": [
-      ".agent/workflows/design-system-reverse.workflow.md",
-      ".agent/workflows/guardrails.md",
-      ".agent/workflows/cycle-template.md",
-      ".agent/workflows/verifier.md",
-      "registry/workflow-state.json",
-      "registry/workflow-ledger.json",
-      "registry/next-action.json",
-      "registry/workflow-invariants.json",
-      "registry/workflow-goal.json",
-      "registry/metric-typography-visual-qa-review.json",
-      "reviews/MetricTypography.visual-qa-review.md",
-      "registry/source-map.json",
-      "figma/node-map.json",
-      "registry/pattern-composition-matrix.json",
-      "registry/module-priority-matrix.json",
-      "registry/promotion-candidates.json",
-      "specs/page-patterns.md",
-      "specs/visual-language.md"
-    ],
     "requiredDeliverables": [
       "registry/summary-dashboard-source-visual-alignment-plan.json",
       "reviews/SummaryDashboard.source-visual-alignment-plan.md",
       "decisions/ADR-034-plan-summary-dashboard-source-visual-alignment.md"
     ],
-    "alignmentPlanTargets": [
-      "SummaryDashboard page density",
-      "Activity metric card hierarchy",
-      "Workouts optional module rhythm",
-      "Trend and Award optional semantic module placement",
-      "BottomNav deferred app shell boundary"
-    ],
     "promotionStatus": "not-promoted",
     "notes": [
-      "Plan only; do not execute visual alignment.",
-      "Do not read new Figma nodes or generate new screenshots.",
-      "Do not change CSS, TSX, Storybook, assets, figma maps, or semantic token values."
-    ]
-  },
-  "nextRecommendedAction": {
-    "status": "pending-active-action-result",
-    "reason": "Cycle 46 should be generated from the SummaryDashboard source visual alignment plan.",
-    "promotionStatus": "not-promoted"
-  },
-  "transitionVerificationAction": {
-    "id": "cycle-44-completion-verification",
-    "cycle": 44,
-    "name": "Metric Typography Visual QA Review",
-    "mode": "visual-qa-review",
-    "workflow": "design-system-reverse",
-    "objective": "Verify the committed Cycle 44 visual QA review changes while advancing activeAction to Cycle 45.",
-    "allowedChanges": [
-      "registry/metric-typography-visual-qa-review.json",
-      "reviews/MetricTypography.visual-qa-review.md",
-      "registry/style-token-evidence-matrix.json",
-      "specs/visual-language.md",
-      "registry/promotion-candidates.json",
-      "registry/workflow-state.json",
-      "registry/workflow-ledger.json",
-      "registry/next-action.json",
-      "decisions/ADR-033-review-metric-typography-visual-qa.md"
-    ],
-    "blockedChanges": [
-      ".agent/workflows/**",
-      "scripts/verify-workflow-cycle.mjs",
-      "src/**/*.css",
-      "src/**/*.tsx",
-      "src/**/*.stories.tsx",
-      "stories/**",
-      "tokens/semantic.tokens.json"
-    ],
-    "constraints": {
-      "cssChangeAllowed": false,
-      "tsxChangeAllowed": false,
-      "storybookChangeAllowed": false,
-      "tokenValueChangeAllowed": false,
-      "promotionAllowed": false,
-      "acceptedStatusAllowed": false
-    },
-    "forbiddenStatusValues": [
-      "accepted",
-      "promoted",
-      "ready-for-promotion",
-      "production-ready",
-      "style-system-ready",
-      "css-promoted",
-      "token-promoted",
-      "component-promoted",
-      "pattern-promoted"
-    ],
-    "requiredDeliverables": [
-      "registry/metric-typography-visual-qa-review.json",
-      "reviews/MetricTypography.visual-qa-review.md",
-      "decisions/ADR-033-review-metric-typography-visual-qa.md"
-    ],
-    "promotionStatus": "not-promoted",
-    "notes": [
-      "This verification action is limited to Cycle 44 completion.",
-      "The next executable business cycle is activeAction Cycle 45."
+      "This verification action is limited to Cycle 45 completion.",
+      "The next executable business cycle is activeAction Cycle 46."
     ]
   }
 }

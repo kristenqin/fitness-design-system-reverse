@@ -1,0 +1,95 @@
+{
+  "status": "planned",
+  "cycle": 45,
+  "scope": "summary-dashboard-source-visual-alignment-plan",
+  "sourceScope": {
+    "patternId": "summary-dashboard",
+    "sourceRefs": [
+      "figma-node-143-23952",
+      "screenshot-summary-dashboard-143-23952"
+    ],
+    "sourceScreenshot": "assets/source-evidence/summary-dashboard-143-23952.png",
+    "readAdditionalFigmaNodes": false,
+    "generatedRuntimeScreenshots": false
+  },
+  "alignmentGoal": "Plan a SummaryDashboard-level high-fidelity alignment pass using existing captured source evidence and existing reverse runtime surfaces.",
+  "alignmentTargets": [
+    {
+      "id": "summary-page-density",
+      "target": "SummaryDashboard page density",
+      "sourceObservation": "The source SummaryDashboard is a narrow mobile surface with dense vertical stacking, compact section spacing, and dark card surfaces.",
+      "currentRuntimeRisk": "Metric typography cannot be fully judged outside page density and rhythm.",
+      "plannedNextStep": "Capture runtime baseline screenshots for SummaryDashboard semantic composition before any further CSS execution.",
+      "status": "planned",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "id": "activity-metric-hierarchy",
+      "target": "Activity metric card hierarchy",
+      "sourceObservation": "Activity metrics use a dominant value and subordinate supporting unit or label roles.",
+      "currentRuntimeRisk": "Cycle 44 judged metric pressure acceptable with evidence limits, but screenshot-level parity is not proven.",
+      "plannedNextStep": "Compare runtime MetricCard and SummaryDashboard screenshots against the source screenshot before further metric CSS work.",
+      "status": "planned",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "id": "workouts-module-rhythm",
+      "target": "Workouts optional module rhythm",
+      "sourceObservation": "Workouts appear as compact repeated records inside the SummaryDashboard vertical stack.",
+      "currentRuntimeRisk": "WorkoutItem is optional-supported but not source-alignment reviewed at the page rhythm level.",
+      "plannedNextStep": "Include optional workouts module in the runtime baseline capture.",
+      "status": "planned",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "id": "trend-award-module-placement",
+      "target": "Trend and Award optional semantic module placement",
+      "sourceObservation": "Trends and Awards are visible lower sections in the captured SummaryDashboard source surface.",
+      "currentRuntimeRisk": "TrendCard and AwardBadge are runtime-composed but not source-alignment reviewed in full page flow.",
+      "plannedNextStep": "Include FullSemanticLoop runtime surface in screenshot baseline review.",
+      "status": "planned",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "id": "bottom-nav-boundary",
+      "target": "BottomNav deferred app shell boundary",
+      "sourceObservation": "Bottom navigation is visible in the source evidence as app shell.",
+      "currentRuntimeRisk": "Adding BottomNav would expand scope beyond current SummaryDashboard transferable pattern.",
+      "plannedNextStep": "Keep BottomNav deferred during SummaryDashboard alignment planning.",
+      "status": "deferred",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "futureExecutionBoundary": {
+    "recommendedNextCycle": {
+      "cycle": 46,
+      "name": "SummaryDashboard Runtime Visual Baseline Capture",
+      "mode": "visual-baseline-capture",
+      "purpose": "Capture local runtime screenshots for SummaryDashboard and MetricCard alignment review before writing more CSS."
+    },
+    "allowedFutureTargets": [
+      "runtime screenshot artifacts",
+      "visual baseline registry",
+      "visual baseline review",
+      "workflow state and next-action update"
+    ],
+    "blockedUntilAfterBaseline": [
+      "CSS execution",
+      "TSX implementation changes",
+      "Storybook story changes",
+      "semantic token value changes",
+      "promotion review"
+    ]
+  },
+  "cssChangeStatus": "not-changed",
+  "tsxChangeStatus": "not-changed",
+  "storybookChangeStatus": "not-changed",
+  "tokenValueChangeStatus": "not-changed",
+  "promotionStatus": "not-promoted",
+  "notes": [
+    "This cycle plans visual alignment only.",
+    "No new Figma nodes are read and no new screenshots are generated.",
+    "High-fidelity alignment remains reverse runtime evidence, not design-system promotion."
+  ]
+}
+
