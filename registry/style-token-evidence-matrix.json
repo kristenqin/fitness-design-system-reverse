@@ -411,6 +411,25 @@
         "tokenValueChangeStatus": "not-changed",
         "runtimeValidationStatus": "not-started",
         "promotionStatus": "not-promoted"
+      },
+      "metricTypographyCssRuntimeValidationStatus": "validated-with-build-warnings",
+      "metricTypographyCssRuntimeValidationTarget": "registry/metric-typography-css-runtime-validation.json",
+      "metricTypographyCssRuntimeValidationSummary": {
+        "validatedRuntimeTargets": [
+          "Components/MetricCard/Default",
+          "Components/MetricCard/LongChineseText",
+          "Components/MetricCard/ExtremeValue",
+          "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
+        ],
+        "commandsRun": [
+          "npm run build",
+          "npm run build-storybook"
+        ],
+        "runtimeResult": "validated-with-build-warnings",
+        "visualParityStatus": "not-proven",
+        "cssChangeStatus": "not-changed",
+        "tokenValueChangeStatus": "not-changed",
+        "promotionStatus": "not-promoted"
       }
     },
     {

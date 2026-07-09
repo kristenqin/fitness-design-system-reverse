@@ -151,6 +151,29 @@
         "reviews/LocalWorkflow.dual-track-protocol.md",
         "decisions/ADR-031-repo-driven-dual-track-workflow.md"
       ]
+    },
+    {
+      "cycle": 43,
+      "name": "Metric Typography CSS Runtime Validation",
+      "mode": "storybook-runtime-validation",
+      "result": "validated-with-build-warnings",
+      "businessStateAdvanced": true,
+      "commandsRun": [
+        "npm run build",
+        "npm run build-storybook"
+      ],
+      "cssChangeStatus": "not-changed",
+      "tsxChangeStatus": "not-changed",
+      "storybookChangeStatus": "not-changed",
+      "tokenValueChangeStatus": "not-changed",
+      "promotionStatus": "not-promoted",
+      "nextRecommendedCycle": 44,
+      "nextRecommendedCycleName": "Metric Typography Visual QA Review",
+      "artifacts": [
+        "registry/metric-typography-css-runtime-validation.json",
+        "reviews/MetricTypography.css-runtime-validation.md",
+        "decisions/ADR-032-validate-metric-typography-css-runtime.md"
+      ]
     }
   ]
 }

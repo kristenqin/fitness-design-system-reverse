@@ -132,9 +132,9 @@
       "rawValueStatus": "semantic-token-values-written-verified-and-transferability-reviewed",
       "promotionStatus": "not-promoted",
       "blockers": [
-        "Metric typography CSS execution is complete but runtime validation is still required.",
+        "Metric typography CSS execution has runtime build validation, but visual QA review is still required.",
         "Typography CSS visual QA is reviewed with warnings.",
-        "Metric unit and label still require runtime validation after selector-level CSS execution.",
+        "Metric unit and label still require visual QA after selector-level CSS execution.",
         "Metric typography may overfit source dashboard emphasis.",
         "record.duration and record.date remain selector-blocked and require a selector strategy before connection.",
         "Typography tokens remain candidate tokens.",
@@ -144,7 +144,7 @@
         "Spacing and density still require transferability review.",
         "radius.policy remains deferred."
       ],
-      "nextAction": "Run metric typography CSS runtime validation before any promotion review.",
+      "nextAction": "Run metric typography visual QA review before any promotion review or further CSS adjustment.",
       "gateStatus": "readiness-reviewed",
       "rawValuePlanStatus": "constrained-typography-planned",
       "rawValueReviewMatrixStatus": "prepared",
@@ -174,7 +174,9 @@
       "metricTypographyCssExecutionPlanTarget": "registry/metric-typography-css-execution-plan.json",
       "metricTypographyCssExecutionStatus": "executed",
       "metricTypographyCssExecutionTarget": "registry/metric-typography-css-execution.json",
-      "metricTypographyCssRuntimeValidationStatus": "not-started",
+      "metricTypographyCssRuntimeValidationStatus": "validated-with-build-warnings",
+      "metricTypographyCssRuntimeValidationTarget": "registry/metric-typography-css-runtime-validation.json",
+      "metricTypographyVisualQaReviewStatus": "recommended-next",
       "cssExecutionAllowedNext": false
     }
   ],

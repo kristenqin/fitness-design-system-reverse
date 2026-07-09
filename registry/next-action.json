@@ -4,21 +4,21 @@
   "workflowMode": "repo-file-driven-local-agent",
   "actionSelectionPolicy": "Execute activeAction. Generate or update nextRecommendedAction during activeAction completion.",
   "activeAction": {
-    "cycle": 43,
-    "name": "Metric Typography CSS Runtime Validation",
-    "mode": "storybook-runtime-validation",
+    "cycle": 44,
+    "name": "Metric Typography Visual QA Review",
+    "mode": "visual-qa-review",
     "workflow": "design-system-reverse",
-    "objective": "Validate the Cycle 42 MetricCard metric typography CSS execution in runtime surfaces without changing CSS, TSX, Storybook, or semantic token values.",
+    "objective": "Review the Cycle 42 metric typography CSS execution after Cycle 43 runtime validation to determine whether metric unit and label visual pressure is acceptable before any further CSS adjustment or promotion review.",
     "allowedChanges": [
-      "registry/metric-typography-css-runtime-validation.json",
-      "reviews/MetricTypography.css-runtime-validation.md",
+      "registry/metric-typography-visual-qa-review.json",
+      "reviews/MetricTypography.visual-qa-review.md",
       "registry/style-token-evidence-matrix.json",
       "specs/visual-language.md",
       "registry/promotion-candidates.json",
       "registry/workflow-state.json",
       "registry/workflow-ledger.json",
       "registry/next-action.json",
-      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
+      "decisions/ADR-033-review-metric-typography-visual-qa.md"
     ],
     "blockedChanges": [
       ".agent/workflows/**",
@@ -62,56 +62,59 @@
       "registry/workflow-invariants.json",
       "registry/workflow-goal.json",
       "registry/metric-typography-css-execution.json",
+      "registry/metric-typography-css-runtime-validation.json",
       "reviews/MetricTypography.css-execution.md",
+      "reviews/MetricTypography.css-runtime-validation.md",
       "decisions/ADR-030-execute-metric-typography-css.md",
+      "decisions/ADR-032-validate-metric-typography-css-runtime.md",
       "registry/style-token-evidence-matrix.json",
       "registry/promotion-candidates.json",
       "specs/visual-language.md"
     ],
     "requiredDeliverables": [
-      "registry/metric-typography-css-runtime-validation.json",
-      "reviews/MetricTypography.css-runtime-validation.md",
-      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
+      "registry/metric-typography-visual-qa-review.json",
+      "reviews/MetricTypography.visual-qa-review.md",
+      "decisions/ADR-033-review-metric-typography-visual-qa.md"
     ],
-    "runtimeValidationTargets": [
-      "MetricCard default runtime surface",
-      "MetricCard long localized label surface",
-      "MetricCard extreme value surface",
-      "SummaryDashboard semantic composition surface"
+    "visualQaTargets": [
+      "MetricCard default visual pressure",
+      "MetricCard long localized label visual pressure",
+      "MetricCard extreme value hierarchy",
+      "SummaryDashboard metric density inside semantic composition"
     ],
     "promotionStatus": "not-promoted",
     "notes": [
-      "Validate whether metric unit and label normalization reduced visual pressure.",
-      "Do not change CSS, TSX, Storybook, or semantic token values in this validation cycle.",
-      "Generate the nextRecommendedAction during completion."
+      "Review visual pressure only; do not write CSS.",
+      "Do not change TSX, Storybook, or semantic token values.",
+      "Generate the nextRecommendedAction from the visual QA result."
     ]
   },
   "nextRecommendedAction": {
     "status": "pending-active-action-result",
-    "reason": "Cycle 44 should be generated from the Cycle 43 runtime validation result.",
+    "reason": "Cycle 45 should be generated from the Cycle 44 visual QA result.",
     "promotionStatus": "not-promoted"
   },
   "transitionVerificationAction": {
-    "id": "workflow-dual-track-protocol-hardening",
-    "name": "Repo-Driven Dual-Track Workflow Protocol Hardening",
-    "mode": "workflow-hardening",
+    "id": "cycle-43-completion-verification",
+    "cycle": 43,
+    "name": "Metric Typography CSS Runtime Validation",
+    "mode": "storybook-runtime-validation",
     "workflow": "design-system-reverse",
-    "objective": "Migrate next-action to activeAction and nextRecommendedAction while keeping the next executable cycle pointed at Cycle 43.",
+    "objective": "Verify the committed Cycle 43 runtime validation changes while advancing activeAction to Cycle 44.",
     "allowedChanges": [
-      ".agent/workflows/design-system-reverse.workflow.md",
-      ".agent/workflows/guardrails.md",
-      ".agent/workflows/verifier.md",
-      ".agent/workflows/cycle-template.md",
-      "scripts/verify-workflow-cycle.mjs",
-      "registry/next-action.json",
+      "registry/metric-typography-css-runtime-validation.json",
+      "reviews/MetricTypography.css-runtime-validation.md",
+      "registry/style-token-evidence-matrix.json",
+      "specs/visual-language.md",
+      "registry/promotion-candidates.json",
       "registry/workflow-state.json",
       "registry/workflow-ledger.json",
-      "registry/workflow-invariants.json",
-      "registry/workflow-goal.json",
-      "reviews/LocalWorkflow.dual-track-protocol.md",
-      "decisions/ADR-031-repo-driven-dual-track-workflow.md"
+      "registry/next-action.json",
+      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
     ],
     "blockedChanges": [
+      ".agent/workflows/**",
+      "scripts/verify-workflow-cycle.mjs",
       "src/**/*.css",
       "src/**/*.tsx",
       "src/**/*.stories.tsx",
@@ -138,14 +141,14 @@
       "pattern-promoted"
     ],
     "requiredDeliverables": [
-      "registry/workflow-goal.json",
-      "reviews/LocalWorkflow.dual-track-protocol.md",
-      "decisions/ADR-031-repo-driven-dual-track-workflow.md"
+      "registry/metric-typography-css-runtime-validation.json",
+      "reviews/MetricTypography.css-runtime-validation.md",
+      "decisions/ADR-032-validate-metric-typography-css-runtime.md"
     ],
     "promotionStatus": "not-promoted",
     "notes": [
-      "This transition action verifies the protocol migration only.",
-      "Future business cycles must use activeAction as the executable action boundary."
+      "This verification action is limited to Cycle 43 completion.",
+      "The next executable business cycle is activeAction Cycle 44."
     ]
   }
 }

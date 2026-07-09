@@ -1,0 +1,89 @@
+{
+  "status": "reviewed",
+  "cycle": 43,
+  "scope": "metric-typography-css-runtime-validation",
+  "sourceExecution": "registry/metric-typography-css-execution.json",
+  "targetRuntimeSurfaces": [
+    "Components/MetricCard/Default",
+    "Components/MetricCard/LongChineseText",
+    "Components/MetricCard/ExtremeValue",
+    "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop"
+  ],
+  "commandsRun": [
+    {
+      "command": "npm run build",
+      "result": "passed",
+      "notes": "TypeScript and project structure validation passed."
+    },
+    {
+      "command": "npm run build-storybook",
+      "result": "passed-with-warnings",
+      "notes": "Storybook production build completed. Warnings were package metadata and chunk-size warnings, not story failures."
+    }
+  ],
+  "validationEntries": [
+    {
+      "target": "Components/MetricCard/Default",
+      "validatedTokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "runtimeValidationStatus": "validated-by-storybook-build",
+      "visualPressureResult": "reduced-by-selector-cap",
+      "remainingRisk": "Visual parity against source screenshot is not proven in this cycle.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "target": "Components/MetricCard/LongChineseText",
+      "validatedTokens": [
+        "typography.metric.label"
+      ],
+      "runtimeValidationStatus": "validated-by-storybook-build",
+      "visualPressureResult": "no-build-regression",
+      "remainingRisk": "Long localized label still needs visual QA inspection after CSS execution.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "target": "Components/MetricCard/ExtremeValue",
+      "validatedTokens": [
+        "typography.metric.value",
+        "typography.metric.unit"
+      ],
+      "runtimeValidationStatus": "validated-by-storybook-build",
+      "visualPressureResult": "no-build-regression",
+      "remainingRisk": "Extreme value hierarchy still needs visual QA inspection after CSS execution.",
+      "promotionStatus": "not-promoted"
+    },
+    {
+      "target": "Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop",
+      "validatedTokens": [
+        "typography.metric.value",
+        "typography.metric.unit",
+        "typography.metric.label"
+      ],
+      "runtimeValidationStatus": "validated-by-storybook-build",
+      "visualPressureResult": "pattern-build-stable",
+      "remainingRisk": "SummaryDashboard source visual parity remains unresolved.",
+      "promotionStatus": "not-promoted"
+    }
+  ],
+  "runtimeResult": "validated-with-build-warnings",
+  "cssChangeStatus": "not-changed",
+  "tsxChangeStatus": "not-changed",
+  "storybookChangeStatus": "not-changed",
+  "tokenValueChangeStatus": "not-changed",
+  "promotionStatus": "not-promoted",
+  "nextRecommendedCycle": {
+    "cycle": 44,
+    "name": "Metric Typography Visual QA Review",
+    "mode": "visual-qa-review",
+    "purpose": "Review the Cycle 42 metric typography CSS execution against visual QA expectations before any further CSS adjustment or design-system promotion."
+  },
+  "notes": [
+    "Runtime validation proves build stability, not pixel parity.",
+    "Metric unit and label normalization should remain under visual QA review.",
+    "No source, CSS, TSX, Storybook, or semantic token value files changed in this cycle."
+  ]
+}
+

@@ -653,3 +653,25 @@ Unchanged:
 - color, spacing, density, state, and radius tokens
 
 This is a CSS execution result only. Runtime validation is still required, and promotion remains blocked.
+
+## Metric Typography CSS Runtime Validation Notes
+
+Forty-third-cycle runtime validation reviews the Cycle 42 metric typography CSS execution in existing Storybook surfaces.
+
+Validated runtime targets:
+
+- `Components/MetricCard/Default`
+- `Components/MetricCard/LongChineseText`
+- `Components/MetricCard/ExtremeValue`
+- `Patterns/SummaryDashboard/SemanticComposition/FullSemanticLoop`
+
+Validation commands:
+
+- `npm run build`
+- `npm run build-storybook`
+
+Both commands passed. Storybook build produced non-blocking package metadata and chunk-size warnings, but no story build failure.
+
+This proves runtime build stability. It does not prove pixel parity or source visual parity.
+
+Next step: run a metric typography visual QA review before any further CSS adjustment or design-system promotion review.
